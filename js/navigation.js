@@ -16,7 +16,7 @@ function currentPage () {
 	let currentPage = window.location.pathname;
 	currentPage = currentPage.substr(currentPage.lastIndexOf('/') + 1);
 
-	if (!currentPage) currentPage = "5etools.html";
+	if (!currentPage) currentPage = "home.html";
 	if (CHILD_PAGES[currentPage]) currentPage = CHILD_PAGES[currentPage];
 
 	if (currentPage.toLowerCase() === "book.html") {
@@ -49,13 +49,15 @@ function navigation () {
 	A('players', 'playerOption', 'dropdown-toggle', 'dropdown', '#', 'button', 'true', 'false', "Player Options <span class='caret'></span>");
 	UL('players', 'ul_players', 'dropdown-menu');
 	LI('ul_players', 'classes.html', 'Classes');
+	LI('ul_players', 'prestigeclasses.html', 'Prestige Classes');
 	LI('ul_players', 'backgrounds.html', 'Backgrounds');
 	LI('ul_players', 'feats.html', 'Feats');
 	LI('ul_players', 'invocations.html', 'Invocations');
 	LI('ul_players', 'races.html', 'Races');
-	LI('ul_players', 'lifegen.html', 'This Is Your Life');
+//	LI('ul_players', 'lifegen.html', 'This Is Your Life');
 	LI('ul_players', 'names.html', 'Names');
 
+	/*
 	LIDropdown('navbar', 'dms', 'dropdown');
 	A('dms', 'dmOption', 'dropdown-toggle', 'dropdown', '#', 'button', 'true', 'false', "DM Tools <span class='caret'></span>");
 	UL('dms', 'ul_dms', 'dropdown-menu');
@@ -67,12 +69,14 @@ function navigation () {
 	LI('ul_dms', 'lootgen.html', 'Loot Generator');
 	LI('ul_dms', 'objects.html', 'Objects');
 	LI('ul_dms', 'trapshazards.html', 'Traps & Hazards');
+	*/
 
 	LIDropdown('navbar', 'references', 'dropdown');
 	A('references', 'references', 'dropdown-toggle', 'dropdown', '#', 'button', 'true', 'false', "References <span class='caret'></span>");
 	UL('references', 'ul_references', 'dropdown-menu');
-	LI('ul_references', 'bestiary.html', 'Bestiary');
 	LI('ul_references', 'conditions.html', 'Conditions');
+	LI('ul_references', 'bestiary.html', 'Bestiary');
+	LI('ul_references', 'worldinfo.html', 'World Info');
 	LI('ul_references', 'deities.html', 'Deities');
 	LI('ul_references', 'items.html', 'Items');
 	LI('ul_references', 'rewards.html', 'Other Rewards');

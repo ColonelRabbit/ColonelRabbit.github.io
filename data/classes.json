@@ -1,5 +1,6 @@
-﻿{
+{
 	"class": [
+
 		{
 			"name": "Barbarian",
 			"source": "PHB",
@@ -156,6 +157,76 @@
 							{
 								"type": "bonus",
 								"value": 4
+							}
+						],
+						[
+							"Unlimited",
+							{
+								"type": "bonus",
+								"value": 5
+							}
+						],
+						[
+							"Unlimited",
+							{
+								"type": "bonus",
+								"value": 5
+							}
+						],
+						[
+							"Unlimited",
+							{
+								"type": "bonus",
+								"value": 6
+							}
+						],
+						[
+							"Unlimited",
+							{
+								"type": "bonus",
+								"value": 6
+							}
+						],
+						[
+							"Unlimited",
+							{
+								"type": "bonus",
+								"value": 7
+							}
+						],
+						[
+							"Unlimited",
+							{
+								"type": "bonus",
+								"value": 7
+							}
+						],
+						[
+							"Unlimited",
+							{
+								"type": "bonus",
+								"value": 8
+							}
+						],
+						[
+							"Unlimited",
+							{
+								"type": "bonus",
+								"value": 8
+							}
+						],
+						[
+							"Unlimited",
+							{
+								"type": "bonus",
+								"value": 9
+							}
+						],
+						[
+							"Unlimited",
+							{
+								"type": "bonus",
+								"value": 10
 							}
 						]
 					]
@@ -394,6 +465,118 @@
 							"At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24."
 						]
 					}
+				],
+				[
+					{
+						"name": "Fast Movement (+20 ft)",
+						"entries": [
+							"Starting at 21st level, your speed increases by another 10 feet for a total of 20 feet. At 25th level your speed increases by yet another 10 feet for a total of 30 feet."
+						]
+					},
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM uses the optional Feats, you can instead take a feat."
+						]
+					}
+				],
+				[
+					{
+						"name": "Blindsight",
+						"entries": [
+							"Your senses have become so honed that you surpass the sensory limitations of mere mortals, being able to accurately predict an opponent’s movements even with your eyes closed. Beginning at 22nd level, you gain blindsight with a range of 5 ft., and an additional 5 ft. of blindsight while raging."
+						]
+					}
+				],
+				[
+					{
+						"name": "Brutal Critical (4 Dice)",
+						"entries": [
+							"Beginning at 23rd level, you can roll four additional weapon damage die when determining the extra damage for a critical hit with a melee attack. This increases to five additional dice at 28th level."
+						]
+					}
+				],
+				[
+					{
+						"name": "Indomitable Vigor",
+						"entries": [
+							"Beginning at 24th level, if your total for a Constitution check is less than your Constitution score, you can use that score in place of the total."
+						]
+					}
+				],
+				[
+					{
+						"name": "Fast Movement (+30 ft)",
+						"entries": [
+							"At 25th level, your speed increases by another 10 feet for a total of 30 feet."
+						]
+					},
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM uses the optional Feats, you can instead take a feat."
+						]
+					}
+				],
+				[
+					{
+						"name": "Unmatched Physicality",
+						"entries": [
+							"Years of hacking and slashing at your enemies, has taught you everything there is to know about creating and abusing openings in an enemy’s defense, as well as opening or closing yourself to opportunistic strikes.",
+							"Beginning at 26th level, when using Reckless Attack, you can choose whether hostile creatures have advantage against you or not, and attacks of opportunity against you are made at disadvantage unless you choose otherwise."
+						]
+					}
+				],
+				[
+					{
+						"name": "Path feature",
+						"entries": [
+							"At 27th level, you gain a feature from your Primal Path."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Brutal Critical (5 Dice)",
+						"entries": [
+							"At 28th level, you can roll five additional weapon damage die when determining the extra damage for a critical hit with a melee attack."
+						]
+					}
+				],
+				[
+					{
+						"name": "Undaunted",
+						"entries": [
+							"Beginning at 29th level, if you drop to 0 hit points and don’t die outright, you can make a DC 5 Constitution saving throw with advantage. If you succeed, you drop to 1 hit point instead, your rage is automatically activated if it isn’t already, and your first attack against the source of the attack you suffered is a guaranteed critical hit. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 5. This feature replaces your Relentless Rage feature."
+						]
+					},
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM uses the optional Feats, you can instead take a feat."
+						]
+					}
+				],
+				[
+					{
+						"name": "Savagery",
+						"entries": [
+							"Taking injuries while raging fuels the fire within you, making you increasingly vicious with every wound you suffer in combat.",
+							"While raging, whenever you are hit with a melee attack, you may use your reaction to immediately strike back at the attacker. As part of the same reaction, but after having struck back at your attacker, you gain a number of Battle Dice equal to the damage taken divided by 5. Battle Dice stack, but you can have a maximum of 5 Battle Dice at any one time. Your stored Battle Dice last until your rage ends, you are healed, or after 5 minutes.",
+							"While you have one or more Battle Dice stored, whenever you hit a creature with a melee weapon attack, you may add all of the Battle Dice to the attack. The damage of your Battle Dice equals your weapon damage die.",
+							"For example, if you were struck for 19 bludgeoning damage by a melee attack, you could retaliate immediately, and then gain 3 Battle Dice. If you are wielding a greataxe, each Battle Die would deal 1d12 slashing damage, which you could add to any attack on any of your subsequent turns."
+						]
+					},
+					{
+						"name": "Death Save Advantage",
+						"entries": [
+							"Your battle hardened physicality has made you very difficult to kill. Starting at 30th level any death saving throws you make are made with advantage."
+						]
+					}
 				]
 			],
 			"subclassTitle": "Primal Path",
@@ -451,6 +634,19 @@
 										"name": "Retaliation",
 										"entries": [
 											"Starting at 14th level, when you take damage from a creature that is within 5 feet of you. you can use your reaction to make a melee weapon attack against that creature."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "test",
+										"entries": [
+											"Test subclass feature."
 										]
 									}
 								]
@@ -705,6 +901,19 @@
 									}
 								]
 							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "test",
+										"entries": [
+											"Test subclass feature."
+										]
+									}
+								]
+							}
 						]
 					],
 					"source": "PHB",
@@ -776,6 +985,19 @@
 									}
 								]
 							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "test",
+										"entries": [
+											"Test subclass feature."
+										]
+									}
+								]
+							}
 						]
 					],
 					"source": "SCAG",
@@ -839,6 +1061,19 @@
 									}
 								]
 							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "test",
+										"entries": [
+											"Test subclass feature."
+										]
+									}
+								]
+							}
 						]
 					],
 					"source": "UABarbarianPrimalPaths",
@@ -898,6 +1133,19 @@
 										"name": "Vengeful Ancestors",
 										"entries": [
 											"At 14th level, your ancestral spirits grow powerful enough to strike foes that dare harm those that you protect. When you use your Spirit Shield Ability to protect a creature damaged by an attack, the attacker takes the same amount of damage that the Spirit Shield protects."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "test",
+										"entries": [
+											"Test subclass feature."
 										]
 									}
 								]
@@ -1072,6 +1320,19 @@
 									}
 								]
 							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "test",
+										"entries": [
+											"Test subclass feature."
+										]
+									}
+								]
+							}
 						]
 					],
 					"source": "UABarbarianPrimalPaths",
@@ -1143,6 +1404,19 @@
 									}
 								]
 							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "test",
+										"entries": [
+											"Test subclass feature."
+										]
+									}
+								]
+							}
 						]
 					],
 					"source": "UABarbarianPrimalPaths",
@@ -1203,6 +1477,19 @@
 										"name": "Vengeful Ancestors",
 										"entries": [
 											"At 14th level, your ancestral spirits grow powerful enough to retaliate. When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage equal to the damage that your Spirit Shield prevents."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "test",
+										"entries": [
+											"Test subclass feature."
 										]
 									}
 								]
@@ -1349,6 +1636,19 @@
 									}
 								]
 							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "test",
+										"entries": [
+											"Test subclass feature."
+										]
+									}
+								]
+							}
 						]
 					],
 					"source": "XGE",
@@ -1416,6 +1716,19 @@
 										"entries": [
 											"Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows.",
 											"While you're raging, having 0 hit points doesn't knock you {@condition unconscious}. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until your rage ends, and you die then only if you still have 0 hit points."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "test",
+										"entries": [
+											"Test subclass feature."
 										]
 									}
 								]
@@ -8345,64 +8658,64 @@
 					"subclassFeatures": [
 						[
 							{
-							"name": "Circle of Spores",
-							"entries": [
-								"Druids of the Circle of Spores find beauty in decay. They see within mold and other fungi the ability to transform lifeless material into abundant, albeit somewhat strange, life. These druids believe that life and death are portions of a grand cycle, with one leading to the other and then back again. Death is not the end of life, but instead a change of state that sees life shift into a new form. Druids of this circle have a complex relationship with the undead. Unlike most other druids, they see nothing inherently wrong with undeath, which they consider to be a companion to life and death. However, these druids believe that the natural cycle is healthiest when each segment of it is vibrant and changing. Undead that seek to replace all life with undeath, or avoid passing to a final rest, violate the cycle and must be thwarted.",
-								{
-									"type": "entries",
-									"name": "Circle Spells",
-									"entries": [
-										"Your symbiotic link to fungus and your ability to tap into the cycle of life and death grants you access to certain spells. At 1st level, you learn the {@spell chill touch} cantrip. At 3rd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Circle of Spores Spells table.",
-										"Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.",
-										{
-											"type": "table",
-											"caption": "Circle of Spores Spells",
-											"colLabels": [
-												"Druid Level",
-												"Circle Spells"
-											],
-											"colStyles": [
-												"col-xs-3 text-align-center",
-												"col-xs-9"
-											],
-											"rows": [
-												[
-													"3rd",
-													"{@spell gentle repose}, {@spell ray of enfeeblement}"
+								"name": "Circle of Spores",
+								"entries": [
+									"Druids of the Circle of Spores find beauty in decay. They see within mold and other fungi the ability to transform lifeless material into abundant, albeit somewhat strange, life. These druids believe that life and death are portions of a grand cycle, with one leading to the other and then back again. Death is not the end of life, but instead a change of state that sees life shift into a new form. Druids of this circle have a complex relationship with the undead. Unlike most other druids, they see nothing inherently wrong with undeath, which they consider to be a companion to life and death. However, these druids believe that the natural cycle is healthiest when each segment of it is vibrant and changing. Undead that seek to replace all life with undeath, or avoid passing to a final rest, violate the cycle and must be thwarted.",
+									{
+										"type": "entries",
+										"name": "Circle Spells",
+										"entries": [
+											"Your symbiotic link to fungus and your ability to tap into the cycle of life and death grants you access to certain spells. At 1st level, you learn the {@spell chill touch} cantrip. At 3rd, 5th, 7th, and 9th level you gain access to the spells listed for that level in the Circle of Spores Spells table.",
+											"Once you gain access to one of these spells, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.",
+											{
+												"type": "table",
+												"caption": "Circle of Spores Spells",
+												"colLabels": [
+													"Druid Level",
+													"Circle Spells"
 												],
-												[
-													"5th",
-													"{@spell animate dead}, {@spell gaseous form}"
+												"colStyles": [
+													"col-xs-3 text-align-center",
+													"col-xs-9"
 												],
-												[
-													"7th",
-													"{@spell blight}, {@spell confusion}"
-												],
-												[
-													"9th",
-													"{@spell cloudkill}, {@spell contagion}"
+												"rows": [
+													[
+														"3rd",
+														"{@spell gentle repose}, {@spell ray of enfeeblement}"
+													],
+													[
+														"5th",
+														"{@spell animate dead}, {@spell gaseous form}"
+													],
+													[
+														"7th",
+														"{@spell blight}, {@spell confusion}"
+													],
+													[
+														"9th",
+														"{@spell cloudkill}, {@spell contagion}"
+													]
 												]
-											]
-										}
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Halo of Spores",
-									"entries": [
-										"Starting at 2nd level, you can launch toxic spores at other creatures. To do so, you use your reaction on your turn to deal 3 poison damage to one creature you can see within 10 feet of you. This damage increases to 6 at 6th level, 9 at 10th level, and 12 at 14th."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Symbiotic Entity",
-									"entries": [
-										"At 2nd level, you gain the ability to channel magic into the spores that infuse you.",
-										"When you use your Wild Shape feature, you can awaken those spores, rather than transforming. When you do so, you gain 3 temporary hit points per level you have in this class, the damage of your Halo of Spores feature doubles, and your melee weapon attacks deal an extra 1d6 poison damage to any target they hit. These benefits last for 10 minutes or until you use your Wild Shape again."
-									]
-								}
-							]
-						}
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Halo of Spores",
+										"entries": [
+											"Starting at 2nd level, you can launch toxic spores at other creatures. To do so, you use your reaction on your turn to deal 3 poison damage to one creature you can see within 10 feet of you. This damage increases to 6 at 6th level, 9 at 10th level, and 12 at 14th."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Symbiotic Entity",
+										"entries": [
+											"At 2nd level, you gain the ability to channel magic into the spores that infuse you.",
+											"When you use your Wild Shape feature, you can awaken those spores, rather than transforming. When you do so, you gain 3 temporary hit points per level you have in this class, the damage of your Halo of Spores feature doubles, and your melee weapon attacks deal an extra 1d6 poison damage to any target they hit. These benefits last for 10 minutes or until you use your Wild Shape again."
+										]
+									}
+								]
+							}
 						],
 						[
 							{
@@ -24973,11 +25286,11 @@
 								]
 							},
 							{
-							    "type": "entries",
-							    "name": "Spellcasting Focus",
-							    "entries": [
-							        "You can use an arcane focus (found in chapter 5) as a spellcasting focus for your sorcerer spells."
-							    ]
+								"type": "entries",
+								"name": "Spellcasting Focus",
+								"entries": [
+									"You can use an arcane focus (found in chapter 5) as a spellcasting focus for your sorcerer spells."
+								]
 							}
 						]
 					},

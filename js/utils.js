@@ -150,7 +150,7 @@ String.prototype.toTitleCase = String.prototype.toTitleCase ||
 		});
 
 		if (!StrUtil._TITLE_LOWER_WORDS_RE) {
-			StrUtil._TITLE_LOWER_WORDS_RE = StrUtil.TITLE_LOWER_WORDS.map(it => new RegExp(`\\s${it}\\s`, 'g'));
+			StrUtil._TITLE_LOWER_WORDS_RE = StrUtil.TITLE_LOWER_WORDS.map(it => new RegExp(`\\s${it}(\s|$)`, 'g'));
 		}
 
 		for (let i = 0; i < StrUtil.TITLE_LOWER_WORDS.length; i++) {
@@ -240,7 +240,9 @@ function utils_makeAttChoose (attList) {
 DICE_REGEX = /([1-9]\d*)?d([1-9]\d*)(\s?[+-]\s?\d+)?/g;
 
 function utils_makeRoller (text) {
-	return text.replace(DICE_REGEX, "<span class='roller' data-roll='$&'>$&</span>").replace(/(-|\+)?\d+(?= to hit)/g, "<span class='roller' data-roll='1d20$&'>$&</span>").replace(/(-|\+)?\d+(?= bonus to)/g, "<span class='roller' data-roll='1d20$&'>$&</span>").replace(/(bonus of )(=?-|\+\d+)/g, "$1<span class='roller' data-roll='1d20$2'>$2</span>");
+	var x = text.replace(DICE_REGEX, "<span class='roller' data-roll='$&'>$&</span>").replace(/(-|\+)?\d+(?= to hit)/g, "<span class='roller' data-roll='1d20$&'>$&</span>").replace(/(-|\+)?\d+(?= bonus to)/g, "<span class='roller' data-roll='1d20$&'>$&</span>").replace(/(bonus of )(=?-|\+\d+)/g, "$1<span class='roller' data-roll='1d20$2'>$2</span>");
+	console.log(x);
+	return x;
 }
 
 class AbilityData {
@@ -1146,6 +1148,7 @@ Parser.ARMOR_ABV_TO_FULL = {
 	"h.": "heavy"
 };
 
+SRC_AG = "AG";
 SRC_CoS = "CoS";
 SRC_DMG = "DMG";
 SRC_EEPC = "EEPC";
@@ -1250,6 +1253,7 @@ PP3_SUFFIX = " (3pp)";
 TftYP_NAME = "Tales from the Yawning Portal";
 
 Parser.SOURCE_JSON_TO_FULL = {};
+Parser.SOURCE_JSON_TO_FULL[SRC_AG] = "Adventurer's Guild Homebrew";
 Parser.SOURCE_JSON_TO_FULL[SRC_CoS] = "Curse of Strahd";
 Parser.SOURCE_JSON_TO_FULL[SRC_DMG] = "Dungeon Master's Guide";
 Parser.SOURCE_JSON_TO_FULL[SRC_EEPC] = "Elemental Evil Player's Companion";
@@ -2283,7 +2287,9 @@ UrlUtil.PG_SPELLS = "spells.html";
 UrlUtil.PG_BACKGROUNDS = "backgrounds.html";
 UrlUtil.PG_ITEMS = "items.html";
 UrlUtil.PG_CLASSES = "classes.html";
+UrlUtil.PG_PRESTIGECLASSES = "prestigeclasses.html";
 UrlUtil.PG_CONDITIONS = "conditions.html";
+UrlUtil.PG_WORLDINFO = "worldinfo.html";
 UrlUtil.PG_FEATS = "feats.html";
 UrlUtil.PG_INVOCATIONS = "invocations.html";
 UrlUtil.PG_PSIONICS = "psionics.html";
@@ -2303,7 +2309,9 @@ UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SPELLS] = (it) => UrlUtil.encodeForHash([
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BACKGROUNDS] = (it) => UrlUtil.encodeForHash([it.name, Parser.sourceJsonToAbv(it.source)]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_PRESTIGECLASSES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_WORLDINFO] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_FEATS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_INVOCATIONS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_PSIONICS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
@@ -2322,7 +2330,9 @@ UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SPELL] = UrlUtil.PG_SPELLS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_BACKGROUND] = UrlUtil.PG_BACKGROUNDS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ITEM] = UrlUtil.PG_ITEMS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CLASS] = UrlUtil.PG_CLASSES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CLASS] = UrlUtil.PG_PRESTIGECLASSES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CONDITION] = UrlUtil.PG_CONDITIONS;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CONDITION] = UrlUtil.PG_WORLDINFO;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_FEAT] = UrlUtil.PG_FEATS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ELDRITCH_INVOCATION] = UrlUtil.PG_INVOCATIONS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_PSIONIC] = UrlUtil.PG_PSIONICS;
@@ -2507,7 +2517,7 @@ function addListShowHide () {
 		<div class="col-xs-12" id="showsearch">
 			<button class="btn btn-block btn-default btn-xs" type="button">Show Search</button>
 			<br>
-		</div>	
+		</div>
 	`;
 
 	const toInjectHide = `
@@ -2729,6 +2739,8 @@ BrewUtil = {
 						return ["spell"];
 					case UrlUtil.PG_CLASSES:
 						return ["class", "subclass"];
+					case UrlUtil.PG_PRESTIGECLASSES:
+						return ["class, subClass"];
 					case UrlUtil.PG_BESTIARY:
 						return ["creature"];
 					case UrlUtil.PG_BACKGROUNDS:
@@ -3031,6 +3043,10 @@ BrewUtil = {
 					addClassData({class: classesToAdd});
 					addSubclassData({subclass: subclassesToAdd});
 					break;
+					case UrlUtil.PG_PRESTIGECLASSES:
+						addClassData({class: classesToAdd});
+						addSubclassData({subclass: subclassesToAdd});
+						break;
 				case UrlUtil.PG_BESTIARY:
 					addMonsters(monstersToAdd);
 					break;

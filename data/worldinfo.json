@@ -1,0 +1,42 @@
+{
+	"deity": [
+    {
+      "source": "AG",
+			"type": "Country",
+			"name": "Roshen",
+			"title": "Empire of",
+			"location": [
+				"Ebion"
+			],
+			"race": [
+				"Human"
+			],
+			"symbol": "Black Sun",
+			"entries": [
+        "Roshen is the biggest known empire on the plane. It is ruled by an Archmage, the God Emperor. The Emperor is generally referred to as “Holy Emperor,” “His Divinity,” “Divine Lord,” or some similar version of that. There is a heavy caste system with priests, nobles, citizens and peasants (Kuul). It is a sort of theocratic feudal empire. Most production is managed by the powerful noble houses with parts of it delegated to smaller houses and citizens. To compare to modern day, noble houses are like corporations, priests fill the role of the government regulators and citizens usually form smaller businesses. However everything is technically owned by the Emperor, including the Kuul. Priests are recruited from nobles and citizens, otherwise there is very little movement between classes, and it usually is down if it happens.",
+        "The empire is almost entirely human. Foreigners and non-humans occupy a middle space between citizens (with general human rights and freedoms) and Kuul (no rights and freedoms). They cannot generally own land, cannot become citizens and require permission from the local government (usually priests) to do basically anything. Non-humans are often heavily discriminated against under these regulations but for foreign travelers and merchants they are just minor nuisances.",
+        "There are five High Houses that control a majority of trade and production within the Empire. Smaller noble houses work under them in a complex political economic system. In general, the Emperor lets the houses feud so long as they meet his quotas for taxes and supplies.",
+        "Most guard forces in Roshen are paid and run by noble houses, with the exception of in the military and the priests have a private troop of guards especially in large cities."
+			],
+			"page": 0
+		},
+    {
+      "source": "AG",
+      "type": "Person",
+      "name": "God Emperor",
+      "title": "Roshen",
+      "location": [
+        "Ebion",
+        "Roshen"
+      ],
+      "race": [
+        "Human"
+      ],
+      "symbol": "Black Sun",
+      "entries": [
+        "God Emperor of Roshen"
+      ],
+      "page": 0
+    }
+	]
+}

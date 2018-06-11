@@ -31,7 +31,7 @@ class StyleSwitcher {
 
 	loadStyleFromCookie () {
 		this.cookie = StyleSwitcher.readCookie();
-		this.cookie = this.cookie ? this.cookie : StyleSwitcher.STYLE_DAY;
+		this.cookie = this.cookie ? this.cookie : StyleSwitcher.STYLE_NIGHT;
 		this.setActiveStyleSheet(this.cookie);
 	}
 

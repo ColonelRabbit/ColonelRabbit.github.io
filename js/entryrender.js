@@ -286,8 +286,8 @@ function EntryRenderer () {
 					renderPrefix();
 					textStack.push(`<table class="statsDataInset">`);
 					textStack.push(`<thead><tr><th class="dataCreature__header" colspan="6" onclick="((ele) => {
-						$(ele).find('.dataCreature__name').toggle(); 
-						$(ele).find('.dataCreature__showHide').text($(ele).text().includes('+') ? '[\u2013]' : '[+]'); 
+						$(ele).find('.dataCreature__name').toggle();
+						$(ele).find('.dataCreature__showHide').text($(ele).text().includes('+') ? '[\u2013]' : '[+]');
 						$(ele).closest('table').find('tbody').toggle()
 					})(this)">
 						<span style="display: none;" class="dataCreature__name">${entry.dataCreature.name}</span>
@@ -1203,7 +1203,7 @@ EntryRenderer.spell = {
 						<th colspan="1">School</th>
 						<th colspan="2">Casting Time</th>
 						<th colspan="2">Range</th>
-					</tr>	
+					</tr>
 					<tr>
 						<td colspan="1">${Parser.spLevelToFull(spell.level)}${Parser.spMetaToFull(spell.meta)}</td>
 						<td colspan="1">${Parser.spSchoolAbvToFull(spell.school)}</td>
@@ -1213,7 +1213,7 @@ EntryRenderer.spell = {
 					<tr>
 						<th colspan="4">Components</th>
 						<th colspan="2">Duration</th>
-					</tr>	
+					</tr>
 					<tr>
 						<td colspan="4">${Parser.spComponentsToFull(spell.components)}</td>
 						<td colspan="2">${Parser.spDurationToFull(spell.duration)}</td>
@@ -1483,12 +1483,12 @@ EntryRenderer.object = {
 						<th class="col-xs-3 text-align-center">Damage Imm.</th>
 					</tr>
 					<tr>
-						<td class="text-align-center">${Parser.sizeAbvToFull(obj.size)} object</td>					
+						<td class="text-align-center">${Parser.sizeAbvToFull(obj.size)} object</td>
 						<td class="text-align-center">${obj.ac}</td>
 						<td class="text-align-center">${obj.hp}</td>
 						<td class="text-align-center">${obj.immune}</td>
 					</tr>
-				</table>			
+				</table>
 			</td></tr>
 			<tr class="text"><td colspan="6">
 			${obj.entries ? renderer.renderEntry({entries: obj.entries}, 2) : ""}
@@ -1571,12 +1571,12 @@ EntryRenderer.monster = {
 						<th>Challenge Rating</th>
 					</tr>
 					<tr>
-						<td>${mon.ac}</td>					
-						<td>${EntryRenderer.monster.getRenderedHp(mon.hp)}</td>					
-						<td>${Parser.getSpeedString(mon)}</td>					
-						<td>${Parser.monCrToFull(mon.cr)}</td>					
+						<td>${mon.ac}</td>
+						<td>${EntryRenderer.monster.getRenderedHp(mon.hp)}</td>
+						<td>${Parser.getSpeedString(mon)}</td>
+						<td>${Parser.monCrToFull(mon.cr)}</td>
 					</tr>
-				</table>			
+				</table>
 			</td></tr>
 			<tr><td colspan="6"><div class="border"></div></td></tr>
 			<tr><td colspan="6">
@@ -1588,7 +1588,7 @@ EntryRenderer.monster = {
 						<th class="col-xs-2 text-align-center">INT</th>
 						<th class="col-xs-2 text-align-center">WIS</th>
 						<th class="col-xs-2 text-align-center">CHA</th>
-					</tr>	
+					</tr>
 					<tr>
 						<td class="text-align-center">${makeAbilityRoller("str")}</td>
 						<td class="text-align-center">${makeAbilityRoller("dex")}</td>
@@ -2911,6 +2911,8 @@ EntryRenderer.dice = {
 			mods.push(m0);
 			return "";
 		});
+		console.log(str);
+		console.log(mods);
 		function cleanOperators (str) {
 			let len;
 			let nextLen;
@@ -2921,7 +2923,7 @@ EntryRenderer.dice = {
 			} while (len !== nextLen);
 			return str;
 		}
-
+		console.log(str);
 		const totalMods = mods.map(m => Number(cleanOperators(m))).reduce((a, b) => a + b, 0);
 
 		function isNumber (char) {
@@ -3051,7 +3053,6 @@ EntryRenderer.dice = {
 			if (!cur.num || !cur.faces) return null;
 			stack.push(cur);
 		}
-
 		return {dice: stack, mod: totalMods};
 	}
 };

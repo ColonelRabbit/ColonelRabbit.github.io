@@ -38,7 +38,7 @@ let classTableDefault;
 let list;
 let subclassComparisonView;
 
-const jsonURL = "data/classes.json";
+const jsonURL = "data/prestigeclasses.json";
 
 const renderer = new EntryRenderer();
 
@@ -51,6 +51,7 @@ window.onload = function load () {
 };
 
 function getClassHash (aClass) {
+
 
 	return `#${UrlUtil.autoEncodeHash(aClass)}`;
 }
@@ -90,9 +91,11 @@ function onJsonLoad (data) {
 		listClass: "classes"
 	});
 
-	const invocFeature = data.class
-		.find(it => it.name === "Warlock" && it.source === SRC_PHB).classFeatures[1]
-		.find(f => f.name === "Eldritch Invocations");
+
+	//const invocFeature = data.class
+	//	.find(it => it.name === "Warlock" && it.source === SRC_PHB).classFeatures[1]
+	//	.find(f => f.name === "Eldritch Invocations");
+	const invocFeature = undefined;
 	if (invocFeature) {
 		const toRemove = invocFeature.entries.findIndex(it => it.type === "options");
 		const toSwitch = invocFeature.entries.findIndex(it => it.includes("Your invocation options are detailed at the end of the class description."));
@@ -270,7 +273,7 @@ function loadhash (id) {
 	profSel.find("div#armor span").html(sProfs.armor === undefined ? STR_PROF_NONE : sProfs.armor.map(a => a === "light" || a === "medium" || a === "heavy" ? a + " armor" : a).join(", "));
 	profSel.find("div#weapons span").html(sProfs.weapons === undefined ? STR_PROF_NONE : sProfs.weapons.map(w => w === "simple" || w === "martial" ? w + " weapons" : w).join(", "));
 	profSel.find("div#tools span").html(sProfs.tools === undefined ? STR_PROF_NONE : sProfs.tools.join(", "));
-	profSel.find("div#skills span").html(sProfs.skills === undefined ? STR_PROF_NONE : getSkillProfString(sProfs.skills));
+	profSel.find("div#skills span").html(sProfs.skills === undefined ? STR_PROF_NONE : sProfs.skills.join(", "));
 
 	function getSkillProfString (skills) {
 		const numString = Parser.numberToString(skills.choose);
@@ -286,6 +289,7 @@ function loadhash (id) {
 
 	// FEATURE TABLE ===================================================================================================
 	renderer.resetHeaderIndex();
+
 	const tData = curClass.classTableGroups;
 	const groupHeaders = $("#groupHeaders");
 	const colHeaders = $("#colHeaders");
@@ -304,9 +308,8 @@ function loadhash (id) {
 			let lbl = renderer.renderEntry(tGroup.colLabels[j]);
 			colHeaders.append(`<th class="centred-col" ${subclassData}>${lbl}</th>`)
 		}
-
 		for (let j = 0; j < tGroup.rows.length; j++) {
-			const tr = $(`#level${j + 1}`);
+			const tr = $(`#level${j + 0}`);
 			levelTrs[j] = tr;
 			for (let k = 0; k < tGroup.rows[j].length; k++) {
 				let entry = tGroup.rows[j][k];
@@ -338,6 +341,7 @@ function loadhash (id) {
 
 		// add class features to render stack
 		const lvlFeatureList = curClass.classFeatures[i];
+
 		for (let j = 0; j < lvlFeatureList.length; j++) {
 			const feature = lvlFeatureList[j];
 			const idLevelPart = UrlUtil.encodeForHash(` ${i + 1}`);
@@ -401,14 +405,14 @@ function loadhash (id) {
 	subclassPillWrapper.find("span").remove();
 
 	// show/hide class features pill
-	makeGenericTogglePill("Class Features", CLSS_CLASS_FEATURES_ACTIVE, ID_CLASS_FEATURES_TOGGLE, HASH_HIDE_FEATURES, true, "Toggle class features");
-	if (curClass.fluff) makeGenericTogglePill("Detail Info", CLSS_FLUFF_ACTIVE, ID_FLUFF_TOGGLE, HASH_SHOW_FLUFF, false, `Toggle class detail information (Source: Xanathar's Guide to Everything, page ${curClass.fluffPage})`);
+	//makeGenericTogglePill("Class Features", CLSS_CLASS_FEATURES_ACTIVE, ID_CLASS_FEATURES_TOGGLE, HASH_HIDE_FEATURES, true, "Toggle class features");
+	//if (curClass.fluff) makeGenericTogglePill("Detail Info", CLSS_FLUFF_ACTIVE, ID_FLUFF_TOGGLE, HASH_SHOW_FLUFF, false, `Toggle class detail information (Source: Xanathar's Guide to Everything, page ${curClass.fluffPage})`);
 
 	// show/hide UA/other sources
-	makeSourceCyclePill();
+	//makeSourceCyclePill();
 
 	// spacer before the subclass pills
-	subclassPillWrapper.append($(`<span class="divider">`));
+  subclassPillWrapper.append($(`<span class="divider">`));
 
 	// subclass pills
 	const subClasses = curClass.subclasses
@@ -434,6 +438,7 @@ function loadhash (id) {
 	// call loadsub with a blank sub-hash, to ensure the right content is displayed
 	loadsub([]);
 
+/*
 	function makeSourceCyclePill () {
 		const $pill = $(`<span title="Cycle through source types" id="${ID_OTHER_SOURCES_TOGGLE}" data-state="0" style="min-width: 8em;"><span>${STRS_SOURCE_STATES[0]}</span></span>`);
 		subclassPillWrapper.append($pill);
@@ -445,7 +450,7 @@ function loadhash (id) {
 			setSourceState(state);
 		});
 	}
-
+*/
 	// helper functions
 	function makeGenericTogglePill (pillText, pillActiveClass, pillId, hashKey, defaultActive, title) {
 		const pill = $(`<span title="${title}" id="${pillId}"><span>${pillText}</span></span>`);
@@ -687,6 +692,7 @@ function loadsub (sub) {
 		cfToggle.addClass(CLSS_CLASS_FEATURES_ACTIVE);
 		toToggleCf.show();
 	}
+
 
 	// show fluff as required
 	const fluffToggle = $(`#${ID_FLUFF_TOGGLE}`);

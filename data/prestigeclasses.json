@@ -1,0 +1,309 @@
+{
+  "class": [
+
+    {
+      "name": "Archblade",
+      "source": "Epics",
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": ["none"],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "shields"
+        ],
+        "weapons": [
+          "simple",
+          "martial"
+        ],
+        "skills": [
+          "History"
+        ]
+      },
+      "classTableGroups": [
+        {
+          "subclasses": [
+            {}
+          ],
+          "colLabels": [],
+          "rows": [
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ],
+      "startingEquipment": {
+        "default": [
+          "The archblade prestige class does not grant any special equipment."
+        ]
+      },
+      "classFeatures": [
+        [
+          {
+            "name": "Requirements",
+            "entries": [
+              "Fuckin prereqs yo. Yo gotta do this shit first yo."
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Chosen Weapon",
+            "entries": [
+              "Spending 8 hours meditating with a melee weapon, without being disturbed, you form a bond with your weapon, making it an extension of yourself. Having a chosen weapon is required to use many of the features of this prestige class."
+            ]
+          },
+          {
+            "name": "Magic Breaker",
+            "entries": [
+              "Your mastery of your inner spirit gives you a supernatural edge, allowing you to affect magic even if you lack a spellcasting ability. You may affect force effects such as a Wall of Force with your chosen weapon, destroying them as if Disintegrate had been cast upon them.",
+              "You also can parry magical beams as if they were physical objects. You add your Strength or Dexterity modifier to your AC or saving throw against any magical ray attack."
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Blade Beam",
+            "entries": [
+              "Beginning at 2nd level, by focusing your spirit you can swing your melee weapon and channel the force of the blow over a distance. With your chosen weapon you may now strike out at targets up to 20 feet beyond your normal range as an attack action, just as if they were in melee. Your reach does not extend, so you cannot make attacks of opportunity at range. Attacks send ghostly ripples of energy through the air as you swing."
+            ]
+          },
+          {
+            "name": "True Strike",
+            "entries": [
+              "Your blows can no longer lose their momentum as you lash out. Starting at 2nd level, you can no longer suffer disadvantage on attacks with your chosen weapon."
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Unrelenting Assault",
+            "entries": [
+              "Your blows hammer down with such speed, force and precision they seem to meld into one. Beginning at 3rd level, all of your attacks with your chosen weapon during your turn, are considered a single attack for the purpose of concentration saving throws."
+            ]
+          },
+          {
+            "name": "Extra Attack",
+            "entries": [
+              "Beginning at 3rd level, you can attack one additional time with your chosen weapon whenever you take the Attack action on your turn, no matter how many attacks you could otherwise make."
+            ]
+          }
+        ]
+      ],
+      "subclassTitle": "Default",
+      "subclasses": []
+    },
+    {
+      "name": "Acolyte of Corruption",
+      "source": "Epics",
+      "hd": {
+        "number": 1,
+        "faces": 12
+      },
+      "proficiency": ["none"],
+      "startingProficiencies": {
+        "armor": ["none"],
+        "weapons": ["none"]
+      },
+      "classTableGroups": [
+        {
+          "subclasses": [
+            {}
+          ],
+          "colLabels": [],
+          "rows": [
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ],
+      "startingEquipment": {
+        "default": [
+          "The acolyte of corruption prestige class does not grant any special equipment."
+        ]
+      },
+      "classFeatures": [
+        [
+          {
+            "name": "Requirements",
+            "entries": [
+              "Fuckin prereqs yo. Yo gotta do this shit first yo."
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Alternate Form",
+            "entries": [
+              "You can cast the {@spell alter self} spell at will, without expending a spell slot. While you are transformed in this way, you gain advantage on Charisma (Deception) checks."
+            ]
+          },
+          {
+            "name": "Devil's Sight",
+            "entries": [
+              "You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."
+            ]
+          },
+          {
+            "name": "Fiendish Suggestion",
+            "entries": [
+              "You can cast {@spell suggestion} without expending a spell slot or material components. When the spell is cast in this way, the also becomes charmed by you if it fails its saving throw, the spell’s duration is indefinete, and you don’t need to maintain concentration on the spell. Humanoids have disadvantage on the saving throw.",
+              "Once you use this feature, you must finish a long rest before you can do so again."
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Magic Resistance",
+            "entries": [
+              "Starting at 2nd level, you gain advantage on saving throws against spells and other magical effects."
+            ]
+          },
+          {
+            "name": "Mind Shielding",
+            "entries": [
+              "Beginning at 2nd level, your thoughts can’t be ready by telepathy or other means, unless you allow it. You can present false thoughts by making a Charisma (deception) check contested by the mind reader’s Wisdom (insight) check.",
+              "Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful, if you so choose, and you can’t be compelled to tell the truth by magic."
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Fiend's Favor",
+            "entries": [
+              "THIS SHIT NEEDS A TABLE YO"
+            ]
+          },
+          {
+            "name": "Skin of Damnation",
+            "entries": [
+              "THIS SHIT ALSO NEEDS A TABLE YO"
+            ]
+          }
+        ]
+      ],
+      "subclassTitle": "Default",
+      "subclasses": []
+    },
+
+    {
+      "name": "Chosen",
+      "source": "Epics",
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": ["none"],
+      "startingProficiencies": {},
+      "classTableGroups": [
+        {
+          "subclasses": [
+            {}
+          ],
+          "colLabels": [],
+          "rows": [
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ],
+      "startingEquipment": {
+        "default": [
+          "The chosen prestige class does not grant any special equipment."
+        ]
+      },
+      "classTableGroups": [
+				{
+					"colLabels": [
+            "",
+            "Sneak Attack"
+					],
+					"rows": [
+						[
+              "",
+              ""
+						],
+            [
+              "",
+              {
+                "type": "bonus",
+                "value": "1d6"
+              }
+            ],
+            [
+              "",
+              {
+                "type": "bonus",
+                "value": "2d6"
+              }
+            ],
+            [
+              "",
+              {
+                "type": "bonus",
+                "value": "3d6"
+              }
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        [
+          {
+            "name": "Requirements",
+            "entries": [
+              "Fuckin prereqs yo. Yo gotta do this shit first yo."
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Sneak Attack",
+            "entries": [
+              "Spending 8 hours meditating with a melee weapon, without being disturbed, you form a bond with your weapon, making it an extension of yourself. Having a chosen weapon is required to use many of the features of this prestige class.",
+              "The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the chosen table."
+            ]
+          },
+          {
+            "name": "Mantra",
+            "entries": [
+              "Chosen keep their faith with an internal mantra that they maintain throughout the day. You learn two mantras from the list below. When you finish a long rest, you may choose your mantra for the day, from the mantras you know.",
+              "TAAAAAAAAAAAAAAABLE"
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Smiting Blade",
+            "entries": [
+              "Beginning at 2nd level, if you spend 8 hours meditating with a melee weapon, without being disturbed, you can discover the weapon’s soul and form a connection between it and your deity.",
+              "Only one weapon can be selected as the smiting blade at any one time. When attacking a target of opposite alignment of your deity, the smiting blade gains +1 to attack and damage rolls, and you cannot suffer disadvantage on attacks against it.",
+              "A new weapon may be selected to replace a smiting blade at any time but the 8 hour meditation must be undergone with the new weapon."
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Soul Resonance",
+            "entries": [
+              "Beginning at 3rd level, you may commune for 24 hours with the soul of your smiting blade to become one with it. Afterward, as an action, you can focus the strength of your own soul and that of your smiting blade into a devastating ranged attack. Make a single attack roll to determine if all of your attacks for the turn hit. This attack lets you use all of your sneak attack dice, regardless of whether or not you qualified for it, and the attack has a range of 100 feet. Against creatures of an alignment opposite to your deity, this attack deals an additional 4d6 damage.",
+              "If you select a new smiting blade, you must also commune with that weapon again, before you can use this feature.",
+              "Once you use this feature, you must finish a long rest before you can do so again."
+            ]
+          }
+        ]
+      ],
+      "subclassTitle": "Default",
+      "subclasses": []
+    }
+  ]
+}
