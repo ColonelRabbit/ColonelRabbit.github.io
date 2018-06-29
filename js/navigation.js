@@ -57,7 +57,7 @@ function navigation () {
 //	LI('ul_players', 'lifegen.html', 'This Is Your Life');
 	LI('ul_players', 'names.html', 'Names');
 
-	/*
+
 	LIDropdown('navbar', 'dms', 'dropdown');
 	A('dms', 'dmOption', 'dropdown-toggle', 'dropdown', '#', 'button', 'true', 'false', "DM Tools <span class='caret'></span>");
 	UL('dms', 'ul_dms', 'dropdown-menu');
@@ -69,7 +69,6 @@ function navigation () {
 	LI('ul_dms', 'lootgen.html', 'Loot Generator');
 	LI('ul_dms', 'objects.html', 'Objects');
 	LI('ul_dms', 'trapshazards.html', 'Traps & Hazards');
-	*/
 
 	LIDropdown('navbar', 'references', 'dropdown');
 	A('references', 'references', 'dropdown-toggle', 'dropdown', '#', 'button', 'true', 'false', "References <span class='caret'></span>");
