@@ -45,9 +45,58 @@
       "classFeatures": [
         [
           {
+            "type": "entries",
             "name": "Requirements",
             "entries": [
-              "Fuckin prereqs yo. Yo gotta do this shit first yo."
+              "In order to take levels in the Archblade prestige class you must first have fulfilled these prerequisites.",
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Strength or Dexterity 17",
+                    "entries": [
+                      "Archblades either posess immense strength or staggering agility, in order to wield their weapon."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Intelligence, Wisdom or Charisma 15",
+                    "entries": [
+                      "Archblades need to posess a mental attribute far above average, in order to fully comprehend the personal connection with a weapon in order to make it an extension of the self."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Character level 25",
+                    "entries": [
+                      "Archblades need to be godlike in power, and you must be of 25th level before you can gain levels in the archblade prestige class."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Train under an Archblade",
+                    "entries": [
+                      "You must gain the attention of an NPC archblade, who chooses to teach you in the ancient ways of the archblade. You might have to complete near-impossible trials, or defeat other apprentice archblades in order to progress further in this class."
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -132,9 +181,58 @@
       "classFeatures": [
         [
           {
+            "type": "entries",
             "name": "Requirements",
             "entries": [
-              "Fuckin prereqs yo. Yo gotta do this shit first yo."
+              "In order to take levels in the Acolyte of Corruption prestige class you must first have fulfilled these prerequisites.",
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Charisma 17",
+                    "entries": [
+                      "Acolytes of corruption need a strong force of will in order to withstand the otherworldly forces infusing their mind and soul."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Constitution 15",
+                    "entries": [
+                      "Acolytes of the skin need far above average constitution, so their bodies don’t wither during the Ritual of Bonding."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Character level 20",
+                    "entries": [
+                      "Acolytes of corruption need to have immense power, and you must be of 20th level before you can gain levels in this prestige class."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Complete the Ritual of Bonding",
+                    "entries": [
+                      "The Ritual of Bonding is a blasphemy that was long ago eradicated from most arcane libraries, but a few barely legible copies - or at least references thereto - survive along with promises of great power."
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -178,13 +276,75 @@
           {
             "name": "Fiend's Favor",
             "entries": [
-              "THIS SHIT NEEDS A TABLE YO"
+              "Beginning at 3rd level, you can touch a willing creature to grant it one of the following favors:",
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Health",
+                    "entries": [
+                      "The touched creature gains perfect health, doubling their maximum hit points, and gaining immunity to disease and poison. After 1d4 days the creature’s maximum hit points are reduced to half their original value, and it becomes inflicted by a disease making them unable to move or speak. The detrimental effects last for 2d6 days, but can be cured by any spell or potion that cures disease."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Knowledge",
+                    "entries": [
+                      "The touched creature gains perfect knowledge regarding a specific field of study like archeology, history, the laws of a country or region, or similar. After 1d4 days the creature’s intelligence drops to 4 for 2d6 days. A {@spell greater restoration} or {@spell wish} spell can also restore the creature’s intelligence."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Power",
+                    "entries": [
+                      "The touched creature gains advantage on all skill checks and attack rolls, as well as resistance to bludgeoning, piercing, and slashing damage. After 1d4 days the creature’s gains disadvantage on all skill checks and attack rolls, and vulnerability to bludgeoning, piercing, and slashing damage. The detrimental effects last for 2d6 days, unless removed with a {@spell greater restoration} or {@spell wish} spell."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Wealth",
+                    "entries": [
+                      "The touched creature gains wealth in the form of various rubies, sapphires, and other gemstones, worth a total of 5d100 times your Charisma modifier. After 1d4 days they lose belongings worth twice the wealth gained or all of their belongings, whichever is lower. Their wealth is either stolen, lost by gambling, claimed by the king due to taxation errors, or through some other means the acolyte wishes."
+                    ]
+                  }
+                ]
+              },
+              "The beneficial effects of a favor can be prolonged by 1d4 days through repeated use of this feature. Only one creature can be affected by a beneficial effect of your Fiend’s Favor feature at a time.",
+              "The first time a creature willingly accepts a favor from your Fiend’s Favor feature, it must succeed DC5 Charisma saving throw. Every time a favor is accepted thereafter, the DC increases by 5. When a good or neutral creature fails it’s saving throw it becomes evil. If an evil creature fails it’s saving throw it dies and you consume its soul, gaining its memories from life.",
+              "Once you use this feature, you must finish a long rest before you can do so again."
             ]
           },
           {
+            "type": "entries",
             "name": "Skin of Damnation",
             "entries": [
-              "THIS SHIT ALSO NEEDS A TABLE YO"
+              "At 3rd level, your appearance and soul have undergone their final metamorphosis. You become a fiend rather than a humanoid, gaining the following features:",
+              {
+                "type": "list",
+                "items": [
+                  "You gain vulnerability to radiant damage",
+                  "You gain resistance to fire damage",
+                  "You gain advantage on Charisma checks and saving throws",
+                  "You cannot die of old age, and cannot be aged magically",
+                  "You cannot become poisoned"
+                ]
+              }
             ]
           }
         ]
@@ -192,7 +352,151 @@
       "subclassTitle": "Default",
       "subclasses": []
     },
-
+    {
+      "name": "Chiseled Warrior",
+      "source": "Epics",
+      "hd": {
+        "number": 2,
+        "faces": 6
+      },
+      "proficiency": ["none"],
+      "startingProficiencies": {},
+      "classTableGroups": [
+        {
+          "subclasses": [
+            {}
+          ],
+          "colLabels": [],
+          "rows": [
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ],
+      "startingEquipment": {
+        "default": [
+          "The chiseled warrior prestige class does not grant any special equipment."
+        ]
+      },
+      "classFeatures": [
+        [
+          {
+            "type": "entries",
+            "name": "Requirements",
+            "entries": [
+              "In order to take levels in the Chiseled Warrior prestige class you must first have fulfilled these prerequisites.",
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Strength 17",
+                    "entries": [
+                      "Chiseled warriors posess immense strength."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Constitution 17",
+                    "entries": [
+                      "Chiseled warriors require high constitution."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Proficiency in the Athletics skill",
+                    "entries": [
+                      "A chiseled warrior must be fit."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Character level 20",
+                    "entries": [
+                      "Chiseled warriors need to have immense power, and you must be of 20th level before you can gain levels in the chosen prestige class."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Train under a Chiseled Warrior",
+                    "entries": [
+                      "You must find an NPC chiseled warrior and compete with him, in order to show your worth. If he or she deems you worthy, he will tutor you in the ways of the chiseled warrior. Be warned though, some chiseled warriors are vain, and he might require you forge a golden comb in live dragonfire, or carve out a statue in his or her honor with your bare hands. These assignments are likely to become increasingly pointless in your view, as you progress in this prestige class."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Cut the Wind",
+            "entries": [
+              "A chiseled warrior becomes so sharp that the resistance of air begins to be cut away. Or their physique just lets them run faster. Your speed increases by 10 feet."
+            ]
+          },
+          {
+            "name": "Limbs of Steel (1)",
+            "entries": [
+              "A chiseled warrior’s limbs become hard and sharp as steel and can be used as weapons. You gain proficiency with unarmed attacks, they now deal 1d8 + your Strength modifier bludgeoning or slashing damage (your choice), and they are magical for the purpose of overcoming magic resistance.",
+              "Starting at 2nd level, the damage increases to 1d10 + your Strength modifier, and at 3rd level the damage increases to 1d12 + your Strength modifier."
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Hardened",
+            "entries": [
+              "Beginning at 2nd level, any bludgeoning, piercing or slashing damage you take from non-magical weapons is reduced by 3."
+            ]
+          },
+          {
+            "name": "Limbs of Steel (2)",
+            "entries": [
+              "At 2nd level, the damage from Limbs of Steel increases to 1d10 + your Strength modifier, and at 3rd level the damage increases to 1d12 + your Strength modifier."
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Thick Skin",
+            "entries": [
+              "Once you reach 3rd level, you gain +3 AC."
+            ]
+          },
+          {
+            "name": "Limbs of Steel (3)",
+            "entries": [
+              "At 3rd level the damage from Limbs of Steel increases to 1d12 + your Strength modifier."
+            ]
+          }
+        ]
+      ],
+      "subclassTitle": "Default",
+      "subclasses": []
+    },
     {
       "name": "Chosen",
       "source": "Epics",
@@ -259,9 +563,70 @@
       "classFeatures": [
         [
           {
+            "type": "entries",
             "name": "Requirements",
             "entries": [
-              "Fuckin prereqs yo. Yo gotta do this shit first yo."
+              "In order to take levels in the Chosen prestige class you must first have fulfilled these prerequisites.",
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Dexterity 15",
+                    "entries": [
+                      "Chosen need to be nimble and agile in order to move effortlessly, avoid detection and strike hard."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Wisdom or Charisma 17",
+                    "entries": [
+                      "Chosen must have high wisdom or charisma, in order to truly understand their connection with and role in regards to their deity."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Belong to a Church",
+                    "entries": [
+                      "You must have an affiliation with a particular deity and its associated church."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Character level 20",
+                    "entries": [
+                      "Chosen need to have immense power, and you must be of 20th level before you can gain levels in the chosen prestige class."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Train under a Chosen",
+                    "entries": [
+                      "You must gain the attention of a high ranking priest within the church, who endorses you for training at the church’s hidden training grounds for its chosen. Here a senior NPC chosen will take you as his apprentice. Gaining levels as a chosen might require you to complete increasingly difficult tasks."
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -274,10 +639,70 @@
             ]
           },
           {
+            "type": "entries",
             "name": "Mantra",
             "entries": [
               "Chosen keep their faith with an internal mantra that they maintain throughout the day. You learn two mantras from the list below. When you finish a long rest, you may choose your mantra for the day, from the mantras you know.",
-              "TAAAAAAAAAAAAAAABLE"
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Mantra of Devotion",
+                    "entries": [
+                      "This mantra bolsters your spirit, and grants you advantage on Wisdom saving throws."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Mantra of Sensing",
+                    "entries": [
+                      "This mantra bolsters your awareness, and grants you advantage on Wisdom (perception) checks."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Mantra of Faithful Service",
+                    "entries": [
+                      "This mantra bolsters your accuracy in combat, granting you +1 on attack rolls with weapons."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Mantra of Adoration",
+                    "entries": [
+                      "love for your deity shields you, granting you +1 AC."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Mantra of Zealotry",
+                    "entries": [
+                      "This mantra empowers your strikes, making you deal 1d6 additional damage with a successful weapon attack, and 2d6 additional damage with your smiting blade."
+                    ]
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -298,6 +723,389 @@
               "Beginning at 3rd level, you may commune for 24 hours with the soul of your smiting blade to become one with it. Afterward, as an action, you can focus the strength of your own soul and that of your smiting blade into a devastating ranged attack. Make a single attack roll to determine if all of your attacks for the turn hit. This attack lets you use all of your sneak attack dice, regardless of whether or not you qualified for it, and the attack has a range of 100 feet. Against creatures of an alignment opposite to your deity, this attack deals an additional 4d6 damage.",
               "If you select a new smiting blade, you must also commune with that weapon again, before you can use this feature.",
               "Once you use this feature, you must finish a long rest before you can do so again."
+            ]
+          }
+        ]
+      ],
+      "subclassTitle": "Default",
+      "subclasses": []
+    },
+    {
+      "name": "Strange Traveler",
+      "source": "Epics",
+      "hd": {
+        "number": 1,
+        "faces": 6
+      },
+      "proficiency": ["none"],
+      "startingProficiencies": {},
+      "classTableGroups": [
+        {
+          "subclasses": [
+            {}
+          ],
+          "colLabels": [],
+          "rows": [
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ],
+      "startingEquipment": {
+        "default": [
+          "The chosen prestige class does not grant any special equipment."
+        ]
+      },
+      "classFeatures": [
+        [
+          {
+            "type": "entries",
+            "name": "Requirements",
+            "entries": [
+              "In order to take levels in the Strange Traveler prestige class you must first have fulfilled these prerequisites.",
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Charisma 17",
+                    "entries": [
+                      "Strange travelers need a powerful force of personality, in order to force their soul onto other creatures."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Proficiency in Arcana",
+                    "entries": [
+                      "Strange travelers need a deep understanding of arcane forces."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Character level 25",
+                    "entries": [
+                      "Strange travelers need to be godlike in power, and you must be of 25th level before you can gain levels in the strange traveler prestige class."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Read 'The Token and the Traveler'",
+                    "entries": [
+                      "You must find the tome titled 'The token and the traveler', and finish reading its 5,000 pages in complete solutide."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Burning Soul",
+            "entries": [
+              "You have mastered the ability to move between bodies. As an action, you may use {@spell magic jar} without expending a spell slot or using any material components. When cast in this way the effect has an indefinite duration.",
+              "For the purposes of this spell, any body you possess also counts as a receptacle, so you may use the senses granted by being in a magic jar receptacle and possess new bodies from this form. You return to the last body you possessed if your current body is killed, if it is within range and fail its saving throw. If it is not within range or the creature succeeds its saving throw, you die.",
+              "Additionally, you no longer age, though bodies you possess will age as normal."
+            ]
+          },
+          {
+            "name": "Token",
+            "entries": [
+              "You are magically followed by a token whenever you change bodies. This is a simple piece of jewelry worth at least 1,000 gp. This item is a tiny object with 20 hit points and 20 AC. If removed from a body you are possessing, you are immediately forced to possess a new body, and you can never possess the body again. If you cannot possess a new body, you die.",
+              "The token is magically recreated or moved each time you possess a new body."
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Soul Roots",
+            "entries": [
+              "At 2nd level, you become immune to any effect that moves your soul or would end your possession of a body (other than removing your token). Any effect that traps your soul in your current body still works, and you will die if such an effect is cast on you and the body you are possessing dies.",
+              "You may also remain in a body if you are in an antimagic field or other magic-destroying effect, though you are effectively trapped in that body until you can leave that effect."
+            ]
+          },
+          {
+            "name": "Emergency Travel",
+            "entries": [
+              "Beginning at 2nd level, when you are in a body that is killed, you may immediately attempt to possess a new body as a reaction (or return to your last body, as usual)."
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Safe Haven",
+            "entries": [
+              "Beginning at 3rd level, if you are in a body that is killed, and you cannot successfully possess another body, your soul is instead transferred into your Token and it counts as a receptacle. Should the Token be destroyed while it holds your soul, you die without a chance to possess new bodies."
+            ]
+          },
+          {
+            "name": "Soulsurf",
+            "entries": [
+              "Beginning at 3rd level, as an action, you may use your magic jar ability a number of times per round equal to your Charisma modifier, or until a creature makes a successful saving throw against your magic jar ability, whichever comes first. This enables you to make possession attempts very quickly and even travel large distances in heavily populated areas."
+            ]
+          },
+          {
+            "name": "Eternal",
+            "entries": [
+              "Beginning at 3rd level, if you die, you return to life with your soul intact in your Token one year later. The Token is recreated 1d4 miles from the location of your death."
+            ]
+          }
+        ]
+      ],
+      "subclassTitle": "Default",
+      "subclasses": []
+    },
+    {
+      "name": "Warshaper",
+      "source": "Epics",
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": ["dex"],
+      "startingProficiencies": {},
+      "classTableGroups": [
+        {
+          "subclasses": [
+            {}
+          ],
+          "colLabels": [],
+          "rows": [
+            [],
+            [],
+            [],
+            []
+          ]
+        }
+      ],
+      "startingEquipment": {
+        "default": [
+          "The warshaper prestige class does not grant any special equipment."
+        ]
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "",
+            "Shaping Points"
+          ],
+          "rows": [
+            [
+              "",
+              ""
+            ],
+            [
+              "",
+              "2"
+            ],
+            [
+              "",
+              "4"
+            ],
+            [
+              "",
+              "6"
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        [
+          {
+            "type": "entries",
+            "name": "Requirements",
+            "entries": [
+              "In order to take levels in the Warshaper prestige class you must first have fulfilled these prerequisites.",
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Constitution 17",
+                    "entries": [
+                      "Warshapers must have an incredible physique, in order to handle the inhuman physical strain associated with morphing."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Shapechanging Capability",
+                    "entries": [
+                      "Warshapers must be capable of changing their shape either through magical means (as with the polymorph spell) or through a class feature (like the druid’s wildshape ability)."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Character level 20",
+                    "entries": [
+                      "Warshapers need to have immense power, and you must be of 20th level before you can gain levels in this prestige class."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Train under a Master Warshaper",
+                    "entries": [
+                      "You must locate a master warshaper, who is willing to teach you his secrets. If you do so, he might require you to gather different materials from a multitude of planes, in order to brew a Mixture of Genetic Transmutation - a potion that destabilizes your genetic structure, allowing you to rearrange it naturally to some degree. After drinking the potion, you must spend 24 hours resting, while a coccoon slowly builds around you. Upon exiting the cocoon after 24 hours, you become able to reach 1st level in this prestige class.",
+                      "Before being able to reach 2nd level in this prestige class, you will have to gather materials for a Mixture of Structural Rearrangement, allowing you even greater control over your body, after once again spending 24 hours resting while being encased in a cocoon.",
+                      "In order to reach 3rd level in this prestige class, you will need to gather materials for a Mixture of Multimorphing. After drinking the potion, you need to spend a full week resting, while a large carapace cocoon builds up around you.",
+                      "If your rest is ever interrupted after drinking any of the mixtures, you need to start the process from the beginning again."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Shaping Points",
+            "entries": [
+              "You have a number of shaping points, as shown in the Shaping Points column in the Warshaper table. Once you finish a short or long rest, you regain all expended shaping points.",
+              "All morphs lasts for 1 minute, until you lose consciousness, or until you choose to end it as a bonus action, whichever occurs first."
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Morphic Weapons",
+            "entries": [
+              "You can grow natural weapons, either replacing an existing limb, or sprouting entirely new limbs. You can choose morphs from among those listed in the Natural Weapons and Additional Limbs sections below, but you can only have one additional limb at any given time.",
+              "It costs 2 shaping points to morph an additional limb, and 1 shaping point to morph a natural weapon.",
+              "Alternatively, for the cost of 1 shaping point, you can morph a hand into simple tools such as a hammer, a hook, a shovel, or similar.",
+              "You are proficient with all morphic weapons, and receive a magical +1 to all attack and damage rolls you make with them.",
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Additional Limbs",
+                    "entries": [
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "items": [
+                  "Armor Piercing Stinger: As an action, you grow a large tentacle from your back, with a strong, scaly stinger at its end. The stinger deals piercing damage equal to 1d10 + your Strength modifier, has a reach of 10 feet, and ignores any AC higher than 20.",
+                  "Bladed Tail: As an action, you grow a tail that has razor sharp blades at its end. The tail deals slashing damage equal to 2d6 + your Strength or Dexterity modifier (your choice). Using your reaction, you may use your bladed tail to make an opportunity attack against any hostile creature that enters your reach.",
+                  "Crusher Tentacle: As an action, you grow a massive tentacle from your back, with a maullike carapace shell at the end. The crusher deals bludgeoning damage equal to 1d12 + your Strength modifier, and has a reach of 15 feet. Additionally, the crusher deals double damage to structures.",
+                  "Needle Spine: As an action, a massive growth sprouts from your neck and over both of your shoulders, allowing you to shoot projectiles. The needles deal piercing damage equal to 2d6 + your Dexterity modifier, and have a range of 30/90."
+                ]
+              },
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Natural Weapons",
+                    "entries": [
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "items": [
+                  "Adamantine Claws: As a bonus action, one of your hands grows large claws, which deal slashing damage equal to 1d10 + your Strength or Dexterity modifier (your choice).",
+                  "Barbed Pincer: As a bonus action, one of your hands morphs into a large, barbed pincer, that deals piercing damage equal to 1d8 + your Strength modifier. You have advantage on grapple checks with a pincer, and every time a creature starts its turn while grappled in this manner, it takes 1d8 piercing damage.",
+                  "Carapace Shield: As a bonus action, one of your forearms grows into a shield, hard as the toughest dragon scales, and full of twisted spikes. The morph grants you +3 AC, and whenever a creature successfully attacks you with a melee attack, it suffers 1d6 piercing damage.",
+                  "Wrist Blades: As a bonus action, one of your hands grows two short blades, which count as a finesse weapon. The blades deal piercing damage equal to 2d4 + your Dexterity modifier.",
+                  "Fist of Stone: As a bonus action, one of your hands grows to an unnatural size and becomes hard as the hardest rock. Your stone fist deals bludgeoning damage equal to 1d10 + your Strength modifier.",
+                  "Venomous Fangs: As a bonus action, your jaw grows in size, and large fangs grow forth, allowing you to make a bite attack. The attack deals piercing damage equal to 1d6 + your Strength or Dexterity modifier (your choice). A creature you bite successfully must succeed a Constitution saving throw or become poisoned until the end of its next turn."
+                ]
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "name": "Morphic Healing",
+            "entries": [
+              "As a warshaper you are capable of changing your form where wounds appear, creating smooth skin where once were wounds.",
+              "Starting at 2nd level, using an action, you regain 20 hit points.",
+              "You can use this feature a number of times equal to your Constitution modifier. You regain all expended charges when you finish a long rest"
+            ]
+          },
+          {
+            "name": "Structural Rearrangement",
+            "entries": [
+              "Your skeletal structure, skin, and organ placement are in flux, constantly changing and adapting, allowing you to take less damage, and absorb hits that would otherwise disorient you.",
+              "Starting at 2nd level, you cannot be stunned, and all damage you take is reduced by 1."
+            ]
+          }
+        ],
+        [
+          {
+            "type": "entries",
+            "name": "Morphic Body",
+            "entries": [
+              "Once you reach 3rd level, you can morph your body in various ways, giving you abilities that are otherwise difficult or impossible to obtain. You can choose morphs from among the body morphs listed below, but you can only have one body morph active at any one time.",
+              "All body morphs cost 2 shaping points to morph.",
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Body Morphs",
+                    "entries": [
+                      ""
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "items": [
+                  "Adamantine Carapace: As an action, you change your molecular structure, hardening your skin, and becoming almost impenetrable. You gain resistance to bludgeoning, piercing, and slashing damage, cannot be critically hit, and your AC becomes 15 + your Constitution modifier. You cannot morph an adamantine carapace if you are wearing heavy armor.",
+                  "Aquatic Adaptation: As an action, you adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.",
+                  "Digitigrade Locomotion: As an action, you change the structure of your legs, increasing your movement speed by 20, and doubling the length and height of your jumps.",
+                  "Environmental Mimicry: As an action, you rearrange your molecules, decreasing your weight, and making your skin change color and structure depending on your surroundings. You can take the Hide action in plain sight, gain advantage on Dexterity (stealth) checks, and all attacks have disadvantage against you.",
+                  "Feathered Wings: As an action, four large and leathery wings sprout from your back, granting you a flying speed equal to your walking speed.",
+                  "Limb Stretch: As an action, you lengthen your arms, increasing their reach by 5 feet.",
+                  "Sonar Sense: As an action, you rearrange and morph several cranial features, gaining blindsight out to a range of 60 feet and advantage on Wisdom (perception) checks.",
+                  "Suction Tentalces: As an action, four long and slender tentacles sprout from your back, each capable of sticking to any solid surface. You gain a climbing speed equal to your walking speed, can climb silently, and gain advantage on Dexterity (acrobatics) checks."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Multimorph",
+            "entries": [
+              "Once you reach 3rd level, you can activate two morphs that both require an action simultaneously using a single action, and two morphs that both require a bonus action using a single bonus action. This does not change the shaping point cost.",
+              "Additionally, you gain +2 to all attack and damage rolls with your morphic weapons."
             ]
           }
         ]

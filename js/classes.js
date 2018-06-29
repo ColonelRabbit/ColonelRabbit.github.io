@@ -244,7 +244,7 @@ function loadhash (id) {
 	$("#statsprof").html(statsProfDefault);
 	$("#classtable").html(classTableDefault);
 	curClass = classes[id];
-
+	console.log(curClass.name);
 	// name
 	$("th#nameTable").html(curClass.name);
 	$("th#nameSummary").html(curClass.name);
@@ -253,7 +253,7 @@ function loadhash (id) {
 	} else {
 		$("th#author").html("").hide();
 	}
-
+	$("#level30 .pb").html((curClass.name == "Bard") ? "+7" : "+6");
 	// SUMMARY SIDEBAR =================================================================================================
 	// hit dice and HP
 	const hdEntry = {toRoll: [curClass.hd], rollable: true};
@@ -361,6 +361,7 @@ function loadhash (id) {
 					const subClass = curClass.subclasses[k];
 					for (let l = 0; l < subClass.subclassFeatures[subclassIndex].length; l++) {
 						const subFeature = subClass.subclassFeatures[subclassIndex][l];
+						console.log(subFeature);
 
 						// if this is not the subclass intro, add the subclass to the feature name
 						// this will only be shown if there are multiple subclasses displayed
