@@ -1,7 +1,6 @@
 "use strict";
 
 const JSON_URL = "data/deities.json";
-const STR_REPRINTED = "reprinted";
 
 window.onload = function load () {
 	DataUtil.loadJSON(JSON_URL, onJsonLoad);
@@ -9,44 +8,16 @@ window.onload = function load () {
 
 let list;
 const sourceFilter = getSourceFilter();
-const pantheonFilter = new Filter({
-	header: "Pantheon",
-	items: [
-		"Celtic",
-		"Dawn War",
-		"Dragonlance",
-		"Drow",
-		"Dwarven",
-		"Eberron",
-		"Egyptian",
-		"Elven",
-		"Faerûnian",
-		"Forgotten Realms",
-		"Gnomish",
-		"Greek",
-		"Greyhawk",
-		"Halfling",
-		"Nonhuman",
-		"Norse",
-		"Orc"
-	]
-});
 const categoryFilter = new Filter({
 	header: "Category",
 	items: [
 		STR_NONE,
-		"Other Faiths of Eberron",
-		"The Dark Six",
-		"The Gods of Evil",
-		"The Gods of Good",
-		"The Gods of Neutrality",
-		"The Sovereign Host"
 	]
 });
 let filterBox;
 function onJsonLoad (data) {
 	list = ListUtil.search({
-		valueNames: ["name", "pantheon", "alignment", "domains", "symbol", "source"],
+		valueNames: ["name", "category", "alignment", "domains", "symbol", "source"],
 		listClass: "deities",
 		sortFunction: SortUtil.listSort
 	});
@@ -60,14 +31,8 @@ function onJsonLoad (data) {
 		header: "Domain",
 		items: ["Arcana", "Death", "Forge", "Grave", "Knowledge", "Life", "Light", "Nature", STR_NONE, "Tempest", "Trickery", "War"]
 	});
-	const miscFilter = new Filter({
-		header: "Miscellaneous",
-		items: [STR_REPRINTED],
-		displayFn: StrUtil.uppercaseFirst,
-		deselFn: (it) => { return it === STR_REPRINTED }
-	});
 
-	filterBox = initFilterBox(sourceFilter, alignmentFilter, pantheonFilter, categoryFilter, domainFilter, miscFilter);
+	filterBox = initFilterBox(sourceFilter, alignmentFilter, categoryFilter, domainFilter);
 
 	list.on("updated", () => {
 		filterBox.setCount(list.visibleItems.length, list.items.length);
@@ -82,7 +47,7 @@ function onJsonLoad (data) {
 	addListShowHide();
 
 	const subList = ListUtil.initSublist({
-		valueNames: ["name", "pantheon", "alignment", "domains", "id"],
+		valueNames: ["name", "category", "alignment", "domains", "id"],
 		listClass: "subdeities",
 		getSublistRow: getSublistItem
 	});
@@ -116,13 +81,11 @@ function addDeities (data) {
 		if (!g.domains) g.domains = [STR_NONE];
 		g.domains.sort(SortUtil.ascSort);
 
-		g._fReprinted = g.reprinted ? STR_REPRINTED : "";
-
 		tempString += `
 			<li class="row" ${FLTR_ID}="${dtI}" onclick="ListUtil.toggleSelected(event, this)" oncontextmenu="ListUtil.openContextMenu(event, this)">
 				<a id="${dtI}" href="#${UrlUtil.autoEncodeHash(g)}" title="${g.name}">
 					<span class="name col-xs-3">${g.name}</span>
-					<span class="pantheon col-xs-2 text-align-center">${g.pantheon}</span>
+					<span class="category col-xs-2 text-align-center">${g.category}</span>
 					<span class="alignment col-xs-2 text-align-center">${g.alignment.join("")}</span>
 					<span class="domains col-xs-3 ${g.domains[0] === STR_NONE ? `list-entry-none` : ""}">${g.domains.join(", ")}</span>
 					<span class="source col-xs-2 source${abvSource}" title="${Parser.sourceJsonToFull(g.source)}">${abvSource}</span>
@@ -131,7 +94,6 @@ function addDeities (data) {
 		`;
 
 		sourceFilter.addIfAbsent(g.source);
-		pantheonFilter.addIfAbsent(g.pantheon);
 		categoryFilter.addIfAbsent(g.category);
 	}
 	const lastSearch = ListUtil.getSearchTermAndReset(list);
@@ -169,8 +131,7 @@ function handleFilterChange () {
 			g.alignment,
 			g.pantheon,
 			g.category,
-			g.domains,
-			g._fReprinted
+			g.domains
 		);
 	});
 	FilterBox.nextIfHidden(deitiesList);
@@ -181,10 +142,10 @@ function getSublistItem (g, pinId) {
 		<li class="row" ${FLTR_ID}="${pinId}" oncontextmenu="ListUtil.openSubContextMenu(event, this)">
 			<a href="#${UrlUtil.autoEncodeHash(g)}" title="${g.name}">
 				<span class="name col-xs-4">${g.name}</span>
-				<span class="pantheon col-xs-2">${g.pantheon}</span>
+				<span class="category col-xs-2">${g.category}</span>
 				<span class="alignment col-xs-2">${g.alignment.join("")}</span>
 				<span class="domains col-xs-4 ${g.domains[0] === STR_NONE ? `list-entry-none` : ""}">${g.domains.join(", ")}</span>
-				<span class="id hidden">${pinId}</span>				
+				<span class="id hidden">${pinId}</span>
 			</a>
 		</li>
 	`;
@@ -201,7 +162,7 @@ function loadhash (jsonIndex) {
 	$content.html(`
 		${EntryRenderer.utils.getBorderTr()}
 		${EntryRenderer.utils.getNameTr(deity, false, "", `, ${deity.title.toTitleCase()}`)}
-		<tr><td colspan="6"><span class="bold">Pantheon: </span>${deity.pantheon}</td></tr>
+		<tr><td colspan="6"><span class="bold">Category: </span>${deity.category}</td></tr>
 		${deity.category ? `<tr><td colspan="6"><span class="bold">Category: </span>${deity.category}</td></tr>` : ""}
 		<tr><td colspan="6"><span class="bold">Alignment: </span>${deity.alignment.map(a => Parser.alignmentAbvToFull(a)).join(" ")}</td></tr>
 		<tr><td colspan="6"><span class="bold">Domains: </span>${deity.domains.join(", ")}</td></tr>
