@@ -15,7 +15,7 @@
 			],
 			"symbol": "Six-pointed snowflake",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Eldath",
@@ -32,7 +32,7 @@
 			],
 			"symbol": "Waterfall plunging into still pool",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Kelemvor",
@@ -52,10 +52,10 @@
 			"additionalSources": [
 				{
 					"source": "AG",
-					"page": 19
+					"page": 0
 				}
 			],
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Loviatar",
@@ -71,7 +71,7 @@
 			],
 			"symbol": "Nine-tailed barbed scourge",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Malar",
@@ -87,7 +87,7 @@
 			],
 			"symbol": "Clawed paw",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Mielikki",
@@ -103,7 +103,7 @@
 			],
 			"symbol": "Unicorn's head",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Milil",
@@ -119,7 +119,7 @@
 			],
 			"symbol": "Five-stringed harp made of leaves",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Myrkul",
@@ -135,7 +135,7 @@
 			],
 			"symbol": "White human skull",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Mystra",
@@ -151,7 +151,7 @@
 			],
 			"symbol": "Circle of seven stars, or nine stars encircling a flowing red mist, or a single star",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Selûne",
@@ -168,7 +168,7 @@
 			],
 			"symbol": "Pair of eyes surrounded by seven stars",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Silvanus",
@@ -183,7 +183,7 @@
 			],
 			"symbol": "Oak leaf",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Shar",
@@ -201,7 +201,7 @@
 			"symbol": "Black disk encircled with a border",
 			"source": "AG",
 			"reprinted": true,
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Sune",
@@ -218,7 +218,7 @@
 			],
 			"symbol": "Face of a beautiful red-haired woman",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Talos",
@@ -234,7 +234,7 @@
 			],
 			"symbol": "Three lightning bolts radiating from a central point",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Tempus",
@@ -249,7 +249,7 @@
 			],
 			"symbol": "Upright flaming sword",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Tyr",
@@ -265,7 +265,7 @@
 			],
 			"symbol": "Balanced scales resting on a warhammer",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "Umberlee",
@@ -281,7 +281,7 @@
 			],
 			"symbol": "Wave curling left and right",
 			"source": "AG",
-			"page": 294
+			"page": 0
 		},
 		{
 			"name": "The Traveler",
@@ -298,7 +298,7 @@
 			],
 			"symbol": "Four crossed, rune-inscribed bones",
 			"source": "AG",
-			"page": 296
+			"page": 0
 		},
 		{
 			"name": "Bahamut",
@@ -315,7 +315,7 @@
 			],
 			"symbol": "Dragon's head in profile",
 			"source": "AG",
-			"page": 296
+			"page": 0
 		},
 		{
 			"name": "Corellon Larethian",
@@ -331,7 +331,7 @@
 			],
 			"symbol": "Quarter moon or starburst",
 			"source": "AG",
-			"page": 296
+			"page": 0
 		},
 		{
 			"name": "Lolth",
@@ -347,7 +347,7 @@
 			],
 			"symbol": "Spider",
 			"source": "AG",
-			"page": 296
+			"page": 0
 		},
 		{
 			"name": "Moradin",
@@ -364,13 +364,7 @@
 			],
 			"symbol": "Hammer and anvil",
 			"source": "AG",
-			"additionalSources": [
-				{
-					"source": "AG",
-					"page": 18
-				}
-			],
-			"page": 296
+			"page": 0
 		},
 		{
 			"name": "Tiamat",
@@ -386,7 +380,7 @@
 			],
 			"symbol": "Dragon head with five claw marks",
 			"source": "AG",
-			"page": 296
+			"page": 0
 		},
 		{
 			"name": "Asmodeus",
@@ -402,7 +396,7 @@
 			],
 			"symbol": "Three triangles in tight formation",
 			"source": "AG",
-			"page": 10
+			"page": 0
 		},
 		{
 			"name": "Raven Queen",
@@ -419,7 +413,7 @@
 			],
 			"symbol": "Raven's head, in profile, facing left",
 			"source": "AG",
-			"page": 10
+			"page": 0
 		},
 		{
 			"source": "AG",
@@ -446,7 +440,7 @@
 					]
 				}
 			],
-			"page": 21,
+			"page": 0,
 			"altNames": [
 				"The Great Mother",
 				"The Grain Goddess"
