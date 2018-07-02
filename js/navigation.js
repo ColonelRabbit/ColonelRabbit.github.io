@@ -49,7 +49,7 @@ function navigation () {
 	A('players', 'playerOption', 'dropdown-toggle', 'dropdown', '#', 'button', 'true', 'false', "Player Options <span class='caret'></span>");
 	UL('players', 'ul_players', 'dropdown-menu');
 	LI('ul_players', 'classes.html', 'Classes');
-	LI('ul_players', 'prestigeclasses.html', 'Prestige Classes');
+	//LI('ul_players', 'prestigeclasses.html', 'Prestige Classes');
 	LI('ul_players', 'backgrounds.html', 'Backgrounds');
 	LI('ul_players', 'feats.html', 'Feats');
 	LI('ul_players', 'invocations.html', 'Invocations');
