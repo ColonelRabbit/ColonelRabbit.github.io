@@ -1,457 +1,797 @@
 {
-	"deity": [
-		{
-			"name": "Auril",
-			"category": "God",
-			"alignment": [
-				"N",
-				"E"
-			],
-			"title": "Goddess of winter",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Nature",
-				"Tempest"
-			],
-			"symbol": "Six-pointed snowflake",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Eldath",
-			"category": "God",
-			"alignment": [
-				"N",
-				"G"
-			],
-			"title": "Goddess of peace",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Life",
-				"Nature"
-			],
-			"symbol": "Waterfall plunging into still pool",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Kelemvor",
-			"category": "God",
-			"alignment": [
-				"L",
-				"N"
-			],
-			"title": "God of the dead",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Death",
-				"Grave"
-			],
-			"symbol": "Upright skeletal arm holding balanced scales",
-			"source": "AG",
-			"additionalSources": [
-				{
-					"source": "AG",
-					"page": 0
-				}
-			],
-			"page": 0
-		},
-		{
-			"name": "Loviatar",
-			"category": "God",
-			"alignment": [
-				"L",
-				"E"
-			],
-			"title": "Goddess of pain",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Death"
-			],
-			"symbol": "Nine-tailed barbed scourge",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Malar",
-			"category": "God",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"title": "God of the hunt",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Nature"
-			],
-			"symbol": "Clawed paw",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Mielikki",
-			"category": "God",
-			"alignment": [
-				"N",
-				"G"
-			],
-			"title": "Goddess of forests",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Nature"
-			],
-			"symbol": "Unicorn's head",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Milil",
-			"category": "God",
-			"alignment": [
-				"N",
-				"G"
-			],
-			"title": "God of poetry and song",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Light"
-			],
-			"symbol": "Five-stringed harp made of leaves",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Myrkul",
-			"category": "God",
-			"alignment": [
-				"N",
-				"E"
-			],
-			"title": "God of death",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Death"
-			],
-			"symbol": "White human skull",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Mystra",
-			"category": "God",
-			"alignment": [
-				"N",
-				"G"
-			],
-			"title": "Goddess of magic",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Knowledge"
-			],
-			"symbol": "Circle of seven stars, or nine stars encircling a flowing red mist, or a single star",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Selûne",
-			"category": "God",
-			"alignment": [
-				"C",
-				"G"
-			],
-			"title": "Goddess of the moon",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Knowledge",
-				"Life"
-			],
-			"symbol": "Pair of eyes surrounded by seven stars",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Silvanus",
-			"category": "God",
-			"alignment": [
-				"N"
-			],
-			"title": "God of wild nature",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Nature"
-			],
-			"symbol": "Oak leaf",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Shar",
-			"category": "God",
-			"alignment": [
-				"N",
-				"E"
-			],
-			"title": "Goddess of darkness and loss",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Death",
-				"Trickery"
-			],
-			"symbol": "Black disk encircled with a border",
-			"source": "AG",
-			"reprinted": true,
-			"page": 0
-		},
-		{
-			"name": "Sune",
-			"category": "God",
-			"alignment": [
-				"C",
-				"G"
-			],
-			"title": "Goddess of love and beauty",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Life",
-				"Light"
-			],
-			"symbol": "Face of a beautiful red-haired woman",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Talos",
-			"category": "God",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"title": "God of storms",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Tempest"
-			],
-			"symbol": "Three lightning bolts radiating from a central point",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Tempus",
-			"category": "God",
-			"alignment": [
-				"N"
-			],
-			"title": "God of war",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"War"
-			],
-			"symbol": "Upright flaming sword",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Tyr",
-			"category": "God",
-			"alignment": [
-				"L",
-				"G"
-			],
-			"title": "God of justice",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"War"
-			],
-			"symbol": "Balanced scales resting on a warhammer",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Umberlee",
-			"category": "God",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"title": "Goddess of the sea",
-			"pantheon": "Forgotten Realms",
-			"domains": [
-				"Tempest"
-			],
-			"symbol": "Wave curling left and right",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "The Traveler",
-			"category": "God",
-			"alignment": [
-				"C",
-				"N"
-			],
-			"title": "Deity of chaos and change",
-			"pantheon": "Eberron",
-			"domains": [
-				"Knowledge",
-				"Trickery"
-			],
-			"symbol": "Four crossed, rune-inscribed bones",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Bahamut",
-			"category": "Divine Entity",
-			"alignment": [
-				"L",
-				"G"
-			],
-			"title": "Dragon god of good",
-			"pantheon": "Nonhuman",
-			"domains": [
-				"Life",
-				"War"
-			],
-			"symbol": "Dragon's head in profile",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Corellon Larethian",
-			"category": "Elder God",
-			"alignment": [
-				"C",
-				"G"
-			],
-			"title": "Elf deity of art and magic",
-			"pantheon": "Nonhuman",
-			"domains": [
-				"Light"
-			],
-			"symbol": "Quarter moon or starburst",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Lolth",
-			"category": "Elder God",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"title": "Drow goddess of spiders",
-			"pantheon": "Nonhuman",
-			"domains": [
-				"Trickery"
-			],
-			"symbol": "Spider",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Moradin",
-			"category": "Elder God",
-			"alignment": [
-				"L",
-				"G"
-			],
-			"title": "Dwarf god of creation",
-			"pantheon": "Nonhuman",
-			"domains": [
-				"Forge",
-				"Knowledge"
-			],
-			"symbol": "Hammer and anvil",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Tiamat",
-			"category": "Divine Entity",
-			"alignment": [
-				"L",
-				"E"
-			],
-			"title": "Dragon goddess of evil",
-			"pantheon": "Nonhuman",
-			"domains": [
-				"Trickery"
-			],
-			"symbol": "Dragon head with five claw marks",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Asmodeus",
-			"category": "Devil",
-			"alignment": [
-				"L",
-				"E"
-			],
-			"title": "Tyranny",
-			"pantheon": "Dawn War",
-			"domains": [
-				"Trickery"
-			],
-			"symbol": "Three triangles in tight formation",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"name": "Raven Queen",
-			"category": "Divine Entity",
-			"alignment": [
-				"L",
-				"N"
-			],
-			"title": "Goddess of death",
-			"pantheon": "Dawn War",
-			"domains": [
-				"Life",
-				"Death"
-			],
-			"symbol": "Raven's head, in profile, facing left",
-			"source": "AG",
-			"page": 0
-		},
-		{
-			"source": "AG",
-			"category": "Type of Deity",
-			"name": "1Temporary",
-			"title": "The Formatting Entry",
-			"alignment": [
-				"N",
-				"G"
-			],
-			"domains": [
-				"Life"
-			],
-			"symbol": "Sheaf of grain or a blooming rose over grain",
-			"entries": [
-				"Chauntea is goddess of agriculture: sowing and reaping, seeding and harvest, breeding and butchery, shearing and weaving. In this aspect she is a rural deity rarely prayed to behind the walls of a city except by kitchen gardeners. But Chauntea is also the Great Mother, a goddess of crib, hearth, and home. And as such she is welcomed into all homes at mealtimes and at the birth of children, and folk give her thanks whenever they experience the pleasure of settling by a fire and feeling safe and loved.",
-				"Chauntea's faith is one of nurturing and growth. Agricultural aphorisms and farming parables dot her teachings. Growing and reaping, the eternal cycle, is a common theme in the faith. Destruction for its own sake, or leveling without rebuilding, is anathema to her.",
-				"Temples of Chauntea maintain a great body of lore about farming and cultivation. Her priests work closely with communities in rural areas, and they are willing to roll up their sleeves and dig their hands into the dirt.",
-				{
-					"type": "inset",
-					"name": "The Earthmother",
-					"entries": [
-						"The druids of the Moonshae Isles worship the Earthmother, she who is the generative power of the land itself. To some mainlanders, the Earthmother is an aspect or manifestation of Chauntea, but to the Ffolk, she is simply the Earthmother, and always will be. The moonwells of the isles are her sacred sites and her windows onto the world. See \"Druids\" in chapter 4 for more information."
-					]
-				}
-			],
-			"page": 0,
-			"altNames": [
-				"The Great Mother",
-				"The Grain Goddess"
-			],
-			"symbolImg": {
-				"type": "image",
-				"href": {
-					"type": "internal",
-					"path": "deities/Symbol of Chauntea.jpg"
-				}
-			}
-		}
-	]
+  "deity": [
+    {
+      "source": "AG",
+      "category": "Type of Deity",
+      "name": "1Temporary",
+      "title": "The Formatting Entry",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "domains": [
+        "Life"
+      ],
+      "symbol": "Sym",
+      "entries": [
+        "Paragraph 1",
+        "Paragraph 2",
+        {
+          "type": "inset",
+          "name": "Inset Title",
+          "entries": [
+            "Inset P1",
+            "Inset P2"
+          ]
+        }
+      ],
+      "page": 0,
+      "altNames": [
+        "Alt Name"
+      ]
+    },
+    {
+      "source": "AG",
+      "category": "God",
+      "name": "Akadi",
+      "title": "Goddess of Air",
+      "alignment": [
+        "N",
+        "N"
+      ],
+      "domains": [
+        "Tempest"
+      ],
+      "symbol": "Cloud",
+      "entries": [
+        "Akadi is as transient as the element she represents and takes little interest in mortals. The only elemental god, for reasons unknown to mortals, she keeps her place as the goddess of ephemeral things and very seldom deigns to interfere in even the grandest struggles."
+      ],
+      "page": 0,
+      "altNames": [
+        "Alt Name"
+      ]
+    },
+    {
+      "name": "Auril",
+      "category": "God",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "title": "Goddess of winter",
+      "domains": [
+        "Nature",
+        "Tempest"
+      ],
+      "symbol": "Six-pointed snowflake",
+      "entries": [
+        "Auril is the end of all things, and she knows it. A veritable embodiment of the time when all things die and wither, Auril keeps watch over the world with a languid eye. One day all will perish. And then it shall be winter evermore."
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Eldath",
+      "category": "God",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "title": "Goddess of peace",
+      "domains": [
+        "Life",
+        "Nature"
+      ],
+      "symbol": "Waterfall plunging into still pool",
+      "entries": [
+        "To Eldath, tranquility and serenity are not just ideals, they are a way of being. As such, though her vision may be just, Eldath is hard to move to action. She watches the world of mortals, hoping that one day they will accept her and live as one. "
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Kelemvor",
+      "category": "God",
+      "alignment": [
+        "L",
+        "N"
+      ],
+      "title": "God of the dead",
+      "domains": [
+        "Death",
+        "Grave"
+      ],
+      "symbol": "Upright skeletal arm holding balanced scales",
+      "entries": [
+        "Kelemvor, oddly enough, has a secondary domain. He doubles often as the God of Order, and his followers seek to ensure the natural cycle of life and death. Kelemvor wishes nothing more than mortals to live and die as they are meant to, and not to return. "
+      ],
+      "source": "AG",
+      "additionalSources": [
+        {
+          "source": "AG",
+          "page": 0
+        }
+      ],
+      "page": 0
+    },
+    {
+      "name": "Loviatar",
+      "category": "God",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "title": "Goddess of pain",
+      "domains": [
+        "Death"
+      ],
+      "symbol": "Nine-tailed barbed scourge",
+      "entries": [
+        "Loviator is the mistress of agony. She relishes in the suffering of mortals, but not their deaths. Her playthings must live, suffer, weep, and bleed upon the soil, while she, queen everlasting, watches them write in exquisite joy."
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Malar",
+      "category": "God",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "God of the hunt",
+      "domains": [
+        "Nature"
+      ],
+      "symbol": "Clawed paw",
+      "entries": [
+        "Malar is a savage and feral god, a powerful force of chaos and destruction. Malar is a bringer of brutal ends, and relishes when the mortal races kill and die in explosive confrontation. However, he is often at odds with Tempus, as he finds armies and grand strategy cowardly."
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Mielikki",
+      "category": "God",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "title": "Goddess of forests",
+      "domains": [
+        "Nature"
+      ],
+      "symbol": "Unicorn's head",
+      "entries": [
+        "Mielikki is a goddess of gentle things. Of the glint of light between the trees in the canopy. Of the birds chirping in the morning air. Of the soft trickling of water over mossy stones in winding brooks. And she will protect it."
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Milil",
+      "category": "God",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "title": "God of poetry and song",
+      "domains": [
+        "Light"
+      ],
+      "symbol": "Five-stringed harp made of leaves",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Myrkul",
+      "category": "God",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "title": "God of death",
+      "domains": [
+        "Death"
+      ],
+      "symbol": "White human skull",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Mystra",
+      "category": "God",
+      "alignment": [
+        "N",
+        "G"
+      ],
+      "title": "Goddess of magic",
+      "domains": [
+        "Knowledge"
+      ],
+      "symbol": "Circle of seven stars, or nine stars encircling a flowing red mist, or a single star",
+      "entries": [
+        "Mystra is the goddess of innovation, progress, and power. She is the patron of those who seek to further the arcane arts and push the world forward into a glorious new age. Her morality can sometimes be questionable, but she reviles misuse of magic, and the pursuits of necromancy in general."
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Pelor",
+      "category": "God",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "title": "God of the Sun",
+      "domains": [
+        "Life",
+        "Light"
+      ],
+      "symbol": "Golden Sun",
+      "entries": [
+        "Pelor is a god of pure righteous power. Pelor is a bringer of life and light, and the patron of paladins and other followers of the laws of the world. Pelor believes in the power of righteousness over all else, and leads an eternal crusade against the forces of darkness."
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Selûne",
+      "category": "God",
+      "alignment": [
+        "C",
+        "G"
+      ],
+      "title": "Goddess of the moon",
+      "domains": [
+        "Knowledge",
+        "Life"
+      ],
+      "symbol": "Pair of eyes surrounded by seven stars",
+      "entries": [
+        "Selune is the goddess of illumination, of light in the shadows, of haunting midnight rays granting light to the revelries of night. She is a goddess patron of vigilantes, heroes who stalk the night and weed out the corrupt essence of the dark. A bright, mysterious, and unforgiving mistress she."
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Sylvanus",
+      "category": "God",
+      "alignment": [
+        "N"
+      ],
+      "title": "God of wild nature",
+      "domains": [
+        "Nature"
+      ],
+      "symbol": "Oak leaf",
+      "entries": [
+        "Sylvanus is not like his sister Mielikki. She is the forest. He is the uncaring, unempathetic, brutality of nature. Death is but a part of the cycle. And he relishes it."
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Shar",
+      "category": "God",
+      "alignment": [
+        "N",
+        "E"
+      ],
+      "title": "Goddess of darkness and loss",
+      "domains": [
+        "Death",
+        "Trickery"
+      ],
+      "symbol": "Black disk encircled with a border",
+      "entries": [
+        "Shar takes no joy in her domain, but sees herself more as the inevitable end of all things. Darkness, she posits, was there before light, and will be there long after light dies. And when light dies, so too is all lost. For in the end, what is there but I?"
+      ],
+      "source": "AG",
+      "reprinted": true,
+      "page": 0
+    },
+    {
+      "name": "Sune",
+      "category": "God",
+      "alignment": [
+        "C",
+        "G"
+      ],
+      "title": "Goddess of love and beauty",
+      "domains": [
+        "Life",
+        "Light"
+      ],
+      "symbol": "Face of a beautiful red-haired woman",
+      "entries": [
+        "Sune is the goddess of whirling, swirling, tempestuous emotions, a veritable maelstrom of passion and fury. She is the goddess of things both beautiful and painful, of love and heartbreak, of smiles and tears. Of beauty and of bane."
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Talos",
+      "category": "God",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "God of storms",
+      "domains": [
+        "Tempest"
+      ],
+      "symbol": "Three lightning bolts radiating from a central point",
+      "entries": [
+        "Talos, to some, is known as the Changebringer, a powerful primordial entity of destruction and rebirth. The storms of Talos wipe the slate clean and usher in new beginnings through a torrent of rain and wind. He destroys, but only so that which has fallen can rebuild stronger than before."
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Tempus",
+      "category": "God",
+      "alignment": [
+        "N"
+      ],
+      "title": "God of war",
+      "domains": [
+        "War"
+      ],
+      "symbol": "Upright flaming sword",
+      "entries": [
+        "War takes no sides. War is not evil. War is not good. War is the means to an end. The end matters not. It is a tool. And Tempus is the blacksmith. The guide. The arbitrator. The executioner."
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Tyr",
+      "category": "God",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "title": "God of justice",
+      "domains": [
+        "War"
+      ],
+      "symbol": "Balanced scales resting on a warhammer",
+      "entries": [
+        "Justice, to some, is seen as subjective. It is based on the will of the society around it. No such thing exists to Tyr. Justice is universal and absolute. Justice is the death of all those who profane the world. Death to those who perpetrate injustice. No other end will suffice."
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Umberlee",
+      "category": "God",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Goddess of the sea",
+      "domains": [
+        "Tempest"
+      ],
+      "symbol": "Wave curling left and right",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "The Traveler",
+      "category": "God",
+      "alignment": [
+        "C",
+        "N"
+      ],
+      "title": "Deity of chaos and change",
+      "domains": [
+        "Knowledge",
+        "Trickery"
+      ],
+      "symbol": "Four crossed, rune-inscribed bones",
+      "entries": [
+        "Who is the Traveler? Nobody knows! Not even he knows, really. What is the god of change? How can you quantify that which can never be the same? The traveler giggles. You check your back pocket. There is 12 gold inside. You didn't have it before. But you feel odd. You see your reflection in the water, and you have no nose. Why?\nWhy not?"
+      ],
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Bahamut",
+      "category": "Divine Entity",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "title": "Dragon god of good",
+      "domains": [
+        "Life",
+        "War"
+      ],
+      "symbol": "Dragon's head in profile",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Corellon Larethian",
+      "category": "Elder God",
+      "alignment": [
+        "C",
+        "G"
+      ],
+      "title": "Elf deity of art and magic",
+      "domains": [
+        "Light"
+      ],
+      "symbol": "Quarter moon or starburst",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Lolth",
+      "category": "Elder God",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Drow goddess of spiders",
+      "domains": [
+        "Trickery"
+      ],
+      "symbol": "Spider",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Moradin",
+      "category": "Elder God",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "title": "Dwarf god of creation",
+      "domains": [
+        "Forge",
+        "Knowledge"
+      ],
+      "symbol": "Hammer and anvil",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Tiamat",
+      "category": "Divine Entity",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "title": "Dragon goddess of evil",
+      "domains": [
+        "Trickery"
+      ],
+      "symbol": "Dragon head with five claw marks",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Raven Queen",
+      "category": "Divine Entity",
+      "alignment": [
+        "L",
+        "N"
+      ],
+      "title": "Goddess of death",
+      "domains": [
+        "Life",
+        "Death"
+      ],
+      "symbol": "Raven's head, in profile, facing left",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Asmodeus",
+      "category": "Archdevil",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "title": "King of the Nine Hells",
+      "domains": [
+        "Trickery"
+      ],
+      "symbol": "Three triangles in tight formation",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Mephistopheles",
+      "category": "Archdevil",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "title": "Archduke of the Inferno",
+      "symbol": "Crimson trident piercing a golden ring",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Baalzebul",
+      "category": "Archdevil",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "title": "The Slug Archduke",
+      "symbol": "Shattered crown, dripping filth",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Glaysa",
+      "category": "Archdevil",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "title": "Archduchess",
+      "symbol": "Gold and ivory throne",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Levistus",
+      "category": "Archdevil",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "title": "The Dark Prince",
+      "symbol": "Rapier embedded in ice",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Belial",
+      "category": "Archdevil",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "title": "Archduke",
+      "symbol": "Red ranseur",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Dispater",
+      "category": "Archdevil",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "title": "The Iron Duke",
+      "symbol": "Iron rod woven with chains",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Bel",
+      "category": "Archdevil",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "title": "The Warlord",
+      "symbol": "Flaming blade, implaing a mound of skulls",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Demogorgon",
+      "category": "Demon Lord",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Prince of Demons",
+      "symbol": "Serpentine forked tail, usually wrapped around a sword or staff",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Orcus",
+      "category": "Demon Lord",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Lord of Undead",
+      "symbol": "Black skull-topped rod",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Graz'zt",
+      "category": "Demon Lord",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "The Dark Prince",
+      "symbol": "Black six-fingered hand",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Baphomet",
+      "category": "Demon Lord",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Prince of Beasts",
+      "symbol": "Black minotaur skull",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Yeenoghu",
+      "category": "Demon Lord",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Lord of Savagery",
+      "symbol": "Triple-headed flail",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Gruumsh",
+      "category": "Demon Lord",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Lord of Rage",
+      "symbol": "A single red eye",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Juiblex",
+      "category": "Demon Lord",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "The Faceless Lord",
+      "symbol": "Rarely used, a pseudopod dripping slime",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Fraz-Urb'luu",
+      "category": "Demon Lord",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Prince of Deception",
+      "symbol": "Unknown",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Kostchtchie",
+      "category": "Demon Lord",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Prince of Wrath",
+      "symbol": "Warhammer, the head coated in frost",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Zuggtmoy",
+      "category": "Demon Lord",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Queen of Fungi",
+      "symbol": "A jawless human skull, covered in mold and fungus",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Lolth",
+      "category": "Demon Lord",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Queen of Spiders",
+      "symbol": "A spider in the center of its web",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Oublivae",
+      "category": "Demon Lord",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Queen of Desolation",
+      "symbol": "Unknown",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "The Queen of Chaos",
+      "category": "Obyrith",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "",
+      "symbol": "Sahuagin skull, imposed on a trident",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Obox-ob",
+      "category": "Obyrith",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "First Prince of Demons",
+      "symbol": "Unknown",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Dagon",
+      "category": "Obyrith",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Prince of the Depths",
+      "symbol": "Unknown",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Pazuzu",
+      "category": "Obyrith",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Dark Angel of the Four Winds",
+      "symbol": "Four avian wings, smoking",
+      "source": "AG",
+      "page": 0
+    },
+    {
+      "name": "Pale Night",
+      "category": "Obyrith",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "title": "Mother of Demons",
+      "symbol": "White shroud",
+      "source": "AG",
+      "page": 0
+    }
+  ]
 }
