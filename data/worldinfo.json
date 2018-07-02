@@ -61,7 +61,6 @@
       "source": "AG",
       "type": "Island",
       "name": "A'tuí",
-      "title": "Island of",
       "location": [
         "Ebion"
       ],
@@ -80,7 +79,6 @@
       "source": "AG",
       "type": "Island",
       "name": "Aerisan",
-      "title": "Island of",
       "location": [
         "Ebion"
       ],
@@ -100,7 +98,7 @@
       "source": "AG",
       "type": "Country",
       "name": "Moon",
-      "title": "Empire of",
+      "title": "Empire of the",
       "location": [
         "Ebion"
       ],
@@ -118,7 +116,6 @@
       "source": "AG",
       "type": "Country",
       "name": "Loren-Hearth",
-      "title": "?",
       "location": [
         "Ebion"
       ],
@@ -218,8 +215,8 @@
     {
       "source": "AG",
       "type": "Plane",
-      "name": "The Shadowfell",
-      "title": "",
+      "name": "Shadowfell",
+      "title": "The",
       "location": [
         "Extraplanar"
       ],
@@ -235,8 +232,8 @@
     {
       "source": "AG",
       "type": "Plane",
-      "name": "The Feywild",
-      "title": "",
+      "name": "Feywild",
+      "title": "The",
       "location": [
         "Extraplanar"
       ],
@@ -268,8 +265,8 @@
     {
       "source": "AG",
       "type": "Plane",
-      "name": "The Astral Plane",
-      "title": "",
+      "name": "Astral Plane",
+      "title": "The",
       "location": [
         "Extraplanar"
       ],
@@ -284,8 +281,8 @@
     {
       "source": "AG",
       "type": "Plane",
-      "name": "The Elemental Chaos",
-      "title": "",
+      "name": "Elemental Chaos",
+      "title": "The",
       "location": [
         "Extraplanar"
       ],
@@ -300,8 +297,8 @@
     {
       "source": "AG",
       "type": "Plane",
-      "name": "Hells",
-      "title": "The Nine",
+      "name": "Nine Hells",
+      "title": "The ",
       "location": [
         "Extraplanar"
       ],
@@ -316,8 +313,8 @@
     {
       "source": "AG",
       "type": "Plane",
-      "name": "Abyss",
-      "title": "The Infinite Layers of",
+      "name": "Infinite Layers of Abyss",
+      "title": "The",
       "location": [
         "Extraplanar"
       ],
@@ -332,8 +329,8 @@
     {
       "source": "AG",
       "type": "Notable Terrain",
-      "name": "The Spine",
-      "title": "",
+      "name": "Spine",
+      "title": "The",
       "location": [
         "Ebion"
       ],
@@ -350,8 +347,8 @@
     {
       "source": "AG",
       "type": "Notable Terrain",
-      "name": "The Blighted Expanse",
-      "title": "",
+      "name": "Blighted Expanse",
+      "title": "The",
       "location": [
         "Ebion"
       ],
