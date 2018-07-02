@@ -168,7 +168,7 @@ function loadhash (jsonIndex) {
 		<tr><td colspan="6"><span class="bold">Location: </span>${deity.location.join(", ")}</td></tr>
 		<tr><td colspan="6"><span class="bold">Race: </span>${deity.race.join(", ")}</td></tr>
 		${deity.altNames ? `<tr><td colspan="6"><span class="bold">Alternate Names: </span>${deity.altNames.join(", ")}</td></tr>` : ""}
-		<tr><td colspan="6"><span class="bold">Symbol: </span>${deity.symbol}</td></tr>
+		${deity.symbol ? `<tr><td colspan="6"><span class="bold">Symbol: </span>${deity.symbol}</td></tr>` : ""}
 		${deity.symbolImg ? `<tr><td colspan="6">${renderer.renderEntry({entries: [deity.symbolImg]})}</td></tr>` : ""}
 		${renderStack.length ? `<tr class="text"><td colspan="6">${renderStack.join("")}</td></tr>` : ""}
 		${EntryRenderer.utils.getPageTr(deity)}

@@ -1,25 +1,369 @@
 {
-	"deity": [
+  "deity": [
     {
       "source": "AG",
-			"type": "Country",
-			"name": "Roshen",
-			"title": "Empire of",
-			"location": [
-				"Ebion"
-			],
-			"race": [
-				"Human"
-			],
-			"symbol": "Black Sun",
-			"entries": [
+      "type": "Country",
+      "name": "Roshen",
+      "title": "Empire of",
+      "location": [
+        "Ebion"
+      ],
+      "race": [
+        "Human"
+      ],
+      "symbol": "Black Sun",
+      "entries": [
         "Roshen is the biggest known empire on the plane. It is ruled by an Archmage, the God Emperor. The Emperor is generally referred to as “Holy Emperor,” “His Divinity,” “Divine Lord,” or some similar version of that. There is a heavy caste system with priests, nobles, citizens and peasants (Kuul). It is a sort of theocratic feudal empire. Most production is managed by the powerful noble houses with parts of it delegated to smaller houses and citizens. To compare to modern day, noble houses are like corporations, priests fill the role of the government regulators and citizens usually form smaller businesses. However everything is technically owned by the Emperor, including the Kuul. Priests are recruited from nobles and citizens, otherwise there is very little movement between classes, and it usually is down if it happens.",
         "The empire is almost entirely human. Foreigners and non-humans occupy a middle space between citizens (with general human rights and freedoms) and Kuul (no rights and freedoms). They cannot generally own land, cannot become citizens and require permission from the local government (usually priests) to do basically anything. Non-humans are often heavily discriminated against under these regulations but for foreign travelers and merchants they are just minor nuisances.",
         "There are five High Houses that control a majority of trade and production within the Empire. Smaller noble houses work under them in a complex political economic system. In general, the Emperor lets the houses feud so long as they meet his quotas for taxes and supplies.",
         "Most guard forces in Roshen are paid and run by noble houses, with the exception of in the military and the priests have a private troop of guards especially in large cities."
-			],
-			"page": 0
-		},
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Archipelago",
+      "name": "Minotaur Isles",
+			"title": "The",
+      "location": [
+        "Ebion"
+      ],
+      "race": [
+        "Minotaur",
+        "Human"
+      ],
+      "entries": [
+        "Not really a country, The Minotaur Isles are a group of 7 large islands and a moderate number of tiny islands in between. Twelve different minotaur pirate lords rule these isles, their huge plunder-fleets constantly skirmishing for sport and loot.",
+        "There is some level of civilization on the islands themselves. In addition to the huge free port Juno, which acts as a sort of capital city, non-pirate Minotaurs live in large port towns and trade with each-other and any country willing to deal with them.  The isles are composed of about 80% minotaurs and 20% other species."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Archipelago",
+      "name": "Free Islands",
+      "title": "The",
+      "location": [
+        "Ebion"
+      ],
+      "race": [
+        "Human",
+        "Elf",
+        "Half-Elf"
+      ],
+      "entries": [
+        "The archipelago in the south west corner of the map is a haven for thieves, smugglers, pirates, and those who would rather not live under the laws of the worlds larger nations.  Despite the efforts of Roshen and Loren-Hearth attempts to tame this archipelago have met with failure. The region is dominated by three major islands each of which holds a large port; new arrivals to the archipelago almost always make port at one of these three islands first before moving on to explore the rest of the islands.",
+        "The islands have a fairly diverse racial population.  Humans and Elves are the most common races, with Half-elves unsurprisingly coming in a close second.  However you can find pretty much any species under the sun in the Free Islands if you spend a little time looking, though many who come don’t want to be found"
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Island",
+      "name": "A'tuí",
+      "title": "Island of",
+      "location": [
+        "Ebion"
+      ],
+      "race": [
+        "Human"
+      ],
+      "entries": [
+        "Invaded and conquered by every major empirical entity on Ebion at some point or another. There are scattered remnants of a long lost dwarven city, though most have sunk in the soft soil. Being tropical, it rains constantly in A’tuí and plants are fast-growing but frail. Softwoods, such as palms, dominate the available timber. The earth is fertile but malleable and tidal marshes are common.",
+        "50 years ago, A’tuí was under the rule of the remnants of the Bistant Empire - the bulk of which existing primarily in the bastion-city of Prow Ira. Growing dissent gave rise to the necromancer Vitor, who used black magics to expunge the Bistant from the island and raise an army of the dead. Knowing that Roshen would quickly swoop in to fill the void left by the Bistant, Vitor made a power play by burning his way to the city of Miria in central Roshen.",
+        "Ultimately, Vitor was stopped by the Shields of Tyr who grievously injured him before he disappeared. Roshen “rewarded” the remaining members of the Shields of Tyr for their service by forcing them to A’tui to both rid the island of the undead and keep the populace from ever again rising up against Roshen.",
+        "Today, A’tuí is essentially under its own rule - being primarily ignored by Roshen. The Shields of Tyr are too ill-funded and isolated to exert much control over the country and wage a fruitless war against perpetual undeath."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Island",
+      "name": "Aerisan",
+      "title": "Island of",
+      "location": [
+        "Ebion"
+      ],
+      "race": [
+        "Aarakocra",
+        "Avariel Elves"
+      ],
+      "entries": [
+        "Aerisan is the home of the Aarakocra and the Avariel Elves. Aarakocra are tribal and split into three tribes on each corner of the island. The center of the island is a holy location and the meeting place of the tribes. The center is a spring at the top of the mountain that makes up the island. It is incredibly difficult to access without flying as there are hundreds of feet of sheer cliffs in multiple sections, also the Aarakocra do not take kindly to outsiders visiting the mountaintop. ",
+        "The three tribes are the Mistwing, Redbeak and Blacktalon. The Mistwing territory is characterized by large cliffs with waterfalls and fog banks, they generally have speckled brown, white and grey feathers. The Redbeak and Blacktalon have similar cliffs but none of the waterfalls of the Mistwing. The Redbeak get there name from a natural die in fish that are a staple of their diet. The Blacktalon live in obsidian bluffs and often attach obsidian shards to their talons and spears. \n",
+        "The tribes mostly live at peace but and tribal conflicts are generally dealt with in individual contests between tribe members. These are usually performed by younger members of the tribes who use these as ways to gain standing in their tribe. These contests are not necessarily lethal but it isn't uncommon for a young Aarakocra to die in a contest. Those that are are honored by all three tribes.",
+        "Avariel, when they come of age, choose a clan to affiliate with. They join this clan in all ways and are treated as one of them, and may only mate with other Avariel of that clan. Avariel are much more likely to travel off of Aerisan though, as they have a looser connection to the clans, and can sometimes be seen traveling as flocks across the ocean."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Country",
+      "name": "Moon",
+      "title": "Empire of",
+      "location": [
+        "Ebion"
+      ],
+      "race": [
+        "Yuan-ti",
+        "Lizardfolk"
+      ],
+      "entries": [
+        "The Moon Empire is a dictatorial Yuan-ti country that occupies the southern half of Arumai. The mountains to the north keep the precipitation high in the south, creating a giant rainforest that became the home of a number of powerful reptilian species. The Moon Empire is ruled by God-Emperor Sshahuzhari, a powerful, nearly ascended, Yuan-ti Anathema whose grand pursuit is to become a god.",
+        "Yuan-ti are slavers by nature, and have a society that looks down upon humanoids that do not share their reptilian form. Their society is caste based relative to their resemblance to their snake gods. Yuan-ti Abominations make up the upper case, with Malisons taking the middle, and Purebloods at the bottom. All other species, except Lizardfolk, are beneath Purebloods, and are regularly enslaved. Yuan-ti enslave travelers that get too close to their borders, including ships full of humans, orcs, and other humanoids. Lizardfolk, due to their reptilian nature, take up a spot just above purebloods in the hierarchy when they interact with the Moon Empire."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Country",
+      "name": "Loren-Hearth",
+      "title": "?",
+      "location": [
+        "Ebion"
+      ],
+      "race": [
+        "High Elf"
+      ],
+      "entries": [
+        "Loren-Hearth is a high elf democracy turned military junta. The western side of Pernath has been inhabited by high elves for centuries if not millennia. In this time the area has flipped between warring kingdoms periods and times of relative peace when one kingdom would manage to appropriate the others. The Divine Followers mostly ignored the high elves during this time, letting them engage in their petty squabbles.",
+        "Since almost the very year Loren-Hearth took control of the west, they’ve been in a defensive war with The Divine Followers for allowing necromancy in their schools of magic. The state is entirely ruled by the military, and almost every industry serves the military in some way."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Country",
+      "name": "Aba'i",
+      "title": "Empire of",
+      "location": [
+        "Ebion"
+      ],
+      "race": [
+        "Genasi",
+        "Elementals",
+        "Djinni"
+      ],
+      "entries": [
+        "Aba’i is the most ancient empire in the world, with a lineage that goes back to the banishing of the elemental evil from the material plane. As part of the final peace an empire of Djinni and Genasi were allowed to remain on the material plane as the emissaries of the elemental lords. But at a point their connection to the elemental planes was broken, and they exist as a fallen extension of the domains of the elemental lords.",
+        "Aba’i is broken into four Caliphates, each one ruled by a different subset of the Genasi and Djinni.   ",
+        "Nar’a is of fire, and sits in a relatively barren segment of Arumai. The fire elementals earn their keep as the most prominent military in Aba’i.",
+        "Ma’ni is the home of the water elementals, who keep their region almost constantly flooded and raining.",
+        "Haw’o is home to the air elementals, and is filled with towering peaks that its inhabitants soar between.",
+        "K’ard is the land of earth elementals, a rocky realm of caves and burrows, with subterranean cities all across.",
+        "And in the center sits the Elemental Palace, where once they communed \nwith the elemental lords, now a council room for the four Djinni Caliphs\n to meet and govern."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Country",
+      "name": "Gruu'shal",
+      "title": "Kingdom of",
+      "location": [
+        "Ebion"
+      ],
+      "race": [
+        "Orc",
+        "Goblin",
+        "Bugbear",
+        "Hobgoblin"
+      ],
+      "entries": [
+        "Gruu’shal is a feudal kingdom of orcs and other goblinoids on the eastern side of Arumai. Their leader is known as Mortakk the Ravager, a powerful orc that rose from the once disparate orc tribes and united them under a banner of order and brutality. Gruu’shal is a caste-based, feudal society, with the country being split into five different lordships. One is ruled by King Mortakk himself, with the rest divided across his four Grand Generals. ",
+        "In Gruu’shal society orcs are the top of the food chain. They are given free reign over society, and make up the majority of the military as Brokmar (orc soldiers) and all high-ranking positions. Second to orcs are the bugbears, as their brute strength is prized, and they hold many of the mercantile and Krukmor (town leadership) positions. Under them are the hobgoblins, whose intellect allows them to work well as Gekmor (skilled laborers). Below those are the goblins themselves, relegated to Munk (unskilled labor), and treated as the dregs of the land.\n"
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Country",
+      "name": "Diirak Crüm",
+      "title": "The Divine Followers of",
+      "location": [
+        "Ebion"
+      ],
+      "race": [
+        "Human"
+      ],
+      "entries": [
+        "A human monarchal theocratic regime founded by a large group of religious deviants that fled a human empire from Ebion in the time when dwarves still ruled most of it. They were led by a priestess named Diirak Crüm, who had been cast out for openly worshipping Kelemvor, the God of the Dead.",
+        "The Divine are ruled entirely by an Arch Priestess and her council of high priests and priestesses. Every Arch Priestess must be a direct descendant of Diirak Crüm. Previous Arch Priestesses have been assassinated before, but they had descendants in place for that eventuality. It is not known what would happen if Diirak Crüm’s entire line was wiped out.",
+        "Being worshippers of Kelemvor, the people of this country base their entire lives around the natural cycles of life and death. Funerals are celebrations of the successful coming of natural death, and necromancy is outlawed under pain of death.",
+        "Their foreign relations are truly one-note. If country has banned necromancy, that country is seen as an ally. If a country has not banned necromancy, they are seen as The Divine’s next target after they finally wipe out Loren-Hearth."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Country",
+      "name": "Ha'me Ajani",
+      "title": "",
+      "location": [
+        "Ebion",
+        "Ajan"
+      ],
+      "race": [
+        "Shifter"
+      ],
+      "symbol": "Clawed Tree",
+      "entries": [
+        "The only major community of shifters in the known world, the Ha'me Ajani is an intensely xenophobic and isolationist nation. They trade only with Abora, and even then mostly unwillingly. ",
+        "The island's populace is divided into a strict racial hierarchy; led by the Hur'ani priesthood of Wildhunt shifters, defended by the Kir'ulla clans of Razorclaws and Longteeth, and peopled by the Lup'ura guilds of Longstride, Deepdive, and Cliffwalk shifters. Those unfortunate enough to be born Beasthide are the lowest of the castes, forced into miserable living conditions and working the hardest and most dangerous jobs",
+        "It is a land of beautiful dangers, with each biome of the landmass dominated by some form of megapredator but also rich in a variety of unique natural resources. This has slowed the Ha'me's technological advancement, but has also produced a fierce and resilient race, with each caste striving to hone their talents and natural gifts to best contribute to the good of their people. ",
+        "The Ha'me is currently led by Hur'ami'te (High Speaker) Tomar, who continues preaching their doctrine of independence and xenophobia."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Plane",
+      "name": "The Shadowfell",
+      "title": "",
+      "location": [
+        "Extraplanar"
+      ],
+      "race": [
+        "Shadar-kai",
+        "Darkling"
+      ],
+      "entries": [
+        "The Shadowfell is the dark reflection of the material plane. It is an everlasting grey-hued dusk there, and danger lurks around every corner. The Shadowfell is home to a number of species, including the Shadar-kai, Darklings, and many others. Maps of the Shadowfell do not exist as we know them, but adventurers unlucky enough to find themselves in it may be able to delve into its secrets."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Plane",
+      "name": "The Feywild",
+      "title": "",
+      "location": [
+        "Extraplanar"
+      ],
+      "race": [
+        "Centaurs",
+        "Eladrin"
+      ],
+      "entries": [
+        "The Feywild is the mad manifestation of magic transposed upon the material plane. While it mirrors the material plane in terrain and other features, the strange and twisted magics of the realm have altered it into a place where truly anything is possible. Species such as Centaurs, Eladrin, and others originate in the Feywild, and are often monstrous and strange as a result."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Plane",
+      "name": "Elemental Planes",
+      "title": "The Four",
+      "location": [
+        "Extraplanar"
+      ],
+      "race": [
+        "Elementals"
+      ],
+      "entries": [
+        "The elemental planes of Air, Fire, Earth, and Water hover just around the Feywild and Shadowfell in relation to the material plane. They were created when the primordial elemental forces were banished from the material plane, and are really a singular plane. However, where the planes meet is an interstitial place of great chaos, and it separates the realms almost like planar barriers."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Plane",
+      "name": "The Astral Plane",
+      "title": "",
+      "location": [
+        "Extraplanar"
+      ],
+      "race": [
+        "Githyanki"
+      ],
+      "entries": [
+        "This plane is an interstitial plane between the planes of Law, most of which are currently unknown. It is an odd and chaotic place, full of floating islands and pieces of various realms that were lost to time. It is the home of the Githyanki, and very little else."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Plane",
+      "name": "The Elemental Chaos",
+      "title": "",
+      "location": [
+        "Extraplanar"
+      ],
+      "race": [
+        "Githzerai"
+      ],
+      "entries": [
+        "This plane is the insterstitial plane between the Planes of Chaos, which includes (but is not limited to) the Nine Hells and the Infinite Layers of the Abyss. It is an inhospitable place, full of raging, tumultuous blends of all of the four elements. It is home to the Githzerai, and not much else."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Plane",
+      "name": "Hells",
+      "title": "The Nine",
+      "location": [
+        "Extraplanar"
+      ],
+      "race": [
+        "Devils"
+      ],
+      "entries": [
+        "The Nine Hells is a plane of lawful, but brutal, evil. It is the home of devils, one of the two subtypes of fiends, and is one of the greatest enemies of the material plane and the gods in general. It is, as the name suggests, in nine planar tiers, each ruled by an Archdevil. Each of these Archdevils can be found in the Other Entities of Power section.plane is the insterstitial plane between the Planes of Chaos, which includes (but is not limited to) the Nine Hells and the Infinite Layers of the Abyss. It is an inhospitable place, full of raging, tumultuous blends of all of the four elements. It is home to the Githzerai, and not much else."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Plane",
+      "name": "Abyss",
+      "title": "The Infinite Layers of",
+      "location": [
+        "Extraplanar"
+      ],
+      "race": [
+        "Demons"
+      ],
+      "entries": [
+        "The Infinite Layers of the Abyss, or the Abyss for short, is a plane of true chaotic evil. It is the home of demons, one of the two subtypes of fiends, and is a terrifying enemy of the material plane. The Abyss is infinite, as its name suggests, but the top layers still have contact with the material plane. Demons are often worshipped by cults, as their very presence causes madness in those around them."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Notable Terrain",
+      "name": "The Spine",
+      "title": "",
+      "location": [
+        "Ebion"
+      ],
+      "race": [
+        "Goliaths",
+        "Dragonborn"
+      ],
+      "symbol": "N/A",
+      "entries": [
+        "The Spine is the mountain range on the eastern side of Ebion. Few today know of why it was named the Spine, and it is a maze of winding caves, ancient paths, and brutal cliffs. The races that live in the Spine are nomadic, as they constantly move from mountain to mountain in search of food and shelter."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Notable Terrain",
+      "name": "The Blighted Expanse",
+      "title": "",
+      "location": [
+        "Ebion"
+      ],
+      "race": [
+        "None"
+      ],
+      "symbol": "N/A",
+      "entries": [
+        "The Blighted expanse is a 350 mile long stretch of blasted, barren land, tainted with foul magics old enough that few remember its origination. It is home to all manner of warped, twisted creatures, from oozes to mangled abominations, and should only be traveled in dire need."
+      ],
+      "page": 0
+    },
     {
       "source": "AG",
       "type": "Person",
@@ -37,6 +381,78 @@
         "God Emperor of Roshen"
       ],
       "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Person",
+      "name": "Avran Shei",
+      "title": "Guild Founder",
+      "location": [
+        "Ebion",
+        "The Adventurer's Guild"
+      ],
+      "race": [
+        "Tiefling"
+      ],
+      "symbol": "Guild Sigil",
+      "entries": [
+        "The leader of the adventuring party The Good Fight, where he served with the rest of his cohorts, Avran comes from humble beginnings. An oddity in the world, a Winged Tiefling, he wanted nothing more than to live a quiet life as a farmer, far away from the troubles of the world and the discrimination he could face. But Avran found that he could not just stand by and watch injustice go unpunished. When war between Gilnar and Modgor seemed certain, he flew to the aid of the common folk and rose as a hero of not Gilnar, but the people. He did not want his fame, but he tried to use it as best he could, and recruited the rest of The Good Fight to go root out the evils of the world before finally settling down in the guild hall.\nCurrently, Avran runs The Quest Board, and is the one that all the quest listings go through to get put up. He also tends to announcements and a lot of the behind the scenes work."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Person",
+      "name": "Clockwork Sootstacks",
+      "title": "Guild Founder",
+      "location": [
+        "Ebion",
+        "The Adventurer's Guild"
+      ],
+      "race": [
+        "Gnome"
+      ],
+      "symbol": "Guild Sigil",
+      "entries": [
+        "Soots is a friendly old gnome tinker. He has been a wanderer for many years and just travels the world. Often he stops in villages and small towns to entertain children and use magic to repair things for the villagers In his free time he tinkers. He will often ask only for scrap parts and food from villagers as payment for helping them. He never really had a destination and if he did, he rarely arrived on time because he always manages to get lost. He joined the Good Fight after Avran convinced him that there were things that he could do to change the world and help people after meeting him in a village. After joining the Good Fight and founding the Guild, he has made large advances on his technologies. Most notably, he made \"Lustersail.\" \nCurrently he runs the Guild shop, where his intelligence is made to good use obtaining both magic items and commodities."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Person",
+      "name": "Enna Redhand",
+      "title": "Guild Founder",
+      "location": [
+        "Ebion",
+        "The Adventurer's Guild"
+      ],
+      "race": [
+        "Half-Orc"
+      ],
+      "symbol": "Guild Sigil",
+      "entries": [
+        "Enna grew up as a Half-orc slave in the Moon Empire. As she grew, her strength was noticed and she was forced into becoming a gladiator for Yuan-Ti entertainment. During this time, she planned an breakout with fellow gladiators and managed to escape. This was the spark of a rebellion among slaves. She was the leader of the Rebellion and led raids against camps to free others. During this time, she earned the name 'Redhand.' Eventually the Rebellion grew too large and the Empire brought it's full force against it. Enna advised retreat but the other leaders of the Rebellion wanted to fight head on. They were all slaughtered and Enna left the continent with a small handful of rebels who decided to stick with her. She disbanded the group as they reached Astodius and went separate ways. She was wasting her time in a bar trying to forget when met Avran. He convinced her to join the Good Fight, and she spent the next few years with them before settling down at the Guild.\nEnna spends her time training people in their downtime hours, and is the most active of the Good Fight currently. She is often away on her own quests, bolstering the Guild's funds."
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
+      "type": "Person",
+      "name": "Rayna Goldastier",
+      "title": "Guild Founder",
+      "location": [
+        "Ebion",
+        "The Adventurer's Guild"
+      ],
+      "race": [
+        "Human"
+      ],
+      "symbol": "Guild Sigil",
+      "entries": [
+        "Rayna was born to fight for the light. As a Cleric beholden to the Order of Light, the Shields of Tyr branch, she grew up on A'tuí. The Order are Paladins, but as she grew they realized her talents were not with the sword. However, she seemed to be blessed by Tyr; bit by bit her magic strengthened in ways they could not possibly emulate. And so, as a Cleric, she saw the horrors of undeath that plagued A'tuí and fought against them for many years, but grew dissatisfied with the Order's operations on the isle. She left to seek ways to help the world better, but she quickly became disillusioned after seeing the state of the world. In the depths of her sorrow she was approached by Avran, who, after a large amount of poking and prodding, was able to convince her to join the Good Fight. She quickly became their most responsible and dedicated member, and pours herself into anything she does. Currently she runs the infirmary, and has the daunting task of resurrecting dead adventurers (Provided they can pay for it)"
+      ],
+      "page": 0
     }
-	]
+  ]
 }
