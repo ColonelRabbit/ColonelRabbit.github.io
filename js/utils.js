@@ -2967,7 +2967,7 @@ BrewUtil = {
 			}
 
 			// prepare for storage
-			["class", "subclass", "spell", "monster", "background", "feat", "invocation", "race", "deity", "item", "psionic", "reward", "object", "trap", "hazard", "variantrule"].forEach(storePrep);
+			["class", "subclass", "spell", "monster", "background", "feat", "invocation", "race", "deity", "item", "psionic", "reward", "object", "trap", "hazard", "variantrule", "info"].forEach(storePrep);
 
 			// store
 			function checkAndAdd (prop) {

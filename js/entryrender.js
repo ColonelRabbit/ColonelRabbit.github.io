@@ -822,6 +822,15 @@ function EntryRenderer () {
 								};
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
 								break;
+								case "@info":
+									fauxEntry.href.path = "worldinfo.html";
+									if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_AG;
+									fauxEntry.href.hover = {
+										page: UrlUtil.PG_WORLDINFO,
+										source: source || SRC_AG
+									};
+									self.recursiveEntryRender(fauxEntry, textStack, depth);
+									break;
 						}
 					}
 				} else {
