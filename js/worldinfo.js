@@ -155,23 +155,23 @@ function getSublistItem (g, pinId) {
 
 const renderer = new EntryRenderer();
 function loadhash (jsonIndex) {
-	const deity = deitiesList[jsonIndex];
+	const info = deitiesList[jsonIndex];
 
 	const renderStack = [];
-	if (deity.entries) renderer.recursiveEntryRender({entries: deity.entries}, renderStack);
-  const deityTitle = deity.title ? `, ${deity.title.toTitleCase()}` : "";
+	if (info.entries) renderer.recursiveEntryRender({entries: info.entries}, renderStack);
+  const infoTitle = info.title ? `, ${info.title.toTitleCase()}` : "";
 	const $content = $(`#pagecontent`);
 	$content.html(`
 		${EntryRenderer.utils.getBorderTr()}
-		${EntryRenderer.utils.getNameTr(deity, false, "", deityTitle)}
-		<tr><td colspan="6"><span class="bold">Type: </span>${deity.type}</td></tr>
-		<tr><td colspan="6"><span class="bold">Location: </span>${deity.location.join(", ")}</td></tr>
-		<tr><td colspan="6"><span class="bold">Race: </span>${deity.race.join(", ")}</td></tr>
-		${deity.altNames ? `<tr><td colspan="6"><span class="bold">Alternate Names: </span>${deity.altNames.join(", ")}</td></tr>` : ""}
-		${deity.symbol ? `<tr><td colspan="6"><span class="bold">Symbol: </span>${deity.symbol}</td></tr>` : ""}
-		${deity.symbolImg ? `<tr><td colspan="6">${renderer.renderEntry({entries: [deity.symbolImg]})}</td></tr>` : ""}
+		${EntryRenderer.utils.getNameTr(info, false, "", infoTitle)}
+		<tr><td colspan="6"><span class="bold">Type: </span>${info.type}</td></tr>
+		<tr><td colspan="6"><span class="bold">Location: </span>${info.location.join(", ")}</td></tr>
+		<tr><td colspan="6"><span class="bold">Race: </span>${info.race.join(", ")}</td></tr>
+		${info.altNames ? `<tr><td colspan="6"><span class="bold">Alternate Names: </span>${info.altNames.join(", ")}</td></tr>` : ""}
+		${info.symbol ? `<tr><td colspan="6"><span class="bold">Symbol: </span>${info.symbol}</td></tr>` : ""}
+		${info.symbolImg ? `<tr><td colspan="6">${renderer.renderEntry({entries: [info.symbolImg]})}</td></tr>` : ""}
 		${renderStack.length ? `<tr class="text"><td colspan="6">${renderStack.join("")}</td></tr>` : ""}
-		${EntryRenderer.utils.getPageTr(deity)}
+		${EntryRenderer.utils.getPageTr(info)}
 		${EntryRenderer.utils.getBorderTr()}
 	`);
 }

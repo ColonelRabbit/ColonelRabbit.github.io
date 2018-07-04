@@ -569,7 +569,6 @@ function EntryRenderer () {
 				if (s === undefined || s === null || s === "") continue;
 				if (s.charAt(0) === "@") {
 					const [tag, text] = EntryRenderer.splitFirstSpace(s);
-
 					if (tag === "@bold" || tag === "@b" || tag === "@italic" || tag === "@i" || tag === "@skill" || tag === "@action") {
 						switch (tag) {
 							// FIXME remove "@link"
@@ -822,15 +821,24 @@ function EntryRenderer () {
 								};
 								self.recursiveEntryRender(fauxEntry, textStack, depth);
 								break;
-								case "@info":
-									fauxEntry.href.path = "worldinfo.html";
-									if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_AG;
-									fauxEntry.href.hover = {
-										page: UrlUtil.PG_WORLDINFO,
-										source: source || SRC_AG
-									};
-									self.recursiveEntryRender(fauxEntry, textStack, depth);
-									break;
+							case "@deity":
+								fauxEntry.href.path = "deities.html";
+								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_AG;
+								fauxEntry.href.hover = {
+									page: UrlUtil.PG_DEITIES,
+									source: source || SRC_AG
+								};
+								self.recursiveEntryRender(fauxEntry, textStack, depth);
+								break;
+							case "@info":
+								fauxEntry.href.path = "worldinfo.html";
+								if (!source) fauxEntry.href.hash += HASH_LIST_SEP + SRC_AG;
+								fauxEntry.href.hover = {
+									page: UrlUtil.PG_WORLDINFO,
+									source: source || SRC_AG
+								};
+								self.recursiveEntryRender(fauxEntry, textStack, depth);
+								break;
 						}
 					}
 				} else {
@@ -1474,6 +1482,24 @@ EntryRenderer.deity = {
 				</div>
 			</td>
 			${deity.entries ? `<tr><td colspan="6"><div class="border"></div></td></tr><tr><td colspan="6">${renderer.renderEntry({entries: deity.entries}, 1)}</td></tr>` : ""}
+		`;
+	}
+};
+
+EntryRenderer.info = {
+	getCompactRenderedString: (info) => {
+		const renderer = EntryRenderer.getDefaultRenderer();
+		return `
+			${EntryRenderer.utils.getNameTr(info, true, "", `, ${info.title}`)}
+			<tr><td colspan="6">
+				<div class="summary-flexer">
+					<p><b>Pantheon:</b> ${info.type}</p>
+					${info.location ? `<p><b>Location:</b> ${info.location}</p>` : ""}
+					${info.race ?`<p><b>Race:</b> ${info.race.join(", ")}</p>` : ""}
+					${info.altNames ? `<p><b>Alternate Names:</b> ${info.altNames.join(", ")}</p>` : ""}
+				</div>
+			</td>
+			${info.entries ? `<tr><td colspan="6"><div class="border"></div></td></tr><tr><td colspan="6">${renderer.renderEntry({entries: info.entries}, 1)}</td></tr>` : ""}
 		`;
 	}
 };
@@ -2259,6 +2285,10 @@ EntryRenderer.hover = {
 				loadSimple(page, "trapshazards.json", ["trap", "hazard"]);
 				break;
 			}
+			case UrlUtil.PG_WORLDINFO: {
+				loadSimple(page, "worldinfo.json", "info");
+				break;
+			}
 		}
 	},
 
@@ -2514,6 +2544,9 @@ EntryRenderer.hover = {
 				break;
 			case UrlUtil.PG_TRAPS_HAZARDS:
 				renderFunction = EntryRenderer.traphazard.getCompactRenderedString;
+				break;
+			case UrlUtil.PG_WORLDINFO:
+				renderFunction = EntryRenderer.info.getCompactRenderedString;
 				break;
 			default:
 				throw new Error(`No hover render function specified for page ${page}`)
@@ -2920,8 +2953,6 @@ EntryRenderer.dice = {
 			mods.push(m0);
 			return "";
 		});
-		console.log(str);
-		console.log(mods);
 		function cleanOperators (str) {
 			let len;
 			let nextLen;
@@ -2932,7 +2963,6 @@ EntryRenderer.dice = {
 			} while (len !== nextLen);
 			return str;
 		}
-		console.log(str);
 		const totalMods = mods.map(m => Number(cleanOperators(m))).reduce((a, b) => a + b, 0);
 
 		function isNumber (char) {

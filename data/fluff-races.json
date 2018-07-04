@@ -878,14 +878,14 @@
 				    "type": "entries",
 				    "name": "Homelands",
 				    "entries": [
-						"Most aarakocra live on the Elemental Plane of Air, but there is a small permanent population of Aarakocra on the Island of {@info Aerisan} can be drawn into the Material Plane, sometimes to pursue enemies or thwart their foes' designs there. Accident might also send a nest of aarakocra tumbling into a world on that plane. A few find their way to such a world through portals on their own plane and establish nests in high mountains or in the canopies of old forests.",
-						"Once tribes of aarakocra settle in an area, they share a hunting territory that extends across an area up to 100 miles on a side, with each tribe hunting in the lands nearest to their colony, ranging farther should game become scarce.",
-						"A typical colony consists of one large, open-roofed nest made of woven vines. The eldest acts as leader with the support of a shaman."
+							"Most aarakocra live on the Elemental Plane of Air, but there is a small permanent population of Aarakocra on the Island of {@info Aerisan}. An accident might also send a nest of aarakocra tumbling into a world on that plane.",
+							"Aarakocra tribes share a hunting territory on their island extends across an area up to 100 miles on a side, with each tribe hunting in the lands nearest to their colony, ranging farther should game become scarce.",
+							"A typical colony consists of one large, open-roofed nest made of woven vines. The eldest acts as leader with the support of a shaman."
 				    ]
 				},
 				{
 				    "type": "inset",
-				    "name": "Aarakocra in the Forgotten Realms",
+				    "name": "Aarakocra in the Guild",
 				    "entries": [
 						"Never well established in Faerûn, aarakocra have only four major colonies: in the Star Mounts within the High Forest, in the Storm Horns in Cormyr, in the Cloven Mountains on the Vilhon Reach, and in the Mistcliffs in Chult.",
 						"Those colonies established in the Star Mounts, closest to the Dessarin Valley, were ever a secretive and guarded people, only spotted during their flights over the High Forest. A cruel and rapacious green dragon nearly wiped out the population and scattered the survivors. These aarakocra and their descendants have sworn vengeance against the dragon and may be seen scouring the lands of the North and Cormyr for signs of their foe.",

@@ -129,7 +129,6 @@ function handleFilterChange () {
 			f,
 			g.source,
 			g.alignment,
-			g.pantheon,
 			g.category,
 			g.domains
 		);
