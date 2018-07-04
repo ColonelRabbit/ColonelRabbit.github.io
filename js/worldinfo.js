@@ -53,8 +53,8 @@ function onJsonLoad (data) {
 	});
 	ListUtil.initGenericPinnable();
 
-	addDeities(data);
-	BrewUtil.addBrewData(addDeities);
+	addInfo(data);
+	BrewUtil.addBrewData(addInfo);
 	BrewUtil.makeBrewButton("manage-brew");
 	BrewUtil.bind({list, filterBox, sourceFilter});
 
@@ -66,10 +66,10 @@ function onJsonLoad (data) {
 
 let deitiesList = [];
 let dtI = 0;
-function addDeities (data) {
-	if (!data.deity || !data.deity.length) return;
+function addInfo (data) {
+	if (!data.info || !data.info.length) return;
 
-	deitiesList = deitiesList.concat(data.deity);
+	deitiesList = deitiesList.concat(data.info);
 
 	let tempString = "";
 	for (; dtI < deitiesList.length; dtI++) {
