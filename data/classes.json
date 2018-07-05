@@ -22475,63 +22475,63 @@
 							4,
 							16,
 							4,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 6th|spells|level=5|class=Warlock}",
 							9
 						],
 						[
 							5,
 							17,
 							4,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 6th|spells|level=5|class=Warlock}",
 							9
 						],
 						[
 							5,
 							17,
 							4,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 6th|spells|level=5|class=Warlock}",
 							10
 						],
 						[
 							5,
 							18,
 							5,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 6th|spells|level=5|class=Warlock}",
 							10
 						],
 						[
 							5,
 							18,
 							5,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 6th|spells|level=5|class=Warlock}",
 							10
 						],
 						[
 							5,
 							19,
 							5,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 6th|spells|level=5|class=Warlock}",
 							11
 						],
 						[
 							5,
 							19,
 							5,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 6th|spells|level=5|class=Warlock}",
 							11
 						],
 						[
 							5,
 							20,
 							5,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 6th|spells|level=5|class=Warlock}",
 							11
 						],
 						[
 							5,
 							20,
 							5,
-							"{@filter 5th|spells|level=5|class=Warlock}",
+							"{@filter 6th|spells|level=5|class=Warlock}",
 							12
 						]
 					]
@@ -23668,16 +23668,166 @@
 						]
 					}
 				],
-				[],
-				[],
-				[],
-				[],
-				[],
-				[],
-				[],
-				[],
-				[],
-				[]
+				[
+					{
+						"name": "Pact Boon Improvement (1)",
+						"entries": [
+							"At 21st level, and again at 25th level, your pact boon is empowered.",
+							{
+								"type": "options",
+								"entries": [
+									{
+										"type": "patron",
+										"name": "Pact of the Chain: Health Link",
+										"entries": [
+											"Starting at 21st level, when your familiar takes damage, you can choose to take the damage instead, or when you take damage, you can choose to let your familiar take the damage instead. This damage can’t be reduced or prevented in any way."
+										]
+									},
+									{
+										"type": "patron",
+										"name": "Pact of the Blade: Otherworldly Parry",
+										"entries": [
+											"Beginning at 21st level, whenever a hostile creature hits you with a melee weapon attack while you are wielding your pact weapon, you may use your reaction to halve the incoming damage."
+										]
+									},
+									{
+										"type": "patron",
+										"name": "Pact of the Tome: Tome Resilience",
+										"entries": [
+											"Starting at 21st level, as a reaction you may cast protection from energy or stoneskin without expending a spell slot or material components, and without having to concentrate on the spell. The spell lasts for a number of rounds equal to your Charisma modifier (minimum of 1).",
+											"Once you have used this feature, you can’t do so again until you finish a short or long rest."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 21st level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a feat."
+						]
+					}
+				],
+				[
+					{
+						"name": "Mythical Pact Magic",
+						"entries": [
+							"Beginning at 22nd level, your spell slots increase to 6th level spell slots, however you still cannot learn any spells through your Pact Magic feature higher than 5th level."
+						]
+					}
+				],
+				[
+					{
+						"name": "Otherworldly Patron feature",
+						"entries": [
+							"At 23rd level, you gain a feature granted by your Otherworldly Patron."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Otherworldly Persona",
+						"entries": [
+							"Your patron has had its due influence on you, and your force of will has been warped and empowered beyond normal limitations.",
+							"At 24th level, your Charisma score increases by 2, and your maximum Charisma is now 26."
+						]
+					}
+				],
+				[
+					{
+						"name": "Pact Boon Improvement (1)",
+						"entries": [
+							"At 25th level, your pact boon is empowered.",
+							{
+								"type": "options",
+								"entries": [
+									{
+										"type": "patron",
+										"name": "Pact of the Chain: Chain Mastery",
+										"entries": [
+											"Beginning at 25th level, as long as your familiar is alive, you gain all of its features (but not its actions) passively."
+										]
+									},
+									{
+										"type": "patron",
+										"name": "Pact of the Blade: Darkest Cut",
+										"entries": [
+											"Starting at 25th level, you may make an additional attack with your pact weapon as a bonus action. If the attack hits, the affected creature can’t make opportunity attacks against you until the start of your next turn."
+										]
+									},
+									{
+										"type": "patron",
+										"name": "Pact of the Tome: Magical Secret",
+										"entries": [
+											"At 25th level, choose a spell from any class. A spell you choose must be of 5th level or lower. The chosen spell counts as a warlock spell for you."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 25th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a feat."
+						]
+					}
+				],
+				[
+					{
+						"name": "Mystic Arcanum (7th level)",
+						"entries": [
+							"At 26th level, your patron bestows upon you a magical secret called an arcanum. Choose one additonal {@filter 7th-level spell from the warlock spell list|spells|level=7|class=Warlock} as this arcanum.",
+							"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+						]
+					}
+				],
+				[
+					{
+						"name": "Otherworldly Patron feature",
+						"entries": [
+							"At 27th level, you gain a feature granted by your Otherworldly Patron."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Dark Bargin",
+						"entries": [
+							"Beginning at 28th level, whenever you finish a long rest, you may sacrifice a number of hit dice in order to bolster your life force. For every 5 hit dice you sacrifice, you gain 25 temporary hit points."
+						]
+					}
+				],
+				[
+					{
+						"name": "Mystic Arcanum (8th level)",
+						"entries": [
+							"At 29th level, your patron bestows upon you a magical secret called an arcanum. Choose one additonal {@filter 8th-level spell from the warlock spell list|spells|level=8|class=Warlock} as this arcanum.",
+							"You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again."
+						]
+					},
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 29th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a feat."
+						]
+					}
+				],
+				[
+					{
+						"name": "Eldritch Signs",
+						"entries": [
+							"You have learned to call on your patron’s power directly, by drawing strange and otherworldly signs in the air, that only your patron and you could possibly fathom.",
+							"At 30th level, you can call on your patron to empower your next offensive spell of 1st level or higher. For the cost of two spell slots, you can cast the same spell three times within a single round. You may target the same creature with all three casts or target multiple enemies. Once you have used this feature, you can’t do so again until you finish a long rest."
+						]
+					}
+				]
 			],
 			"subclassTitle": "Otherworldly Patron",
 			"subclasses": [
@@ -23782,7 +23932,9 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[]
 					],
 					"source": "PHB",
 					"shortName": "Archfey"
@@ -23887,123 +24039,12 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[]
 					],
 					"source": "PHB",
 					"shortName": "Fiend"
-				},
-				{
-					"name": "Ghost in the Machine (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Ghost in the Machine",
-								"entries": [
-									"You have made a bargain for power granted by an entity that you believe to be completely digital. Whether it is a rogue AI or the spirit of a deceased hacker, the Ghost in the Machine is capable of feats that defy explanation.",
-									{
-										"type": "entries",
-										"name": "Expanded Spell List",
-										"entries": [
-											"The Ghost in the Machine lets you choose from an expanded list of spells when you learn a warlock spell. You gain the on/off cantrip, and the following new spells are added to the warlock spell list for you.",
-											"Spells marked with an asterisk can be found in Unearthed Arcana: Modern Magic.",
-											{
-												"type": "table",
-												"caption": "Ghost in the Machine Expanded Spells",
-												"colLabels": [
-													"Spell Level",
-													"Spells"
-												],
-												"colStyles": [
-													"col-xs-3 text-align-center",
-													"col-xs-9"
-												],
-												"rows": [
-													[
-														"1st",
-														"{@spell infallible relay (UA)|UAModernMagic|infallible relay}*, {@spell remote access (UA)|UAModernMagic|remote access}*"
-													],
-													[
-														"2nd",
-														"{@spell arcane hacking (UA)|UAModernMagic|arcane hacking}*, {@spell digital phantom (UA)|UAModernMagic|digital phantom}*"
-													],
-													[
-														"3rd",
-														"{@spell haywire (UA)|UAModernMagic|haywire}*, {@spell invisibility to cameras (UA)|UAModernMagic|invisibility to cameras}*"
-													],
-													[
-														"4th",
-														"{@spell conjure knowbot (UA)|UAModernMagic|conjure knowbot}*, {@spell system backdoor (UA)|UAModernMagic|system backdoor}*"
-													],
-													[
-														"5th",
-														"{@spell shutdown (UA)|UAModernMagic|shutdown}*, {@spell synchronicity (UA)|UAModernMagic|synchronicity}*"
-													]
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Bonus Proficiency",
-										"entries": [
-											"At 1st level, you gain proficiency with hacking tools."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Information Surge",
-										"entries": [
-											"At 1st level, you gain the ability to temporarily render computerized devices inoperable. As an action, you can target a computerized device within 30 feet of you. If the targeted device is held or otherwise actively used by a living creature, that creature must make an Intelligence saving throw against your spell save DC. On a failed save, the targeted device ceases to function until the end of your next turn. If the targeted device is not held or used by a creature, the DM makes a special saving throw for the device with disadvantage and a +0 modifier. Certain shielded devices might negate the disadvantage, at the DM's determination.",
-											"Once you use this feature, you can't use it again until you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Wire Walk",
-										"entries": [
-											"Starting at 6th level, you gain the ability to travel short distances over electrical wires, data lines, or telephone cables. As a bonus action, you can touch a device or socket connected to a hardwired network and teleport along this network to another device or socket within your line of sight. Once you use this feature, you can't use it again until you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Personal Encryption",
-										"entries": [
-											"Beginning at 10th level, you have learned to apply your innate knowledge of encryption to your thoughts, memories, and presence. You have advantage on saving throws against {@spell scrying}, thought detection, or any other method of magically learning your whereabouts or reading your thoughts. For any such effect that does not grant you a saving throw but which requires the creature targeting you to make an ability check, the check is made with disadvantage."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Technovirus",
-										"entries": [
-											"At 14th level, you gain the ability to infect a humanoid's body with living circuitry. You can use an action to make a melee attack against a humanoid creature using your spell attack modifier. The target must make a Constitution saving throw against your spell save DC as a techno-organic virus quickly spreads through its body. On a failed save, the target takes 8d10 psychic damage, or half as much damage on a successful one.",
-											"Additionally, if the target fails the saving throw, you can use an action to issue it a single command, as if you were casting the {@spell command} spell. The target makes its saving throw against your {@spell command} with disadvantage. You can issue this {@spell command} at any time while the target remains infected.",
-											"Once you use this feature, you can't use it again until you finish a long rest, at which point the target is cured of the technovirus. The infection can also be removed with a lesser restoration spell."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UAModernMagic",
-					"shortName": "Ghost in the Machine (UA)"
 				},
 				{
 					"name": "The Great Old One",
@@ -24104,7 +24145,9 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[]
 					],
 					"source": "PHB",
 					"shortName": "Great Old One"
@@ -24211,267 +24254,12 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[]
 					],
 					"source": "SCAG",
 					"shortName": "Undying"
-				},
-				{
-					"name": "The Undying Light (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "The Undying Light",
-								"entries": [
-									"Your patron is not a specific entity, but the energy that radiates from the Positive Plane. Your pact allows you to experience the barest touch of the raw stuff of life that powers the multiverse. Anything more, and you would be instantly incinerated by its energy.",
-									"Contact with the Positive Plane causes subtle changes to your behavior and beliefs. You are driven to bring light to dark places, to annihilate undead creatures, and to protect all living things. At the same time, you crave the light and find total darkness a suffocating experience akin to drowning.",
-									"As an optional way to add more flavor to your character, you can pick from or roll on the following table of flaws associated with warlocks of the Undying Light.",
-									{
-										"type": "table",
-										"caption": "Undying Light Flaws",
-										"colLabels": [
-											"d6",
-											"Quirk"
-										],
-										"colStyles": [
-											"col-xs-1 text-align-center",
-											"col-xs-11"
-										],
-										"rows": [
-											[
-												"1",
-												"You are afraid of the dark, and must always have a light source at hand."
-											],
-											[
-												"2",
-												"You have a nervous compulsion to keep a bright light in even the barest shadow."
-											],
-											[
-												"3",
-												"You have a compulsion to enter and illuminate dark areas."
-											],
-											[
-												"4",
-												"You have an overwhelming hatred of undead creatures."
-											],
-											[
-												"5",
-												"You fidget and are irritable when you can't see the sun."
-											],
-											[
-												"6",
-												"In a dark area, you always carry a lit torch or lantern. Putting it down is an unbearable thought."
-											]
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Expanded Spell List",
-										"entries": [
-											"The Undying Light lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
-											{
-												"type": "table",
-												"caption": "Undying Light Expanded Spells",
-												"colLabels": [
-													"Spell Level",
-													"Spells"
-												],
-												"colStyles": [
-													"col-xs-3 text-align-center",
-													"col-xs-9"
-												],
-												"rows": [
-													[
-														"1st",
-														"{@spell burning hands}"
-													],
-													[
-														"2nd",
-														"{@spell flaming sphere}"
-													],
-													[
-														"3rd",
-														"{@spell daylight}"
-													],
-													[
-														"4th",
-														"{@spell fire shield}"
-													],
-													[
-														"5th",
-														"{@spell flame strike}"
-													]
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Radiant Soul",
-										"entries": [
-											"Starting at 1st level, your link to the Positive Plane allows you to serve as a conduit for radiant energy. You have resistance to radiant damage, and when you cast a spell that deals radiant damage or fire damage, you add your Charisma modifier to that damage. Additionally, you know the {@spell sacred flame} and {@spell light} cantrips and can cast them at will. They don't count against your number of cantrips known."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Searing Vengeance",
-										"entries": [
-											"Starting at 6th level, the radiant energy you channel allows you to overcome grievous injuries. When you would make a death saving throw, you can instead spring back to your feet with a burst of radiant energy. You immediately stand up (if you so choose), and you regain hit points equal to half your hit point maximum. All hostile creatures within 30 feet of you take 10 + your Charisma modifier radiant damage and are {@condition blinded} until the end of your turn.",
-											"Once you use this feature, you can't use it again until you finish a long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Radiant Resilience",
-										"entries": [
-											"Starting at 10th level, you gain temporary hit points whenever you finish a long or short rest. These temporary hit points equal your warlock level + your Charisma modifier. Additionally, choose up to five creatures you can see at the end of your rest. Those creatures gain temporary hit points equal to half your warlock level + your Charisma modifier."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Healing Light",
-										"entries": [
-											"At 14th level, you gain the ability to channel the Undying Light to heal yourself and other creatures. As a bonus action, you can touch a creature and heal it. With each touch, a creature regains from 1d6 to 5d6 hit points (your choice). You have a total pool of 15d6 you can expend. Subtract the dice you use with each touch from that total.",
-											"You regain all expended dice from your pool when you finish a long rest."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UALightDarkUnderdark",
-					"shortName": "Undying Light (UA)"
-				},
-				{
-					"name": "The Celestial (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "The Celestial",
-								"entries": [
-									"Your patron is a powerful being of the Upper Planes. You have bound yourself to an ancient empyrean, solar, ki-rin, or unicorn or to another entity that resides in the planes of everlasting bliss. Your pact with that being allows you to experience the barest touch of the holy light that illuminates the multiverse.",
-									"Being connected to such power can cause changes in your behavior and beliefs. You might find yourself driven to annihilate the undead, to defeat fiends, and to protect the innocent. At times, your heart might also be filled with a longing for the celestial realm of your patron, a desire to wander that paradise for the rest of your days. But you know that your mission is among mortals for now and that your pact binds you to bring light to the dark places of the world.",
-									{
-										"type": "entries",
-										"name": "Expanded Spell List",
-										"entries": [
-											"The Celestial lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
-											{
-												"type": "table",
-												"caption": "Celestial Expanded Spells",
-												"colLabels": [
-													"Spell Level",
-													"Spells"
-												],
-												"colStyles": [
-													"col-xs-3 text-align-center",
-													"col-xs-9"
-												],
-												"rows": [
-													[
-														"1st",
-														"{@spell burning hands}, {@spell cure wounds}"
-													],
-													[
-														"2nd",
-														"{@spell flaming sphere}, {@spell lesser restoration}"
-													],
-													[
-														"3rd",
-														"{@spell daylight}, {@spell revivify}"
-													],
-													[
-														"4th",
-														"{@spell guardian of faith}, {@spell wall of fire}"
-													],
-													[
-														"5th",
-														"{@spell flame strike}, {@spell greater restoration}"
-													]
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Bonus Cantrips",
-										"entries": [
-											"At 1st level, you learn the {@spell sacred flame} and {@spell light} cantrips. They count as warlock cantrips for you, but they don't count against your number of cantrips known."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Healing Light",
-										"entries": [
-											"At 1st level, you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s that you spend to fuel this healing. The number of dice in the pool equals 1 + your warlock level.",
-											"As a bonus action, you can touch a creature and heal it, spending dice from the pool. The maximum number of dice you can spend at once equals your Charisma modifier (minimum of one die). Roll the dice you spend, add them together, and restore a number of hit points equal to the total.",
-											"Your pool regains all expended dice when you finish a long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Radiant Soul",
-										"entries": [
-											"Starting at 6th level, your link to the Celestial allows you to serve as a conduit for radiant energy. You have resistance to radiant damage, and when you cast a spell that deals radiant or fire damage, you add your Charisma modifier to that damage against one target of your choice."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Celestial Resilience",
-										"entries": [
-											"Starting at 10th level, you gain temporary hit points whenever you finish a short or long rest. These temporary hit points equal your warlock level + your Charisma modifier. Additionally, choose up to five creatures you can see at the end of the rest. Those creatures each gain temporary hit points equal to half your warlock level + your Charisma modifier."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Healing Light",
-										"entries": [
-											"Starting at 14th level, the radiant energy you channel allows you to overcome grievous injuries. When you have to make a death saving throw at the start of your turn, you can instead spring back to your feet with a burst of radiant energy. You regain hit points equal to half your hit point maximum, and then you stand up, if you so choose. Each creature of your choice that is within 30 feet of you takes radiant damage equal to 2d8 + your Charisma modifier, and it is {@condition blinded} until the end of the current turn.",
-											"Once you use this feature, you can't use it again until you finish a long rest."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UARevisedClassOptions",
-					"shortName": "Celestial (UA)"
 				},
 				{
 					"name": "The Seeker (UA)",
@@ -24575,7 +24363,9 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[]
 					],
 					"source": "UATheFaithful",
 					"shortName": "Seeker (UA)"
@@ -24682,129 +24472,12 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[]
 					],
 					"source": "UAWarlockAndWizard",
 					"shortName": "Raven Queen (UA)"
-				},
-				{
-					"name": "The Hexblade (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "The Hexblade",
-								"entries": [
-									"You have made your pact with a powerful, sentient magic weapon carved from the stuff of the Shadowfell. The mighty sword Blackrazor is the most notable of these weapons, several of which have spread across the multiverse over the ages. These weapons grow stronger as they consume the life essence of their victims. The strongest of them can use their ties to the Shadowfell to offer power to mortals who serve them. The Raven Queen forged the first of these weapons. They, along with the hexblade warlocks, are another tool she can use to manipulate events in the Material Plane to her inscrutable ends.",
-									{
-										"type": "entries",
-										"name": "Expanded Spell List",
-										"entries": [
-											"The Hexblade lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
-											{
-												"type": "table",
-												"caption": "Hexblade Expanded Spells",
-												"colLabels": [
-													"Spell Level",
-													"Spells"
-												],
-												"colStyles": [
-													"col-xs-3 text-align-center",
-													"col-xs-9"
-												],
-												"rows": [
-													[
-														"1st",
-														"{@spell shield}, {@spell wrathful smite}"
-													],
-													[
-														"2nd",
-														"{@spell branding smite}, {@spell magic weapon}"
-													],
-													[
-														"3rd",
-														"{@spell blink}, {@spell elemental weapon}"
-													],
-													[
-														"4th",
-														"{@spell phantasmal killer}, {@spell staggering smite}"
-													],
-													[
-														"5th",
-														"{@spell cone of cold}, {@spell destructive wave}"
-													]
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Hex Warrior",
-										"entries": [
-											"At 1st level, you gain proficiency with medium armor, shields, and martial weapons. In addition, when attacking with a melee weapon that you are proficient with and that lacks the two-handed property, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Hexblade's Curse",
-										"entries": [
-											"Starting at 1st level, you gain the ability to place a baleful curse on an enemy. As a bonus action, choose one creature you can see within 30 feet of you. The target is cursed for 1 minute. Until the curse ends, you gain the following benefits:",
-											{
-												"type": "list",
-												"items": [
-													"You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.",
-													"Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20.",
-													"If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier."
-												]
-											},
-											"You can't use this feature again until you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Shadow Hound",
-										"entries": [
-											"Starting at 6th level, your shadow can split from you and transform into a hound of pure darkness. Most of the time, your shadow hound masquerades as your normal shadow. As a bonus action, you can command it to magically slip into the shadow of a creature you can see within 60 feet of you. While the shadow hound is merged in this manner, the target can't gain the benefits of half cover or three-quarters cover against your attack rolls, and you know the distance and direction to the target even if it is hidden. The hound can't be seen by anyone but you and those with truesight, and it is unaffected by light. The target has a vague feeling of dread while the hound is present.",
-											"As a bonus action, you can command your shadow hound to return to you. It also automatically returns to you if you and the target are on different planes of existence, if you're {@condition incapacitated}, or if dispel magic, {@spell remove curse}, or similar magic is used on the target."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Armor of Hexes",
-										"entries": [
-											"At 10th level, your hex grows more powerful. If the target cursed by your Hexblade's Curse hits you with an attack roll, roll a d6. On a 4 or higher, the attack instead misses you."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Master of Hexes",
-										"entries": [
-											"Starting at 14th level, you can use your Hexblade's Curse again without resting, but when you apply it to a new target, the curse immediately ends on the previous target."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UAWarlockAndWizard",
-					"shortName": "Hexblade (UA)"
 				},
 				{
 					"name": "The Celestial",
@@ -24914,7 +24587,9 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[]
 					],
 					"source": "XGE",
 					"shortName": "Celestial"
@@ -25036,144 +24711,12 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[]
 					],
 					"source": "XGE",
 					"shortName": "Hexblade"
-				},
-				{
-					"name": "The Kraken (Livestream)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "The Kraken (Livestream)",
-								"entries": [
-									"You made a pact with a Kraken somewhere in the world's ocean.",
-									{
-										"type": "entries",
-										"name": "Expanded Spell List",
-										"entries": [
-											"The Kraken lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.",
-											{
-												"type": "table",
-												"caption": "Kraken Patron Expanded Spells",
-												"colLabels": [
-													"Spell Level",
-													"Spells"
-												],
-												"colStyles": [
-													"col-xs-3 text-align-center",
-													"col-xs-9"
-												],
-												"rows": [
-													[
-														"1st",
-														"{@spell thunderwave}, {@spell create or destroy water}"
-													],
-													[
-														"2nd",
-														"{@spell augury}, {@spell gust of wind}"
-													],
-													[
-														"3rd",
-														"{@spell call lightning}, {@spell water breathing}"
-													],
-													[
-														"4th",
-														"{@spell evard's black tentacles}, {@spell control water}"
-													],
-													[
-														"5th",
-														"{@spell commune with nature}, {@spell cone of cold}"
-													]
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Grasp of the Kraken",
-										"entries": [
-											"Starting at 1st level, you gain the ability to call forth spectral tentacles that grab at your foes. As an action, pick a point that you can see within 60 ft. of you. A horde of grasping tendrils appears at that point. Creatures of your choice within 10 ft. of that point must make a Strength saving throw against your Warlock spell save DC. Creatures that fail their saving throws are {@condition grappled} for 1 minute or until you use this ability again. The spectral tentacle's Strength (Athletics) bonus is 2 + your proficiency bonus and its reach is 10 feet."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Inky Escape",
-										"entries": [
-											"At 6th level, you gain the ability to call upon your patron to escape from your foes. As a reaction when you take damage, you can cast {@spell darkness} centered on a point within 5 ft. of you. The spell lasts until the end of your next turn, and it has no effect on your vision.",
-											"Once you use this ability, you cannot use it until you complete a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Scion of the Depths",
-										"entries": [
-											"Starting at 10th level, your patron accepts you into his inner court of servitors. You gain the ability to breathe water, and a swim speed equal to your normal speed.",
-											"You gain immunity to lightning damage. When your immunity reduces damage from an effect to 0, as a reaction you can cause creatures of your choice that you can see within 30 ft. of you to take lightning damage equal to your Charisma modifier + your proficiency bonus."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Unleash the Kraken",
-										"entries": [
-											"At 14th level, you gain the ability to call upon your patron for aid. As an action, you open a portal at a point you can see within 30 ft. of you and choose one of the following effects."
-										]
-									},
-									{
-										"type": "entries",
-										"entries": [
-											{
-												"type": "entries",
-												"name": "Transport",
-												"entries": [
-													"You and up to 5 creatures of your choosing that you can see are grasped by tentacles that emerge from the portal. A second portal opens at a point of your choice within 100 miles that you have visited in the past 24 hours, depositing you and your chosen allies there."
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"entries": [
-											{
-												"type": "entries",
-												"name": "Fury",
-												"entries": [
-													"The tentacles slam into your foes. Pick up to 5 creatures that you can see within 30 ft. of the portal. Those creatures must make Dexterity saving throws against your Warlock spell save DC.  Creatures that fail their saving throws take {@dice 10d6} bludgeoning damage and are {@condition restrained} for 1 minute. Creatures that succeed take half the bludgeoning damage and are not {@condition restrained}. On its turn, a {@condition restrained} creature can use its action to attempt a DC 15 Strength (Athletics) or Dexterity (Acrobatics) check to end its {@condition restrained} condition."
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"entries": [
-											"Once you use this ability, you cannot use it until you complete a long rest."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "Stream",
-					"shortName": "Kraken (Stream)"
 				}
 			],
 			"fluff": [
@@ -26066,16 +25609,93 @@
 						]
 					}
 				],
+				[
+					{
+						"name": "Arcane Tradition feature",
+						"entries": [
+							"At 21st level, you gain a feature granted by your Arcane Tradition."
+						],
+						"gainSubclassFeature": true
+					},
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 21st level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a feat."
+						]
+					}
+				],
 				[],
+				[
+					{
+						"name": "Study Focus",
+						"entries": [
+							"At 23rd level, you gain proficiency with Constitution saving throws for the purpose of maintaining concentration."
+						]
+					}
+				],
+				[
+					{
+						"name": "Deep Memory",
+						"entries": [
+							"Starting at 24th level, as a bonus action, you can exchange one memorized spell for one that isn’t.",
+							"You can use this feature twice. You regain all expended charges when you finish a long rest."
+						]
+					}
+				],
+				[
+					{
+						"name": "Arcane Tradition feature",
+						"entries": [
+							"At 25th level, you gain a feature granted by your Arcane Tradition."
+						],
+						"gainSubclassFeature": true
+					},
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 25th level you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a feat."
+						]
+					}
+				],
 				[],
-				[],
-				[],
-				[],
-				[],
-				[],
-				[],
-				[],
-				[]
+				[
+					{
+						"name": "Prismatic Juggle",
+						"entries": [
+							"At 27th level, when you cast a spell of 1st level or higher, that isn’t of the same school as the previous spell you cast, you may cast the new spell as if casting it using a spell slot of one level higher. The two spells must have been cast within one minute of each other."
+						]
+					}
+				],
+				[
+					{
+						"name": "Arcane Tradition feature",
+						"entries": [
+							"At 28th level, you gain a feature granted by your Arcane Tradition."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Legendary Spell Capacity",
+						"entries": [
+							"At 29th level you gain a 10th, 11th and 12th level spell slot.",
+							"The 10th, 11th, and 12th level spell slots can be used to cast any spell you know. If a spell would gain an increased effect by being cast through a higher level spell slot, it gains that effect. If you, for example, were to cast a fireball using a 12th level spell slot, it would deal 17d6 fire damage."
+						]
+					}
+				],
+				[
+					{
+						"name": "Archmage",
+						"entries": [
+							"Your name is known far and wide, as your knowledge of the arcane is only rivalled by the gods themselves. Once you reach 30th level, you can conjure forth a Spellbook of the Ages, which can be opened by only you. Should the book be destroyed or lost, you can conjure it back into existence as a bonus action. The book disappears in a flash of elemental light if you die.",
+							"All wizard spells in existence are transcribed inside the book in a language that only you can understand, and the book has an infinite number of pages, leaving plenty of room, should you want to experiment with creating your own spells.",
+							"The book is a massive weightless tome, granting you a +1 bonus to AC and saving throws while you hold it, and also functions as a spellcasting focus. Additionally, you gain two more signature spells, and while holding the book, any spells you cast as a ritual are cast in half the usual time."
+						]
+					}
+				]
 			],
 			"subclassTitle": "Arcane Tradition",
 			"subclasses": [
@@ -26411,7 +26031,10 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[],
+						[]
 					],
 					"source": "UAEberron",
 					"shortName": "Artificer (UA)"
@@ -26483,7 +26106,10 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[],
+						[]
 					],
 					"source": "PHB",
 					"shortName": "Abjuration"
@@ -26572,7 +26198,10 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[],
+						[]
 					],
 					"source": "SCAG",
 					"shortName": "Bladesinger"
@@ -26642,7 +26271,10 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[],
+						[]
 					],
 					"source": "PHB",
 					"shortName": "Conjuration"
@@ -26759,7 +26391,10 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[],
+						[]
 					],
 					"source": "PHB",
 					"shortName": "Divination"
@@ -26831,7 +26466,10 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[],
+						[]
 					],
 					"source": "PHB",
 					"shortName": "Enchantment"
@@ -26900,7 +26538,10 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[],
+						[]
 					],
 					"source": "PHB",
 					"shortName": "Evocation"
@@ -26971,83 +26612,13 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[],
+						[]
 					],
 					"source": "PHB",
 					"shortName": "Illusion"
-				},
-				{
-					"name": "Technomancy (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Technomancy",
-								"entries": [
-									"Unlike the more common arcane traditions based around the schools of magic, the tradition of Technomancy does not focus on a singular type of spellcraft or magical energy. Rather, students of Technomancy concern themselves with how their spells interact with modern technology.",
-									"Technomancers can make use of technology as both a conduit and a storage space for magic. In a campaign using the optional rules for magic item creation (see the Dungeon Master's Guide), a technomancer might craft disposable electronic devices and smartphone apps in lieu of potions and scrolls.",
-									{
-										"type": "entries",
-										"name": "Bonus Proficiencies",
-										"entries": [
-											"Beginning when you select this arcane tradition at 2nd level, you gain proficiency with sidearms and hacking tools."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Technological Savant",
-										"entries": [
-											"Also at 2nd level, you trade out your spellbook for a specially attuned storage device of your choosing, capable of recording magical data. The computing power of this device must be equal to or greater than a tablet computer. Only one storage device can be attuned to you at any given time. Spells can be copied into this device at half the cost of copying spells into a spellbook."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Program Spell",
-										"entries": [
-											"At 6th level, you can insert a spell within an electronic device of your choosing, so that by touching a key or flicking a switch using an action, the spell activates. All variables of the spell are set at the time of casting. The computing power of this device must be equal to or greater than a mobile phone.",
-											"A programmed spell remains placed in its device for 48 hours, and is gone once it is discharged. You can use this feature to place a programmed spell in only one device at a time, and a device can hold only one programmed spell. Only you can activate the programmed spell in the device. If the device is destroyed, the programmed spell is lost.",
-											"A concentration spell placed in a device cannot be activated while you are concentrating on another spell. Once you use this feature, you can't use it again until you finish a long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Online Casting",
-										"entries": [
-											"At 10th level, you can cast spells through networked electronic devices, including cameras, mobile phones, and computers. For example, if a creature is under the observation of a security camera and you can see the video feed from that camera on a computer, you can cast a spell into the computer and out through the security camera to target that creature.",
-											"If the spell requires the caster to be seen, the target must see you or a live image of you. If the spell requires the caster to be heard, the target must be able to hear you or a live audio transmission of you. The spell's range is determined using the distance from you to your device, and then from the target to its device. You must be able to see or otherwise determine the location of the target. This feature can be used to cast only spells that target specific creatures. Spells that affect an area are not subject to online casting.",
-											"This feature can be used a number of times per day equal to your Intelligence modifier (minimum of once)."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Chained Device",
-										"entries": [
-											"By 14th level, you have learned to imprint vestiges of your consciousness on electronic devices with significant computing power. When you cast a concentration spell, you can use a device whose computing power is equal to or greater than a tablet computer to maintain concentration of the spell on your behalf. The device must be held or worn by you to maintain this effect. If the device is destroyed, taken from you, dropped, or turned off, the concentration ends. Once you use this feature, you can't use it again until you finish a long rest."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UAModernMagic",
-					"shortName": "Technomancy (UA)"
 				},
 				{
 					"name": "Theurgy (UA)",
@@ -27133,81 +26704,13 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[],
+						[]
 					],
 					"source": "UATheFaithful",
 					"shortName": "Theurgy (UA)"
-				},
-				{
-					"name": "War Magic (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "War Magic",
-								"entries": [
-									"A variety of arcane colleges specialize in training wizards for war. The tradition of War Magic blends principles of evocation and abjuration. It teaches techniques that empower a caster's spells, while also providing methods for a wizard to bolster their own defenses.",
-									"Followers of this tradition are known as war mages. They see their magic as both a weapon and armor, a resource superior to any flimsy piece of steel. War mages strike fast in battle, using their spells to seize tactical control of a situation. Their spells strike hard, while their defensive skills foil their opponents' attempts to counterattack.",
-									{
-										"type": "entries",
-										"name": "Arcane Deflection",
-										"entries": [
-											"At 2nd level, you have learned to weave your magic to fortify yourself against harm. When you are hit by an attack or fail a Constitution saving throw, you can use your reaction to gain a +2 bonus to your AC against that attack or a +4 bonus to that saving throw.",
-											"When you use this feature, you can't cast spells other than cantrips until the end of your next turn."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Tactical Wit",
-										"entries": [
-											"Starting at 2nd level, your ability to quickly assess tactical situations allows you to act quickly in battle. You gain a bonus to your initiative rolls equal to your Intelligence modifier."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Power Surge",
-										"entries": [
-											"Starting at 6th level, you can empower your spells that unleash harm on groups of foes. When you force multiple creatures to make saving throws against the damage of one of your spells, you can increase the spell's damage by rolling two more of its damage dice. This increase occurs only on the turn you cast the spell.",
-											"Once you use this feature, you can't use it again until you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Durable Magic",
-										"entries": [
-											"Beginning at 10th level, the magic you channel helps ward off harm. While you maintain concentration on a spell, you have a +2 bonus to AC and all saving throws."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Durable Magic",
-										"entries": [
-											"At 14th level, your Arcane Deflection becomes infused with deadly magic. When you use your Arcane Deflection feature, magical energy arcs from you; each creature of your choice within 10 feet of you takes force damage equal to half your wizard level."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UAWizardRevisited",
-					"shortName": "War Magic (UA)"
 				},
 				{
 					"name": "School of Transmutation",
@@ -27333,7 +26836,10 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[],
+						[]
 					],
 					"source": "PHB",
 					"shortName": "Transmutation"
@@ -27411,93 +26917,13 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[],
+						[]
 					],
 					"source": "PHB",
 					"shortName": "Necromancy"
-				},
-				{
-					"name": "Lore Mastery (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Lore Mastery",
-								"entries": [
-									"Lore Mastery is an arcane tradition fixated on understanding the underlying mechanics of magic. It is the most academic of all arcane traditions. The promise of uncovering new knowledge or proving (or discrediting) a theory of magic is usually required to rouse its practitioners from their laboratories, academies, and archives to pursue a life of adventure.",
-									"Known as savants, followers of this tradition are a bookish lot who see beauty and mystery in the application of magic. The results of a spell are less interesting to them than the process that creates it. Some savants take a haughty attitude toward those who follow a tradition focused on a single school of magic, seeing them as provincial and lacking the sophistication needed to master true magic. Other savants are generous teachers, countering ignorance and deception with deep knowledge and good humor.",
-									{
-										"type": "entries",
-										"name": "Lore Master",
-										"entries": [
-											"Starting at 2nd level, you become a compendium of knowledge on a vast array of topics. Your proficiency bonus is doubled for any ability check you make that uses the Arcana, History, Nature, or Religion skill if you are proficient in that skill.",
-											"In addition, your analytical abilities are so well-honed that your initiative in combat can be driven by mental agility, rather than physical agility. When you roll initiative, it is either an Intelligence check or a Dexterity check for you (your choice)."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Spell Secrets",
-										"entries": [
-											"At 2nd level, you master the first in a series of arcane secrets uncovered by your extensive studies.",
-											"When you cast a spell with a spell slot and the spell deals acid, cold, fire, force, lightning, necrotic, radiant, or thunder damage, you can substitute that damage type with one other type from that list (you can change only one damage type per casting of a spell). You replace one energy type for another by altering the spell's formula as you cast it.",
-											"When you cast a spell with a spell slot and the spell requires a saving throw, you can change the saving throw from one ability score to another of your choice. Once you change a saving throw in this way, you can't do so again until you finish a short or long rest."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Altering Spells",
-										"entries": [
-											"While the Spell Secrets feature offers increased versatility, at the table its effects can be difficult to spot by the other players. If you're playing a savant, take a moment to describe how you alter your spells. Think of a signature change your character is particularly proud of. Be inventive, and make the game more fun for everyone by playing up the sudden, unexpected tricks you character can employ. For example, a {@spell fireball} transformed to require a Strength save might become a sphere of burning rock that shatters and slams into its target. A {@spell charm person} that requires a Constitution save might take the form of a vaporous narcotic that alters the target's mood."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Alchemical Casting",
-										"entries": [
-											"At 6th level, you learn to augment spells in a variety of ways. When you cast a spell with a spell slot, you can expend one additional spell slot to augment its effects for this casting, mixing the raw stuff of magic into your spell to amplify it. The effect depends on the spell slot you expend.",
-											"An additional 1st-level spell slot can increase the spell's raw force. If you roll damage for the spell when you cast it, increase the damage against every target by 2d10 force damage. If the spell can deal damage on more than one turn, it deals this extra force damage only on the turn you cast the spell.",
-											"An additional 2nd-level spell slot can increase the spell's range. If the spell's range is at least 30 feet, it becomes 1 mile.",
-											"An additional 3rd-level spell slot can increase the spell's potency. Increase the spell's save DC by 2."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Prodigious Memory",
-										"entries": [
-											"At 10th level, you have attained a greater mastery of spell preparation. As a bonus action, you can replace one spell you have prepared with another spell from your spellbook. You can't use this feature again until you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Master of Magic",
-										"entries": [
-											"At 14th level, your knowledge of magic allows you to duplicate almost any spell. As a bonus action, you can call to mind the ability to cast one spell of your choice from any class's spell list. The spell must be of a level for which you have spell slots, you mustn't have it prepared, and you follow the normal rules for casting it, including expending a spell slot. If the spell isn't a wizard spell, it counts as a wizard spell when you cast it. The ability to cast the spell vanishes from your mind when you cast it or when the current turn ends.",
-											"You can't use this feature again until you finish a long rest."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UAWarlockAndWizard",
-					"shortName": "Lore Mastery (UA)"
 				},
 				{
 					"name": "War Magic",
@@ -27567,234 +26993,13 @@
 									}
 								]
 							}
-						]
+						],
+						[],
+						[],
+						[]
 					],
 					"source": "XGE",
 					"shortName": "War Magic"
-				},
-				{
-					"name": "School of Invention (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "School of Invention",
-								"entries": [
-									"The School of Invention claims credit for inventing the other schools of magic\u2014a claim other wizards find absurd. Wizards of this school push magic to its limits. They stretch the known laws of arcane power and strive to reveal important truths about the nature of the multiverse.",
-									"Adherents of this school believe that innovation is best served through experimentation. They have a reputation for acting first, thinking second. Most wizards are scholars who have mastered their craft through careful study, rigorous practice, and endless hours of repetition. These wizards would rather throw spells together and see what happens.",
-									"Many wizards of this tradition are gnomes, alchemists, or both, and they take pride in the magic-infused armor they don. The armor not only provides protection, but it is also designed to help the wizard channel magic in unpredictable ways.",
-									"Wizards of this tradition are regarded as savants to their faces, but wizards of other traditions often think of them as lunatics.",
-									{
-										"type": "entries",
-										"name": "Tools of the Inventor",
-										"entries": [
-											"At 2nd level, you gain proficiency with two tools of your choice."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Arcanomechanical Armor",
-										"entries": [
-											"Innovation is a dangerous practice, at least as far as members of this school practice it. As a shield against this risk, you have developed a suit of arcane armor.",
-											"Starting at 2nd level, you gain proficiency with light armor and gain a suit of arcanomechanical armor\u2014a magic item that only you can attune to. While you are attuned to it and wearing it, it grants you resistance to force damage.",
-											"The armor is light armor and provides an AC of 12 + your Dexterity modifier. It weighs 8 pounds.",
-											"You can create a new suit of it at the end of a long rest by touching a nonmagical suit of studded leather armor, which magically transforms it. Doing so removes the magic from your previous arcanomechanical armor, turning it in to nonmagical studded leather."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Reckless Casting",
-										"entries": [
-											"Starting at 2nd level, you can attempt to cast a spell you don't have prepared. When you use this ability, you use your action and choose one of the following options:",
-											{
-												"type": "list",
-												"items": [
-													"Roll on the Reckless Casting table for cantrips and cast the resulting spell as part of this action.",
-													"Expend a spell slot and roll twice on the Reckless Casting table for its level, or the 5th-level table if the slot is 6th level or higher. Pick which of the two results you want to use and cast the resulting spell as part of this action."
-												]
-											},
-											"If the spell you cast isn't a wizard spell, it is nonetheless a wizard spell for you when you cast it with this feature.",
-											{
-												"type": "table",
-												"caption": "Reckless Casting",
-												"colLabels": [
-													"d10", "Cantrip"
-												],
-												"colStyles": [
-													"col-xs-2",
-													"col-xs-10"
-												],
-												"rows": [
-													["1", "{@spell acid splash}"],
-													["2", "{@spell chill touch}"],
-													["3", "{@spell fire bolt}"],
-													["4", "{@spell light}"],
-													["5", "{@spell poison spray}"],
-													["6", "{@spell ray of frost}"],
-													["7", "{@spell shocking grasp}"],
-													["8", "{@spell sacred flame}"],
-													["9", "{@spell thorn whip}"],
-													["10", "Roll twice and cast each cantrip, but if you roll another 10 on either die, you cast nothing, wasting your action."]
-												]
-											},
-											{
-												"type": "table",
-												"colLabels": [
-													"d10", "1st-Level Spell"
-												],
-												"colStyles": [
-													"col-xs-2",
-													"col-xs-10"
-												],
-												"rows": [
-													["1", "{@spell burning hands}"],
-													["2", "{@spell chromatic orb}"],
-													["3", "{@spell color spray}"],
-													["4", "{@spell faerie fire}"],
-													["5", "{@spell false life}"],
-													["6", "{@spell fog cloud}"],
-													["7", "{@spell jump}"],
-													["8", "{@spell magic missile}"],
-													["9", "{@spell thunderwave}"],
-													["10", "Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."]
-												]
-											},
-											{
-												"type": "table",
-												"colLabels": [
-													"d10", "2nd-Level Spell"
-												],
-												"colStyles": [
-													"col-xs-2",
-													"col-xs-10"
-												],
-												"rows": [
-													["1", "{@spell blur}"],
-													["2", "{@spell darkness}"],
-													["3", "{@spell enlarge/reduce}"],
-													["4", "{@spell gust of wind}"],
-													["5", "{@spell invisibility}"],
-													["6", "{@spell levitate}"],
-													["7", "{@spell Melf's acid arrow}"],
-													["8", "{@spell scorching ray}"],
-													["9", "{@spell shatter}"],
-													["10", "Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."]
-												]
-											},
-											{
-												"type": "table",
-												"colLabels": [
-													"d10", "3rd-Level Spell"
-												],
-												"colStyles": [
-													"col-xs-2",
-													"col-xs-10"
-												],
-												"rows": [
-													["1", "{@spell blink}"],
-													["2", "{@spell fear}"],
-													["3", "{@spell feign death}"],
-													["4", "{@spell fireball}"],
-													["5", "{@spell fly}"],
-													["6", "{@spell gaseous form}"],
-													["7", "{@spell lightning bolt}"],
-													["8", "{@spell sleet storm}"],
-													["9", "{@spell stinking cloud}"],
-													["10", "Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."]
-												]
-											},
-											{
-												"type": "table",
-												"colLabels": [
-													"d10", "4th-Level Spell"
-												],
-												"colStyles": [
-													"col-xs-2",
-													"col-xs-10"
-												],
-												"rows": [
-													["1", "{@spell blight}"],
-													["2", "{@spell confusion}"],
-													["3", "{@spell Evard's black tentacles}"],
-													["4", "{@spell fire shield}"],
-													["5", "{@spell greater invisibility}"],
-													["6", "{@spell ice storm}"],
-													["7", "{@spell phantasmal killer}"],
-													["8", "{@spell stoneskin}"],
-													["9", "{@spell wall of fire}"],
-													["10", "Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."]
-												]
-											},
-											{
-												"type": "table",
-												"colLabels": [
-													"d10", "5th-Level Spell"
-												],
-												"colStyles": [
-													"col-xs-2",
-													"col-xs-10"
-												],
-												"rows": [
-													["1", "{@spell cloudkill}"],
-													["2", "{@spell cone of cold}"],
-													["3", "{@spell destructive wave}"],
-													["4", "{@spell flame strike}"],
-													["5", "{@spell hold monster}"],
-													["6", "{@spell insect plague}"],
-													["7", "{@spell mass cure wounds}"],
-													["8", "{@spell wall of force}"],
-													["9", "{@spell wall of stone}"],
-													["10", "Roll twice and cast each spell, but if you roll another 10 on either die, you cast nothing, wasting your action but not the spell slot."]
-												]
-											}
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Alchemical Casting",
-										"entries": [
-											"At 6th level, you learn to channel magic through your arcanomechanical armor to augment spells in a variety of ways. When you cast a spell while wearing that armor and attuned to it, you can expend one additional spell slot of 1st or 2nd level to alter the spell. The effect depends on the spell slot you expend.",
-											"A 1st-level slot allows you to manipulate the spell's energy. When you cast a spell that deals acid, cold, fire, lightning, or thunder damage, you can substitute that damage type for another one from that list.",
-											"A 2nd-level slot increases the spell's raw force. If you roll damage for the spell when you cast it, increase that damage by 2d10 force damage against one of the spell's targets (your choice) this turn."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Prodigious Inspiration",
-										"entries": [
-											"At 10th level, you have attained a greater mastery of spell preparation. As a bonus action, you can replace one spell you have prepared with another spell from your spellbook. You can't use this ability again until you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Controlled Chaos",
-										"entries": [
-											"At 14th level, your ability to improvise magic grows stronger. Whenever you roll on a Reckless Casting table for a spell other than a cantrip, you can roll on the table that is one level higher than the expended spell slot."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UAThreeSubclasses",
-					"shortName": "Invention (UA)"
 				}
 			],
 			"fluff": [
