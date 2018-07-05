@@ -27245,7 +27245,7 @@
 		},
 		{
 			"name": "Artificer",
-			"source": "UAArtificer",
+			"source": " UAA",
 			"hd": {
 				"number": 1,
 				"faces": 8
@@ -28156,7 +28156,7 @@
 		},
 		{
 			"name": "Blood Hunter",
-			"source": "Matt Mercer",
+			"source": "CR",
 			"hd": {
 				"number": 1,
 				"faces": 10

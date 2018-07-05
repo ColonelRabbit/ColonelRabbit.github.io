@@ -77,13 +77,6 @@ function setSourceState (toState) {
 	}
 }
 
-const sourceFilter = new Filter({
-	header: FilterBox.SOURCE_HEADER,
-	minimalUI: true,
-	items: ["Core", "Others"],
-	selFn: (it) => it === "Core"
-});
-const filterBox = initFilterBox(sourceFilter);
 function onJsonLoad (data) {
 	list = ListUtil.search({
 		valueNames: ['name', 'source', 'uniqueid'],
@@ -119,26 +112,17 @@ function onJsonLoad (data) {
 
 	BrewUtil.addBrewData(handleBrew);
 	BrewUtil.makeBrewButton("manage-brew");
-	BrewUtil.bind({list, filterBox, sourceFilter});
 
 	function handleBrew (homebrew) {
 		addClassData(homebrew);
 		addSubclassData(homebrew);
 	}
 
-	// filtering function
-	$(filterBox).on(
-		FilterBox.EVNT_VALCHANGE,
-		handleFilterChange
-	);
-
 	History.init();
 	initCompareMode();
 	initReaderMode();
 
 	History.initialLoad = false;
-	filterBox.render();
-	handleFilterChange()
 }
 
 function handleFilterChange () {
@@ -360,7 +344,7 @@ function loadhash (id) {
 					const subClass = curClass.subclasses[k];
 					for (let l = 0; l < subClass.subclassFeatures[subclassIndex].length; l++) {
 						const subFeature = subClass.subclassFeatures[subclassIndex][l];
-						
+
 						// if this is not the subclass intro, add the subclass to the feature name
 						// this will only be shown if there are multiple subclasses displayed
 						if (subFeature.name === undefined) {
