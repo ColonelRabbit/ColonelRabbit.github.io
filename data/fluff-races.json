@@ -397,18 +397,18 @@
 						"WORK REQUIRED REORGANIZING HUMAN VARIANTS",
 						{
 							"type": "entries",
-							"name": "Calishite",
+							"name": "Astodian",
 							"entries": [
-								"Shorter and slighter in build than most other humans, Calishites have dusky brown skin, hair, and eyes.",
-								"They're found primarily in southwest Faerun.",
+								"Shorter than most other humans, Astodians range from pale to yellowish-bronze skin, and sport dark hair and eyes. Astodian surnames are placed before their given names.",
+								"They are found the Sha'ir Peninsula, in the City-State of {@info Astodius}.",
 								{
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
 										{
 											"type": "item",
-											"name": "Calishite Names:",
-											"entry": "(Male) Aseir, Bardeid, Haseid, Khemed, Mehmen, Sudeiman, Zasheir; (female) Atala, Ceidil, Hama, ]asmal, Meilil, Seipora, Yasheira, Zasheida; (surnames) Basha, Dumein, ]assan, Khalid, Mostana, Pashar, Rein"
+											"name": "Astodian Names:",
+											"entry": "(Male) Chang, Wen, Hun, Jiang, Dian, Liao, Meng, Hou; (female)  Xiao, Shiang, Ci, Hui, Yin, Fei; (surnames) Sun, Dong, Xia, Shao, Cao, Feng, Ren, Bai"
 										}
 									]
 								}
