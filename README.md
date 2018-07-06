@@ -27,7 +27,7 @@ Be sure to close any running Chrome instances (and kill any remaining Chrome pro
 #### Trailing commas
 To remove trailing commas in JSON:
 
-Find: (.*?)(,)(:?\s*]|\s*})
+Find: (.\*?)(,)(:?\s\*]|\s*})
 
 Replace: $1$3
 
