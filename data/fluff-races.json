@@ -18,7 +18,7 @@
 					"type": "entries",
 					"name": "Long Memory, Long Grudges",
 					"entries": [
-						"Dwarves can live to be more than 400 years old, so the oldest living dwarves often remember a very different world. For example, some of the oldest dwarves living in Citadel Felbarr (in the world of the Forgotten Realms) can recall the day, more than three centuries ago, when orcs conquered the fortress and drove them into an exile that lasted over 250 years. This longevity grants them a perspective on the world that shorter-lived races such as humans and halflings lack.",
+						"Dwarves can live to be more than 400 years old, so the oldest living dwarves often remember a very different world. This longevity grants them a perspective on the world that shorter-lived races such as humans and halflings lack.",
 						"Dwarves are solid and enduring like the mountains they love, weathering the passage of centuries with stoic endurance and little change. They respect the traditions of their clans, tracing their ancestry back to the  founding of their most ancient strongholds in the youth of the world, and don't abandon those traditions lightly. Part of those traditions is devotion to the gods of the dwarves, who uphold the dwarven ideals of industrious labor, skill in battle, and devotion to the forge.",
 						"Individual dwarves are determined and loyal, true to their word and decisive in action, sometimes to the point of stubbornness. Many dwarves have a strong sense of justice, and they are slow to forget wrongs they have suffered. A wrong done to one dwarf is a wrong done to the dwarf's entire clan, so what begins as one dwarf's hunt for vengeance can become a full-blown clan feud."
 					]
@@ -211,15 +211,13 @@
 			"entries": [
 				"Descended from an earlier subrace of dark skinned elves, the drow were banished from the surface world for following the goddess Lolth down the path to evil and corruption. Now they have built their own civilization in the depths of the Underdark, patterned after the Way of Lolth.  Also called dark elves, the drow have black skin that resembles polished obsidian and stark white or pale yellow hair. They commonly have very pale eyes so pale as to be mistaken for white) in shades of pale lilac, silver, pink, and  blue. They tend to be smaller and thinner than  most elves.",
 				"The Darkness of the Drow",
-				"Were it not for one renowned exception, the race of drow would be universally reviled. Their depraved society is preoccupied with the favor of Lolth, their spider-queen goddess, who sanctions murder and the extermination of entire families noble houses vie for position.",
-				"Yet one drow, at least, broke the mold. In the world of the Forgotten Realms, Drizzt Do'Urden, ranger of the North, has proven his quality as a good-hearted defender of the weak and innocent.",
+				"The race of drow is universally reviled. Their depraved society is preoccupied with the favor of Lolth, their spider-queen goddess, who sanctions murder and the extermination of entire families noble houses vie for position.",
 				"Drow grow up believing that surface dwelling races are worthless except as slaves. Drow who develop a conscience or find it necessary to cooperate with members of other races find it hard to overcome that prejudice, especially when they are so often on the receiving end of hatred.",
 				{
 					"type": "inset",
 					"name": "The Darkness of the Drow",
 					"entries": [
-						"Were it not for one renowned exception, the race of drow would be universally reviled. Their depraved society is preoccupied with the favor of Lolth, their spider-queen goddess, who sanctions murder and the extermination of entire families noble houses vie for position.",
-						"Yet one drow, at least, broke the mold. In the world of the Forgotten Realms, Drizzt Do'Urden, ranger of the North, has proven his quality as a good-hearted defender of the weak and innocent.",
+						"The race of drow is universally reviled. Their depraved society is preoccupied with the favor of Lolth, their spider-queen goddess, who sanctions murder and the extermination of entire families noble houses vie for position.",
 						"Drow grow up believing that surface dwelling races are worthless except as slaves. Drow who develop a conscience or find it necessary to cooperate with members of other races find it hard to overcome that prejudice, especially when they are so often on the receiving end of hatred."
 					]
 				}
@@ -395,8 +393,8 @@
 					"name": "Human Names and Ethnicities",
 					"entries": [
 						"Having so much more variety than other cultures, humans as a whole have no typical names. Some human parents give their children names from other languages, such as Dwarvish or Elvish (pronounced more or less correctly), but most parents give names that are linked to their region's culture or to the naming traditions of their ancestors.",
-						"The material culture and physical characteristics of humans can change wildly from region to region. In the Forgotten Realms, for example, the clothing, architecture, cuisine, music, and literature are different in the northwestern lands of the Silver Marches than  in distant Turmish or Impiltur to the east-and even more distinctive in far-off Kara-Tur. Human physical characteristics, though, vary according to the ancient migrations of the earliest humans, so that the humans of the Silver Marches have every possible variation of coloration and features.",
-						"In the Forgotten Realms, nine human ethnic groups are widely recognized, though over a dozen others are found in more localized areas of Faerun. These groups, and the typical names of their members, can be used as inspiration no matter which world your human is in.",
+						"The material culture and physical characteristics of humans can change wildly from region to region.",
+						"WORK REQUIRED REORGANIZING HUMAN VARIANTS",
 						{
 							"type": "entries",
 							"name": "Calishite",
@@ -884,23 +882,10 @@
 				    ]
 				},
 				{
-				    "type": "inset",
-				    "name": "Aarakocra in the Guild",
-				    "entries": [
-						"Never well established in Faerûn, aarakocra have only four major colonies: in the Star Mounts within the High Forest, in the Storm Horns in Cormyr, in the Cloven Mountains on the Vilhon Reach, and in the Mistcliffs in Chult.",
-						"Those colonies established in the Star Mounts, closest to the Dessarin Valley, were ever a secretive and guarded people, only spotted during their flights over the High Forest. A cruel and rapacious green dragon nearly wiped out the population and scattered the survivors. These aarakocra and their descendants have sworn vengeance against the dragon and may be seen scouring the lands of the North and Cormyr for signs of their foe.",
-						"Their only remaining settlement lies on the slopes of the Star Mounts' southernmost mountains. At the headwaters of the Unicorn Run, the Last Aerie is home to several dozen aarakocra. Recently, aarakocra elders detected changes in the prevailing winds that they regarded as a bad omen.",
-						"Unlike the aarakocra of other worlds on the Material Plane, the aarakocra of the Realms rarely travel to the Elemental Plane of Air."
-				    ]
-				},
-				{
 				    "type": "entries",
 				    "name": "Great Purpose",
 				    "entries": [
-						"Aarakocra enjoy peace and solitude. Most of them have little interest in dealing with other peoples and less interest in spending time on the ground. For this reason, it takes an exceptional circumstance for an aarakocra to leave his or her tribe and undertake the adventurer's life. Neither treasure nor glory is enough to lure them from their tribes; a dire threat to their people, a mission of vengeance, or a catastrophe typically lies at the heart of the aarakocra adventurer's chosen path.",
-						"Two other circumstances might call an aarakocra to adventure. First, aarakocra have historical ties to the Wind Dukes of Aqaa. Exceptional individuals honor that connection and might seek out the missing pieces of the Rod of Seven Parts, the remains of an artifact fashioned by the Wind Dukes long ago to defeat the Queen of Chaos's monstrous champion, Miska the Wolf-Spider.",
-						"When plunged into Miska's body, the chaos in his blood sundered the rod and scattered its pieces across the multiverse. Recovering the pieces means gaining honor and esteem in the eyes of the vaati who forged it and could possibly restore a powerful weapon for defense against the agents of elemental evil.",
-						"Second, aarakocra are sworn foes of elemental earth, in particular the gargoyles that serve Ogremoch, the Prince of Earth. The Aarakocra word for gargoyle is loosely translated as \"flying rock,\" and battles between aarakocra and gargoyles have raged across the Elemental Planes of Earth and Air, occasionally spilling into a world on the Material Plane. Aarakocra on that plane might leave their colonies to lend aid to other humanoids committed to fighting earth cults and thwarting their efforts."
+						"Aarakocra enjoy peace and solitude. Most of them have little interest in dealing with other peoples and less interest in spending time on the ground. For this reason, it takes an exceptional circumstance for an aarakocra to leave his or her tribe and undertake the adventurer's life. Neither treasure nor glory is enough to lure them from their tribes; a dire threat to their people, a mission of vengeance, or a catastrophe typically lies at the heart of the aarakocra adventurer's chosen path."
 				    ]
 				},
 				{
@@ -916,7 +901,7 @@
 				    "name": "Aarakocra Backgrounds",
 				    "entries": [
 						"Backgrounds that are most appropriate for aarakocra include the outlander, the hermit, and the sage.",
-						"The small colonies of aarakocra are insular and remote, and few aarakocra live away from their roosts. In the Star Mounts of the High Forest in the Forgotten Realms, no more than a few dozen aarakocra live away from the nests of their families. Those that do are usually rangers or fighters, constantly patrolling for outside threats."
+						"The small colonies of aarakocra are insular and remote, and few aarakocra live away from their roosts."
 				    ]
 				}
 			]
@@ -988,13 +973,6 @@
 							]
 						}
 				    ]
-				},
-				{
-				    "type": "inset",
-				    "name": "Deep Gnomes in the Forgotten Realms",
-				    "entries": [
-						"In the Forgotten Realms, deep gnomes live within a perilous, subterranean world known as the Underdark. This maze of caverns and tunnels is home to some of the most feared creatures in Faerûn. Because of this, the svirfneblin that dwell here are much more distrusting and wary than their kin on other worlds. Rarely do they allow strangers within their midst, and those that they must deal with are kept at arms length. If one is lucky enough to be trusted by the deep gnomes, they are a friend for life. For the svirfneblin of the Underdark, genuine trust is a commodity far more valuable than gold."
-				    ]
 				}
 			]
 		},
@@ -1028,18 +1006,14 @@
 				    "type": "entries",
 				    "name": "Genasi Lands",
 				    "entries": [
-						"As rare beings, genasi might go their entire lives without encountering another one of their kind. There are no great genasi cities or empires. Genasi seldom have communities of their own and typically adopt the cultures and societies into which they are born. The more strange their appearance, the harder time they have. Many genasi lose themselves in teeming cities, where their distinctiveness hardly raises an eyebrow in places accustomed to a variety of different people.",
-						"Those living on the frontier, though, have a much harder time. People there tend to be less accepting of differences. Sometimes a cold shoulder and a suspicious glare are the best genasi can hope for; in more backward places, they face ostracism and even violence from people who mistake them for fiends. Facing a hard life, these genasi seek isolation in the wilds, making their homes in mountains or forests, near lakes, or underground.",
-						"Most air and fire genasi in the Realms are descendants of the djinn and efreet who once ruled Calimshan. When those rulers were overthrown, their planetouched children were scattered. Over thousands of years, the bloodlines of those genasi have spread into other lands. Though far from common, air and fire genasi are more likely to be found in the western regions of Faerun, along the coast from Calimshan north up to the Sword Coast, and into the Western Heartlands to the east. Some remain in their ancient homeland.",
-						"In contrast, water and earth genasi have no common history. Individuals have difficulty tracing their own lineage, and bloodlines occasionally skip a generation or two. Many earth genasi originated in the North and spread out from there. Water genasi come from coastal areas, the largest concentration of them hailing from the regions surrounding the Sea of Fallen Stars.",
-						"The distant land of Zakhara is known only in legends to most inhabitants of Faerun. There, genies and spellcasters enter into bargains, and genasi can result from such pacts. Those genasi have been sources of great weal and woe in the history of that land."
+						"Genasi are only commonly found in the Elemental Caliphates of Abai'i, where they form the bulk of the populace. Under the rule of the Djinni, the Genasi live much like their human counterparts in other realms. They live primarily separate from each other, separated by type of Genasi; Fire in Nar'a, Water in Ma'ni, Earth in K'ard, Air in Haw'o."
 				    ]
 				},
 				{
 				    "type": "entries",
 				    "name": "Genasi Names",
 				    "entries": [
-						"Genasi use the naming conventions of the people among whom they were raised. They might later assume distinctive names to capture their heritage, such as Flame, Ember, Wave, or Onyx."
+						"Need Duncan's Notes on Names."
 				    ]
 				}
 			]
@@ -1192,7 +1166,7 @@
 				    "type": "entries",
 				    "name": "Beliefs",
 				    "entries": [
-						"Tortles don't have their own pantheon of gods, but they often worship the gods of other races. It's not unusual for a tortle to hear stories or legends related to a god and choose to worship that deity. In the Forgotten Realms, tortles are especially fond of Eldath, Gond, Lathander, Savras, Selûne, and Tymora. In the Greyhawk setting, they gravitate toward Celestian, Fharlanghn, Pelor, Pholtus, and St. Cuthbert. Tortles are often drawn to the Gods of Good in Dragonlance and the Sovereign Host in Eberron. Among the nonhuman deities, Moradin and Yondalla relate to tortles most of all.",
+						"Tortles don't have their own pantheon of gods, but they often worship the gods of other races. It's not unusual for a tortle to hear stories or legends related to a god and choose to worship that deity. Among the nonhuman deities, Moradin and Yondalla relate to tortles most of all.",
 						"Tortles believe that night and day watch over them and other creatures. The moon is the eye of night that watches over them in darkness, and the sun is the equally vigilant eye of day. Tortles feel most at peace when one or both of these \"eyes\" are looking down on them. They become more nervous and uneasy when neither orb is visible in the sky. Tortles tend to be most uncomfortable underground, where neither the sun nor the moon is visible to them.",
 						"Blessed are the days when both the sun and moon are visible in the sky at the same time. Tortles often choose such days to leave their homes and begin a wilderness expedition, or perform some other task they know to be dangerous."
 				    ]
@@ -1721,13 +1695,6 @@
 						    ]
 						}
 				    ]
-				},
-				{
-				    "type": "inset",
-				    "name": "Tabaxi in the Forgotten Realms",
-				    "entries": [
-						"In the Forgotten Realms, tabaxi hail from Maztica, a realm located far across the ocean west of the Sword Coast. The tabaxi of Maztica are known for their isolation, and until recently they never ventured from their homeland. The tabaxi say little of why that has changed, though rumors persist of strange happenings in that distant land."
-				    ]
 				}
 			]
 		},
@@ -1873,15 +1840,15 @@
 			"name": "Elf (High)",
 			"source": "PHB",
 			"entries": [
-				"As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type (which includes the gray elves and valley elves of Greyhawk, the Silvanesti of Dragonlance, and the sun elves of the Forgotten Realms) is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type (including the high elves of Greyhawk, the Qualinesti of Dragonlance, and the moon elves of the Forgotten Realms) are more common and more friendly, and often encountered among humans and other races.",
-				"The sun elves of Faerun (also called gold elves or sunrise elves) have bronze skin and hair of copper, black, or golden blond. Their eyes are golden, silver, or black. Moon elves (also called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold."
+				"As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many of the worlds of D&D, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type are more common and more friendly, and often encountered among humans and other races.",
+				"The sun elves (also called gold elves or sunrise elves) have bronze skin and hair of copper, black, or golden blond. Their eyes are golden, silver, or black. Moon elves (also called silver elves or gray elves) are much paler, with alabaster skin sometimes tinged with blue. They often have hair of silver-white, black, or blue, but various shades of blond, brown, and red are not uncommon. Their eyes are blue or green and flecked with gold."
 			]
 		},
 		{
 			"name": "Elf (Wood)",
 			"source": "PHB",
 			"entries": [
-				"As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests. This category includes the wild elves (grugach) of Greyhawk and the Kagonesti of Dragonlance, as well as the races called wood elves in Greyhawk and the Forgotten Realms. In Faerun, wood elves (also called wild elves, green elves, or forest elves) are reclusive and distrusting of non-elves.",
+				"As a wood elf, you have keen senses and intuition, and your fleet feet carry you quickly and stealthily through your native forests.",
 				"Wood elves' skin tends to be copperish in hue, sometimes with traces of green. Their hair tends toward browns and blacks, but it is occasionally blond or copper-colored. Their eyes are green, brown, or hazel."
 			]
 		},
@@ -1889,15 +1856,15 @@
 			"name": "Halfling (Lightfoot)",
 			"source": "PHB",
 			"entries": [
-				"As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You're inclined to be affable and get along well with others. In the Forgotten Realms, lightfoot halflings have spread the farthest and thus are the most common variety.",
-				"Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life. In the world of Greyhawk, these halflings are called hairfeet or tallfellows."
+				"As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You're inclined to be affable and get along well with others.",
+				"Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life."
 			]
 		},
 		{
 			"name": "Halfling (Stout)",
 			"source": "PHB",
 			"entries": [
-				"As a stout halfling, you're hardier than average and have some resistance to poison. Some say that stouts have dwarven blood. In the Forgotten Realms, these halflings are called stronghearts, and they're most common in the south."
+				"As a stout halfling, you're hardier than average and have some resistance to poison. Some say that stouts have dwarven blood."
 			]
 		},
 		{
