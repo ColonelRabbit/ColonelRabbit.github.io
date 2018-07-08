@@ -472,33 +472,22 @@
 							"type": "entries",
 							"name": "Gilnaran",
 							"entries": [
-								"Dominant in the eastern and southeastern shores of the Inner Sea, the Mulan are generally tall, slim, and amber-skinned, with eyes of hazel or brown. Their hair ranges from black to dark brown, but in the lands where the Mulan are most prominent, nobles and many other Mulan shave off all their hair.",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"type": "item",
-											"name": "Mulan Names:",
-											"entry": "(Male)} Aoth, Bareris, Ehput-Ki, Kethoth, Mumed, Ramas, So-Kehur, Thazar-De, Urhur; (female)} Arizima, Chathi, Nephis, Nulara, Murithi, Sefris, Thola, Umara, Zolis; (surnames) Ankhalab, Anskuld, Fezim, Hahpet, Nathandem, Sepret, Uuthrakt"
-										}
-									]
-								}
+								"Dominant in the eastern city-state of Gilnar on the Sha'ir Peninsula, Gilnarans are a young race of emigrants from Roshen, and therefore still match their appearance and naming schemes."
 							]
 						},
 						{
 							"type": "entries",
 							"name": "Tiizan",
 							"entries": [
-								"Most often found east of the Inner Sea and often intermingled with the Mulan, Rashemis tend to be short, stout, and muscular. They usually have dusky skin, dark eyes, and thick black hair.",
+								"Found in the eastern side of the Sha'ir Peninsula, the Tiizan humans are a dusky, dark tan people with thick coffee-colored hair and rich brown eyes. They are serious folk, known for their piercing stares and curt conversations.",
 								{
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
 										{
 											"type": "item",
-											"name": "Rashemi Names:",
-											"entry": "(Male) Borivik, Faurgar, ]andar, Kanithar, Madislak, Ralmevik, Shaumar, Vladislak; (female) Fyevarra, Hulmarra, Immith, Imzel, Navarra, Shevarra, Tammith, Yuldra; (surnames) Chergoba, Dyernina, Iltazyara, Murnyethara, Stayanoga, Ulmokina"
+											"name": "Tiizan Names:",
+											"entry": "(Male) Aryan, Viihan, Dhruv, Kabir, Raghav, Pratyush, Jai, Ishaan; (female) Aarohi, Pari, Shreya, Aditi, Myra, Saanvi, Akshara, Diya, Sai; (surnames) Apte, Bhasin, Khanna, Majumdar, Randhawa, Sangha, Yadav"
 										}
 									]
 								}
