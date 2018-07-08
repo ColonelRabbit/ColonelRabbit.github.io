@@ -416,17 +416,17 @@
 						},
 						{
 							"type": "entries",
-							"name": "Chondathan",
+							"name": "Free Islanders",
 							"entries": [
-								"Chondathans are slender, tawny-skinned folk with brown hair that ranges from almost blond to almost black. Most are tall and have green or brown eyes, but these traits are hardly universal. Humans of Chondathan descent dominate the central lands of Faerun, around the Inner Sea.",
+								"The humans of the Free Islands are as diverse as the species to be found there. They tend towards more tanned complexions, due to the tropical climate, but are otherwise a motley bunch",
 								{
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
 										{
 											"type": "item",
-											"name": "Chondathan Names:",
-											"entry": "(Male) Darvin, Dorn, Evendur, Gorstag, Grim, Helm, Malark, Morn, Randal, Stedd; (female) Arveene, Esvele, Chessail, Kerri, Lureene, Miri, Rowan, Shandri, Tessele; (surnames) Amblecrown, Buckman, Dundragon, Evenwood, Greycastle, Tallstag"
+											"name": "Free Islander Names:",
+											"entry": "Free Islanders name their children and themselves as they please, drawing inspiration from the myriad languages around them."
 										}
 									]
 								}
@@ -434,17 +434,17 @@
 						},
 						{
 							"type": "entries",
-							"name": "Damaran",
+							"name": "A'ti",
 							"entries": [
-								"Found primarily in the northwest of Faerun, Damarans are of moderate height and build, with skin hues ranging from tawny to fair. Their hair is usually brown or black, and their eye color varies widely, though brown is most common.",
+								"Found on their native island of A'tuí, the A'ti are of moderate height and build, with dark skin and eyes. Their hair ranges from darker greys to bright whites and silvers, and their eye color varies widely, though brown is most common.",
 								{
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
 										{
 											"type": "item",
-											"name": "Damaran Names:",
-											"entry": "(Male) Bor, Fodel, Glar, Grigor, Igan, Ivor, Kosef, Mival, Orel, Pavel, Sergor; (female) Alethra, Kara, Katernin, Mara, Natali, Olma, Tana, Zora; (surnames) Bersk, Chernin, Dotsk, Kulenov, Marsk, Nemetsk, Shemov, Starag"
+											"name": "A'ti Names:",
+											"entry": "(Male) ?; (female) ?; (surnames) ?"
 										}
 									]
 								}
@@ -452,16 +452,16 @@
 						},
 						{
 							"type": "entries",
-							"name": "Illuskan",
+							"name": "Roshen",
 							"entries": [
-								"Illuskans are tall, fair-skinned folk with blue or steely gray eyes. Most have raven-black hair, but those who inhabit the extreme northwest have blond, red, or light brown hair.",
+								"The humans of Roshen are a fairly unremarkable folk, with widely varied features. They tend towards paler complexions, but are otherwise largely unremarkable in their physiology.",
 								{
 									"type": "list",
 									"style": "list-hang-notitle",
 									"items": [
 										{
 											"type": "item",
-											"name": "Illuskan Names:",
+											"name": "Roshen Names:",
 											"entry": "(Male) Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth; (female) Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra; (surnames) Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver"
 										}
 									]
@@ -470,7 +470,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Mulan",
+							"name": "Gilnaran",
 							"entries": [
 								"Dominant in the eastern and southeastern shores of the Inner Sea, the Mulan are generally tall, slim, and amber-skinned, with eyes of hazel or brown. Their hair ranges from black to dark brown, but in the lands where the Mulan are most prominent, nobles and many other Mulan shave off all their hair.",
 								{
@@ -488,7 +488,7 @@
 						},
 						{
 							"type": "entries",
-							"name": "Rashemi",
+							"name": "Tiizan",
 							"entries": [
 								"Most often found east of the Inner Sea and often intermingled with the Mulan, Rashemis tend to be short, stout, and muscular. They usually have dusky skin, dark eyes, and thick black hair.",
 								{
@@ -506,32 +506,21 @@
 						},
 						{
 							"type": "entries",
-							"name": "Shou",
+							"name": "Mintoaur Islanders",
 							"entries": [
-								"The Shou are the most numerous and powerful ethnic group in Kara-Tur, far to the east of Faerun. They are yellowish-bronze in hue, with black hair and dark eyes. Shou surnames are usually presented before the given name.",
-								{
-									"type": "list",
-									"style": "list-hang-notitle",
-									"items": [
-										{
-											"type": "item",
-											"name": "Shou Names:",
-											"entry": "(Male) An, Chen, Chi, Fai, ]iang, ]un, Lian, Long, Meng, On, Shan, Shui, Wen; (female)} Bai, Chao, Lia, Lei, Mei, Qiao, Shui, Tai; (surnames) Chien, Huang, Kao, Kung, Lao, Ling, Mei, Pin, Shin, Sum, Tan, Wan"
-										}
-									]
-								}
+								"The humans in the Minotaur Isles are a miniscule minority. They tend to be natives of other parts of the world, primarily Roshen and the Sha'ir city-states.",
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Tethyrian",
+							"name": "EXTRA",
 							"entries": [
 								"Widespread along the entire Sword Coast at the western edge of Faerun, Tethyrians are of medium build and height, with dusky skin that tends to grow fairer the farther north they dwell. Their hair and eye color varies widely, but brown hair and blue eyes are the most common. Tethyrians primarily use Chondathan names."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Turami",
+							"name": "EXTRA",
 							"entries": [
 								"Native to the southern shore of the Inner Sea, the Turami people are generally tall and muscular, with dark mahogany skin, curly black hair, and dark eyes.",
 								{
