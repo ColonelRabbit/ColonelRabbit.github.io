@@ -366,6 +366,7 @@
 			"inherits": {
 				"tier": "Major",
 				"rarity": "Uncommon",
+				"masterwork": "true",
 				"source": "DMG",
 				"page": "150",
 				"namePrefix": "Adamantine ",
@@ -385,6 +386,7 @@
 			"inherits": {
 				"tier": "Major",
 				"rarity": "Uncommon",
+				"masterwork": "true",
 				"source": "DMG",
 				"page": "150",
 				"namePrefix": "Adamantine ",
@@ -1373,6 +1375,7 @@
 			"inherits": {
 				"rarity": "Unknown",
 				"tier": "Major",
+				"masterwork": "true",
 				"source": "XGE",
 				"page": "71",
 				"namePrefix": "Adamantine ",
@@ -1394,6 +1397,7 @@
 			"inherits": {
 				"tier": "Minor",
 				"rarity": "Unknown",
+				"masterwork": "true",
 				"source": "XGE",
 				"page": "71",
 				"namePrefix": "Adamantine ",
