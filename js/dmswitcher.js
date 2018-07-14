@@ -5,13 +5,11 @@ const DmSwitcher = {
   LOGGED_IN: "logged-in",
   LOGGED_OUT: "logged-out",
 
-  loginStatus: "",
-
   init: init = function() {
     //  DO I LOG IN AUTOMATICALLY OR SHOW LOGIN BOX
     //    DmSwitcher.currentStatus = DmSwitcher.loadLoginFromCookie();
     DmSwitcher.loadLoginFromCookie();
-    console.log(DmSwitcher.cookie);
+    console.log("login cookie status: ", DmSwitcher.cookie);
 
     if (DmSwitcher.cookie == DmSwitcher.LOGGED_OUT) {
       DmSwitcher.loginBox();
@@ -181,6 +179,6 @@ const DmSwitcher = {
 window.addEventListener("load", DmSwitcher.init);
 
 window.addEventListener("unload", function () {
-	const title = DmSwitcher.loginStatus;
+	const title = DmSwitcher.cookie;
 	DmSwitcher.createCookie(title);
 });
