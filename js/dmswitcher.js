@@ -9,10 +9,10 @@ const DmSwitcher = {
     //  DO I LOG IN AUTOMATICALLY OR SHOW LOGIN BOX
     //    DmSwitcher.currentStatus = DmSwitcher.loadLoginFromCookie();
     DmSwitcher.loadLoginFromCookie();
-    console.log("login cookie status: ", DmSwitcher.cookie);
 
     if (DmSwitcher.cookie == DmSwitcher.LOGGED_OUT) {
-      DmSwitcher.loginBox();
+      DmSwitcher.showLoginBox();
+      //DmSwitcher.loginBox();
     } else {
       DmSwitcher.loggedIn();
     }
@@ -31,7 +31,42 @@ const DmSwitcher = {
     return Cookies.get("dm-login");
   },
 
+  showingLoginBox: showingLoginBox = function() {
+    return document.getElementById('dm-login-box') !== null;
+  },
+
+  showLoginBox: showLoginBox = function() {
+  		const a = document.createElement('a');
+  		a.href = '#';
+  		a.className = 'loginBoxToggle';
+      console.log(DmSwitcher.showingLoginBox());
+      a.innerHTML = "Show Login";
+
+  		a.setAttribute('onclick', "DmSwitcher.loginBox();");
+
+  		const li = document.createElement('li');
+  		li.id = 'loginBoxToggler';
+  		li.setAttribute('role', 'presentation');
+  		li.appendChild(a);
+
+  		const appendBefore = document.getElementById('wrp-omnisearch-input');
+  		appendBefore.parentNode.insertBefore(li, appendBefore);
+  },
+
+
 	loginBox: loginBox = function () {
+    if (DmSwitcher.cookie == 'logged-in') {
+
+      return null;
+    } else if (DmSwitcher.showingLoginBox()) {
+      const loginBox = document.getElementById(`dm-login-box`);
+      loginBox.parentNode.removeChild(loginBox);
+
+      const $loginBoxToggler = $(`.loginBoxToggle`);
+      $loginBoxToggler.html(`Show Login`);
+
+      return null;
+    }
 		const $nav = $(`#navbar`);
     $nav.append(`
   		<div class="input-group" id="dm-login-box">
@@ -41,6 +76,9 @@ const DmSwitcher = {
   			</div>
   		</div>
   	`);
+
+    const $loginBoxToggler = $(`.loginBoxToggle`);
+    $loginBoxToggler.html(`Hide Login`);
 
 		const $loginSubmit = $(`#dm-login-submit`);
     const $loginInput = $(`#dm-login-input`);
@@ -68,7 +106,8 @@ const DmSwitcher = {
       loginSubmit.parentNode.removeChild(loginSubmit);
       DmSwitcher.cookie = DmSwitcher.LOGGED_IN;
       DmSwitcher.loggedIn();
-      console.log(DmSwitcher.cookie);
+      const loginBoxToggler = document.getElementById(`loginBoxToggler`);
+      loginBoxToggler.parentNode.removeChild(loginBoxToggler);
     } else {
       const loginInput = document.getElementById(`dm-login-input`);
       loginInput.value = '';
@@ -88,6 +127,8 @@ const DmSwitcher = {
     DmSwitcher.LI('ul_dms', 'lootgen.html', 'Loot Generator');
     DmSwitcher.LI('ul_dms', 'objects.html', 'Objects');
     DmSwitcher.LI('ul_dms', 'trapshazards.html', 'Traps & Hazards');
+    DmSwitcher.LI('ul_dms', 'prestigeclasses.html', 'Prestige Classes');
+    DmSwitcher.LI('ul_dms', 'dmsecrets.html', 'DM World Info');
     DmSwitcher.LIlogout('ul_dms', 'Logout of DM Tools', 'Hides this toolbar from the website');
   },
 
@@ -169,7 +210,7 @@ const DmSwitcher = {
     const dmDropdown = document.getElementById(`dms`);
     dmDropdown.parentNode.removeChild(dmDropdown);
     DmSwitcher.cookie = DmSwitcher.LOGGED_OUT;
-    console.log(DmSwitcher.cookie);
+    DmSwitcher.showLoginBox();
     return false;
   },
 
