@@ -4,6 +4,7 @@ class StyleSwitcher {
 	constructor () {
 		this.currentStylesheet = this.STYLE_DAY;
 		this.loadStyleFromCookie();
+		console.log(this.currentStylesheet);
 	}
 
 	setActiveStyleSheet (style) {
