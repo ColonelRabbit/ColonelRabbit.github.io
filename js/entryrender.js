@@ -2900,9 +2900,9 @@ EntryRenderer.dice = {
 					if (!d.drops) return [r, []];
 					let toSlice;
 					if (d.drops === "h") {
-						toSlice = [...r].sort().reverse();
+						toSlice = [...r].sort((a, b) => b - a);
 					} else if (d.drops === "l") {
-						toSlice = [...r].sort();
+						toSlice = [...r].sort((a, b) => a - b);
 					}
 					const toDrop = toSlice.slice(0, d.drop);
 					const keepStack = [];
@@ -2933,7 +2933,7 @@ EntryRenderer.dice = {
 					neg: d.neg,
 					num: d.num,
 					faces: d.faces,
-					mod: d.mod,
+					//mod: d.mod,
 					drop: d.drop,
 					drops: d.drops
 				}
