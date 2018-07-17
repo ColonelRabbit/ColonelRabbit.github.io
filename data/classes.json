@@ -644,9 +644,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "test",
+										"name": "Ravager",
 										"entries": [
-											"Test subclass feature."
+											"Beginning at 27th level, you no longer suffer exhaustion from your Frenzy feature."
 										]
 									}
 								]
@@ -907,9 +907,69 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "test",
+										"name": "Totemic Symbiosis",
 										"entries": [
-											"Test subclass feature."
+											"Beginning at 27th level, you may choose one of the following totems.",
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Bear",
+														"entries": [
+															"While raging you cannot be knocked prone or moved against your will by any means as long as you are conscious."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Eagle",
+														"entries": [
+															"You don’t take fall damage when falling 30 feet or less, and when you fall longer distances you take only half fall damage."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Elk",
+														"entries": [
+															"Your movement speed cannot be reduced by any means, and it only costs you 5 feet of movement to stand up from prone."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Tiger",
+														"entries": [
+															"You have advantage on Stealth checks and you can take the Hide action as a bonus action."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Wolf",
+														"entries": [
+															"While you’re raging, you can use a bonus action to attempt to grapple an opponent."
+														]
+													}
+												]
+											}
 										]
 									}
 								]
@@ -991,9 +1051,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "test",
+										"name": "Thorns",
 										"entries": [
-											"Test subclass feature."
+											"Starting at 27th level, you may move through other creatures no matter their size. The first time you enter a creature’s space on your turn, you deal piercing damage equal to half your rage damage rounded down. If you are raging, this damage equals your rage damage. If you end your turn in another creature’s space, you take 1d10 bludgeoning damage and are ejected to the nearest unoccupied space."
 										]
 									}
 								]
@@ -1002,425 +1062,6 @@
 					],
 					"source": "SCAG",
 					"shortName": "Battlerager"
-				},
-				{
-					"name": "Path of the Ancestral Guardian (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Path of the Ancestral Guardian",
-								"entries": [
-									"Some barbarians hail from cultures that revere their ancestors. These tribes teach that the warriors of the past linger on in the world as mighty spirits who can guide and protect the living. When barbarians who follow this path rage, they cross the barrier into the spirit world and call on these guardian spirits for aid.",
-									"Barbarians who draw on their ancestral guardians fight to protect their tribes and their allies. With the spirits' help, they can hinder their foes even as they strike powerful blows against them.",
-									"In order to cement ties to their ancestral guardians, barbarians who follow this path cover themselves in elaborate tattoos that celebrate their ancestors' deeds. These tattoos tell epic sagas of victories against terrible monsters and other fearsome rivals.",
-									{
-										"type": "entries",
-										"name": "Ancestral Protectors",
-										"entries": [
-											"Starting when you choose this path at 3rd level, spectral warriors appear when you rage. These warriors distract a foe you designate and hinder its attempts to evade you. While you're raging, you can use a bonus action on your turn to choose one creature you can see within 5 feet of you. Until the start of your next turn or until your rage ends, the chosen creature has disadvantage on any attack roll that doesn't target you, and if the creature takes the Disengage action within 5 feet of you, its speed is halved until the end of its turn."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Ancestral Shield",
-										"entries": [
-											"Beginning at 6th level, the guardian spirits that aid you can provide protection for your allies. If you are raging and an ally you can see within 30 feet of you takes bludgeoning, piercing, or slashing damage, you can use your reaction to transfer your resistance to those damage types to the ally. The resistance applies to the incoming damage. Until the start of your next turn, the ally keeps the resistance and you lack it, unless you also have it from a source other than rage."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Consult the Spirits",
-										"entries": [
-											"At 10th level, you gain the ability to consult with your ancestral spirits. Right before you make an Intelligence or a Wisdom check, you can give yourself advantage on the check. You can use this feature three times, and you regain expended uses when you finish a long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Vengeful Ancestors",
-										"entries": [
-											"At 14th level, your ancestral spirits grow powerful enough to strike your foes. When you or an ally you can see within 30 feet of you is damaged by a melee attack while you're raging, you can use your reaction to cause the attacker to take 2d8 force damage from the spirits."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "test",
-										"entries": [
-											"Test subclass feature."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UABarbarianPrimalPaths",
-					"shortName": "Ancestral Guardian (UA)"
-				},
-				{
-					"name": "Path of the Ancestral Guardian v2 (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Path of the Ancestral Guardian v2",
-								"entries": [
-									"Some barbarians hail from cultures that revere their ancestors. These tribes teach that the warriors of the past linger on in the world as mighty spirits who can guide and protect the living. When barbarians who follow this path rage, they cross the barrier into the spirit world and call on these guardian spirits for aid.",
-									"Barbarians who draw on their ancestral guardians fight to protect their tribes and their allies. With the spirits' help, they can hinder their foes even as they strike powerful blows against them.",
-									"In order to cement ties to their ancestral guardians, barbarians who follow this path cover themselves in elaborate tattoos that celebrate their ancestors' deeds. These tattoos tell epic sagas of victories against terrible monsters and other fearsome rivals.",
-									{
-										"type": "entries",
-										"name": "Ancestral Protectors",
-										"entries": [
-											"Starting when you choose this path at 3rd level, spectral warriors appear when you rage. These warriors distract a foe you designate and hinder its attempts to evade you. While you're raging, the first creature you hit with an attack on your turn becomes the target of these warriors. Until the start of your next turn or until your rage ends, that target has disadvantage on any attack roll that doesn't target you, and creatures other than you have resistance to the damage of the creature's attacks."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Ancestral Shield",
-										"entries": [
-											"Beginning at 6th level, the guardian spirits that aid you can provide protection for your allies. If you are raging and a creature you can see within 30 feet of you takes damage, you can use your reaction and reduce that damage by 2d8. When you reach certain levels in this class, you can reduce the damage by more: by 3d8 at 10th level and by 4d8 at 14th level."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Consult the Spirits",
-										"entries": [
-											"At 10th level, you gain the ability to consult with your ancestral spirits and use them to scout far-off lands. When you do so, you cast the {@spell clairvoyance} spell, without needing a spell slot. Rather than creating a spherical sensor, the spell invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for the spell. After you cast the spell in this way, you can't do so again until you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Vengeful Ancestors",
-										"entries": [
-											"At 14th level, your ancestral spirits grow powerful enough to strike foes that dare harm those that you protect. When you use your Spirit Shield Ability to protect a creature damaged by an attack, the attacker takes the same amount of damage that the Spirit Shield protects."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "test",
-										"entries": [
-											"Test subclass feature."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UARevisedSubclasses",
-					"shortName": "Ancestral Guardian v2 (UA)"
-				},
-				{
-					"name": "Path of the Storm Herald (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Path of the Storm Herald",
-								"entries": [
-									"Typical barbarians harbor a fury that dwells within. Their rage grants them superior strength, durability, and speed. Barbarians who follow the Path of the Storm Herald learn instead to transform their rage into a mantle of primal magic that swirls around them. When in a fury, a barbarian of this path taps into nature to create powerful, magical effects.",
-									"Storm heralds are typically elite champions who train alongside druids, rangers, and others sworn to protect the natural realm. Other storm heralds hone their craft in elite lodges founded in regions wracked by storms, in the frozen reaches at the world's end, or deep in the hottest deserts.",
-									{
-										"type": "entries",
-										"name": "Storm of Fury",
-										"entries": [
-											"When you select this path at 3rd level, choose one of the following options: desert, sea, or tundra. The environment you choose shapes the nature of the storm you conjure when you rage. While raging, you emanate an aura in a 10-foot radius. The effects of this aura depend on your chosen environment.",
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Desert",
-														"entries": [
-															"Any enemy that ends its turn in your aura takes fire damage equal to 2 + your barbarian level divided by 4."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Sea",
-														"entries": [
-															"At the end of each of your turns, you can choose a creature in your aura other than yourself. The target must make a Dexterity saving throw against a DC equal to 8 + your proficiency bonus + your Constitution modifier. The target takes 2d6 lightning damage on a failed save, and half as much damage on a successful one. This damage increases to 3d6 at 10th level and to 4d6 at 15th level."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Tundra",
-														"entries": [
-															"Any enemy that ends its turn in your aura takes cold damage equal to 2 + your barbarian level divided by 4."
-														]
-													}
-												]
-											}
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Storm Soul",
-										"entries": [
-											"At 6th level, your link to the power of the storm grants you additional abilities based on the environment you chose at 3rd level.",
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Desert",
-														"entries": [
-															"You gain resistance to fire damage and don't suffer the effects of extreme heat."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Sea",
-														"entries": [
-															"You gain resistance to lightning damage and can breathe underwater."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Tundra",
-														"entries": [
-															"Tundra. You gain resistance to cold damage and don't suffer the effects of extreme cold."
-														]
-													}
-												]
-											}
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Shield of the Storm",
-										"entries": [
-											"At 10th level, you learn to use your mastery of the storm to protect your allies. While you are raging, allies within your aura gain the benefits of your Storm Soul feature."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Raging Storm",
-										"entries": [
-											"At 14th level, the power of the storm you channel grows mightier.",
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Desert",
-														"entries": [
-															"The ground around you becomes like shifting sand. Any enemy that attempts to move more than 5 feet per turn on the ground while in your aura must make a Strength saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the creature's speed drops to 0 until the start of its next turn."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Sea",
-														"entries": [
-															"Roaring winds tear through the area around you. Any creature in your aura that you hit with an attack must make a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked {@condition prone}."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Tundra",
-														"entries": [
-															"The air around you coldly slows your foes. The area within your aura is difficult terrain for your enemies."
-														]
-													}
-												]
-											}
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "test",
-										"entries": [
-											"Test subclass feature."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UABarbarianPrimalPaths",
-					"shortName": "Storm Herald (UA)"
-				},
-				{
-					"name": "Path of the Zealot (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Path of the Zealot",
-								"entries": [
-									"Some deities inspire their followers to pitch themselves into a ferocious battle fury. These barbarians are zealots\u2014warriors who channel their rage into powerful displays of divine power.",
-									"A variety of gods across the worlds of D&D inspire their followers to embrace this path. Tempus from the Forgotten Realms and Hextor and Erythnul of Greyhawk are all prime examples. In general, the gods who inspire zealots are deities of combat, destruction, and violence. Not all are evil, but few are good.",
-									{
-										"type": "entries",
-										"name": "Divine Fury",
-										"entries": [
-											"Starting when you choose this path at 3rd level, you can channel divine fury when you start to rage. If you do so, you become cloaked in an aura of divine power until the rage ends. At the end of each of your turns for that duration, each creature within 5 feet of you takes damage equal to 1d6 + half your barbarian level. The damage is necrotic or radiant; you choose the type of damage when you gain this feature."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Warrior of the Gods",
-										"entries": [
-											"At 3rd level, your soul is marked for endless battle. If a spell would have the sole effect of restoring you to life (but not undeath), the caster does not need material components to cast the spell on you."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Zealous Focus",
-										"entries": [
-											"At 6th level, the divine power that fuels your rage can shield you from harm. If you fail a saving throw while raging, you can instead succeed on that saving throw as a reaction. However, doing so immediately ends your rage, and you can't rage again until you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Zealous Presence",
-										"entries": [
-											"At 10th level, you learn to channel divine power to inspire zealotry in others. As an action, you howl in fury and unleash a battle cry infused with divine energy. Every ally within 60 feet of you gains advantage on attack rolls and saving throws until the start of your next turn.",
-											"Once you use this feature, you can't use it again until you finish a long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Rage Beyond Death",
-										"entries": [
-											"Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows.",
-											"While raging, having 0 hit points doesn't knock you {@condition unconscious}. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until your rage ends."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "test",
-										"entries": [
-											"Test subclass feature."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UABarbarianPrimalPaths",
-					"shortName": "Zealot (UA)"
 				},
 				{
 					"name": "Path of the Ancestral Guardian",
@@ -2936,9 +2577,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "test",
+										"name": "Expert Casting",
 										"entries": [
-											"Test subclass feature."
+											"Beginning at 27th level, casting spells from a specific school comes easily to you. Choose a school, where casting will only expend a fraction of your spellcasting efforts. When you cast a spell of 2nd level or higher from that school, you regain one expended spell slot. The slot you regain must be of a level lower than the spell you cast and can’t be higher than 5th level."
 										]
 									}
 								]
@@ -3004,9 +2645,10 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "test",
+										"name": "Inspire Legion",
 										"entries": [
-											"Test subclass feature."
+											"When you would grant another creature a bardic inspiration die, you can instead choose to grant up to five eligible creatures of your choice a bardic inspiration die. You only expend one use of bardic inspiration when doing so. You cannot use this feature on a turn where you also use your legendary wordsmith feature.",
+											"Once you use this feature, you cannot use it again until you finish a long rest."
 										]
 									}
 								]
@@ -4614,141 +4256,48 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Weave Distortion",
+										"entries": [
+											"Starting at 21st level, you can twist and bend the Weave around you as a bonus action, granting yourself resistance to all magic damage, as well as advantage on all saving throws against spells of 7th level or lower until the end of your next turn. Usable a number of times equal to your Wisdom modifier. You regain all expended charges once you finish a long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Channel Arcana",
+										"entries": [
+											"Beginning at 25th level, your Channel Divinity: Arcane Abjuration has its range increased to 60 feet, and the maximum Challenge Rating for banishment increases to 5."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Arcane Insight",
+										"entries": [
+											"Upon reaching 28th level, the detect magic spell becomes a passive effect for you that is always active. Additionally, once every long rest, if you spend at least 10 minutes studying a creature, you will know of 1d6 spells of 7th level or lower that the creature is capable of casting (if any)."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "SCAG",
 					"shortName": "Arcana"
-				},
-				{
-					"name": "City Domain (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "City Domain (UA)",
-								"entries": [
-									"The City domain is concerned with the citizenry, commerce, traffic, and even architecture of modern civilization. In the eyes of a cleric of the city, the center of modern life is a sense and spirit of community, and the gravest enemies of the city are those who seek to harm the common weal of its citizens.",
-									"At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
-									"Spells marked with an asterisk can be found in Unearthed Arcana: Modern Magic.",
-									{
-										"type": "table",
-										"caption": "City Domain Spells",
-										"colLabels": [
-											"Cleric Level",
-											"Spells"
-										],
-										"colStyles": [
-											"col-xs-3 text-align-center",
-											"col-xs-9"
-										],
-										"rows": [
-											[
-												"1st",
-												"{@spell comprehend languages}, {@spell remote access (UA)|UAModernMagic|remote access}*"
-											],
-											[
-												"3rd",
-												"{@spell find vehicle (UA)|UAModernMagic|find vehicle}*, {@spell heat metal}"
-											],
-											[
-												"5th",
-												"{@spell lightning bolt}, {@spell protection from ballistics (UA)|UAModernMagic|protection from ballistics}*"
-											],
-											[
-												"7th",
-												"{@spell locate creature}, {@spell synchronicity (UA)|UAModernMagic|synchronicity}*"
-											],
-											[
-												"9th",
-												"{@spell commune with city (UA)|UAModernMagic|commune with city}*, {@spell shutdown (UA)|UAModernMagic|shutdown}*"
-											]
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Bonus Cantrip",
-										"entries": [
-											"When you choose this domain at 1st level, you gain the {@spell On/Off (UA)|UAModernMagic|on/off} cantrip in addition to your chosen cantrips."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Bonus Proficiencies",
-										"entries": [
-											"Also starting at 1st level, you gain proficiency with sidearms and proficiency with vehicles (land)."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Heart of the City",
-										"entries": [
-											"From 1st level, you are able to tap into the spirit of community found in the city. While you are within any city, you can gain advantage on a single Charisma (Deception, Intimidation, or Persuasion) check, and you are considered proficient in the appropriate skill. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain any expended uses when you finish a long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Channel Divinity: Spirits of the City",
-										"entries": [
-											"Starting at 2nd level, you can use your Channel Divinity to call on the city for aid. As an action, you present your holy symbol, and any city utility within 30 feet of you either works perfectly or shuts down entirely for 1 minute (your choice).",
-											"Additionally, each hostile creature within 30 feet of you must make a Charisma saving throw. On a failed save, the creature is knocked {@condition prone} or {@condition restrained} (your choice) by hazards such as entangling wires, high-pressure water erupting from fire hydrants, pavement collapsing to unseen potholes, and so on. A {@condition restrained} creature can escape by making a successful Strength (Athletics) or Dexterity (Acrobatics) check against your spell save DC.",
-											"This effect is entirely local and affects only utilities within 30 feet of you. Determination of what utilities are available within range and how the physical effects of those utilities manifest are left to the DM."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Block Watch",
-										"entries": [
-											"Starting at 6th level, your awareness while in the city extends preternaturally. While in an urban environment, you are considered proficient in the Insight and Perception skills, and you add double your proficiency bonus to Wisdom (Insight) and Wisdom (Perception) checks, instead of your normal proficiency bonus."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Divine Strike",
-										"entries": [
-											"At 8th level, you gain the ability to infuse your weapon strikes with psychic energy borrowed from the citizens of your city. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage to the target. When you reach 14th level, the extra psychic damage increases to 2d8."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Express Transit",
-										"entries": [
-											"At 17th level, you can use mass transit routes to transport instantaneously to other points in the city. Starting from a bus stop, train station, subway stop, or other suitable mass transit site within the city, you can teleport to any other similar transit stop within the city, as if you had cast a teleport spell whose destination is a permanent {@spell teleportation circle} you know. Once you use this feature, you must finish a short or long rest before using it again."
-										]
-									}
-								]
-							}
-						],
-						[],
-						[],
-						[]
-					],
-					"source": "UAModernMagic",
-					"shortName": "City (UA)"
 				},
 				{
 					"name": "Death Domain",
@@ -4863,9 +4412,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Death Throes",
+										"entries": [
+											"Beginning at 21st level, whenever you deal necrotic damage to a creature, the creature’s maximum hit points is reduced by the same amount."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Channel Death",
+										"entries": [
+											"Beginning at 25th level, the damage from your Channel Divinity: Touch of Death spreads to all creatures of your choosing within 10 feet of you."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Improved Divine Strike",
+										"entries": [
+											"Beginning at 28th level, your Divine Strike damage increases to 3d8."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "DMG",
 					"shortName": "Death"
@@ -5004,9 +4589,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Magical Knowhow",
+										"entries": [
+											"Your deep insight into the workings of magic, let’s you thwart offensive spells against you more effectively. Beginning at 21st level, you have advantage on saving throws against hostile spells."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Channel Knowledge",
+										"entries": [
+											"Starting at 25th level, you can empower others with your Channel Divinity: Knowledge of the Ages."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Educated",
+										"entries": [
+											"Beginning at 28th level, you can read all writing and understand all languages."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Knowledge"
@@ -5124,9 +4745,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Armor of Life",
+										"entries": [
+											"Beginning at 21st level, whenever you receive healing, you gain the same amount of hit points as temporary hit points, up to a maximum of half your cleric level (rounded down)."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Channel Life",
+										"entries": [
+											"Starting at 25th level, your Channel Divinity: Preserve Life can restore a creature back to it’s hit point maximum."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Life Infused Divine Strike",
+										"entries": [
+											"Beginning at 28th level, your Divine Strike heals you for the amount of damage done."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Life"
@@ -5245,9 +4902,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Embrace the Light",
+										"entries": [
+											"Beginning at 21st level, you become resistant to fire and radiant damage."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Channel the Light",
+										"entries": [
+											"Starting at 25th level, your Channel Divinity: Radiance of the Dawn increases its radius to 60 feet, and has its damage increased to 4d10 + your Cleric level."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Empowered Flare",
+										"entries": [
+											"At 28th level, whenever you use your Warding Flare, the affected creature must also succeed a Constitution saving throw, or become blinded until the end of it’s next turn."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Light"
@@ -5365,9 +5058,46 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Elemental Ward",
+										"entries": [
+											"Beginning at 21st level, using your Dampen Elements ability, you can choose to grant immunity rather than resistance to the affected elements.",
+											"Once you use this feature, you must finish a long rest before you can do so again."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Channel Nature",
+										"entries": [
+											"Starting at 25th level, the radius of your Channel Divinity: Charm Animals and Plants has it’s radius increased to 60 feet, and it’s duration increased to 5 minutes."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Bond with Nature",
+										"entries": [
+											"At 28th level, you learn one 1st, 3rd and 5th level druid spell of your choice. These spells are always prepared, but don’t count toward your maximum of prepared spells."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Nature"
@@ -5486,9 +5216,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Molecular Absorption",
+										"entries": [
+											"Starting at 21st level, you become resistant to thunder and lightning damage."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Channel the Tempest",
+										"entries": [
+											"Beginning at 25th level, your Channel Divinity: Destructive Wrath also makes your attack hit up to two additional targets within 5 feet of the original target."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Improved Divine Strike",
+										"entries": [
+											"Beginning at 28th level, your Divine Strike damage increases to 3d8."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Tempest"
@@ -5601,9 +5367,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Advantageous",
+										"entries": [
+											"When an enemy misses you with an attack, you can use your reaction to force the missed attack to hit another enemy within 5 ft. of you (if any)."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Channel Trickery",
+										"entries": [
+											"Beginning at 25th level, your Channel Divinity: Cloak of Shadows can be activated using a bonus action, rather than an action."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Elusive",
+										"entries": [
+											"Beginning at 28th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren’t incapacitated."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Trickery"
@@ -5720,142 +5522,49 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Holy Armor",
+										"entries": [
+											"Starting at 21st level, as a bonus action, you can activate a Holy Armor that surrounds you with a bright light. The Holy Armor grants you +2 AC, and enemies have disadvantage on attack rolls against you. The effect lasts for a number of rounds equal to your Wisdom modifier.",
+											"Once you use this feature, you must finish a long rest before you can do so again."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Channel War",
+										"entries": [
+											"Beginning at 25th level, your Channel Divinity: Guided Strike affects all of your attacks on that turn."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Improved Divine Strike",
+										"entries": [
+											"Beginning at 28th level, your Divine Strike damage increases to 3d8."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "War"
-				},
-				{
-					"name": "Forge Domain (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Forge Domain (UA)",
-								"entries": [
-									"The gods of the forge are patrons of artisans who work with metal, from a humble blacksmith who keeps a village in horseshoes and plow blades to the mighty elf artisan whose diamond-tipped arrows of mithral have felled demon lords. The gods of the forge teach that, with patience and hard work, even the most intractable metal can transform from a lump of ore to a beautifully wrought object. Clerics of these deities quest to search for objects lost to the forces of darkness, liberate mines overrun by orcs, and uncover rare and wondrous materials necessary to create potent magic items. Followers of these gods take great pride in their work, and they are willing to craft and use heavy armor and powerful weapons to protect them. Deities of this domain include Gond, Reorx, Onatar, Moradin, Hephaestus, and Goibhniu.",
-									"At each indicated cleric level, add the listed spells to your spells prepared.",
-									{
-										"type": "table",
-										"caption": "Forge Domain Spells",
-										"colLabels": [
-											"Cleric Level",
-											"Spells"
-										],
-										"colStyles": [
-											"col-xs-3 text-align-center",
-											"col-xs-9"
-										],
-										"rows": [
-											[
-												"1st",
-												"{@spell searing smite}, {@spell shield}"
-											],
-											[
-												"3rd",
-												"{@spell heat metal}, {@spell magic weapon}"
-											],
-											[
-												"5th",
-												"{@spell elemental weapon}, {@spell protection from energy}"
-											],
-											[
-												"7th",
-												"{@spell fabricate}, {@spell wall of fire}"
-											],
-											[
-												"9th",
-												"{@spell animate objects}, {@spell creation}"
-											]
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Bonus Proficiency",
-										"entries": [
-											"When you choose this domain at 1st level, you gain proficiency with heavy armor."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Blessing of the Forge",
-										"entries": [
-											"At 1st level, you gain the ability to imbue magic into a weapon or armor. At the end of a long rest, touch one nonmagical object that is a suit of armor or a simple or martial weapon. Until the end of your next long rest, the object becomes a magic item, granting a +1 bonus to AC if it's armor or a +1 bonus to attack and damage rolls if it's a weapon.",
-											"Once you use this feature, you can't use it again until you finish a long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Channel Divinity: Artisan's Blessing",
-										"entries": [
-											"Starting at 2nd level, you can use your Channel Divinity to create simple items.",
-											"Starting at the beginning of a short rest, you conduct a ritual to your deity that grants you the ability to craft a finished item that is at least part metal. The item is completed at the end of the rest.",
-											"The object can be worth no more than 100 gp, and as part of this ritual you must expend metals, such as coins or other finished items, with a value equal to the item you want to make. The item can be an exact duplicate of a nonmagical item, such as a copy of a key, if you possess the original during your short rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Soul of the Forge",
-										"entries": [
-											"Starting at 6th level, your mastery of the forge grants you a number of special abilities:",
-											{
-												"type": "list",
-												"items": [
-													"You gain a +1 bonus to AC while you are wearing medium or heavy armor.",
-													"You gain resistance to fire damage.",
-													"When you hit a construct with an attack, you deal additional force damage to it equal to your cleric level."
-												]
-											}
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Divine Strike",
-										"entries": [
-											"At 8th level, you gain the ability to infuse your weapon strikes with the fiery power of the forge. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 fire damage to the target. When you reach 14th level, the extra damage increases to 2d8."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Saint of Forge and Fire",
-										"entries": [
-											"At 17th level, your affinity for fire and metal becomes more powerful due to your deity's blessing. You gain immunity to fire damage, and while you're wearing heavy armor, you have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks."
-										]
-									}
-								]
-							}
-						],
-						[],
-						[],
-						[]
-					],
-					"source": "UAClericDivineDomains",
-					"shortName": "Forge (UA)"
 				},
 				{
 					"name": "Forge Domain",
@@ -5986,142 +5695,48 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Forge"
-				},
-				{
-					"name": "Grave Domain (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Grave Domain (UA)",
-								"entries": [
-									"Gods of the grave watch over the line between life and death. To these deities, death and the afterlife are a foundational part of the multiverse's workings. To resist death, or to desecrate the dead's rest, is an abomination. Deities of the grave include Kelemvor, WeeJas, the ancestral spirits of the Undying Court, Hades, Anubis, and Osiris. These deities teach their followers to respect the dead and pay them due homage. Followers of these deities seek to put restless spirits to rest, destroy the undead wherever they find them, and ease the suffering of dying creatures. Their magic also allows them to stave off a creature's death, though they refuse to use such magic to extend a creature's lifespan beyond its mortal limits.",
-									"At each indicated cleric level, add the listed spells to your spells prepared.",
-									{
-										"type": "table",
-										"caption": "Grave Domain Spells",
-										"colLabels": [
-											"Cleric Level",
-											"Spells"
-										],
-										"colStyles": [
-											"col-xs-3 text-align-center",
-											"col-xs-9"
-										],
-										"rows": [
-											[
-												"1st",
-												"{@spell bane}, {@spell false life}"
-											],
-											[
-												"3rd",
-												"{@spell gentle repose}, {@spell ray of enfeeblement}"
-											],
-											[
-												"5th",
-												"{@spell revivify}, {@spell vampiric touch}"
-											],
-											[
-												"7th",
-												"{@spell blight}, {@spell death ward}"
-											],
-											[
-												"9th",
-												"{@spell antilife shell}, {@spell raise dead}"
-											]
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Bonus Proficiency",
-										"entries": [
-											"When you choose this domain at 1st level, you gain proficiency with heavy armor."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Circle of Mortality",
-										"entries": [
-											"At 1st level, you gain the ability to manipulate the line between life and death. When you cast a spell that restores hit points to a living creature currently at 0, treat any dice rolled to determine the spell's healing as having rolled their maximum result. In addition, if you have the {@spell spare the dying} cantrip, you can cast it as a bonus action."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Eyes of the Grave",
-										"entries": [
-											"Starting at 1st level, you gain an innate sense of creatures whose existence is an insult to the natural cycle of life. If you spend 1 minute in uninterrupted contemplation, you can determine the presence and nature of undead creatures in the area. This detection extends up to 1 mile in all directions. You learn the number of undead and their distance and direction from you. In addition, you learn the creature type of the undead in that area that has the highest challenge rating.",
-											"Once you use this feature, you can't use it again until you finish a long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Channel Divinity: Path to the Grave",
-										"entries": [
-											"Starting at 2nd level, you can use your Channel Divinity to mark another creature's life force for termination.",
-											"As an action, you touch a creature. The next time that creature takes damage from a spell or an attack from you or an ally, it is vulnerable to that spell or attack's damage. If the source of damage has multiple damage types, the creature is vulnerable to all of them. The vulnerability applies only to the first time that source inflicts damage, and then ends.",
-											"If the creature has resistance or is immune to the damage, it instead loses its resistance or immunity against that spell or attack when it first applies damage."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Sentinel at Death's Door",
-										"entries": [
-											"Starting at 6th level, you gain the ability to impede death's progress. As a reaction when you or an ally that you can see within 30 feet of you suffers a critical hit, you can turn that attack into a normal hit. Any effects triggered by a critical hit are canceled.",
-											"Once you use this feature, you can't use it again until you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Divine Strike",
-										"entries": [
-											"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 necrotic damage. When you reach 14th level, the extra damage increases to 2d8."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Keeper of Souls",
-										"entries": [
-											"At 17th level, you gain the ability to manipulate the boundary between life and death. When an enemy you can see dies within 30 feet of you, you or one ally of your choice that is within 30 feet of you regains hit points equal to the enemy's number of Hit Dice. You can use this feature as long as you aren't {@condition incapacitated}, but no more than once per round."
-										]
-									}
-								]
-							}
-						],
-						[],
-						[],
-						[]
-					],
-					"source": "UAClericDivineDomains",
-					"shortName": "Grave (UA)"
 				},
 				{
 					"name": "Protection Domain (UA)",
@@ -6237,9 +5852,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UAClericDivineDomains",
 					"shortName": "Protection (UA)"
@@ -6359,135 +6010,48 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Grave"
-				},
-				{
-					"name": "Order Domain (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Order Domain (UA)",
-								"entries": [
-									"The Order domain represents discipline, as well as service to a society or an institution, whether that service is rendered in obedience to or enforcement of the law\u2014civil, religious, or both. Gods on many worlds grant access to this domain, including Bane, Tyr, Majere, Erathis, Pholtus, Wee Jas, Aureon, Maglubiyet, Nuada, Athena, Anubis, Forseti, and Asmodeus.",
-									"The ideal of order is obedience to the law above all else, rather than to a specific individual or the passing influence of emotion or popular rule. Clerics of order are typically concerned with how things are done, rather than whether an action's results are just. Following the law and obeying its edicts is critical, especially when it benefits these clerics and their deities.",
-									"More importantly, law establishes hierarchies. Those selected by the law to lead must be obeyed. Those who obey must do so to the best of their ability. In this manner, law creates an intricate web of obligations that allows society to forge order and security in a chaotic multiverse.",
-									"At each indicated cleric level, you add the listed spells to your spells prepared.",
-									{
-										"type": "table",
-										"caption": "Order Domain Spells",
-										"colLabels": [
-											"Cleric Level",
-											"Spells"
-										],
-										"colStyles": [
-											"col-xs-3 text-align-center",
-											"col-xs-9"
-										],
-										"rows": [
-											[
-												"1st",
-												"{@spell command}, {@spell heroism}"
-											],
-											[
-												"3rd",
-												"{@spell enhance ability}, {@spell hold person}"
-											],
-											[
-												"5th",
-												"{@spell mass healing word}, {@spell slow}"
-											],
-											[
-												"7th",
-												"{@spell compulsion}, {@spell locate creature}"
-											],
-											[
-												"9th",
-												"{@spell commune}, {@spell dominate person}"
-											]
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Bonus Proficiency",
-										"entries": [
-											"When you choose this domain at 1st level, you gain proficiency with heavy armor."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Voice of Authority",
-										"entries": [
-											"Starting at 1st level, you can invoke the power of law to drive an ally to attack. Immediately after you cast a spell on an ally using a spell slot of 1st level or higher, that ally can use their reaction to make one weapon attack against a target of your choice that you can see. If the spell targets more than one ally, you choose the ally who can make the attack."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Channel Divinity: Order's Demand",
-										"entries": [
-											"Starting at 2nd level, you can use your Channel Divinity to exert an intimidating presence over others.",
-											"As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any of the charmed creatures to fall prone when they fail the saving throw."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Order's Dominion",
-										"entries": [
-											"At 6th level, you become extraordinarily adept at channeling magical energy to compel others.",
-											"When you cast a spell of the enchantment school using a spell slot of 2nd level or higher, you regain one expended spell slot. The slot you regain must be of a level lower than the spell you cast and can't be higher than 5th level."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Divine Strike",
-										"entries": [
-											"At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 force damage to the target. When you reach 14th level, the extra damage increases to 2d8."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Order's Wrath",
-										"entries": [
-											"Starting at 17th level, enemies you designate for destruction wilt under the combined efforts of you and your allies. If you deal your Divine Strike damage to a creature, that creature takes an extra 2d8 force damage the first time each turn that any ally of yours hits it with a weapon attack. This benefit lasts until the start of your next turn."
-										]
-									}
-								]
-							}
-						],
-						[],
-						[],
-						[]
-					],
-					"source": "UAOrderDomain",
-					"shortName": "Order (UA)"
 				}
 			],
 			"fluff": [
@@ -7881,8 +7445,32 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Improved Natural Recovery",
+										"entries": [
+											"Beginning at 23rd level, the spell slots recoverable through your Natural Recovery ability can be of any level."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Magical Secrets",
+										"entries": [
+											"Starting at 27th level, your innate wisdom has absorbed enough knowledge from observing other spell casters cast their magic, that you have learned to replicate some of their spells. Choose two spells from any class. A spell you choose must be of a level you can cast. The chosen spells count as druid spells for you."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Land"
@@ -8000,8 +7588,32 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Moon Ward",
+										"entries": [
+											"Beginning at 23rd level, you can’t be charmed or frightened by beasts or monstrosities, and you are immune to poison and disease."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Monstrous Wild Shape",
+										"entries": [
+											"Starting at 27th level, your Wild Shape ability enables you to take the form of monstrosities, such as a Gorgon or Chimera. The monstrous shape you assume must be Large in size."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Moon"
@@ -8067,8 +7679,32 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UADruid",
 					"shortName": "Twilight (UA)"
@@ -8138,8 +7774,32 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Dreams"
@@ -8247,8 +7907,32 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Shepherd"
@@ -8357,8 +8041,32 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UAThreeSubclasses",
 					"shortName": "Spores (UA)"
@@ -9575,7 +9283,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Surgical Precision",
+										"entries": [
+											"Your weapon attacks score a critical hit on a roll of 17-20."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Champion"
@@ -9949,7 +9669,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Warlord",
+										"entries": [
+											"You learn two additional maneuvers, gain one additional Superiority Die, and your Superiority Dice turn into d20s."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Battle Master"
@@ -10106,7 +9838,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Superior War Magic",
+										"entries": [
+											"When you take the Attack Action, you may use your bonus action to cast a spell of 3rd level or lower, even if it would normally require an action to do so."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Eldritch Knight"
@@ -10229,7 +9973,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UAGothicHeroes",
 					"shortName": "Monster Hunter (UA)"
@@ -10318,7 +10074,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Vanguard",
+										"entries": [
+											"You can extend the use of your Pincer Maneuver to your allies. When you use your Pincer Maneuver ability, you can choose an ally within 60 feet of you that is also in danger of receiving a hit. If that creature can see or hear you, the first critical hit against it before the end of its next turn, will be reduced to a normal hit."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "SCAG",
 					"shortName": "Purple Dragon Knight (Banneret)"
@@ -10459,7 +10227,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UAKitsOfOld",
 					"shortName": "Scout (UA)"
@@ -10545,7 +10325,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UAFighter",
 					"shortName": "Knight (UA)"
@@ -10630,7 +10422,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UAFighter",
 					"shortName": "Sharpshooter (UA)"
@@ -10859,7 +10663,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Arcane Archer"
@@ -10953,7 +10769,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Cavalier"
@@ -11038,7 +10866,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Samurai"
@@ -11139,7 +10979,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UAThreeSubclasses",
 					"shortName": "Brute (UA)"
@@ -12345,7 +12197,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Master Opportunist",
+										"entries": [
+											"Starting at 27th level, when you would normally be able to make a melee attack using your Opportunist feature, you may instead use your Flurry of Blows for the cost of 1 Ki."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Shadow"
@@ -12418,7 +12282,21 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "One Finger Death Punch",
+										"entries": [
+											"You have learned the feared One Finger Death Punch technique. At 27th level, when you use the Attack action to make a melee attack, if you don’t use the Extra Attack and Flurry of Blows features, you may make a One Finger Death Punch.",
+											"Using this feature, your attack is guaranteed to connect as a critical hit and applies all effects of your Open Hand Technique, Stunning Strike and Quivering Palm features.",
+											"Once you use this feature, you must finish a long rest before you can use it again."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Open Hand"
@@ -12702,7 +12580,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Elemental Affinity",
+										"entries": [
+											"Beginning at 27th level, you learn to cast {@spell scorching ray} for the cost of 1 Ki, {@spell lightning bolt} for the cost of 2 Ki, {@spell fire shield} for the cost of 3 Ki and {@spell conjure elemental} for the cost of 4 Ki."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Four Elements"
@@ -12764,7 +12654,20 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Touch of the Long Death",
+										"entries": [
+											"Beginning at 27th level, for the cost of 1 Ki you may use your Touch of Death feature, when an ally reduces a creature within 5 feet of you to 0 hit points.",
+											"Additionally, whenever you use your Touch of Death feature after you have reduced a creature within 5 feet of you to 0 hit points, you gain healing equal to the amount of temporary hit points gained."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "SCAG",
 					"shortName": "Long Death"
@@ -12832,7 +12735,20 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Corneal Burn",
+										"entries": [
+											"Upon reaching 27th level, your Sun Shield can reach brightness only surpassed by the sun itself. When your Sun Shield is up, for the cost of 2 Ki per round, hostile creature have disadvantage on any attack rolls against you. Furthermore, any hostile creatures within 10 feet of you must succeed a Constitution saving throw, or suffer a corneal burn, effectively blinding them. They can repeat the saving throw at the end of each of their turns, ending the effect on a success, and becoming immune to your Corneal Burn feature for 24 hours.",
+											"This feature is usable for a number of rounds equal to your Wisdom modifier. You regain all expended charges when you finish a long rest."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "SCAG",
 					"shortName": "Sun Soul"
@@ -12909,7 +12825,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UAMonk",
 					"shortName": "Tranquility (UA)"
@@ -12993,7 +12921,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Drunken Master"
@@ -13098,7 +13038,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Kensei"
@@ -13167,7 +13119,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Sun Soul"
@@ -14356,7 +14320,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Improved Nature’s Wrath",
+										"entries": [
+											"Beginning at 27th level, your Channel Divinity: Nature’s Wrath can be cast as a bonus action, and the target creature has disadvantage on saving throws against it."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Ancients"
@@ -14539,7 +14515,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Improved Sacred Weapon",
+										"entries": [
+											"Beginning at 27th level, your Channel Divinity: Sacred Weapon lets you add your proficiency bonus as additional damage, rather than just your Charisma modifier."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Devotion"
@@ -14714,7 +14702,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Improved Vow of Enmity",
+										"entries": [
+											"Beginning at 27th level, your Channel Divinity: Vow of Enmity can be moved to a new target using a bonus action, when the original target creature is reduced to 0 hit points or falls unconscious."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Vengeance"
@@ -14828,7 +14828,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "DMG",
 					"shortName": "Oathbreaker"
@@ -15002,7 +15014,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Improved Turn the Tide",
+										"entries": [
+											"Beginning at 27th level, your Channel Divinity: Turn the Tide can affect allies even if they have more than half their hit points, and its heal is increased to 3d6 + your Charisma Modifier."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "SCAG",
 					"shortName": "Crown"
@@ -15154,7 +15178,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UAPaladin",
 					"shortName": "Treachery (UA)"
@@ -15309,7 +15345,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Conquest"
@@ -15484,7 +15532,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Redemption"
@@ -19261,7 +19321,20 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Master of Magical Ambush",
+										"entries": [
+											"Starting at 27th level, you can use your Sneak Attack feature in conjunction with any spells you cast that involve an attack roll, and your Mage Hands can be used to apply Sneak Attack as well. The remaining rules for Sneak Attack still apply.",
+											"Additionally, when you cast mage hand, the spell materialises three hands, rather than one. All hands can be controlled with a single bonus action."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Arcane Trickster"
@@ -19333,91 +19406,22 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Master of Death",
+										"entries": [
+											"Beginning at 27th level, when a creature is surprised and affected by your Death Strike feature, it is not allowed to make a saving throw against it, and if you kill a creature using this feature, you immediately gain another action, and are allowed another Sneak Attack on this turn, but you cannot add your Death Strike feature to the second strike."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Assassin"
-				},
-				{
-					"name": "Mastermind",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Mastermind",
-								"entries": [
-									"Your focus is on people and on the influence and secrets they have. Many spies, courtiers, and schemers follow this archetype, leading lives of intrigue. Words are your weapons as often as knives or poison, and secrets and favors are some of your favorite treasures.",
-									{
-										"type": "entries",
-										"name": "Master of Intrigue",
-										"entries": [
-											"When you choose this archetype at 3rd level, you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice.",
-											"Additionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, allowing you to pass yourself off as a native speaker of a particular land, provided that you know the language."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Master of Tactics",
-										"entries": [
-											"Starting at 3rd level, you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than 5 feet of you, if the target can see or hear you."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Insightful Manipulator",
-										"entries": [
-											"Starting at 9th level, if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:",
-											{
-												"type": "list",
-												"items": [
-													"Intelligence score",
-													"Wisdom score",
-													"Charisma score",
-													"Class levels (if any)"
-												]
-											},
-											"At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Misdirection",
-										"entries": [
-											"Beginning at 13th level, you can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can use your reaction to have the attack target that creature instead of you."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Soul of Deceit",
-										"entries": [
-											"Starting at 17th level, your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.",
-											"Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful, if you so choose, and you can't be compelled to tell the truth by magic."
-										]
-									}
-								]
-							}
-						],
-						[]
-					],
-					"source": "SCAG",
-					"shortName": "Mastermind"
 				},
 				{
 					"name": "Thief",
@@ -19484,7 +19488,20 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Master of Stealth",
+										"entries": [
+											"Beginning at 27th level, you have advantage on a Dexterity (stealth) check, no matter how much you move during the same turn.",
+											"Additionally, if you hide in darkness, you cannot be detected by a creature unless it has truesight, tremorsense or you choose to reveal yourself to it."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Thief"
@@ -19562,7 +19579,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Inquisitive"
@@ -19643,7 +19672,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Master of Lore and Insight",
+										"entries": [
+											"Beginning at 27th level, you have advantage on History, Insight, Investigation, and Religion checks. Furthermore, your Master of Intrigue and Insightful Manipulator features no longer require you to spend a minute in preparation."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Mastermind"
@@ -19713,7 +19754,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Scout"
@@ -19786,7 +19839,19 @@
 								]
 							}
 						],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Master of Risk and Reward",
+										"entries": [
+											"Upon reaching 27th level, you can use your Master Duelist feature a number of times equal to your Dexterity modifier between rests."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Swashbuckler"
@@ -21227,9 +21292,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Dragon Scales",
+										"entries": [
+											"At 21st level, when you aren’t wearing armor, your AC equals 15 + your Dexterity modifier, and you gain permanent resistance to the damage type associated with your draconic ancestry."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Half-Dragon",
+										"entries": [
+											"Your draconic ancestry shows itself more and more. Beginning at 25th level, your draconic wings grow in size, granting you a flying speed equal to twice your current speed, and hostile creatures have disadvantage against your Draconic Presence feature."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Prismatic Morph",
+										"entries": [
+											"You have learned to manipulate and warp your own molecular structure, becoming capable of mimicking a broader ancestry. At 28th level, choose a second Dragon Ancestor and gain all of the benefits associated with it. You do not loose the benefits of your original Dragon Ancestor."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Draconic "
@@ -21360,9 +21461,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UASorcerer",
 					"shortName": "Phoenix (UA)"
@@ -21481,9 +21618,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UASorcerer",
 					"shortName": "Sea (UA)"
@@ -21593,9 +21766,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UASorcerer",
 					"shortName": "Stone (UA)"
@@ -21657,9 +21866,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PSK",
 					"shortName": "Pyromancer (PSK)"
@@ -21767,9 +22012,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Divine Soul"
@@ -21890,9 +22171,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Shadow"
@@ -21976,9 +22293,46 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Storm Escape",
+										"entries": [
+											"Beginning at 21st level, when your Storm’s Fury feature fails to push an attacker away from you, you may, as part of the same reaction, fly up to 20 feet without provoking opportunity attacks."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Storm Soul",
+										"entries": [
+											"Your Wind Soul feature becomes empowered, allowing you to grant greater power to your allies. Starting at 25th level, as a bonus action, and without reducing your own speed, you can choose a number of creatures equal to 3 + your Charisma modifier. The chosen creatures gain a magical flying speed of 60 feet for 1 hour.",
+											"Once you empower 1 or more creatures in this way, you can’t do so again until you finish a short or long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Storm Mastery",
+										"entries": [
+											"At 28th level, whenever you start casting a spell of 1st level or higher that deals lightning or thunder damage, stormy magic erupts from you and causes creatures of your choice that you can see within 10 feet of you to take lightning or thunder damage (choose each time this ability activates) equal to your sorcerer level."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Storm "
@@ -23933,8 +24287,33 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Fey Vision",
+										"entries": [
+											"Your eyes are blessed by powerful fey magic, giving you vision as only the most powerful fey have. You gain Fey Vision out to a range of 60 feet. Each object or creature within range is outlined in a blue, green, or violet light (your choice), and your attack rolls have advantage against creatures and objects within range. Your Fey Vision outlines even hidden or invisible creatures, as well as creatures on the ethereal plane, but it doesn’t let you discern a shapeshifter’s true shape."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Invisible Passage",
+										"entries": [
+											"Beginning at 27th level, you can turn invisible using an action. The invisibility lasts until you attack or cast a spell or until your concentration ends (as if concentrating on a spell). While invisible, you leave no physical evidence of your passage, and you can be tracked only through magic. Any equipment you wear or carry, along with your familiar if you have one, is invisible with you.",
+											"Once you use this feature, you must finish a short or long rest before you can do so again."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Archfey"
@@ -24040,8 +24419,36 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Fiendish Aura",
+										"entries": [
+											"Your skin has begun to radiate a fiendish aura, making man and beast alike tremble in fear of you.",
+											"Beginning at 23rd level, unless you are incapacitated, whenever a hostile creature starts its turn within 10 feet of you, it must succeed a Wisdom saving throw or become frightened of you until the beginning of your next turn. On a successful saving throw, the creature becomes immune to your Fiendish Aura for 24 hours. Fiends are immune to your fiendish aura."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Mist Form",
+										"entries": [
+											"Beginning at 27th level, as an action or a reaction to being hit by a melee attack, you can transform into a toxic mist. Any equipment you are wearing or carrying is also transformed. You revert back to your true form if you die, or if you use a bonus action to end the effect.",
+											"While in mist form you are incapacitated and can’t speak. You have a flying speed of 30 feet, can hover, and can pass through any space that isn’t airtight. You have advantage on Strength, Dexterity, and Constitution saving throws, and you are immune to nonmagical damage.",
+											"While in mist form you can enter a creature’s space and stop there. Each time that creature starts its turn with you in its space, the creature must succeed on a Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target is incapacitated.",
+											"Once you use this feature, you must finish a short or long rest before you can do so again."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Fiend"
@@ -24146,8 +24553,34 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Eyes in the Void",
+										"entries": [
+											"Beginning at 23rd level, as a bonus action, you may call upon eldritch horrors in the void through your patron, who can keep a watchful eye on a creature of your choosing. While the target creature is observed in this way, you know it’s precise location, what it says, and you have a detailed description of the surroundings within 30 feet of it. The creature does not know, that it is being watched.",
+											"You can use this feature a number of times equal to your Charisma modifier. You regain all expended charges when you finish a long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Eldritch Denial",
+										"entries": [
+											"There is no escaping your horrible judgement. Starting at 27th level, when a creature within 60 feet of you tries to teleport, by using your reaction you can prevent them from doing so.",
+											"You can use this feature a number of times equal to your Charisma modifier. You regain all expended charges when you finish a long rest."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Great Old One"
@@ -24255,8 +24688,34 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Spontaneous Resurrection",
+										"entries": [
+											"Beginning at 23rd level, when you die, you can return to life at the start of your next turn as a free action. You appear in the closest unoccupied space of where you died. You must spend between one and ten hit dice, which grant you hit points upon your resurrection. You are freed of any temporary effects existing at the time of your death, but permanent conditions remain.",
+											"If you have no hit dice remaining, you cannot resurrect in this manner."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Undying Enmity",
+										"entries": [
+											"You narrow your eyes, and even minor deities know how it feels to be prey. Beginning at 27th level, you may roll a total of 3d20’s for an attack roll and take the highest. This feature is usable even if you would have disadvantage on the roll.",
+											"Once you use this feature, you must finish a short or long rest before you can do so again."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "SCAG",
 					"shortName": "Undying"
@@ -24364,8 +24823,32 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UATheFaithful",
 					"shortName": "Seeker (UA)"
@@ -24473,8 +24956,32 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UAWarlockAndWizard",
 					"shortName": "Raven Queen (UA)"
@@ -24588,8 +25095,32 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Celestial"
@@ -24712,8 +25243,32 @@
 								]
 							}
 						],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "Hexblade"
@@ -26032,9 +26587,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UAEberron",
 					"shortName": "Artificer (UA)"
@@ -26107,9 +26698,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Arcane Armor",
+										"entries": [
+											"Beginning at 21st level, you are permanently under the effects of an improved mage armor called Arcane Armor. As long as you are not wearing armor, your AC equals 16 + your Dexterity modifier."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Abjurer’s Cunning",
+										"entries": [
+											"Beginning at 25th level, whenever you cast an abjuration spell, it gains all effects as if it was cast with a spell slot one level higher, up to a maximum of 9th level."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Arcane Block",
+										"entries": [
+											"Starting at 28th level, you become permanently affected by the nondetection and protection from evil and good spells."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Abjuration"
@@ -26199,9 +26826,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Extra Attack",
+										"entries": [
+											"Starting at 21st level, you can attack three times, instead of once, whenever you take the Attack action on your turn."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Bladesinger’s Cunning",
+										"entries": [
+											"Beginning at 25th level, any weapon you wield can be used as an arcane focus, and you can perform the somatic components of a spell, even if you wield a weapon in each hand."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Song of Endurance",
+										"entries": [
+											"Starting at 28th level, your Bladesong feature takes root for good, and becomes permanent, as long as you are conscious."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "SCAG",
 					"shortName": "Bladesinger"
@@ -26272,9 +26935,46 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Faithful Companion",
+										"entries": [
+											"Starting at 21st level, you permanently have a companion with you, as if conjured with the mordenkainen’s faithful hound spell. As an action you can command your hound to be alert or not, and you can change the pass phrase at any time using a bonus action."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Conjurer’s Cunning",
+										"entries": [
+											"Beginning at 25th level, whenever you cast a conjuration spell, it gains all effects as if it was cast with a spell slot one level higher, up to a maximum of 9th level."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Mastering the Circle",
+										"entries": [
+											"At 28th level, you can cast the teleportation circle spell as an action, without spending any material components. Any circles you create in this manner are permanent. You may destroy any of your own circles using an action, as long as you are on the same plane of existence.",
+											"Additionally, any other Teleportation Circles you find, you can destroy as an action."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Conjuration"
@@ -26392,9 +27092,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Divining Sight",
+										"entries": [
+											"Beginning at 21st level, you gain truesight out to a range of 30 feet."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Diviner’s Cunning",
+										"entries": [
+											"Beginning at 25th level, whenever you cast a divination spell, it gains all effects as if it was cast with a spell slot one level higher, up to a maximum of 9th level."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Lore Master",
+										"entries": [
+											"Starting at 28th level, you become permanently affected by the legend lore spell."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Divination"
@@ -26467,9 +27203,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Strong Casting",
+										"entries": [
+											"Starting at 21st level, creatures have disadvantage on saving throws against your enchantment spells."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Enchanter’s Cunning",
+										"entries": [
+											"Beginning at 25th level, whenever you cast an enchantment spell, it gains all effects as if it was cast with a spell slot one level higher, up to a maximum of 9th level."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Master Enchanter",
+										"entries": [
+											"Starting at 28th level, you can cast Geas without spending a spell slot. When cast in this way, the spell has a duration of 1 hour."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Enchantment"
@@ -26539,9 +27311,46 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Prismatic Shield",
+										"entries": [
+											"Starting at 21st level, you can surround yourself with flames of all colors, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can create this shield, or dismiss it using a bonus action.",
+											"While active the flames grant you resistance to cold, fire and lightning damage. In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d6 fire damage, 2d6 cold damage, and 2d6 lightning damage."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Evoker’s Cunning",
+										"entries": [
+											"Beginning at 25th level, whenever you cast an evocation spell, it gains all effects as if it was cast with a spell slot one level higher, up to a maximum of 9th level."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Headmaster",
+										"entries": [
+											"Starting at 28th level, you may add your proficiency bonus to the damage roll of any ranged spell attack you perform using a wizard evocation spell."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Evocation"
@@ -26613,9 +27422,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Convincing Illusions",
+										"entries": [
+											"Starting at 21st level, your illusion spells that would fail physical inspection, can now pass as real. For example, if you change the appearance of one of your allies, by making him shorter, as with the seeming spell, and a guard were to inspect his height, the guard would perceive it as being so, even though your ally is physically taller."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Illusionist’s Cunning",
+										"entries": [
+											"Beginning at 25th level, whenever you cast an illusion spell, it gains all effects as if it was cast with a spell slot one level higher, up to a maximum of 9th level."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Illusion"
@@ -26705,9 +27550,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "UATheFaithful",
 					"shortName": "Theurgy (UA)"
@@ -26837,9 +27718,46 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Master Transmuter’s Stone",
+										"entries": [
+											"Starting at 21st level, your Transmuter’s Stone gains all four effects simultaneously."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Transmuter’s Cunning",
+										"entries": [
+											"Beginning at 25th level, whenever you cast a transmutation spell, it gains all effects as if it was cast with a spell slot one level higher, up to a maximum of 9th level."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Ethereal",
+										"entries": [
+											"Starting at 28th level, as a bonus action, you can cast etherealness as a 9th level spell, without expending a spell slot.",
+											"Once you use this feature, you must finish a short or long rest before you can do so again."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Transmutation"
@@ -26918,9 +27836,47 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Aura of Death",
+										"entries": [
+											"Starting at 21st level, using an action, you can cast circle of death on yourself as a 6th level spell, without using materials or expending a spell slot, although its radius if cast in this way is reduced to 15 feet. You can dismiss it again using a bonus action."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Necromancer’s Cunning",
+										"entries": [
+											"Beginning at 25th level, whenever you cast a necromancy spell, it gains all effects as if it was cast with a spell slot one level higher, up to a maximum of 9th level."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Undying Nature",
+										"entries": [
+											"Beginning at 28th level, if you drop to 0 hit points or die outright, you can drop to 1 hit point instead and gain temporary hit points equal to half your maximum hit points.",
+											"Once you use this feature, you must finish a long rest before you can do so again.",
+											"Additionally, for every 10 years that pass you age only 1 year, and you cannot be magically aged."
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "PHB",
 					"shortName": "Necromancy"
@@ -26994,9 +27950,45 @@
 								]
 							}
 						],
-						[],
-						[],
-						[]
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Temp",
+										"entries": [
+											"Temp"
+										]
+									}
+								]
+							}
+						]
 					],
 					"source": "XGE",
 					"shortName": "War Magic"

@@ -22,9 +22,45 @@
     },
     {
       "source": "AG",
+      "type": "Region",
+      "name": "The Free Islands",
+      "location": [
+        "The Free Islands",
+        "South Ebion Sea"
+      ],
+      "race": [
+        "Tortle",
+        "Triton",
+        "High Elf ",
+        "Half-Elf",
+        "Minotaur ",
+        "Dwarf",
+        "Halfing",
+        "Half-Orc",
+        "Human"
+      ],
+      "entries": [
+        "The archipelago known as the Free Islands is a haven for thieves, smugglers, pirates, and those who would rather not live under the laws of the worlds larger nations.  Despite the efforts of Roshen and Loren-Hearth attempts to tame this archipelago have met with failure. The region is dominated by three major islands each of which holds a large port; new arrivals to the archipelago almost always make port at one of these three islands first before moving on to explore the rest of the islands.  ",
+        "The largest and most northern island is named Stal.  The initial founding of the city traces back to a colony from the city of Astodius.  Those origins are long past though the island still trades with its father city-state, and the Roshen empire. ",
+        "Peshara is least ‘civilized’ of the archipelagos major islands.  Due both to its proximity to the Western Nothing and its distance from the rest of the world it has a population that is smaller than many of the islands around it.  The port of Arlas is the least developed of all the major ports in the island chain and unlike many of the other larger ports no one has laid claim to rule it. ",
+        "The large western island is named Heath-Lorian.  It was previously under the control of Loren-Hearth, and there are the ruins of several forts that are relics of that occupation.  The main port city is also named Heath-Lorian and trades mostly with Loren-Hearth and the minotaur islands. ",
+        "As with most of the world humans are one of the most common races found in the free islands.  Most humans here have either been settled for generations, or have come here from Aba’i, Diirack Crum, or the Shair peninsula.",
+        "Tortles are one of the largest minority populations in the archipelago. The tortles in the region have a dark bronze cast to their shells and live in small tribes that are close-knit and fairly insular.  ",
+        "Tritons are another large minority in the area, perhaps unsurprisingly due to their aquatic nature.  Unlike the surface dwelling humanoid species tritons in the archipelago have built down, along the sides of the various islands.  These sideways villages and towns are located  away from the main shipping channels in the somewhat deeper waters around the edges of the archipelago.  ",
+        "Due to the proximity of the islands to the elf nation of Loren-Hearth, and the former colony status of several of the eastern islands.  Many of the elves who make their living in the islands are refugees from Loren-Hearth, those who dissented against the war, or just individuals who wanted to leave the mainland and travel a little. ",
+        "Unsurprisingly Half-Elves are common among the free islands.  They live among most of the humanoid mammalian settlements.  ",
+        "As a common seafaring race it’s not uncommon to see Minotaurs in the Free Islands.  For the most part there are not minotaur settlements, however there are minotaurs living alone  and small groups of minotaurs throughout the other various island settlements. ",
+        "Dwarves are a rarity in the islands.  The ancient dwarven empire never became a significant seafaring power and so dwarves never settled the islands or established colonies there.  A few dwarves have settled here, mostly exiles from the Shair peninsula.",
+        "Halflings exist throughout the islands, both in their own villages and within larger communities.  Most are of the lightfoot or stout variants though there a few ghostwise halfings among them as well. ",
+        "Half-Orcs and Orcs are uncommon in the islands.  Some come through the islands as part of pirate crews or are shipwrecked and washed ashore.  However Orcs and Half-Orcs do not tend to settle for more than a few days in the islands.  "
+      ],
+      "page": 0
+    },
+    {
+      "source": "AG",
       "type": "Archipelago",
       "name": "Minotaur Isles",
-			"title": "The",
+      "title": "The",
       "location": [
         "Ebion"
       ],
@@ -59,19 +95,20 @@
     },
     {
       "source": "AG",
-      "type": "Island",
+      "type": "Country",
       "name": "A'tuí",
+      "title": "Island of",
       "location": [
-        "Ebion"
+        "South Ebion Sea"
       ],
       "race": [
         "Human"
       ],
       "entries": [
-        "Invaded and conquered by every major empirical entity on Ebion at some point or another. There are scattered remnants of a long lost dwarven city, though most have sunk in the soft soil. Being tropical, it rains constantly in A’tuí and plants are fast-growing but frail. Softwoods, such as palms, dominate the available timber. The earth is fertile but malleable and tidal marshes are common.",
-        "50 years ago, A’tuí was under the rule of the remnants of the Bistant Empire - the bulk of which existing primarily in the bastion-city of Prow Ira. Growing dissent gave rise to the necromancer Vitor, who used black magics to expunge the Bistant from the island and raise an army of the dead. Knowing that Roshen would quickly swoop in to fill the void left by the Bistant, Vitor made a power play by burning his way to the city of Miria in central Roshen.",
-        "Ultimately, Vitor was stopped by the Shields of Tyr who grievously injured him before he disappeared. Roshen “rewarded” the remaining members of the Shields of Tyr for their service by forcing them to A’tui to both rid the island of the undead and keep the populace from ever again rising up against Roshen.",
-        "Today, A’tuí is essentially under its own rule - being primarily ignored by Roshen. The Shields of Tyr are too ill-funded and isolated to exert much control over the country and wage a fruitless war against perpetual undeath."
+        "50 years ago, A’tuí was under the rule of the remnants of the Bistant Empire - the bulk of which existing primarily in the bastion-city of Prow Ira. Growing dissent gave rise to the necromancer Vitor, who used black magics to expunge the Bistant from the island and raise an army of the dead. Knowing that Roshen would quickly swoop in to fill the void left by the Bistant, Vitor struck at Roshen with his army. Ultimately he was stopped by the Shields of Tyr. Crippled as it was, A’tuí was viciously captured by Roshen as punishment. The Shields of Tyr were forced onto the island as insurance that such an undead horde could never be fashioned again.",
+        "The political structure of A’tuí is an unusual one. The repeat conquerings have left the island without royalty, nobility, or elected powers. The only traditional power left on the island is that of the Ara'ta - the Life Chief. The healer-in-chief gives orders to his direct subordinates and to the remote rulers, known as Swimmers, of other island towns - from the smallest fishing village to the mighty Prow Ira.",
+        "Undead still plague the island and the Shields of Tyr, now far from home and without support or reinforcement, are notably incapable of handling this issue. As a result, a group of unusual warlocks - known as the Witch Doctors - have taken to power. Under the leadership of Black Doctor Ba'la, these “sellspells” wander the island offering the expulsion of undead for a fee. Wealthier towns employ a witchdoctor full time, while smaller towns and remote homes must hope that a wandering Witch Doctor will visit.",
+        "The locals of A’tuí, known as A’ti, are very visually distinctive humans. Chestnut colored skin, grey to white hair, and green eyes are common traits, but variations in hair and eye color are not unheard of. Many A'ti are magically gifted - to a degree. Very basic spells are commonplace but few have interest or aptitude in furthering those talents."
       ],
       "page": 0
     },
