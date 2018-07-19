@@ -53,7 +53,7 @@
 		},
     {
 			"name": "Centaur",
-			"source": "Adventurer's Guild Homebrew",
+			"source": "AG",
 			"page": 1,
 			"size": "M",
 			"speed": 35,
@@ -1812,6 +1812,12 @@
 								"Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
 							],
 							"type": "entries"
+						},
+						{
+							"name": "Dwarven Resilience",
+							"entries": [
+								"Your hit point maximum increases by 25 at 25th level."
+							]
 						}
 					]
 				},
