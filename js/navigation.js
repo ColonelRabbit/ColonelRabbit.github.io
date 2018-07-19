@@ -49,15 +49,14 @@ function navigation () {
 	A('players', 'playerOption', 'dropdown-toggle', 'dropdown', '#', 'button', 'true', 'false', "Player Options <span class='caret'></span>");
 	UL('players', 'ul_players', 'dropdown-menu');
 	LI('ul_players', 'classes.html', 'Classes');
-	//LI('ul_players', 'prestigeclasses.html', 'Prestige Classes');
 	LI('ul_players', 'backgrounds.html', 'Backgrounds');
 	LI('ul_players', 'feats.html', 'Feats');
 	LI('ul_players', 'invocations.html', 'Invocations');
 	LI('ul_players', 'races.html', 'Races');
-//	LI('ul_players', 'lifegen.html', 'This Is Your Life');
+	LI('ul_players', 'lifegen.html', 'This Is Your Life');
 	LI('ul_players', 'names.html', 'Names');
 
-
+/*
 	LIDropdown('navbar', 'dms', 'dropdown');
 	A('dms', 'dmOption', 'dropdown-toggle', 'dropdown', '#', 'button', 'true', 'false', "DM Tools <span class='caret'></span>");
 	UL('dms', 'ul_dms', 'dropdown-menu');
@@ -69,7 +68,7 @@ function navigation () {
 	LI('ul_dms', 'lootgen.html', 'Loot Generator');
 	LI('ul_dms', 'objects.html', 'Objects');
 	LI('ul_dms', 'trapshazards.html', 'Traps & Hazards');
-
+*/
 	LIDropdown('navbar', 'references', 'dropdown');
 	A('references', 'references', 'dropdown-toggle', 'dropdown', '#', 'button', 'true', 'false', "References <span class='caret'></span>");
 	UL('references', 'ul_references', 'dropdown-menu');
@@ -92,6 +91,7 @@ function navigation () {
 	LI('ul_utils', 'roll20.html', 'Roll20 Script Help');
 
 	LISwitcher('navbar', 'daynightMode', 'nightModeToggle', '#', 'styleSwitcher.toggleActiveStyleSheet(); return false;');
+
 
 	/**
 	 * Adds a link for the LIDropdowns
@@ -126,6 +126,7 @@ function navigation () {
 	 * @param {String} ul_id - What ID should this UL have.
 	 * @param {String} _class - What class(es) should this link have.
 	 */
+
 	function UL (append_to_id, ul_id, _class) {
 		const ul = document.createElement('ul');
 		ul.id = ul_id;
@@ -142,6 +143,7 @@ function navigation () {
 	 * @param a_text - What text does this link have.
 	 * @param a_hash - Optional hash to be appended to the base href
 	 */
+
 	function LI (append_to_id, a_href, a_text, a_hash) {
 		const hashPart = a_hash ? `#${a_hash}`.toLowerCase() : "";
 		$(`#${append_to_id}`)
@@ -202,6 +204,7 @@ function navigation () {
 	 * @param {String} a_href - Where does this link to.
 	 * @param {String} a_class - What should the link do when you click on it.
 	 */
+
 	function LISwitcher (append_to_id, li_id, a_class, a_href, a_onclick) {
 		const a = document.createElement('a');
 		a.href = a_href;
@@ -217,4 +220,5 @@ function navigation () {
 		const appendTo = document.getElementById(append_to_id);
 		appendTo.appendChild(li);
 	}
+
 }

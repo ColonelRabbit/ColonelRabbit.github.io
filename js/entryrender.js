@@ -1868,6 +1868,8 @@ EntryRenderer.item = {
 				variantList[i].source = variantList[i].inherits.source;
 				variantList[i].page = variantList[i].inherits.page;
 				if (!variantList[i].entries && variantList[i].inherits.entries) variantList[i].entries = JSON.parse(JSON.stringify(variantList[i].inherits.entries));
+				if (variantList[i].inherits.magic) variantList[i].magic = true;
+				if (variantList[i].inherits.masterwork) variantList[i].masterwork = true;
 				if (variantList[i].requires.armor) variantList[i].armor = variantList[i].requires.armor;
 				if (variantList[i].inherits.resist) variantList[i].resist = variantList[i].inherits.resist;
 				if (variantList[i].inherits.reqAttune) variantList[i].reqAttune = variantList[i].inherits.reqAttune;
@@ -2898,9 +2900,9 @@ EntryRenderer.dice = {
 					if (!d.drops) return [r, []];
 					let toSlice;
 					if (d.drops === "h") {
-						toSlice = [...r].sort().reverse();
+						toSlice = [...r].sort((a, b) => b - a);
 					} else if (d.drops === "l") {
-						toSlice = [...r].sort();
+						toSlice = [...r].sort((a, b) => a - b);
 					}
 					const toDrop = toSlice.slice(0, d.drop);
 					const keepStack = [];
@@ -2931,7 +2933,7 @@ EntryRenderer.dice = {
 					neg: d.neg,
 					num: d.num,
 					faces: d.faces,
-					mod: d.mod,
+					//mod: d.mod,
 					drop: d.drop,
 					drops: d.drops
 				}

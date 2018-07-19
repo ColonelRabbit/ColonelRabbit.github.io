@@ -78,7 +78,7 @@ function populateTablesAndFilters (data) {
 		items: ["Basic", "Generic Variant", "Specific Variant", "Other"],
 		deselFn: deselectFilter("category", "Specific Variant")
 	});
-	const miscFilter = new Filter({header: "Miscellaneous", items: ["Magic", "Mundane", "Sentient"]});
+	const miscFilter = new Filter({header: "Miscellaneous", items: ["Magic", "Mundane", "Sentient", "Masterwork"]});
 
 	filterBox = initFilterBox(sourceFilter, typeFilter, tierFilter, rarityFilter, propertyFilter, attunementFilter, categoryFilter, miscFilter);
 
@@ -198,10 +198,10 @@ function addItems (data) {
 		curitem._fTier = tierTags;
 		curitem._fProperties = curitem.property ? curitem.property.map(p => curitem._allPropertiesPtr[p].name).filter(n => n) : [];
 		curitem._fMisc = curitem.sentient ? ["Sentient"] : [];
-		const isMundane = rarity === "None" || rarity === "Unknown" || category === "Basic";
-		curitem._fMisc.push(isMundane ? "Mundane" : "Magic");
+		curitem._fMisc.push(curitem.magic ? "Magic" : "Mundane");
+		if (curitem.masterwork) curitem._fMisc.push("Masterwork");
 
-		if (isMundane) {
+		if (!curitem.magic) {
 			liList["mundane"] += `
 			<li class="row" ${FLTR_ID}=${itI} onclick="ListUtil.toggleSelected(event, this)" oncontextmenu="ListUtil.openContextMenu(event, this)">
 				<a id="${itI}" href="#${UrlUtil.autoEncodeHash(curitem)}" title="${name}">
@@ -311,9 +311,9 @@ function getSublistItem (item, pinId, addCount) {
 		<li class="row" ${FLTR_ID}="${pinId}" oncontextmenu="ListUtil.openSubContextMenu(event, this)">
 			<a href="#${UrlUtil.autoEncodeHash(item)}" title="${item.name}">
 				<span class="name col-xs-6">${item.name}</span>
-				<span class="weight text-align-center col-xs-2">${item.weight ? `${item.weight} lb${item.weight > 1 ? "s" : ""}.` : "\u2014"}</span>		
+				<span class="weight text-align-center col-xs-2">${item.weight ? `${item.weight} lb${item.weight > 1 ? "s" : ""}.` : "\u2014"}</span>
 				<span class="price text-align-center col-xs-2">${item.value || "\u2014"}</span>
-				<span class="count text-align-center col-xs-2">${addCount || 1}</span>		
+				<span class="count text-align-center col-xs-2">${addCount || 1}</span>
 				<span class="id hidden">${pinId}</span>
 			</a>
 		</li>
