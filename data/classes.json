@@ -1128,9 +1128,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "test",
+										"name": "Ancenstral Aegis",
 										"entries": [
-											"Test subclass feature."
+											"At 27th level, the damage reduction on Spirit Shield increases to 7d6 and the range increases to 60 ft."
 										]
 									}
 								]
@@ -1283,9 +1283,36 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "test",
+										"name": "Tempest",
 										"entries": [
-											"Test subclass feature."
+											"At 27th level, the power of the storm you channel grows mightier, lashing out at your foes. The effect is based on the environment you chose for your Storm Aura.",
+											"Additionally, the size of your aura increases to 15 ft.",
+											{
+												"type": "options",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Desert",
+														"entries": [
+															"Any creature that enters your aura or starts their turn inside your aura takes 2d10 fire damage."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Sea",
+														"entries": [
+															"As a bonus action, force a creature to make a Strength saving throw. On a failed save, the target takes 2d10 lightning damgage and is pushed or pulled up to 10 ft. On a successful throw, the target takes half damage and isn't moved. The displacement does not provoke attacks of opportunity."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Tundra",
+														"entries": [
+															"When an ally with temporary hit points is hit by a melee attack, the attacker must make a Constitution saving throw. On a failed throw, they cannot make a melee attack against this target until their next turn."
+														]
+													}
+												]
+											}
 										]
 									}
 								]
@@ -1367,9 +1394,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "test",
+										"name": "Divine Protection",
 										"entries": [
-											"Test subclass feature."
+											"While raging you are affected by the {@spell protection from evil and good} spell."
 										]
 									}
 								]
@@ -2729,9 +2756,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "test",
+										"name": "Fools Never Die",
 										"entries": [
-											"Test subclass feature."
+											"At 27th level, whenever you would be reduced to 0 hit points, you may expend a bardic insipration dice to move up to your movement speed and set your hit poitns equal to the number rolled. This movement doesn't provoke attacks of opportunity."
 										]
 									}
 								]
@@ -2807,9 +2834,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "test",
+										"name": "Beguiling Tongue",
 										"entries": [
-											"Test subclass feature."
+											"At 27th level, any creature that can see you and shares a language with you has disadvantage on spells that makes the target {@condition charmed}."
 										]
 									}
 								]
@@ -2931,9 +2958,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "test",
+										"name": "Grand Master's Flourish",
 										"entries": [
-											"Test subclass feature."
+											"Starting at 27th level, whenever you use a Blade Flourish option, you can roll a d12 and use it instead of expending a Bardic Inspiration die."
 										]
 									}
 								]
@@ -2958,7 +2985,7 @@
 										"entries": [
 											"When you join the College of Whispers at 3rd level, you gain the ability to make your weapon attacks magically toxic to a creature's mind.",
 											"When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an extra 2d6 psychic damage to that target. You can do so only once per round on your turn.",
-											"The psychic damage increases when you reach certain levels in this class, increasing to 3d6 at 5th level, 5d6 at 10th level, and 8d6 at 15th level."
+											"The psychic damage increases when you reach certain levels in this class, increasing to 3d6 at 5th level, 5d6 at 10th level, 8d6 at 15th level, and 12d6 at 24th level."
 										]
 									},
 									{
@@ -3014,9 +3041,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "test",
+										"name": "Mantle of Silence",
 										"entries": [
-											"Test subclass feature."
+											"At 27th level, when you use the Mantle of Whispers feature, you can keep the disguise until you dismiss it as a bonus action. You cannot use Mantle of Whispers while you have a shadow active."
 										]
 									}
 								]
@@ -4300,162 +4327,6 @@
 					"shortName": "Arcana"
 				},
 				{
-					"name": "Death Domain",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Death Domain",
-								"entries": [
-									"The Death domain is concerned with the forces that cause death, as well as the negative energy that gives rise to undead creatures. Deities such as Chemosh, Myrkul, and WeeJas are patrons of necromancers, death knights, liches, mummy lords, and vampires. Gods of the Death domain also embody murder (Anubis, Bhaal, and Pyremius), pain (Iuz or Loviatar), disease or poison (Incabulos, Talona, or Morgion), and the underworld (Hades and Hel).",
-									"At each indicated cleric level, add the listed spells to your spells prepared. They do not count towards your limit.",
-									{
-										"type": "table",
-										"caption": "Death Domain Spells",
-										"colLabels": [
-											"Cleric Level",
-											"Spells"
-										],
-										"colStyles": [
-											"col-xs-3 text-align-center",
-											"col-xs-9"
-										],
-										"rows": [
-											[
-												"1st",
-												"{@spell false life}, {@spell ray of sickness}"
-											],
-											[
-												"3rd",
-												"{@spell blindness/deafness}, {@spell ray of enfeeblement}"
-											],
-											[
-												"5th",
-												"{@spell animate dead}, {@spell vampiric touch}"
-											],
-											[
-												"7th",
-												"{@spell blight}, {@spell death ward}"
-											],
-											[
-												"9th",
-												"{@spell antilife shell}, {@spell cloudkill}"
-											]
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Bonus Proficiency",
-										"entries": [
-											"When the cleric chooses this domain at 1st level, he or she gains proficiency with martial weapons."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Reaper",
-										"entries": [
-											"At 1st level, the cleric learns one necromancy cantrip of his or her choice from any spell list. When the cleric casts a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures within range and within 5 feet of each other."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Channel Divinity: Touch of Death",
-										"entries": [
-											"Starting at 2nd level, the cleric can use Channel Divinity to destroy another creature's life force by touch.",
-											"When the cleric hits a creature with a melee attack, the cleric can use Channel Divinity to deal extra necrotic damage to the target. The damage equals 5 + twice his or her cleric level."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Inescapable Destruction",
-										"entries": [
-											"Starting at 6th level, the cleric's ability to channel negative energy becomes more potent. Necrotic damage dealt by the character's cleric spells and Channel Divinity options ignores resistance to necrotic damage."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Divine Strike",
-										"entries": [
-											"At 8th level, the cleric gains the ability to infuse his or her weapon strikes with necrotic energy. Once on each of the cleric's turns when he or she hits a creature with a weapon attack, the cleric can cause the attack to deal an extra 1d8 necrotic damage to the target. When the cleric reaches 14th level, the extra damage increases to 2d8."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Improved Reaper",
-										"entries": [
-											"Starting at 17th level, when the cleric casts a Necromancy spell of 1st through 5th-level that targets only one creature, the spell can instead target two creatures within range and within 5 feet of each other. If the spell consumes its material components, the cleric must provide them for each target."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Death Throes",
-										"entries": [
-											"Beginning at 21st level, whenever you deal necrotic damage to a creature, the creature’s maximum hit points is reduced by the same amount."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Channel Death",
-										"entries": [
-											"Beginning at 25th level, the damage from your Channel Divinity: Touch of Death spreads to all creatures of your choosing within 10 feet of you."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Improved Divine Strike",
-										"entries": [
-											"Beginning at 28th level, your Divine Strike damage increases to 3d8."
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "DMG",
-					"shortName": "Death"
-				},
-				{
 					"name": "Knowledge Domain",
 					"subclassFeatures": [
 						[
@@ -5700,9 +5571,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Arms Keeper",
 										"entries": [
-											"Temp"
+											"At 21st level, you gain an additional attunement slot (4 total)."
 										]
 									}
 								]
@@ -5713,9 +5584,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Channel the Forge Masters",
 										"entries": [
-											"Temp"
+											"At 25th level, you may craft magic items, upto uncommon in rarity, and worth no more than 500 gp."
 										]
 									}
 								]
@@ -5726,9 +5597,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Improved Divine Strike",
 										"entries": [
-											"Temp"
+											"Beginning at 28th level, your Divine Strike damage increases to 3d8."
 										]
 									}
 								]
@@ -5859,7 +5730,7 @@
 										"type": "entries",
 										"name": "Temp",
 										"entries": [
-											"Temp"
+											"At 21st level, when you give an ally resistance using Indomitable Defense, you keep the resistance to that damage type yourself. You can only provide this resitance to up to one creature. Additionally, you can also choose resistance to fire, cold and lightning damage with Indomintable Denfese."
 										]
 									}
 								]
@@ -5870,9 +5741,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Channel Brilliance",
 										"entries": [
-											"Temp"
+											"At 25th level, your Channel Divinity: Radiant Defense increases its damage to 4d10 + your Cleric level."
 										]
 									}
 								]
@@ -5883,9 +5754,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Improved Divine Strike",
 										"entries": [
-											"Temp"
+											"Beginning at 28th level, your Divine Strike damage increases to 3d8."
 										]
 									}
 								]
@@ -6015,9 +5886,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Turn Back Death",
 										"entries": [
-											"Temp"
+											"At 21st level, you gain resistance to necrotic damage. Additionally, whenever you target an ally with a spell, the target gains resistance to necrotic damage for one round."
 										]
 									}
 								]
@@ -6028,9 +5899,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Channel ",
 										"entries": [
-											"Temp"
+											"At 25th level, a creature affected by Channel Divinity: Path to the Grave is affected for a number of rounds equal to your wisdom modifier. Additionally, the curse does not end when they take damage."
 										]
 									}
 								]
@@ -6041,9 +5912,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Reject the Grave",
 										"entries": [
-											"Temp"
+											"At 28th level, whenever you use your Sentinel at Death's Door feature your target regains hit points equal to 2 times your wisdom modifier."
 										]
 									}
 								]
@@ -6923,7 +6794,9 @@
 									"When you transform, you assume the beast's hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked {@condition unconscious}.",
 									"You can't cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn't break your concentration on a spell you've already cast, however, or prevent you from taking actions that are part of a spell, such as {@spell call lightning}, that you've already cast.",
 									"You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can't use any of your special senses, such as darkvision, unless your new form also has that sense.",
-									"You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form."
+									"You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.",
+									"You cannot use Wild Shape while in Wild Shape.",
+									"If you revert to normal form due to dropping to 0 hit points, you cannot use Wild Shape until the end of your next turn."
 								]
 							}
 						]
@@ -7684,9 +7557,10 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Bane of the Dead",
 										"entries": [
-											"Temp"
+											"At 23rd level, you can use an action to gain the effects of the {@item Scroll of Protection from Undead}.",
+											"Once you use this feature, you can't use it again until you finish a short or long rest."
 										]
 									}
 								]
@@ -7697,9 +7571,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Reaper",
 										"entries": [
-											"Temp"
+											"At 27th level, necrotic damage dealt with the Harvest's Scythe feature ignore necrotic resistance and deal half damage to creatures with immunity to necrotic."
 										]
 									}
 								]
@@ -7779,9 +7653,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Boon of the Summer Court",
 										"entries": [
-											"Temp"
+											"At 23rd level, when you heal with Balm of the Summer Court, all dice are set to their max value."
 										]
 									}
 								]
@@ -7794,7 +7668,8 @@
 										"type": "entries",
 										"name": "Temp",
 										"entries": [
-											"Temp"
+											"At 27th level, you can use magical paths in the Feywild to increase your travel speeds. You and a number of creatures up to your Wisdom modifier can travel a distance of up to 100 miles to a location that you can visualize in 1 minute.",
+											"Once you use this feature, you can't use it again until you finish a long rest."
 										]
 									}
 								]
@@ -7912,9 +7787,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Woodland Devotion",
 										"entries": [
-											"Temp"
+											"At 23rd level, any conjuration spell you cast, you cast it as if it were two spell slots higher and can go above 9th level. This includes casts from the Faithful Summons feature."
 										]
 									}
 								]
@@ -7927,7 +7802,33 @@
 										"type": "entries",
 										"name": "Temp",
 										"entries": [
-											"Temp"
+											"Starting at 27th level, your spirit totems can draw on the power of their primal ancestors to empower their auras. Your Spirit totem feature gains the following properties:",
+											{
+												"type": "options",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Bear Spirit",
+														"entries": [
+															"Each creature of your choice that starts its turn in the Bear aura gains temporary hit points equal to half your druid level."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Hawk Spirit",
+														"entries": [
+															"Each creature of your choice in the aura gets a +2 to attack rolls."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Unicorn Spirit",
+														"entries": [
+															"Each creature of your choice inside the aura has advantage on saving throws against spells and other magical effects."
+														]
+													}
+												]
+											}
 										]
 									}
 								]
@@ -7987,7 +7888,7 @@
 										"type": "entries",
 										"name": "Halo of Spores",
 										"entries": [
-											"Starting at 2nd level, you can launch toxic spores at other creatures. To do so, you use your reaction on your turn to deal 3 poison damage to one creature you can see within 10 feet of you. This damage increases to 6 at 6th level, 9 at 10th level, and 12 at 14th."
+											"Starting at 2nd level, you can launch toxic spores at other creatures. To do so, you use your reaction on your turn to deal 3 poison damage to one creature you can see within 10 feet of you. This damage increases to 6 at 6th level, 9 at 10th level, 12 at 14th, 15 23rd level and 18 at 27th level."
 										]
 									},
 									{
@@ -8046,9 +7947,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Infested One",
 										"entries": [
-											"Temp"
+											"At 23rd level, you gain resistance to poison damage. Additionally, any creature within 30 feet that has taken damage from your Halo of Spores feature and dies is affected by your Fungal Infestation feature."
 										]
 									}
 								]
@@ -8059,9 +7960,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Fungal Champion",
 										"entries": [
-											"Temp"
+											"At 27th level, creatures you reanimate using the Fungal Infestation feature start with 50 hit points."
 										]
 									}
 								]
@@ -9856,141 +9757,6 @@
 					"shortName": "Eldritch Knight"
 				},
 				{
-					"name": "Monster Hunter (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Monster Hunter",
-								"entries": [
-									"As an archetypal Monster Hunter, you are an expert at defeating supernatural threats. Typically mentored by an older, experienced Monster Hunter, you learn to overcome a variety of unnatural defenses and attacks, including those of undead, lycanthropes, and other creatures of horror.",
-									{
-										"type": "entries",
-										"name": "Bonus Proficiencies",
-										"entries": [
-											"When you choose this archetype at 3rd level, you gain proficiency in three of the following skills of your choice: Arcana, History, Insight, Investigation, Nature, or Perception. You can choose to gain proficiency with thieves' tools in place of one skill choice."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Combat Superiority",
-										"entries": [
-											"At 3rd level, you gain a set of abilities that are fueled by special dice called superiority dice.",
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Superiority Dice",
-														"entries": [
-															"You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a long or short rest. You gain another superiority die at 7th level and one more at 15th level."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Using Superiority Dice",
-														"entries": [
-															"You can expend superiority dice to gain a number of different benefits:",
-															{
-																"type": "list",
-																"items": [
-																	"When you make a weapon attack against a creature, you can expend one superiority die to add it to the attack roll. You can use this ability before or after making the attack roll, but before any of the effects of the attack are applied.",
-																	"When you damage a creature with a weapon attack, you can expend one superiority die to add it to the damage roll. You can use this ability after rolling damage. If the attack causes the target to make a Constitution saving throw to maintain concentration, it has disadvantage on that save.",
-																	"When you make an Intelligence, a Wisdom, or a Charisma saving throw, you can expend one superiority die to add it to the roll. You can use this feature only before you learn if the save succeeded or failed.",
-																	"When you make a Wisdom (Perception) check to detect a hidden creature or object, or a Wisdom (Insight) check to determine if someone is lying to you, you can expend one superiority die to add it to the roll. You can use this feature after seeing the total but before learning if you succeeded or failed."
-																]
-															}
-														]
-													}
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Hunter's Mysticism",
-										"entries": [
-											"At 3rd level, your study of the supernatural gives you a limited ability to use magic. You can cast {@spell detect magic} as a ritual. You can cast {@spell protection from evil and good}, but you cannot cast it again with this feature until you finish a long rest. Wisdom is your spellcasting ability for these spells.",
-											"In addition, you gain the ability to speak one of the following languages of your choice: Abyssal, Celestial, or Infernal."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Monster Slayer",
-										"entries": [
-											"At 7th level, whenever you expend superiority dice to add to a damage roll, you can expend up to two dice instead of just one, adding both to the roll. Both dice are expended as normal. If the target of your attack is an aberration, a fey, a fiend, or an undead, you deal maximum damage with both dice, instead of rolling them."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Improved Combat Superiority",
-										"entries": [
-											"At 10th level, your superiority dice turn into d10s. At 18th level, they turn into d12s."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Relentless",
-										"entries": [
-											"Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Improved Combat Superiority",
-										"entries": [
-											"At 18th level, your superiority dice turn into d12s."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Temp",
-										"entries": [
-											"Temp"
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UAGothicHeroes",
-					"shortName": "Monster Hunter (UA)"
-				},
-				{
 					"name": "Purple Dragon Knight (Banneret)",
 					"subclassFeatures": [
 						[
@@ -10090,354 +9856,6 @@
 					],
 					"source": "SCAG",
 					"shortName": "Purple Dragon Knight (Banneret)"
-				},
-				{
-					"name": "Scout (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Scout",
-								"entries": [
-									"The archetypal Scout excels at finding safe passage through dangerous regions. Scouts usually favor light armor and ranged weapons, but they are comfortable using heavier gear when faced with intense fighting.",
-									{
-										"type": "entries",
-										"name": "Bonus Proficiencies",
-										"entries": [
-											"When you choose this archetype at 3rd level, you gain proficiency in three of the following skills of your choice: Acrobatics, Athletics, Investigation, Medicine, Nature, Perception, Stealth, or Survival. You can choose to gain proficiency with thieves' tools in place of one skill choice."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Combat Superiority",
-										"entries": [
-											"At 3rd level, you gain a set of abilities that are fueled by special dice called superiority dice.",
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Superiority Dice",
-														"entries": [
-															"You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a long or short rest. You gain another superiority die at 7th level and one more at 15th level."
-														]
-													}
-												]
-											},
-											{
-												"type": "entries",
-												"entries": [
-													{
-														"type": "entries",
-														"name": "Using Superiority Dice",
-														"entries": [
-															"You can expend superiority dice to gain a number of different benefits:",
-															{
-																"type": "list",
-																"items": [
-																	"When you make a check that allows you to apply your proficiency in Athletics, Nature, Perception, Stealth, or Survival, you can expend one superiority die to bolster the check. Add half the number rolled on the superiority die (rounding up) to your check. You apply this bonus after making the check but before learning if it was successful.",
-																	"When you make a weapon attack against a creature, you can expend one superiority die to add it to the attack roll. You can use this ability before or after making the attack roll, but before any of the effects of the attack are applied.",
-																	"If you are hit by an attack while wearing light or medium armor, you can expend one superiority die as a reaction, adding the number rolled to your AC. If the attack still hits, you take half damage from it."
-																]
-															}
-														]
-													}
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Natural Explorer",
-										"entries": [
-											"You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.",
-											"While traveling for an hour or more in your favored terrain, you gain the following benefits:",
-											{
-												"type": "list",
-												"items": [
-													"Difficult terrain doesn't slow your group's travel.",
-													"Your group can't become lost except by magical means.",
-													"Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.",
-													"If you are traveling alone, you can move stealthily at a normal pace.",
-													"When you forage, you find twice as much food as you normally would.",
-													"While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
-												]
-											},
-											"You choose additional favored terrain types at 7th and 15th level."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Additional Superiority Die",
-										"entries": [
-											"You gain another superiority die at 7th level."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Improved Combat Superiority",
-										"entries": [
-											"At 10th level, your superiority dice turn into d10s. At 18th level, they turn into d12s."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Relentless",
-										"entries": [
-											"Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Additional Superiority Die",
-										"entries": [
-											"You gain another superiority die at 15th level."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Improved Combat Superiority",
-										"entries": [
-											"At 18th level, your superiority dice turn into d12s."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Temp",
-										"entries": [
-											"Temp"
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UAKitsOfOld",
-					"shortName": "Scout (UA)"
-				},
-				{
-					"name": "Knight (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Knight",
-								"entries": [
-									"The Knight is a colossus on the battlefield who can shrug off attacks and protect allies from harm. Knights fight from the saddle when they can, and in combat they are expected to seek out and lock down the mightiest of the enemy's forces. On adventures, they are the armored bulwark that strives to keep the rest of the party safe.",
-									{
-										"type": "entries",
-										"name": "Born to the Saddle",
-										"entries": [
-											"Starting at 3rd level, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed. In addition, you have advantage on saving throws made to avoid falling off your mount. If you fall off it, you can automatically land on your feet if you aren't {@condition incapacitated} and you fall less than 10 feet."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Implacable Mark",
-										"entries": [
-											"At 3rd level, you excel at foiling attacks and protecting your allies by menacing your foes. When you hit a creature with a melee weapon attack, the target is marked by you until the end of your next turn. A creature ignores this effect if the creature can't be {@condition frightened}.",
-											"The marked target has disadvantage on any attack roll against a creature other than you or someone else who marked it.",
-											"If a target marked by you is within 5 feet of you on its turn and it moves at least 1 foot or makes an attack that suffers disadvantage from this feature, you can make one melee weapon attack against it using your reaction. This attack roll has advantage, and if it hits, the attack's weapon deals extra damage to the target equal to your fighter level.",
-											"You can make this special attack even if you have already expended your reaction this round, but not if you have already used your reaction this turn. You can make this attack three times, and you regain all expended uses of it when you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Noble Cavalry",
-										"entries": [
-											"At 7th level, you gain proficiency in two of the following skills of your choice: Animal Handling, History, Insight, Persuasion, or Religion. Alternatively, you learn one language of your choice."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Hold the Line",
-										"entries": [
-											"At 10th level, you master the ability to harass and slow your enemies. As a reaction when a creature moves at least 1 foot within 5 feet of you, you can make one melee weapon attack against that creature. If you hit, the attack's weapon deals extra damage to the target equal to half your fighter level, and the target's speed is reduced to 0 until the end of this turn."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Rapid Strike",
-										"entries": [
-											"Starting at 15th level, you learn to trade accuracy for swift strikes. If you have advantage on a weapon attack against a target on your turn, you can forgo that advantage to immediately make an additional weapon attack against the same target as a bonus action."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Defender's Blade",
-										"entries": [
-											"At 18th level, you respond to danger with extraordinary vigilance. You can use your reaction for an opportunity attack even if you have already expended your reaction this round, but not if you have already used your reaction this turn.",
-											"In addition, you gain a +1 bonus to AC while wearing heavy armor."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Temp",
-										"entries": [
-											"Temp"
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UAFighter",
-					"shortName": "Knight (UA)"
-				},
-				{
-					"name": "Sharpshooter (UA)",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Sharpshooter",
-								"entries": [
-									"The Sharpshooter is a master of ranged combat. An excellent sniper and eagle-eyed scout, this fighter is a perilous foe who can defeat an entire war band so long as they are kept at range.",
-									{
-										"type": "entries",
-										"name": "Steady Aim",
-										"entries": [
-											"Beginning when you choose this archetype at 3rd level, your aim becomes deadly. As a bonus action on your turn, you can take careful aim at a creature you can see that is within range of a ranged weapon you're wielding. Until the end of this turn, your ranged attacks with that weapon gain two benefits against the target:",
-											{
-												"type": "list",
-												"items": [
-													"The attacks ignore half and three-quarters cover.",
-													"On each hit, the weapon deals additional damage to the target equal to 2 + half your fighter level."
-												]
-											},
-											"You can use this feature three times. You regain all expended uses of it when you finish a short or long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Careful Eyes",
-										"entries": [
-											"Starting at 7th level, you excel at picking out hidden enemies and other threats. You can take the Search action as a bonus action.",
-											"You also gain proficiency in the Perception, Investigation, or Survival skill (choose one)."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Close-Quarters Shooting",
-										"entries": [
-											"At 10th level, you learn to handle yourself in close combat. Making a ranged attack roll while within 5 feet of an enemy doesn't impose disadvantage on your roll.",
-											"In addition, if you hit a creature within 5 feet of you with a ranged attack on your turn, that creature can't take reactions until the end of this turn."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Rapid Strike",
-										"entries": [
-											"Starting at 15th level, you learn to trade accuracy for swift strikes. If you have advantage on a weapon attack against a target on your turn, you can forgo that advantage to immediately make an additional weapon attack against the same target as a bonus action."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Snap Shot",
-										"entries": [
-											"Starting at 18th level, you are ever ready to spring into action. If you take the Attack action on your first turn of a combat, you can make one additional ranged weapon attack as part of that action."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Temp",
-										"entries": [
-											"Temp"
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "UAFighter",
-					"shortName": "Sharpshooter (UA)"
 				},
 				{
 					"name": "Arcane Archer",
@@ -10668,9 +10086,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Arcane Mastery",
 										"entries": [
-											"Temp"
+											"Beginning at 27th level you gain three additional uses of Arcane shot."
 										]
 									}
 								]
@@ -10774,9 +10192,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Master of Defense",
 										"entries": [
-											"Temp"
+											"Beginning at 27th level, your opportunity attacks are made with advantage."
 										]
 									}
 								]
@@ -10873,7 +10291,7 @@
 										"type": "entries",
 										"name": "Temp",
 										"entries": [
-											"Temp"
+											"Beginning at 27th level, if you start combat without an action surge, you gain one."
 										]
 									}
 								]
@@ -10984,9 +10402,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Massive Blows",
 										"entries": [
-											"Temp"
+											"Beginning at 27th level your Brute Force die becomes 2d6"
 										]
 									}
 								]
@@ -12830,9 +12248,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Boundless Patience",
 										"entries": [
-											"Temp"
+											"At 27th level, you may spend any number of ki points to regain healing points in your pool for the Healing Hands feature. You regain 10 x the number of ki points spent points in the pool."
 										]
 									}
 								]
@@ -12926,9 +12344,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Drunken Obliviousness",
 										"entries": [
-											"Temp"
+											"At 27th level, your drunken stupor makes you resistant to attacks on the mind. When you must make a Intelligence, Wisdom or Charisma saving throw, you may spend 2 ki points to gain advantage on that throw."
 										]
 									}
 								]
@@ -13043,9 +12461,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "God of the Blade",
 										"entries": [
-											"Temp"
+											"At 27th level, you have trained with weapons so long that every weapon you pick up is familiar and comfortable. All weapons become kensei weapons for you. Additionally, when you use flurry of blows you may replace the unarmed strikes with attacks from a kensei weapon."
 										]
 									}
 								]
@@ -13124,9 +12542,10 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Corneal Burn",
 										"entries": [
-											"Temp"
+											"Upon reaching 27th level, your Sun Shield can reach brightness only surpassed by the sun itself. When your Sun Shield is up, for the cost of 2 Ki per round, hostile creature have disadvantage on any attack rolls against you. Furthermore, any hostile creatures within 10 feet of you must succeed a Constitution saving throw, or suffer a corneal burn, effectively blinding them. They can repeat the saving throw at the end of each of their turns, ending the effect on a success, and becoming immune to your Corneal Burn feature for 24 hours.",
+											"This feature is usable for a number of rounds equal to your Wisdom modifier. You regain all expended charges when you finish a long rest."
 										]
 									}
 								]
@@ -14720,132 +14139,6 @@
 					"shortName": "Vengeance"
 				},
 				{
-					"name": "Oathbreaker",
-					"subclassFeatures": [
-						[
-							{
-								"name": "Oathbreaker",
-								"entries": [
-									"An Oathbreaker is a paladin who breaks his or her sacred oaths to pursue some dark ambition or serve an evil power. Whatever light burned in the paladin's heart has been extinguished. Only darkness remains.",
-									"A paladin must be evil and at least 3rd level to become an Oathbreaker. The paladin replaces the features specific to his or her Sacred Oath with Oathbreaker features.",
-									{
-										"type": "entries",
-										"name": "Oathbreaker Spells",
-										"entries": [
-											"You gain oathbreaker spells at the paladin levels listed.",
-											{
-												"type": "table",
-												"caption": "Oathbreaker Spells",
-												"colLabels": [
-													"Paladin Level",
-													"Spells"
-												],
-												"colStyles": [
-													"col-xs-3 text-align-center",
-													"col-xs-9"
-												],
-												"rows": [
-													[
-														"3rd",
-														"{@spell hellish rebuke}, {@spell inflict wounds}"
-													],
-													[
-														"5th",
-														"{@spell crown of madness}, {@spell darkness}"
-													],
-													[
-														"9th",
-														"{@spell animate dead}, {@spell bestow curse}"
-													],
-													[
-														"13th",
-														"{@spell blight}, {@spell confusion}"
-													],
-													[
-														"17th",
-														"{@spell contagion}, {@spell dominate person}"
-													]
-												]
-											}
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Oathbreaker Channel Divinity: Control Undead",
-										"entries": [
-											"As an action, the paladin targets one undead creature he or she can see within 30 feet of him or her. The target must make a Wisdom saving throw. On a failed save, the target must obey the paladin's commands for the next 24 hours, or until the paladin uses this Channel Divinity option again. An undead whose challenge rating is equal to or greater than the paladin's level is immune to this effect."
-										]
-									},
-									{
-										"type": "entries",
-										"name": "Oathbreaker Channel Divinity: Dreadful Aspect",
-										"entries": [
-											"As an action, the paladin channels the darkest emotions and focuses them into a burst of magical menace. Each creature of the paladin's choice within 30 feet of the paladin must make a Wisdom saving throw if it can see the paladin. On a failed save, the target is {@condition frightened} of the paladin for 1 minute. If a creature {@condition frightened} by this effect ends its turn more than 30 feet away from the paladin, it can attempt another Wisdom saving throw to end the effect on it."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Aura of Hate",
-										"entries": [
-											"Starting at 7th level, the paladin, as well any fiends and undead within 10 feet of the paladin, gains a bonus to melee weapon damage rolls equal to the paladin's Charisma modifier (minimum of +1). A creature can benefit from this feature from only one paladin at a time.",
-											"At 18th level, the range of this aura increases to 30 feet."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Supernatural Resistance",
-										"entries": [
-											"At 15th level, the paladin gains resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Dread Lord",
-										"entries": [
-											"At 20th level, the paladin can, as an action, surround himself or herself with an aura of gloom that lasts for 1 minute. The aura reduces any bright light in a 30-foot radius around the paladin to dim light. Whenever an enemy that is {@condition frightened} by the paladin starts its turn in the aura, it takes 4d10 psychic damage. Additionally, the paladin and creatures he or she chooses in the aura are draped in deeper shadow. Creatures that rely on sight have disadvantage on attack rolls against creatures draped in this shadow.",
-											"While the aura lasts, the paladin can use a bonus action on his or her turn to cause the shadows in the aura to attack one creature. The paladin makes a melee spell attack against the target. If the attack hits, the target takes necrotic damage equal to 3d10 + the paladin's Charisma modifier.",
-											"After activating the aura, the paladin can't do so again until he or she finishes a long rest."
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Temp",
-										"entries": [
-											"Temp"
-										]
-									}
-								]
-							}
-						]
-					],
-					"source": "DMG",
-					"shortName": "Oathbreaker"
-				},
-				{
 					"name": "Oath of the Crown",
 					"subclassFeatures": [
 						[
@@ -15183,9 +14476,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Improved Conjured Duplicate",
 										"entries": [
-											"Temp"
+											"At 27th level, when Channel Divinity: Conjure Duplicate is active, you may perform any action, bonus action or reaction as if it originated from the duplicate."
 										]
 									}
 								]
@@ -15350,9 +14643,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Improved Guided Strike",
 										"entries": [
-											"Temp"
+											"At 27th level, when using Channel Divinity: Guided Strike, if the attack hits, the target must succeed on a Wisdom saving throw or become {@condition frightened} for 1 minute. The {@condition frightened} creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success. The target also takes radiant or necrotic damage equal to your Paladin level "
 										]
 									}
 								]
@@ -15537,9 +14830,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Improved Emissary of Peace",
 										"entries": [
-											"Temp"
+											"At 27th level, when you use Channel Divinity: Emissary of Peace, you gain advantage on Charisma (Persuasion) checks, and any creature you succeed on a check against is {@condition charmed} by you for the duration."
 										]
 									}
 								]
@@ -19584,9 +18877,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Perfect Prediction",
 										"entries": [
-											"Temp"
+											"At 27th level, the target of Isnightful Fighting automatically fails their saving throw. You may have up to 3 targets marked for Insightful Fighting."
 										]
 									}
 								]
@@ -19759,9 +19052,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Debilitating Strike",
 										"entries": [
-											"Temp"
+											"At 27th level, when you hit a target with an attack, you may apply the Help action to the target."
 										]
 									}
 								]
@@ -21468,7 +20761,7 @@
 										"type": "entries",
 										"name": "Temp",
 										"entries": [
-											"Temp"
+											"At 21st level, when you use the Phoenix Spark feature, you regain hit points equal to half your maximum hit points."
 										]
 									}
 								]
@@ -21481,7 +20774,7 @@
 										"type": "entries",
 										"name": "Temp",
 										"entries": [
-											"Temp"
+											"At 25th level, you can use the Mantle of Flame feature a number of times equal to your Charisma modifier."
 										]
 									}
 								]
@@ -21492,9 +20785,10 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Avatar of Flame",
 										"entries": [
-											"Temp"
+											"At 28th level, when using the Mantle of Flame feature, you may use a bonus action to become pure flame. In this form, you cannot cast spells and gain immunity to bludgeoning, slashing, piercing and fire damage.",
+											"In addition, you can pass through the space of other characters and they must make a Dexterity saving throw or take 1d10 fire damage. You can use this to squeeze through small spaces."
 										]
 									}
 								]
@@ -21623,9 +20917,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Will of the Ocean",
 										"entries": [
-											"Temp"
+											"At 21st level, you can use the Watery Defense reaction a number of times equal to your Charisma level per long rest. You regain a use of this feature on a short rest."
 										]
 									}
 								]
@@ -21636,9 +20930,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Tendrils of the Deep",
 										"entries": [
-											"Temp"
+											"At 25th level, the Curse of the Sea feature can apply on non-cantrip spells. Additionally, it will affect all affected creatures of your choice and is not limitted to one curse."
 										]
 									}
 								]
@@ -21649,9 +20943,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Avatar of the Ocean",
 										"entries": [
-											"Temp"
+											"At 28th level, if you are within 1 miles of a large body of water (DM's discretion), you regain hit points equal to your Sorcerer level at the beginning of your turns and gain resistance to all damage."
 										]
 									}
 								]
@@ -21810,18 +21104,240 @@
 					"shortName": "Stone (UA)"
 				},
 				{
-					"name": "Pyromancer (PSK)",
+					"name": "Wild Magic",
 					"subclassFeatures": [
 						[
 							{
-								"name": "Pyromancer (PSK)",
+								"name": "Wild Magic",
 								"entries": [
-									"Your innate magic manifests in fire. You are your fire, and your fire is you.",
+									"Your innate magic comes from the wild forces of chaos that underlie the order of creation. You might have endured exposure to some form of raw magic, perhaps through a planar portal leading to Limbo, the Elemental Planes, or the mysterious Far Realm. Perhaps you were blessed by a powerful fey creature or marked by a demon. Or your magic could be a fluke of your birth, with no apparent cause or reason. However it came to be, this chaotic magic churns within you, waiting for any outlet.",
 									{
 										"type": "entries",
-										"name": "Heart of Fire",
+										"name": "Wild Magic Surge",
 										"entries": [
-											"At 1st level, whenever you start casting a spell of 1st level or higher that deals fire damage, fiery magic erupts from you. This eruption causes creatures of your choice that you can see within 10 feet of you to take fire damage equal to half your sorcerer level (minimum of 1)."
+											"Starting when you choose this origin at 1st level, your spellcasting can unleash surges of untamed magic. Immediately after you cast a sorcerer spell of 1st level or higher, the DM can have you roll a d20. If you roll a 1, roll on the Wild Magic Surge table to create a random magical effect. A Wild Magic Surge can happen once per turn.",
+											"If a Wild Magic effect is a spell, it's too wild to be affected by Metamagic. If it normally requires concentration, it doesn't require concentration in this case; the spell lasts for its full duration.",
+											{
+												"type": "table",
+												"caption": "Wild Magic Surge",
+												"colLabels": [
+													"d100",
+													"Effect"
+												],
+												"colStyles": [
+													"text-align-center"
+												],
+												"rows": [
+													[
+														"01-02",
+														"Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls."
+													],
+													[
+														"03-04",
+														"For the next minute, you can see any {@condition invisible} creature if you have line of sight to it."
+													],
+													[
+														"05-06",
+														"A modron chosen and controlled by the DM appears in an unoccupied space within 5 feet of you, then disappears 1 minute later."
+													],
+													[
+														"07-08",
+														"You cast {@spell fireball} as a 3rd-level spell centered on yourself."
+													],
+													[
+														"09-10",
+														"You cast {@spell magic missile} as a 5th-level spell."
+													],
+													[
+														"11-12",
+														"Roll a d10. Your height changes by a number of inches equal to the roll. If the roll is odd, you shrink. If the roll is even, you grow."
+													],
+													[
+														"13-14",
+														"You cast {@spell confusion} centered on yourself."
+													],
+													[
+														"15-16",
+														"For the next minute, you regain 5 hit points at the start of each of your turns."
+													],
+													[
+														"17-18",
+														"You grow a long beard made of feathers that remains until you sneeze, at which point the feathers explode out from your face."
+													],
+													[
+														"19-20",
+														"You cast {@spell grease} centered on yourself."
+													],
+													[
+														"21-22",
+														"Creatures have disadvantage on saving throws against the next spell you cast in the next minute that involves a saving throw."
+													],
+													[
+														"23-24",
+														"Your skin turns a vibrant shade of blue. A {@spell remove curse} spell can end this effect."
+													],
+													[
+														"25-26",
+														"An eye appears on your forehead for the next minute."
+													],
+													[
+														"27-28",
+														"For the next minute, all your spells with a casting time of 1 action have a casting time of 1 bonus action."
+													],
+													[
+														"29-30",
+														"You teleport up to 60 feet to an unoccupied space of your choice that you can see."
+													],
+													[
+														"31-32",
+														"You are transported to the Astral Plane until the end of your next turn, after which time you return to the space you previously occupied or the nearest unoccupied space if that space is occupied."
+													],
+													[
+														"33-34",
+														"Maximize the damage of the next damaging spell you cast within the next minute."
+													],
+													[
+														"35-36",
+														"Roll a d10. Your age changes by a number of years equal to the roll. If the roll is odd, you get younger (minimum 1 year old). If the roll is even, you get older."
+													],
+													[
+														"37-38",
+														"1d6 flumphs controlled by the DM appear in unoccupied spaces within 60 feet of you and are {@condition frightened} of you. They vanish after 1 minute."
+													],
+													[
+														"39-40",
+														"You regain 2d10 hit points."
+													],
+													[
+														"41-42",
+														"You turn into a potted plant until the start of your next turn. While a plant, you are {@condition incapacitated} and have vulnerability to all damage. If you drop to 0 hit points, your pot breaks, and your form reverts."
+													],
+													[
+														"43-44",
+														"For the next minute, you can teleport up to 20 feet as a bonus action on each of your turns."
+													],
+													[
+														"45-46",
+														"You cast {@spell levitate} on yourself."
+													],
+													[
+														"47-48",
+														"A unicorn controlled by the DM appears in a space within 5 feet of you, then disappears 1 minute later."
+													],
+													[
+														"49-50",
+														"You can't speak for the next minute. Whenever you try, pink bubbles float out of your mouth."
+													],
+													[
+														"51-52",
+														"A spectral shield hovers near you for the next minute, granting you a +2 bonus to AC and immunity to {@spell magic missile}."
+													],
+													[
+														"53-54",
+														"You are immune to being intoxicated by alcohol for the next 5d6 days."
+													],
+													[
+														"55-56",
+														"Your hair falls out but grows back within 24 hours."
+													],
+													[
+														"57-58",
+														"For the next minute, any flammable object you touch that isn't being worn or carried by another creature bursts into flame."
+													],
+													[
+														"59-60",
+														"You regain your lowest-level expended spell slot."
+													],
+													[
+														"61-62",
+														"For the next minute, you must shout when you speak."
+													],
+													[
+														"63-64",
+														"You cast {@spell fog cloud} centered on yourself."
+													],
+													[
+														"65-66",
+														"Up to three creatures you choose within 30 feet of you take 4d10 lightning damage."
+													],
+													[
+														"67-68",
+														"You are {@condition frightened} by the nearest creature until the end of your next turn."
+													],
+													[
+														"69-70",
+														"Each creature within 30 feet of you becomes {@condition invisible} for the next minute. The invisibility ends on a creature when it attacks or casts a spell."
+													],
+													[
+														"71-72",
+														"You gain resistance to all damage for the next minute."
+													],
+													[
+														"73-74",
+														"A random creature within 60 feet of you becomes poisoned for 1d4 hours."
+													],
+													[
+														"75-76",
+														"You glow with bright light in a 30-foot radius for the next minute. Any creature that ends its turn within 5 feet of you is {@condition blinded} until the end of its next turn."
+													],
+													[
+														"77-78",
+														"You cast {@spell polymorph} on yourself. If you fail the saving throw, you turn into a sheep for the spell's duration."
+													],
+													[
+														"79-80",
+														"Illusory butterflies and flower petals flutter in the air within 10 feet of you for the next minute."
+													],
+													[
+														"81-82",
+														"You can take one additional action immediately."
+													],
+													[
+														"83-84",
+														"Each creature within 30 feet of you takes 1d10 necrotic damage. You regain hit points equal to the sum of the necrotic damage dealt."
+													],
+													[
+														"85-86",
+														"You cast {@spell mirror image}."
+													],
+													[
+														"87-88",
+														"You cast {@spell fly} on a random creature within 60 feet of you."
+													],
+													[
+														"89-90",
+														"You become {@condition invisible} for the next minute. During that time, other creatures can't hear you. The invisibility ends if you attack or cast a spell."
+													],
+													[
+														"91-92",
+														"If you die within the next minute, you immediately come back to life as if by the {@spell reincarnate} spell."
+													],
+													[
+														"93-94",
+														"Your size increases by one size category for the next minute."
+													],
+													[
+														"95-96",
+														"You and all creatures within 30 feet of you gain vulnerability to piercing damage for the next minute."
+													],
+													[
+														"97-98",
+														"You are surrounded by faint, ethereal music for the next minute."
+													],
+													[
+														"99-100",
+														"You regain all expended sorcery points."
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Tides of Chaos",
+										"entries": [
+											"Starting at 1st level, you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again.",
+											"Any time before you regain the use of this feature, the DM can have you roll on the Wild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature."
 										]
 									}
 								]
@@ -21832,9 +21348,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Fire in the Veins",
+										"name": "Bend Luck",
 										"entries": [
-											"At 6th level, you gain resistance to fire damage. In addition, spells you cast ignore resistance to fire damage."
+											"Starting at 6th level, you have the ability to twist fate using your wild magic. When another creature you can see makes an attack roll, an ability check, or a saving throw, you can use your reaction and spend 2 sorcery points to roll 1d4 and apply the number rolled as a bonus or penalty (your choice) to the creature's roll. You can do so after the creature rolls but before any effects of the roll occur."
 										]
 									}
 								]
@@ -21845,9 +21361,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Pyromancer's Fury",
+										"name": "Controlled Chaos",
 										"entries": [
-											"Starting at 14th level, when you are hit by a melee attack, you can use your reaction to deal fire damage to the attacker. The damage equals your sorcerer level, and ignores resistance to fire damage."
+											"At 14th level, you gain a modicum of control over the surges of your wild magic. Whenever you roll on the Wild Magic Surge table, you can roll twice and use either number."
 										]
 									}
 								]
@@ -21858,9 +21374,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Fiery Soul",
+										"name": "Spell Bombardment",
 										"entries": [
-											"At 18th level, you gain immunity to fire damage. In addition, any spell or effect you create ignores resistance to fire damage and treats immunity to fire damage as resistance to fire damage."
+											"Beginning at 18th level, the harmful energy of your spells intensifies. When you roll damage for a spell and roll the highest number possible on any of the dice, choose one of those dice, roll it again and add that roll to the damage. You can use the feature only once per turn."
 										]
 									}
 								]
@@ -21871,9 +21387,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Forced Chaos",
 										"entries": [
-											"Temp"
+											"You have learned to manipulate the forces of chance and chaos more consistently. Beginning at 21st level, for the cost of 3 sorcery points, you may utilize your Tides of Chaos feature, even if you normally wouldn’t be able to."
 										]
 									}
 								]
@@ -21884,9 +21400,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Chaos Sorcery",
 										"entries": [
-											"Temp"
+											"Wild magic surges come naturally to you, enabling you to manipulate your surges for more favorable effects. Starting at 25th level, whenever you roll on the Wild Magic Surge table, you may adjust your rolls by 1 in either direction for every 1 sorcery point you spend."
 										]
 									}
 								]
@@ -21897,17 +21413,17 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Chaos Mastery",
 										"entries": [
-											"Temp"
+											"You have learned to draw even more power from your wild magic surges, mastering the art beyond the logically possible. Beginning at 28th level, whenever you roll twice on the Wild Magic Surge table, you may choose to use either or both rolls."
 										]
 									}
 								]
 							}
 						]
 					],
-					"source": "PSK",
-					"shortName": "Pyromancer (PSK)"
+					"source": "PHB",
+					"shortName": "Wild "
 				},
 				{
 					"name": "Divine Soul",
@@ -22017,9 +21533,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Divine Deflection",
 										"entries": [
-											"Temp"
+											"At 21st level, you gain proficiency in all Saving Throws."
 										]
 									}
 								]
@@ -22030,9 +21546,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Divine Destiny",
 										"entries": [
-											"Temp"
+											"At 25th level, you can use the Favored by the Gods feature up to your Charisma modifier times per long rest. You regain one use on a short rest. Additionally, you can use the Favored by the Gods feature on an ally's saving throws or attack rolls."
 										]
 									}
 								]
@@ -22043,9 +21559,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Divine Resilience",
 										"entries": [
-											"Temp"
+											"At 28th level, you gain resistance to Radiant and Necrotic damage, and at the end of each of your turns you gain hit points equal to half your Sorcerer level rounded down."
 										]
 									}
 								]
@@ -22178,7 +21694,7 @@
 										"type": "entries",
 										"name": "Temp",
 										"entries": [
-											"Temp"
+											"At 21st level, Strength of the Grave now restores you to half your hit point maximum. The maximum DC of the saving throw is 20."
 										]
 									}
 								]
@@ -22189,9 +21705,21 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Herald of Umbral Woe",
 										"entries": [
-											"Temp"
+											"At 25th level, your Hound of Ill Omen feature gets upgraded. The hounds now has a {@creature hell hound}'s statistics, with the following changes:",
+											{
+												"type": "list",
+												"items": [
+													"The hound is size Large, not Medium, and it counts as a monstrosity, not a fiend.",
+													"It appears with a number of temporary hit points equal to your sorcerer level.",
+													"It gains a bonus to attack rolls and damage equal to your Charisma modifier.",
+													"The hound's 'Fire Breath' feature deals psychic damage instead of fire damage.",
+													"It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.",
+													"At the start of its turn, the hound automatically knows its target's location. If the target was hidden, it is no longer hidden from the hound."
+												]
+											},
+											"The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes."
 										]
 									}
 								]
@@ -22202,9 +21730,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Shadow Mastery",
 										"entries": [
-											"Temp"
+											"At 28th level, whenever you use the Shadow Walk feature, you gain resistance to all damage until the start of your next turn."
 										]
 									}
 								]
@@ -24092,7 +23620,7 @@
 				],
 				[
 					{
-						"name": "Pact Boon Improvement (1)",
+						"name": "Pact Boon Improvement (2)",
 						"entries": [
 							"At 25th level, your pact boon is empowered.",
 							{
@@ -24823,32 +24351,8 @@
 								]
 							}
 						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Temp",
-										"entries": [
-											"Temp"
-										]
-									}
-								]
-							}
-						],
-						[
-							{
-								"entries": [
-									{
-										"type": "entries",
-										"name": "Temp",
-										"entries": [
-											"Temp"
-										]
-									}
-								]
-							}
-						]
+						[],
+						[]
 					],
 					"source": "UATheFaithful",
 					"shortName": "Seeker (UA)"
@@ -24961,9 +24465,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Raven Queen's Eyes",
 										"entries": [
-											"Temp"
+											"At 23rd level, you permanently gain the effects of the Sentinel Raven perched on your shoulder. When the raven is perched on your shoulder, the effects are doubled."
 										]
 									}
 								]
@@ -24974,9 +24478,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Scion of the Raven Queen",
 										"entries": [
-											"Temp"
+											"At 27th level, your bond with the Raven Queen is strong enough that you can use her magic while in form from the Soul of the Raven feature. You can cast spells using the Pact Magic feature. You still cannot use other class features or Mystic Arcanum."
 										]
 									}
 								]
@@ -25100,9 +24604,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Eyes of the True Seeker",
 										"entries": [
-											"Temp"
+											"At 23rd level, your bond with your divine patron has become so strong that you see through their eyes. You gain truesight up to 30ft and you know if you hear a lie."
 										]
 									}
 								]
@@ -25113,9 +24617,12 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Mantle of Divinity",
 										"entries": [
-											"Temp"
+											"At 28th level, you can turn into a blinding form of your patron. You gain an aura of 30ft. The first time each enemy starts their turn in the aura must succeed on a Constitution saving throw or be blinded for 1 minute and take radiant damage equal to your Warlock level. They can repeat the saving throw at the end of every turn to end the effect. This can only each enemy once",
+											"All allies that start their turn in the aura regain half your Warlock level.",
+											"The form lasts a number of rounds equal to your Charisma modifier.",
+											"You can use this ability once per long rest."
 										]
 									}
 								]
@@ -25248,9 +24755,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Hexblade's Despair",
 										"entries": [
-											"Temp"
+											"At 23rd level, you gain an additonal use of Hexblade's Curse. You cannot target the same creature with two curses."
 										]
 									}
 								]
@@ -25261,9 +24768,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Blade Symbiosis",
 										"entries": [
-											"Temp"
+											"At 27th level, your sword is capable of acting without your guidance. You can use a free reaction on each turn other than your own."
 										]
 									}
 								]
@@ -26592,9 +26099,31 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Superior Infusion",
 										"entries": [
-											"Temp"
+											"At 21st level you can infuse more powerful magic items using the Infuse Weapons and Armor feature. The new improvements are on the table below."
+											{
+												"type": "table",
+												"caption": "Infuse Weapons and Armor",
+												"colLabels": [
+													"Spell Level",
+													"Item Created"
+												],
+												"colStyles": [
+													"col-xs-3 text-align-center",
+													"col-xs-9"
+												],
+												"rows": [
+													[
+														"7th",
+														"+3 weapon, +3 shield or +3 ammunition (20 pieces)"
+													],
+													[
+														"8th",
+														"+3 armor"
+													]
+												]
+											}
 										]
 									}
 								]
@@ -26605,9 +26134,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Artificer's Cunning",
 										"entries": [
-											"Temp"
+											"At 25th level, whenever you create a magic item using the Master Artificer ability, you can use Magic Item Tables C and D"
 										]
 									}
 								]
@@ -26618,9 +26147,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Ultimate Artificer",
 										"entries": [
-											"Temp"
+											"Starting at 28th level, you can create a 3rd item using Infused Weapons and Armor. You can also one additonal potion or scroll."
 										]
 									}
 								]
@@ -27555,9 +27084,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Celestial Arcana",
 										"entries": [
-											"Temp"
+											"At 21st level, you gain the improved Channel Divinity feature from the cooresponding cleric subclass of your chosen Cleric's Domain."
 										]
 									}
 								]
@@ -27568,9 +27097,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Theurgist's Cunning",
 										"entries": [
-											"Temp"
+											"At 25th level, whenever you cast a spell from your chosen Cleric's Domain, you can cast that spell as if it was 1 spell slot higher, up to a maximum 9th level."
 										]
 									}
 								]
@@ -27581,9 +27110,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Arcane Arch Priest",
 										"entries": [
-											"Temp"
+											"At 28th level, you gain your chosen domain's 21st-level benefits. Your academic dedication to learning magic and doctrine allow you to reach divine status."
 										]
 									}
 								]
@@ -27957,7 +27486,7 @@
 										"type": "entries",
 										"name": "Temp",
 										"entries": [
-											"Temp"
+											"At 21st level, the damage from the Power Surge feature becomes equal to your Wizard level."
 										]
 									}
 								]
@@ -27968,9 +27497,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "Warmage's Cunning",
 										"entries": [
-											"Temp"
+											"At 21st level, your Arcane Deflection feature doesn't limit you to using cantrips on the following turn."
 										]
 									}
 								]
@@ -27981,9 +27510,9 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "Temp",
+										"name": "",
 										"entries": [
-											"Temp"
+											"You can Concentrate on an additional spell. While concentrating on two spells simultaneously, you can only cast cantrips."
 										]
 									}
 								]
