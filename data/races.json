@@ -51,6 +51,92 @@
 				}
 			]
 		},
+    {
+			"name": "Centaur",
+			"source": "Adventurer's Guild Homebrew",
+			"page": 1,
+			"size": "M",
+			"speed": 35,
+			"ability": {
+				"str": 1,
+				"choose": [
+					{
+						"from": [
+							"str",
+							"dex",
+							"wis"
+						],
+						"count": 1,
+						"amount": 1
+					}
+				]
+			},
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Centaurs enter adulthood at around the age of 17 and can live up to 150 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Centaurs are inclined toward neutrality."
+					]
+				},
+				{
+					"name": "Nature's Virtue",
+					"entries": [
+						"From a young age, you focused on one of the three virtues of strength, agility, or cunning. Your choice of your Strength, Dexterity, or Wisdom score increases by 1."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Hooves",
+					"entries": [
+						"You are never unarmed. You are proficient with your hooves, which are a melee weapon that deals 1d6 bludgeoning damage. Your equine strength grant you advantage on all checks made to shove a creature, but not to avoid being shoved yourself."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Charge",
+					"entries": [
+						"When you use the Dash action during your turn and move at least 20 ft in a straight line, you can make a melee attack as a bonus action. If you choose, the attack has disadvantage, but the target cannot make an attack of opportunity against you on that turn."
+					],
+					"type": "entries"
+				},
+        {
+          "name": "Equine Build",
+          "entries": [
+            "You count as one size larger when determining your carrying capacity and the weight you can push or drag. In addition, any climb that requires hands and feet is especially difficult for you because of your hooves. When you make such a climb, each foot of movement costs you 4 extra feet, instead of the normal 1 extra foot. Finally, a Medium or smaller creature can ride on your equine back if you allow it. In such a situation, you continue to act independently, not as a controlled mount but cannot take actions on your turn."
+          ],
+          "type": "entries"
+        },
+				{
+					"name": "Plains Nomad",
+					"entries": [
+						"You gain advantage in Wisdom (survival) checks while in a plain."
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Sylvan."
+					],
+					"type": "entries"
+				},
+        {
+          "name": "DM Note",
+          "entries": [
+            "While we are making this race playable because we want to give players the opportunity to play a centaur if they are set on it, the DMs of the Guild would not enjoy DMing for a centaur. So if you are considering making a centaur, please be sure that it is *very* important for your character to have them be this race."
+          ],
+          "type": "entries"
+        }
+			]
+		},
 		{
 			"name": "Genasi",
 			"source": "EEPC",
@@ -1327,6 +1413,88 @@
 					]
 				},
 				{
+					"name": "Eladrin Descent",
+					"source": "Adventurer's Guild Homebrew",
+					"page": 116,
+					"entries": [
+						{
+							"type": "inset",
+							"name": "Variant Feature (Choose 1)",
+							"entries": [
+								{
+									"name": "Skill Versatility",
+									"entries": [
+										"You gain proficiency in two skills of your choice."
+									],
+									"type": "entries"
+								},
+								{
+									"name": "Keen Senses",
+									"entries": [
+										"You have proficiency in the Perception skill."
+									],
+									"type": "entries"
+								},
+								{
+									"name": "Elf Weapon Training",
+									"entries": [
+										"You have proficiency with the longsword, shortsword, shortbow, and longbow."
+									],
+									"type": "entries"
+								},
+								{
+              "name": "Fey Step",
+              "entries": [
+                "As a bonus action, you can magically teleport up to 30 feet to an unoccupied space you can see. Once you use this trait, you can't do so again until you finish a short or long rest."
+              ],
+              "type": "entries"
+            },
+            {
+              "name": "Shifting Seasons",
+              "entries": [
+                "At the end of each short or long rest, you can align yourself with the magic of one season, regardless of the season that is dominating your personality. Doing so allows you to cast a certain cantrip, as shown in the Shifting Seasons Cantrips table. When you align yourself with a season's magic, you lose the cantrip associated with the previous season and gain the cantrip associated with the new season.",
+                "Your spellcasting ability for these cantrips is Intelligence or Charisma, whichever is higher.",
+                {
+                  "type": "table",
+                  "caption": "Shifting Seasons Cantrips",
+                  "colLabels": [
+                    "Season",
+                    "Cantrip"
+                  ],
+                  "colStyles": [
+                    "col-xs-6 text-align-center",
+                    "col-xs-6 text-align-center"
+                  ],
+                  "rows": [
+                    [
+                      "Autumn",
+                      "{@spell Friends}"
+                    ],
+                    [
+                      "Winter",
+                      "{@spell Chill touch}"
+                    ],
+                    [
+                      "Spring",
+                      "{@spell Minor illusion}"
+                    ],
+                    [
+                      "Summer",
+                      "{@spell Fire bolt}"
+                    ]
+                  ]
+                }
+              ],
+              "type": "entries"
+            }
+							],
+							"data": {
+								"overwrite": "Skill Versatility"
+							}
+						}
+					]
+				},
+				{
 					"name": "Moon Elf or Sun Elf Descent",
 					"source": "SCAG",
 					"page": 116,
@@ -1400,6 +1568,49 @@
 									],
 									"type": "entries"
 								}
+							],
+							"data": {
+								"overwrite": "Skill Versatility"
+							}
+						}
+					]
+				},
+				{
+					"name": "Shadar-Kai Descent",
+					"source": "Adventurer's Guild Homebrew",
+					"entries": [
+						{
+							"type": "inset",
+							"name": "Variant Feature (Choose 1)",
+							"entries": [
+								{
+									"name": "Skill Versatility",
+									"entries": [
+										"You gain proficiency in two skills of your choice."
+									],
+									"type": "entries"
+								},
+								{
+									"name": "Keen Senses",
+									"entries": [
+										"You have proficiency in the Perception skill."
+									],
+									"type": "entries"
+								},
+								{
+              "name": "Cantrip",
+              "entries": [
+                "You know one of the following cantrips of your choice: {@spell chill touch}, {@spell spare the dying}, or {@spell thaumaturgy}. Charisma is your spellcasting ability for it."
+              ],
+              "type": "entries"
+            },
+            {
+              "name": "Blessing of the Raven Queen",
+              "entries": [
+                "As a bonus action, you can magically teleport up to 15 feet to an unoccupied space you can see, and you gain resistance to all damage until the start of your next turn. During that time, you appear ghostly and translucent. Once you use this ability, you can't use it again until you finish a short or long rest."
+              ],
+              "type": "entries"
+            }
 							],
 							"data": {
 								"overwrite": "Skill Versatility"
@@ -1932,6 +2143,21 @@
 						}
 					]
 				},
+				{
+					"name": "Deepdive",
+					"ability": {
+						"con": 1
+						},
+						"entries": [
+							{
+								"name": "Shifting Feature",
+								"entries": [
+									"While shifting, you gain a swim speed of 25 feet, and may hold your breath for a number of minutes equal to your Constitution modifier x 5."
+								],
+								"type": "entries"
+							}
+						]
+					},
 				{
 					"name": "Cliffwalk",
 					"ability": {

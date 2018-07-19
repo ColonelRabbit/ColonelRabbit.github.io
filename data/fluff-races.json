@@ -1677,6 +1677,71 @@
 			]
 		},
 		{
+					"name": "Shifter",
+					"source": "UAEberron",
+					"entries": [
+						"On the island of Ajan, just north-east of Abora, majestic seaside cliffs give way to deep and darkened pine forests. Among the hills and woods that cover the islands one can find myriad megapredators; griffins, hydras, roc, even the occasional dragon. It is on this island that the shifters make their home.",
+						{
+							"type": "entries",
+							"name": "Lycanthropic Heritage",
+							"entries": [
+								"Shifters are a proud and savage people, organized into strict castes based on how their descent from werebeasts has manifested. They are incredibly suspicious of outsiders, yet their distrust is matched by their dedication to kin and clan.",
+								"At first glance, many could easily mistake a shifter for an exceptionally well-built human. On closer examination their skin is thicker, hair coarser, their features more flat, and depending on their heritage one may just spot the hint of fangs or claws.",
+								"Shifters groom themselves as suits their position in society. Those expected to fight will have closely cut hair, while more elaborate styles are found among the laborers and priesthood.",
+								"As a race, shifters tend towards duskier skin tones and darker hair, with blonde or red hair being a rare and celebrated occurance."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Dedicated to the Ha'me",
+							"entries": [
+								"Shifters call their home the Ha'me Ajani. They consider it a sacred homeland, given to them by nature itself. They are fierce in its protection, and unrelenting in their punishment of intruders.",
+								"To aid them in the protection of their home (and to no small degree their survival within it), nature also gave them the powerful senses of the animal kingdom. They put these to work in elaborate hunts, with some lasting many weeks as they force their prey into the perfect position to strike, and claim the kill.",
+								"To better serve the Ha'me and their race as a whole, each shifter is expected to hone the skills required for their labor to an absolute razor's edge. Such fanatic devotion often creates incredibly skilled specialists capable of producing great works, but entirely clueless when it comes to other fields."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "The Castes and Clans",
+							"entries": [
+								"Each of the shifting expressions is part of a caste. The Hur'an caste forms the priesthood, with Hur'ani universally being Wildhunt shifters. The Kir'ulla caste is composed of highly competitive clans of Longtooth and Razorclaw shifters. The Lup'ura are the working class of the Ha'me. Into this caste fall the Longstride, Cliffwalk, and Deepdive shifters.",
+								"Lowest of all the castes are the Cherhk. Any unfortunate enough to be born as Beasthide are forced into slavery, forbidden from even sleeping under the sky. They are used as brute labor, and as disposable chaff in both hunting and war.",
+								"Finding a shifter outside of Ajan is difficult, since many are capable of subtly shifting their features to more closely match those of humans. Any to be found are most likely to be serving their homeland in secrecy, or outcasts from their caste and the Ha'me at large."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Playing a Shifter",
+							"entries": [
+								"The Hur'ani have kept Ajan isolated from the outside world for centuries. Any shifter found outside of their home island has a mission of some kind. Without a mission, they are outcasts or wanderers, unable to return to their homeland under pain of death."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Shifter Names",
+							"entries": [
+								"Shifter names are often short, with three syllables being almost unheard of. Other times, they are compound names, formed words capturing important events preceding their birth, their parents' notable achievements, or words that bear special significance to their culture.",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"type": "item",
+											"name": "Male Names:",
+											"entry": "Akkin, Chehak, Gam, Haan, Togar, Veyku"
+										},
+										{
+											"type": "item",
+											"name": "Female Names:",
+											"entry": "Biira, K'reth, Ita, Makna, Mi'en, Talla"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+		{
 			"name": "Triton",
 			"source": "VGM",
 			"entries": [
