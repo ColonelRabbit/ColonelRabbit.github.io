@@ -26101,7 +26101,7 @@
 										"type": "entries",
 										"name": "Superior Infusion",
 										"entries": [
-											"At 21st level you can infuse more powerful magic items using the Infuse Weapons and Armor feature. The new improvements are on the table below."
+											"At 21st level you can infuse more powerful magic items using the Infuse Weapons and Armor feature. The new improvements are on the table below.",
 											{
 												"type": "table",
 												"caption": "Infuse Weapons and Armor",
@@ -27510,7 +27510,7 @@
 								"entries": [
 									{
 										"type": "entries",
-										"name": "",
+										"name": "Warmage",
 										"entries": [
 											"You can Concentrate on an additional spell. While concentrating on two spells simultaneously, you can only cast cantrips."
 										]
