@@ -80,6 +80,7 @@ function navigation () {
 	LI('ul_references', 'rewards.html', 'Other Rewards');
 	LI('ul_references', 'psionics.html', 'Psionics');
 	LI('ul_references', 'spells.html', 'Spells');
+	LI('ul_references', 'map.html', 'Maps');
 
 	LI('navbar', 'statgen.html', 'Statgen');
 
