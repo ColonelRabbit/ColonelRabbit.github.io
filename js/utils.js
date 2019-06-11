@@ -2289,6 +2289,7 @@ UrlUtil.PG_SPELLS = "spells.html";
 UrlUtil.PG_BACKGROUNDS = "backgrounds.html";
 UrlUtil.PG_ITEMS = "items.html";
 UrlUtil.PG_CLASSES = "classes.html";
+UrlUtil.PG_CHARSHEET = "charsheet.html";
 UrlUtil.PG_PRESTIGECLASSES = "prestigeclasses.html";
 UrlUtil.PG_CONDITIONS = "conditions.html";
 UrlUtil.PG_WORLDINFO = "worldinfo.html";
@@ -2313,6 +2314,7 @@ UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_SPELLS] = (it) => UrlUtil.encodeForHash([
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_BACKGROUNDS] = (it) => UrlUtil.encodeForHash([it.name, Parser.sourceJsonToAbv(it.source)]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_ITEMS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CLASSES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
+UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CHARSHEET] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_PRESTIGECLASSES] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_CONDITIONS] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
 UrlUtil.URL_TO_HASH_BUILDER[UrlUtil.PG_WORLDINFO] = (it) => UrlUtil.encodeForHash([it.name, it.source]);
@@ -2335,6 +2337,7 @@ UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_SPELL] = UrlUtil.PG_SPELLS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_BACKGROUND] = UrlUtil.PG_BACKGROUNDS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_ITEM] = UrlUtil.PG_ITEMS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CLASS] = UrlUtil.PG_CLASSES;
+UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CLASS] = UrlUtil.PG_CHARSHEET;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CLASS] = UrlUtil.PG_PRESTIGECLASSES;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CONDITION] = UrlUtil.PG_CONDITIONS;
 UrlUtil.CAT_TO_PAGE[Parser.CAT_ID_CONDITION] = UrlUtil.PG_WORLDINFO;
@@ -2745,6 +2748,8 @@ BrewUtil = {
 						return ["spell"];
 					case UrlUtil.PG_CLASSES:
 						return ["class", "subclass"];
+					case UrlUtil.PG_CHARSHEET:
+						return ["class", "subclass"];
 					case UrlUtil.PG_PRESTIGECLASSES:
 						return ["class, subClass"];
 					case UrlUtil.PG_BESTIARY:
@@ -3049,10 +3054,14 @@ BrewUtil = {
 					addClassData({class: classesToAdd});
 					addSubclassData({subclass: subclassesToAdd});
 					break;
-					case UrlUtil.PG_PRESTIGECLASSES:
-						addClassData({class: classesToAdd});
-						addSubclassData({subclass: subclassesToAdd});
-						break;
+				case UrlUtil.PG_CHARSHEET:
+					addClassData({class: classesToAdd});
+					addSubclassData({subclass: subclassesToAdd});
+					break;
+				case UrlUtil.PG_PRESTIGECLASSES:
+					addClassData({class: classesToAdd});
+					addSubclassData({subclass: subclassesToAdd});
+					break;
 				case UrlUtil.PG_BESTIARY:
 					addMonsters(monstersToAdd);
 					break;

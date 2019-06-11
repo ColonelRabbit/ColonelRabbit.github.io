@@ -30,7 +30,12 @@ class History {
 					const id = $el.attr("id");
 					History.lastLoadedId = id;
 					loadhash(id);
-					document.title = decodeURIComponent($el.attr("title")) + " - 5etools";
+					console.log($el[0].pathname.includes("charsheet"));
+					if ($el[0].pathname.includes("charsheet")) {
+						//document.title = decodeURIComponent($el.attr("title"));
+					} else {
+						document.title = decodeURIComponent($el.attr("title")) + " - 5etools";
+					}
 				}
 			}
 		}

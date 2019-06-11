@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--5ETOOLS_VERSION-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Character Sheet </title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="favicon.png">
+
+	<script src="https://kit.fontawesome.com/664b321228.js"></script>
+
+	<script type="text/javascript" src="lib/js-cookie.js"></script>
+	<script type="text/javascript" src="js/styleswitch.js"></script>
+	<script type="text/javascript" src="js/navigation.js"></script>
+	<style>
+	table#stats > tbody > tr > td {
+		padding: 0 0.8em;
+	}
+
+	#please-select-message {
+		height: 10px;
+	}
+
+	#please-select-message.showing > td {
+		height: 40px;
+		color: #922610;
+		font-family: 'Andada', serif;
+		font-variant: small-caps;
+		font-weight: 500;
+		line-height: 2.3em;
+		text-align: center;
+		font-size: 1.8em;
+	}
+
+	#please-select-message.showing > td::after {
+		content: "Toggle a button to view class and subclass information";
+	}
+
+	.book-mode div.pnl-content {
+		min-height: 100vh;
+		flex: 7 0 0;
+		height: 100vh;
+		overflow-y: auto;
+	}
+
+	.book-mode div.pnl-menu::-webkit-scrollbar-track,
+	.book-mode div.pnl-content::-webkit-scrollbar-track {
+		background: #e0e0e0;
+	}
+
+	.book-mode div.pnl-menu {
+		min-height: 100vh;
+		min-width: 100px;
+		flex: 1 0 0;
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+	}
+
+	span.pnl-link {
+		font-size: 0.8em;
+		padding: 3px;
+		margin-bottom: 1px;
+		cursor: pointer;
+		user-select: none;
+	}
+
+	span.pnl-link-close {
+		margin-top: auto;
+	}
+
+	.wrp-btn-readmode {
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+
+	#sticky-nav {
+		width: 100%;
+		position: sticky;
+		top: 15px;
+		overflow-y: hidden;
+		margin-top: 15px;
+		max-height: calc(100vh - 30px);
+		padding-right: 9px;
+		font-family: 'Andada', serif;
+		font-variant: small-caps;
+		font-weight: 500;
+	}
+
+	#sticky-nav:hover {
+		overflow-y: auto;
+		padding-right: 0;
+	}
+
+	#sticky-nav .nav-head[data-state="0"] {
+		color: #00000020;
+	}
+
+	.night-mode #sticky-nav .nav-head[data-state="0"] {
+		color: #bbbbbb40;
+	}
+
+	#sticky-nav .nav-head[data-state="1"] .nav-outline:hover::after {
+		content: " (Hide)";
+		font-weight: initial;
+	}
+
+	#sticky-nav .nav-head[data-state="0"]:hover {
+		color: inherit;
+	}
+
+	#sticky-nav .nav-head[data-state="0"] .nav-outline:hover::after {
+		content: " (Show)";
+		font-weight: initial;
+	}
+
+	#sticky-nav .nav-outline {
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	#sticky-nav hr {
+		margin: 2px;
+	}
+
+	#sticky-nav div.nav-item {
+		cursor: pointer;
+		user-select: none;
+		max-height: 20px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: #922610;
+	}
+
+	#sticky-nav div.nav-item.blue {
+		color: #337ab7;
+	}
+
+	#sticky-nav div.nav-item.green {
+		color: #1d965d;
+	}
+
+	#sticky-nav div.nav-item.purple {
+		color: #8c3b96;
+	}
+
+	.night-mode #sticky-nav div.nav-item {
+		color: #d29a38;
+	}
+
+	.night-mode #sticky-nav div.nav-item.blue {
+		color: #609dd2;
+	}
+
+	.night-mode #sticky-nav div.nav-item.green {
+		color: #27ce80;
+	}
+
+	#sticky-nav div.nav-item:hover {
+		background: lightgrey;
+	}
+
+	#sticky-nav div.nav-item:active {
+		color: #e0e0e0;
+	}
+
+	.night-mode #sticky-nav div.nav-item:hover {
+		background: black;
+	}
+
+	#sticky-nav div.nav-item:active {
+		color: white;
+	}
+
+	#sticky-nav .n1 {
+		font-weight: bold;
+	}
+
+	#sticky-nav .n2 {
+	}
+
+	#sticky-nav .n3 {
+		padding-left: 10px;
+	}
+
+	#sticky-nav .n3::before {
+		content: '\2022  ';
+	}
+
+	#desktop-flex {
+		display: flex;
+	}
+
+	#charsheet {
+		max-width: 800px;
+		margin: auto;
+	}
+
+	.staboxwrapper {
+		padding: 2%;
+
+	}
+	.skillboxwrapper{
+		padding-left: 2%;
+		padding-right: 2%;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	.saveswrapper {
+		padding: 3%;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 5px;
+		text-align: center;
+		font-size: 1.0em;
+		font-family: fantasy;
+	}
+
+	.skillbox {
+		display: flex;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 5px;
+		min-height: 20px;
+		width: 100%;
+		margin: auto;
+		display: inline-block;
+		position: relative;
+	}
+
+	.savethrowbox {
+		display: flex;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 5px;
+		min-height: 25px;
+		width: 100%;
+		margin: auto;
+		display: inline-block;
+		position: relative;
+	}
+
+	.savethrowcontent {
+		height: 100%;
+		padding: 0px;
+		font-family: fantasy;
+	}
+
+	.statbox {
+		display: flex;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 5px;
+		width:100%;
+		min-height: 85px;
+		margin: auto;
+		display: inline-block;
+		position: relative;
+	}
+
+	.savethrowbox:before{
+		content: "";
+		position: relative;
+		display: block;
+		padding-top: 20%; 	/* initial ratio of 1:1*/
+	}
+
+	.skillbox:before{
+		content: "";
+		position: relative;
+		display: block;
+		padding-top: 8%; 	/* initial ratio of 1:1*/
+	}
+
+	.statmod {
+		display: table;
+		height: 100%;
+		padding: 0px;
+		margin: auto;
+		text-align: center;
+		border-style: solid;
+		border-width: 0px 1px 0px 0px;
+	}
+	.statmod2 {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.skillmod2 {
+		display: table-cell;
+		vertical-align: middle;
+		font-size: .9em;
+	}
+	.statnumbers {
+		line-height: 1.8em;
+		font-size: 1.2em;
+		text-align: center;
+		height: 33.33%;
+	}
+
+	.statmodbox {
+		height: 33.34%;
+		border-width: 1px 0px 0px;
+		border-radius: 5px;
+		border-style: solid;
+	}
+
+	.statboxbox:before{
+		content: "";
+		display: block;
+		padding-top: 100%; 	/* initial ratio of 1:1*/
+	}
+
+	.content{
+		position:  absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		font-family: fantasy;
+	}
+
+	.dicebox {
+		min-height: 15px;
+		height: 100%;
+		padding: 0px;
+	}
+
+	.skilldice {
+		max-height: 20px;
+		max-width: 20px;
+		min-height: 15px;
+		min-width: 15px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	.statdice {
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 15px;
+		min-width: 15px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	.savethrowdice {
+		max-height: 100%;
+		max-width: 100%;
+		min-height: 20px;
+		min-width: 20px;
+
+	}
+
+	.statbox:before{
+		content: "";
+		display: block;
+		padding-top: 100%; 	/* initial ratio of 1:1*/
+	}
+
+	.stattext{
+		height: 33.33%;
+		letter-spacing: 3px;
+		font-size: 1.5em;
+		border-style: solid;
+		border-width: 0px 0px 3px;
+		text-align: center;
+	}
+	.right-align-sorts {
+		position: absolute;
+		right: 3px;
+	}
+
+	#charstats{
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 5px;
+
+	}
+	#charname{
+		font-family: fantasy;
+		font-size: 2em;
+		margin-bottom: 1%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		/*text-shadow: 1.5px 1px grey;*/
+	}
+	#charname:hover {
+		white-space: normal;
+		overflow: visible;
+		word-wrap: break-word;
+	}
+
+	#charheadertext{
+		top: -10px;
+	}
+
+	#charmain {
+		max-width: 850px;
+	}
+
+	@media (max-width: 991px) {
+		.wrp-btn-readmode {
+			margin-top: 0;
+		}
+
+		#sticky-nav {
+			display: none;
+		}
+
+		#desktop-flex {
+			display: block;
+		}
+
+		#statsprof {
+			margin-bottom: 7px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.book-mode div.pnl-content {
+			min-height: 0;
+			overflow-y: initial;
+		}
+
+		.book-mode div.pnl-menu {
+			min-height: 200px;
+		}
+
+		.book-mode div.pnl-menu-pad {
+			display: none;
+		}
+
+		span.pnl-link-close {
+			margin-top: 0;
+		}
+	}
+
+	</style>
+</head>
+
+<body>
+	<header class="hidden-xs hidden-sm">
+		<div class="container">
+
+			<h1>Charsheet: Beta</h1>
+			<p>Beta character sheet for 5e.</p>
+		</div>
+	</header>
+	<nav class="container" id="navigation">
+		<ul class="nav nav-pills" id="navbar">
+		</ul>
+	</nav>
+	<main class="container bodyContent classes">
+
+		<i id="lockicon" class="fas fa-lock"></i> <!--lock/lock-open for input/user modes-->
+
+
+		<div id="charsheet">
+			<div class="row" id="charheader">
+
+				<div style="padding: 0px 0px 20px 2%;" class="col-sm-2 col-xs-3" id="portrait">
+					<img src="img/charsheet/forest2.jpg" alt="charportrait" height="auto" width="100%">
+				</div>
+
+				<div class="col-sm-8 col-xs-6" id="charheadertext">
+					<div style="padding: 0px;" class="col-sm-12" id="charname"> Forest </div>
+					<div style="padding: 0px" class="col-sm-12" id="baseinfo">
+						<div style="padding: 0px" class="col-sm-12" id="race">
+							Human
+						</div>
+						<div style="padding: 0px" class="col-sm-12" id="class">
+							Rogue (Inquisitive)
+						</div>
+						<div style="padding: 0px" class="col-sm-12" id="level"> Level 3 </div>
+					</div>
+				</div>
+
+				<div class="col-sm-2 col-xs-3" style="padding-right: 2%;">
+					<div id="hpbar" style="height: 75px; text-align: right; border-style: solid; width: 100%;">
+						HP: 200/200
+					</div>
+				</div>
+			</div>
+
+			<!--
+
+			CHAR STATS
+
+			-->
+			<div class="row" id="charstats">
+				<div class="col-xs-4 col-sm-2 staboxwrapper">
+					<div class="statbox box">
+						<div class="content">
+							<div class="stattext"> STR</div>
+							<div class="statnumbers" id="str"> 18 </div>
+							<div class="statmodbox">
+								<div class="col-xs-6 statmod">
+									<div class="statmod2" id="strmod"> +4 </div>
+								</div>
+								<div class="col-xs-6 dicebox">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-2 staboxwrapper">
+					<div class="statbox box">
+						<div class="content">
+							<div class="stattext"> DEX</div>
+							<div class="statnumbers" id="dex"> 18 </div>
+							<div class="statmodbox">
+								<div class="col-xs-6 statmod">
+									<div class="statmod2" id="dexmod"> +4 </div>
+								</div>
+								<div class="col-xs-6 dicebox">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-2 staboxwrapper">
+					<div class="statbox box">
+						<div class="content">
+							<div class="stattext"> CON</div>
+							<div class="statnumbers" id="con"> 18 </div>
+							<div class="statmodbox">
+								<div class="col-xs-6 statmod">
+									<div class="statmod2" id="conmod"> +4 </div>
+								</div>
+								<div class="col-xs-6 dicebox">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-2 staboxwrapper">
+					<div class="statbox box">
+						<div class="content">
+							<div class="stattext"> INT</div>
+							<div class="statnumbers" id="int"> 18 </div>
+							<div class="statmodbox">
+								<div class="col-xs-6 statmod">
+									<div class="statmod2" id="intmod"> +4 </div>
+								</div>
+								<div class="col-xs-6 dicebox">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-2 staboxwrapper">
+					<div class="statbox box">
+						<div class="content">
+							<div class="stattext"> WIS</div>
+							<div class="statnumbers" id="wis"> 18 </div>
+							<div class="statmodbox">
+								<div class="col-xs-6 statmod">
+									<div class="statmod2" id="wismod"> +4 </div>
+								</div>
+								<div class="col-xs-6 dicebox">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4 col-sm-2 staboxwrapper">
+					<div class="statbox box">
+						<div class="content">
+							<div class="stattext"> CHA</div>
+							<div class="statnumbers" id="cha"> 18 </div>
+							<div class="statmodbox">
+								<div class="col-xs-6 statmod">
+									<div class="statmod2" id="chamod"> +4 </div>
+								</div>
+								<div class="col-xs-6 dicebox">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="row mason-container" id="charmain">
+
+
+			<!--
+
+			SAVING THROWS
+
+			-->
+			<div class="col-sm-6 col-xs-12 mason-grid" id="savethrows">
+
+				<div class="col-xs-12 saveswrapper">
+					<div> Saving Throws </div>
+					<div class="col-xs-6 staboxwrapper">
+						<div class="savethrowbox">
+							<div class="content">
+								<div class="statmod col-xs-2">
+									<div class="statmod2">
+										<i id="strsaveprof" class="far fa-circle"></i>
+										<!--<i class="far fa-dot-circle"></i>-->
+									</div>
+								</div>
+								<div class="statmod col-xs-6">
+									<div class="statmod2">
+										STR
+									</div>
+								</div>
+								<div class="statmod col-xs-2" >
+									<div class="statmod2" id="strsave">
+										+3
+									</div>
+								</div>
+								<div class="dicebox col-xs-2">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 staboxwrapper">
+						<div class="savethrowbox">
+							<div class="content">
+								<div class="statmod col-xs-2">
+									<div class="statmod2">
+										<i id="intsaveprof" class="fas fa-circle"></i>
+									</div>
+								</div>
+								<div class="statmod col-xs-6">
+									<div class="statmod2">
+										INT
+									</div>
+								</div>
+								<div class="statmod col-xs-2" >
+									<div class="statmod2" id="intsave">
+										0
+									</div>
+								</div>
+								<div class="dicebox col-xs-2">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 staboxwrapper">
+						<div class="savethrowbox">
+							<div class="content">
+								<div class="statmod col-xs-2">
+									<div class="statmod2">
+										<i id="dexsaveprof" class="far fa-circle"></i>
+										<!--<i id="dexsaveprof" class="far fa-dot-circle"></i>-->
+									</div>
+								</div>
+								<div class="statmod col-xs-6">
+									<div class="statmod2">
+										DEX
+									</div>
+								</div>
+								<div class="statmod col-xs-2" >
+									<div class="statmod2" id="dexsave">
+										+2
+									</div>
+								</div>
+								<div class="dicebox col-xs-2">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 staboxwrapper">
+						<div class="savethrowbox">
+							<div class="content">
+								<div class="statmod col-xs-2">
+									<div class="statmod2">
+										<i id="wissaveprof" class="fas fa-circle"></i>
+									</div>
+								</div>
+								<div class="statmod col-xs-6">
+									<div class="statmod2">
+										WIS
+									</div>
+								</div>
+								<div class="statmod col-xs-2" >
+									<div class="statmod2" id="wissave">
+										-2
+									</div>
+								</div>
+								<div class="dicebox col-xs-2">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 staboxwrapper">
+						<div class="savethrowbox">
+							<div class="content">
+								<div class="statmod col-xs-2">
+									<div class="statmod2">
+										<i id="consaveprof" class="fas fa-circle"></i>
+									</div>
+								</div>
+								<div class="statmod col-xs-6">
+									<div class="statmod2">
+										CON
+									</div>
+								</div>
+								<div class="statmod col-xs-2" >
+									<div class="statmod2" id="consave">
+										+2
+									</div>
+								</div>
+								<div class="dicebox col-xs-2">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 staboxwrapper">
+						<div class="savethrowbox">
+							<div class="content">
+								<div class="statmod col-xs-2">
+									<div class="statmod2">
+										<i id="chasaveprof" class="fas fa-circle"></i>
+									</div>
+								</div>
+								<div class="statmod col-xs-6">
+									<div class="statmod2">
+										CHA
+									</div>
+								</div>
+								<div class="statmod col-xs-2" >
+									<div class="statmod2" id="chasave">
+										+1
+									</div>
+								</div>
+								<div class="dicebox col-xs-2">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<!--
+
+			SKILLS
+
+			-->
+			<div class="col-sm-6 col-xs-12 mason-grid" id="skills">
+
+				<div class="col-xs-12 saveswrapper">
+					<div> Skills </div>
+					<div class="col-xs-12 skillboxwrapper">
+						<div class="skillbox">
+							<div class="content">
+								<div class="statmod col-xs-2 col-sm-1">
+									<div class="skillmod2">
+										<b> Prof </b>
+										<!--<i class="far fa-dot-circle"></i>-->
+									</div>
+								</div>
+								<div class="statmod col-xs-4 col-sm-6">
+									<div class="skillmod2">
+										SKILL
+										<span class="right-align-sorts"><i class="fas fa-sort-alpha-down" id="name-sort-icon"></i> </span>
+									</div>
+								</div>
+								<div class="statmod col-xs-2 col-sm-2">
+									<div class="skillmod2">
+										<span style="position:relative; left: -7px;"> STAT </span>
+										<span class="right-align-sorts"><i class="fas fa-sort-alpha-down"></i></span>
+									</div>
+								</div>
+								<div class="statmod col-xs-2 col-sm-2">
+									<div class="skillmod2">
+										<span style="position:relative; left: -7px;"> MOD </span>
+										<span class="right-align-sorts"><i class="fas fa-sort-numeric-down-alt" id="mod-sort-icon"></i></span>
+									</div>
+								</div>
+								<div class="statmod col-xs-2 col-sm-1" style="border-style:none;">
+									<div class="skillmod2">
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="allskills">
+						<div class="col-xs-12 skillboxwrapper" id="acrobaticsbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="acrobaticsprof" class="far fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Acrobatics
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											DEX
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="acrobaticsmod">
+											+4
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="animalbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="animalprof" class="far fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Animal Handling
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											WIS
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="animalmod">
+											+2
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="arcanabox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="arcanaprof" class="far fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Arcana
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											INT
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="animalmod">
+											0
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="athleticsbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="athleticsprof" class="fas fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Athletics
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											STR
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="athleticsmod">
+											+1
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="deceptionbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="deceptionprof" class="far fa-dot-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Deception
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											CHA
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="deceptionmod">
+											+6
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="historybox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="historyprof" class="far fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											History
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											INT
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="historymod">
+											0
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="insightbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="insightprof" class="far fa-dot-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Insight
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											WIS
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="insightmod">
+											+6
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="intimidationbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="intimidationprof" class="far fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Intimidation
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											CHA
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="intimidationmod">
+											+2
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="investigationbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="investigationprof" class="far fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Investigation
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											INT
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="investigationmod">
+											0
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="medicinebox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="medicineprof" class="far fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Medicine
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											WIS
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="medicinemod">
+											+2
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="naturebox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="natureprof" class="far fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Nature
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											INT
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="naturemod">
+											0
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="perceptionbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="perceptionprof" class="fas fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Perception
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											WIS
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="perceptionmod">
+											+4
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="performancebox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="performanceprof" class="far fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Performance
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											CHA
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="performancemod">
+											+2
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="persuasionbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="persuasionprof" class="fas fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Persuasion
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											CHA
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="presuasionmod">
+											+4
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="religionbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="religionprof" class="far fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Religion
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											INT
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="religionnmod">
+											0
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="sleightbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="sleightprof" class="fas fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Sleight of Hand
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											DEX
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="sleightmod">
+											+5
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="stealthbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="stealthprof" class="fas fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Stealth
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											DEX
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="stealthmod">
+											+5
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 skillboxwrapper" id="survivalbox">
+							<div class="skillbox">
+								<div class="content">
+									<div class="statmod col-xs-2 col-sm-1">
+										<div class="skillmod2">
+											<i id="survivalprof" class="far fa-circle"></i>
+											<!--<i class="far fa-dot-circle"></i>-->
+										</div>
+									</div>
+									<div class="statmod col-xs-4 col-sm-6">
+										<div class="skillmod2">
+											Survival
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2">
+											WIS
+										</div>
+									</div>
+									<div class="statmod col-xs-2 col-sm-2">
+										<div class="skillmod2" id="survivalmod">
+											+2
+										</div>
+									</div>
+									<div class="dicebox col-xs-2 col-sm-1">
+										<img class="skilldice" src="img/charsheet/d20.png" alt="d20">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+			<!--
+
+			SAVING THROWS
+
+			-->
+			<div class="col-sm-6 col-xs-12 mason-grid" id="stuff">
+
+				<div class="col-xs-12 saveswrapper">
+					<div> STUFFBOX </div>
+					<div class="col-xs-6 staboxwrapper">
+						<div class="savethrowbox">
+							<div class="content">
+								<div class="statmod col-xs-2">
+									<div class="statmod2">
+										<i id="" class="far fa-circle"></i>
+										<!--<i class="far fa-dot-circle"></i>-->
+									</div>
+								</div>
+								<div class="statmod col-xs-6">
+									<div class="statmod2">
+										asd
+									</div>
+								</div>
+								<div class="statmod col-xs-2" >
+									<div class="statmod2" id="">
+										+3
+									</div>
+								</div>
+								<div class="dicebox col-xs-2">
+									<img class="statdice" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+
+
+
+<div class="row" style="height:40px; border-style: solid; border-width: 0px 0px 10px;"> </div>
+<div class="row">
+	<div class="col-sm-3" id="listcontainer">
+		<div class="input-group" id="filter-search-input-group">
+			<input type="search" id="search" class="search form-control" placeholder="Find class...">
+			<span class="input-group-btn">
+				<button class="btn btn-default" type="button" id="reset">Reset</button>
+			</span>
+		</div>
+		<div id="filtertools" class="sortlabel btn-group">
+			<button class="col-xs-8 sort btn btn-default btn-xs" type="button" data-sort="name">Name</button>
+			<button class="col-xs-4 sort btn btn-default btn-xs" type="button" data-sort="source">Source</button>
+		</div>
+
+		<ul class="list classes">
+
+		</ul>
+		<p class="text-align-center">
+			<button class="btn btn-default btn-sm btn-file" id="manage-brew">Manage Homebrew</button>
+		</p>
+	</div>
+	<div class="col-sm-9" id="classtable">
+		<table class="shadow-big">
+			<tr>
+				<th class="border" colspan="15"></th>
+			</tr>
+			<tr>
+				<th id="nameTable" colspan="15">Name</th>
+			</tr>
+			<tr id="groupHeaders">
+				<th colspan="3"></th> <!-- spacer to match the 3 default cols (level, prof, features) -->
+			</tr>
+			<tr id="colHeaders">
+				<th class="level">Level</th>
+				<th class="pb">Proficiency Bonus</th>
+				<th class="features">Features</th>
+			</tr>
+			<tr id="level1">
+				<td class="level">1st</td>
+				<td class="pb">+2</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level2">
+				<td class="level">2nd</td>
+				<td class="pb">+2</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level3">
+				<td class="level">3rd</td>
+				<td class="pb">+2</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level4">
+				<td class="level">4th</td>
+				<td class="pb">+2</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level5">
+				<td class="level">5th</td>
+				<td class="pb">+3</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level6">
+				<td class="level">6th</td>
+				<td class="pb">+3</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level7">
+				<td class="level">7th</td>
+				<td class="pb">+3</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level8">
+				<td class="level">8th</td>
+				<td class="pb">+3</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level9">
+				<td class="level">9th</td>
+				<td class="pb">+4</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level10">
+				<td class="level">10th</td>
+				<td class="pb">+4</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level11">
+				<td class="level">11th</td>
+				<td class="pb">+4</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level12">
+				<td class="level">12th</td>
+				<td class="pb">+4</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level13">
+				<td class="level">13th</td>
+				<td class="pb">+5</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level14">
+				<td class="level">14th</td>
+				<td class="pb">+5</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level15">
+				<td class="level">15th</td>
+				<td class="pb">+5</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level16">
+				<td class="level">16th</td>
+				<td class="pb">+5</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level17">
+				<td class="level">17th</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level18">
+				<td class="level">18th</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level19">
+				<td class="level">19th</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level20">
+				<td class="level">20th</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level21">
+				<td class="level">21st</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level22">
+				<td class="level">22nd</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level23">
+				<td class="level">23rd</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level24">
+				<td class="level">24th</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level25">
+				<td class="level">25th</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level26">
+				<td class="level">26th</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level27">
+				<td class="level">27th</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level28">
+				<td class="level">28th</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level29">
+				<td class="level">29th</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr id="level30">
+				<td class="level">30th</td>
+				<td class="pb">+6</td>
+				<td class="features"></td>
+			</tr>
+			<tr>
+				<th class="border" colspan="15"></th>
+			</tr>
+		</table>
+	</div>
+</div>
+<hr>
+<div class="row" id="desktop-flex">
+	<div class="col-md-3">
+		<div class="text-align-center wrp-btn-readmode">
+			<button class="btn btn-default btn-sm" id="btn-comparemode" title="A pop-up table which can be used to compare subclass features.">Subclass Comparison</button>
+			<button class="btn btn-default btn-sm" id="btn-readmode" title="A pop-up reading mode thatkeeps class and subclass information separated, matching the books.">Book View</button>
+		</div>
+		<table id="statsprof" class="stats shadow-big">
+			<tr>
+				<th class="border" colspan="6"></th>
+			</tr>
+			<tr>
+				<th id="nameSummary" colspan="6">Name</th>
+			</tr>
+			<tr>
+				<th id="author" colspan="6">Author</th>
+			</tr>
+			<tr>
+				<td class="divider" colspan="6">
+					<div></div>
+				</td>
+			</tr>
+			<tr>
+				<td id="hp" colspan="6">
+					<h5>Hit Points</h5>
+					<div id="hitdice">
+						<strong>Hit Dice:</strong>
+						<span> </span>
+					</div>
+					<div id="hp1stlevel">
+						<strong>Hit Points at 1st Level:</strong>
+						<span> </span>
+					</div>
+					<div id="hphigherlevels">
+						<strong>Hit Points at Higher Levels:</strong>
+						<span> </span>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td id="prof" colspan="6">
+					<h5>Proficiencies</h5>
+					<span>You are proficient with the following items, in addition to any proficiencies provided by your race or background.</span>
+					<div id="armor">
+						<strong>Armor:</strong>
+						<span> </span>
+					</div>
+					<div id="weapons">
+						<strong>Weapons:</strong>
+						<span> </span>
+					</div>
+					<div id="tools">
+						<strong>Tools:</strong>
+						<span> </span>
+					</div>
+					<div id="saves">
+						<strong>Saving Throws:</strong>
+						<span> </span>
+					</div>
+					<div id="skills">
+						<strong>Skills:</strong>
+						<span> </span>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td id="equipment" colspan="6">
+					<h5>Starting Equipment</h5>
+					<div></div>
+				</td>
+			</tr>
+
+			<tr>
+				<th class="border" colspan="6"></th>
+			</tr>
+		</table>
+		<div id="sticky-nav">
+			<div class="nav-head" data-state="1"><div class="nav-outline">Outline</div><hr></div>
+			<div class="nav-body"><!-- populate with JS --></div>
+		</div>
+	</div>
+	<div class="col-md-9">
+		<div id="subclasses"></div>
+		<table id="pagecontent" class="stats shadow-big">
+			<tr id="ftTopBorder">
+				<th class="border" colspan="6"></th>
+			</tr>
+
+			<!-- populate with JS -->
+
+			<tr id="please-select-message">
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<th class="border" colspan="6"></th>
+			</tr>
+		</table>
+
+	</div>
+</div>
+</main>
+<footer class="container">
+
+</footer>    <!--5ETOOLS_SCRIPT_ANCHOR-->
+
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="lib/masonry.pkgd.min.js"></script>
+
+<script type="text/javascript" src="js/charsheet.js"></script>
+
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/omnisearch.js"></script>
+<script type="text/javascript" src="js/dmswitcher.js"></script>
+<script type="text/javascript" src="js/filter.js"></script>
+<script type="text/javascript" src="js/entryrender.js"></script>
+<script type="text/javascript" src="js/history.js"></script>
+<script type="text/javascript" src="js/classes.js"></script>
+<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="lib/bootstrap.js"></script>
+<script type="text/javascript" src="lib/elasticlunr.js"></script>
+</body>
+
+</html>
