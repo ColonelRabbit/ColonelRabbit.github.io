@@ -621,7 +621,7 @@
 							<div class="content">
 								<div class="statmod col-xs-2">
 									<div class="statmod2">
-										<i id="strsaveprof" class="prof-dot notproficient far fa-circle"></i>
+										<i id="strsaveprof" class="prof notproficient far fa-circle"></i>
 										<!--<i class="far fa-dot-circle"></i>-->
 									</div>
 								</div>
@@ -646,7 +646,7 @@
 							<div class="content">
 								<div class="statmod col-xs-2">
 									<div class="statmod2">
-										<i id="intsaveprof" class="prof-dot proficient fas fa-circle"></i>
+										<i id="intsaveprof" class="prof proficient fas fa-circle"></i>
 									</div>
 								</div>
 								<div class="statmod col-xs-6">
@@ -670,7 +670,7 @@
 							<div class="content">
 								<div class="statmod col-xs-2">
 									<div class="statmod2">
-										<i id="dexsaveprof" class="prof-dot proficient fas fa-circle"></i>
+										<i id="dexsaveprof" class="prof proficient fas fa-circle"></i>
 										<!--<i id="dexsaveprof" class="far fa-dot-circle"></i>-->
 									</div>
 								</div>
@@ -695,7 +695,7 @@
 							<div class="content">
 								<div class="statmod col-xs-2">
 									<div class="statmod2">
-										<i id="wissaveprof" class="prof-dot notproficient far fa-circle"></i>
+										<i id="wissaveprof" class="prof notproficient far fa-circle"></i>
 									</div>
 								</div>
 								<div class="statmod col-xs-6">
@@ -719,7 +719,7 @@
 							<div class="content">
 								<div class="statmod col-xs-2">
 									<div class="statmod2">
-										<i id="consaveprof" class="prof-dot notproficient far fa-circle"></i>
+										<i id="consaveprof" class="prof notproficient far fa-circle"></i>
 									</div>
 								</div>
 								<div class="statmod col-xs-6">
@@ -743,7 +743,7 @@
 							<div class="content">
 								<div class="statmod col-xs-2">
 									<div class="statmod2">
-										<i id="chasaveprof" class="prof-dot notproficient far fa-circle"></i>
+										<i id="chasaveprof" class="prof notproficient far fa-circle"></i>
 									</div>
 								</div>
 								<div class="statmod col-xs-6">
@@ -794,7 +794,7 @@
 								<div class="statmod col-xs-2 col-sm-2">
 									<div class="skillmod2">
 										<span style="position:relative; left: -7px;"> STAT </span>
-										<span class="right-align-sorts"><i class="fas fa-sort-alpha-down"></i></span>
+										<span class="right-align-sorts"><i class="fas fa-sort-alpha-down" id="skill-sort-icon"></i></span>
 									</div>
 								</div>
 								<div class="statmod col-xs-2 col-sm-2">
@@ -817,7 +817,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="acrobaticsprof" class="notproficient far fa-circle"></i>
+											<i id="acrobaticsprof" class="prof notproficient far fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -847,7 +847,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="animalprof" class="notproficient far fa-circle"></i>
+											<i id="animalprof" class="prof notproficient far fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -867,7 +867,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="animal" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -877,7 +877,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="arcanaprof" class="notproficient far fa-circle"></i>
+											<i id="arcanaprof" class="prof notproficient far fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -897,7 +897,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="arcana" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -907,7 +907,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="athleticsprof" class="proficient fas fa-circle"></i>
+											<i id="athleticsprof" class="prof proficient fas fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -927,7 +927,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="athletics" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -937,7 +937,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="deceptionprof" class="expert far fa-dot-circle"></i>
+											<i id="deceptionprof" class="prof expert far fa-dot-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -957,7 +957,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="deception" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -967,7 +967,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="historyprof" class="notproficient far fa-circle"></i>
+											<i id="historyprof" class="prof notproficient far fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -987,7 +987,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="history" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -997,7 +997,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="insightprof" class="expert far fa-dot-circle"></i>
+											<i id="insightprof" class="prof expert far fa-dot-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -1017,7 +1017,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="insight" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -1027,7 +1027,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="intimidationprof" class="notproficient far fa-circle"></i>
+											<i id="intimidationprof" class="prof notproficient far fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -1047,7 +1047,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="intimidation" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -1057,7 +1057,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="investigationprof" class="notproficient far fa-circle"></i>
+											<i id="investigationprof" class="prof notproficient far fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -1077,7 +1077,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="investigation" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -1087,7 +1087,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="medicineprof" class="notproficient far fa-circle"></i>
+											<i id="medicineprof" class="prof notproficient far fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -1107,7 +1107,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice"  id="medicine" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -1117,7 +1117,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="natureprof" class="notproficient far fa-circle"></i>
+											<i id="natureprof" class="prof notproficient far fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -1137,7 +1137,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="nature" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -1147,7 +1147,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="perceptionprof" class="proficient fas fa-circle"></i>
+											<i id="perceptionprof" class="prof proficient fas fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -1167,7 +1167,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="perception" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -1177,7 +1177,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="performanceprof" class="notproficient far fa-circle"></i>
+											<i id="performanceprof" class="prof notproficient far fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -1197,7 +1197,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="performance" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -1207,7 +1207,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="persuasionprof" class="proficient fas fa-circle"></i>
+											<i id="persuasionprof" class="prof proficient fas fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -1227,7 +1227,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="persuasion" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -1237,7 +1237,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="religionprof" class="notproficient far fa-circle"></i>
+											<i id="religionprof" class="prof notproficient far fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -1257,7 +1257,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="religion" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -1267,7 +1267,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="sleightprof" class="proficient fas fa-circle"></i>
+											<i id="sleightprof" class="prof proficient fas fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -1287,7 +1287,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="sleight" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -1297,7 +1297,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="stealthprof" class="proficient fas fa-circle"></i>
+											<i id="stealthprof" class="prof proficient fas fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -1317,7 +1317,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="stealth" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>
@@ -1327,7 +1327,7 @@
 								<div class="content">
 									<div class="statmod col-xs-2 col-sm-1">
 										<div class="skillmod2">
-											<i id="survivalprof" class="notproficient far fa-circle"></i>
+											<i id="survivalprof" class="prof notproficient far fa-circle"></i>
 											<!--<i class="far fa-dot-circle"></i>-->
 										</div>
 									</div>
@@ -1347,7 +1347,7 @@
 										</div>
 									</div>
 									<div class="dicebox col-xs-2 col-sm-1">
-										<img class="statdice" src="img/charsheet/d20.png" alt="d20">
+										<img class="statdice" id="survival" src="img/charsheet/d20.png" alt="d20">
 									</div>
 								</div>
 							</div>

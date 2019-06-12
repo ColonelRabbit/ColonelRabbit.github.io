@@ -17,14 +17,33 @@ const lockIcon = $("#lockicon");
 const dice = $(".statdice");
 const alphaSortButton = $("#name-sort-icon");
 const modSortButton = $("#mod-sort-icon");
-const profDots = $(".prof-dot");
+const skillSortButton = $("#skill-sort-icon");
+const proficiencies = $(".prof");
 const statnumbers = $(".statnumbers");
 const skills=$("#allskills div.skillboxwrapper").get();
 const saves=$("#allsaves div.staboxwrapper").get();
 var proficiencyBonus = Math.floor((char_level-1)/4)+2;
 
-const proficiency_types = ['notproficient', 'proficient', 'jack', 'expert'];
-const proficiency_multiplier = [0, 1, 0.5, 2];
+const proficiency_types = ['notproficient', 'jack', 'proficient', 'expert'];
+const proficiency_multiplier = [0, 0.5, 1, 2];
+const proficiency_icons = [
+	{
+		"type": "far",
+		"icon": "fa-circle"
+	},
+	{
+		"type": "fas",
+		"icon": "fa-adjust"
+	},
+	{
+		"type": "fas",
+		"icon": "fa-circle"
+	},
+	{
+		"type": "far",
+		"icon": "fa-dot-circle"
+	}
+]
 
 $(document).ready(()=>{
 	updateStat('str');
@@ -80,33 +99,34 @@ function updateSkill(skill) {
 	mod_box.innerText = mod_text;
 }
 
-function toggleProficiency() {
-  const toggler = $(this)[0];
-  proficient = toggler.classList.contains('proficient');
-  if (proficient) {
-    toggler.classList.replace('proficient', 'notproficient');
-    toggler.classList.replace('fas', 'far');
-  } else {
-    toggler.classList.replace('notproficient', 'proficient');
-    toggler.classList.replace('far', 'fas');
-  }
-  updateMod(toggler);
+
+//BADLY WRITTEN AND NOT SUPER FUNCTIONAL
+function toggleProf() {
+	const prof = $(this)[0];
+	let profType = 0;
+	let new_profType = 0;
+	for (let prof_type in proficiency_types) {
+		if (prof.classList.contains(proficiency_types[prof_type])) {
+			profType = parseInt(prof_type);
+			new_profType = (profType+1)%4;
+			break;
+		}
+	}
+	prof.classList.replace(proficiency_types[profType], proficiency_types[new_profType]);
+	prof.classList.replace(proficiency_icons[profType].icon, proficiency_icons[new_profType].icon,)
+	prof.classList.replace(proficiency_icons[profType].type, proficiency_icons[new_profType].type,)
+	prof_id = prof.id.split('prof')[0];
+	if (prof_id.includes('save')) {
+		updateSave(prof_id);
+	} else {
+		updateSkill(prof_id);
+	}
 }
-//BROKEN
-function updateMod(abilityProf) {
-  const ability = abilityProf.id.split('prof')[0];
-  console.log(ability);
-  if (abilityProf.classList.contains('proficient')) {
-    modifier = 2 + 1;
-  } else {
-    modifier = -1;
-  }
-  const modifierText = (modifier > 0) ? `+${modifier}` : modifier;
-  $(`#${ability}mod`)[0].innerText=modifierText;
-}
+
 
 alphaSortButton.click(sortByName);
 modSortButton.click(sortByMod);
+skillSortButton.click(sortBySkill);
 
 dice.click(rollDice);
 
@@ -123,13 +143,13 @@ lockIcon.click(lockUnlock);
 function lockEdit() {
   lockIcon.removeClass('fa-lock-open');
   lockIcon.addClass('fa-lock');
-  profDots.off('click');
+  proficiencies.off('click');
 }
 
 function unlockEdit() {
   lockIcon.removeClass('fa-lock');
   lockIcon.addClass('fa-lock-open');
-  profDots.click(toggleProficiency);
+  proficiencies.click(toggleProf);
   statnumbers.click(editStat);
 }
 
@@ -211,6 +231,9 @@ function sortByMod() {
 	$.each(skills,function(){
 		$("#allskills").append(this);
 	});
+}
+function sortBySkill() {
+	console.log("not implemented yet");
 }
 
 //MASONRY GRID
