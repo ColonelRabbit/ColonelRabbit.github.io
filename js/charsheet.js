@@ -22,18 +22,15 @@ const proficiencies = $(".prof");
 const statnumbers = $(".statnumbers");
 const skills=$("#allskills div.skillboxwrapper").get();
 const saves=$("#allsaves div.staboxwrapper").get();
+const loadcharSubmit = $("#loadChar-submit");
 var proficiencyBonus = Math.floor((char_level-1)/4)+2;
 
-const proficiency_types = ['notproficient', 'jack', 'proficient', 'expert'];
-const proficiency_multiplier = [0, 0.5, 1, 2];
+const proficiency_types = ['notproficient', 'proficient', 'expert', 'jack'];
+const proficiency_multiplier = [0, 1, 2, 0.5];
 const proficiency_icons = [
 	{
 		"type": "far",
 		"icon": "fa-circle"
-	},
-	{
-		"type": "fas",
-		"icon": "fa-adjust"
 	},
 	{
 		"type": "fas",
@@ -42,17 +39,48 @@ const proficiency_icons = [
 	{
 		"type": "far",
 		"icon": "fa-dot-circle"
+	},
+	{
+		"type": "fas",
+		"icon": "fa-adjust"
 	}
 ]
 
-$(document).ready(()=>{
-	updateStat('str');
-	updateStat('dex');
-	updateStat('con');
-	updateStat('int');
-	updateStat('wis');
-	updateStat('cha');
+const jsonPath = "data/charsheets/chardata.json";
+
+var charData;
+
+$('document').ready(()=> {
+	DataUtil.loadJSON(jsonPath, onCharLoad);
 });
+
+//loadcharSubmit.click()
+
+
+function onCharLoad(data) {
+	let character = data.character;
+	console.log(data);
+	for (let skill in character.skills) {
+		let prof = proficiency_types.indexOf(character.skills[skill]);
+		const profIcon = $(`#${skill}prof`);
+		profIcon.addClass(proficiency_types[prof]);
+		profIcon[0].classList.replace('far', proficiency_icons[prof].type);
+		profIcon[0].classList.replace('fa-circle', proficiency_icons[prof].icon);
+	}
+	for (let save in character.saves) {
+		let prof = proficiency_types.indexOf(character.saves[save]);
+		const profIcon = $(`#${save}saveprof`);
+		profIcon.addClass(proficiency_types[prof]);
+		profIcon[0].classList.replace('far', proficiency_icons[prof].type);
+		profIcon[0].classList.replace('fa-circle', proficiency_icons[prof].icon);
+	}
+	for (let stat in character.stats) {
+		$(`#${stat}stat`)[0].innerText = character.stats[stat];
+		updateStat(stat);
+	}
+}
+
+
 
 function updateStat(stat) {
 	const statScore = parseInt($(`#${stat}stat`)[0].innerText);
@@ -131,12 +159,10 @@ skillSortButton.click(sortBySkill);
 dice.click(rollDice);
 
 function rollDice() {
-  console.log($(this));
   const rollFor = $(this)[0].id;
   const mod = parseInt($(`#${rollFor}mod`)[0].innerText);
   console.log(`Rolling 1d20+${mod} = ${parseInt(Math.random()*20)+mod+1} for ${rollFor}`);
 }
-
 
 lockIcon.click(lockUnlock);
 

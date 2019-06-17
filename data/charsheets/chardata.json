@@ -1,0 +1,126 @@
+{
+  "character": {
+    "id": 123123,
+    "name": "Forest",
+    "race": {
+      "main": "Tiefling",
+      "subrace": "Variant",
+      "variant": "Infernal Legacy (PHB)"
+    },
+    "level": [
+      {
+        "class": "Rogue",
+        "level": 3,
+        "subclass": "Inquisitive"
+      },
+      {
+        "class": "Cleric",
+        "level": 2,
+        "subclass": "Trickery"
+      }
+    ],
+    "stats": {
+      "str": 8,
+      "dex": 16,
+      "con": 12,
+      "int": 10,
+      "wis": 14,
+      "cha": 14
+    },
+    "saves": {
+      "str": "notproficient",
+      "dex": "proficient",
+      "con": "notproficient",
+      "int": "proficient",
+      "wis": "notproficient",
+      "cha": "notproficient"
+    },
+    "skills": {
+      "acrobatics": "notproficient",
+      "animal": "notproficient",
+      "arcana": "notproficient",
+      "athletics": "proficient",
+      "deception": "expert",
+      "history": "notproficient",
+      "insight": "expert",
+      "intimidation": "notproficient",
+      "investigation": "notproficient",
+      "medicine": "notproficient",
+      "nature": "notproficient",
+      "perception": "proficient",
+      "performance": "notproficient",
+      "persuasion": "proficient",
+      "religion": "notproficient",
+      "sleight": "proficient",
+      "stealth": "proficient",
+      "survival": "notproficient"
+    },
+    "feats": [
+      "Observant",
+      "Mobile",
+      "Defensive Duelist"
+    ],
+    "personality": {
+      "traits": "I am slow to trust; those who seem the fairest often have the most to hide. I am quiet and unobtrusive; not drawing attention keeps me safe.",
+      "ideals": "I don't steal from those who can't support themselves. I will not betray those who work with me, but I won't hesitate to leave them behind if necessary.",
+      "bonds": "The crew I grew up with is home, rough though it is.",
+      "flaws": "I'm too curious for my own good and often end up in sticky situations because of that."
+    },
+    "inventory": [
+      {
+        "item": "short sword",
+        "quantity": 1
+      },
+      {
+        "item": "light crossbow",
+        "quantity": 1
+      },
+      {
+        "item": "crossbow bolts",
+        "quantity": 30
+      },
+      {
+        "item": "leater armor",
+        "quantity": 1
+      },
+      {
+        "item": "sling",
+        "quantity": 1
+      },
+      {
+        "item": "sling stones",
+        "quantity": 30
+      },
+      {
+        "item": "dagger",
+        "quantity": 4
+      }
+    ],
+    "languages": [
+      "Common",
+      "Infernal",
+      "Thieves' Cant"
+    ],
+    "toolproficiencies": [
+      "Thieves' Tools"
+    ],
+    "backstory": [
+      "P1",
+      "P2",
+      "P3"
+    ],
+    "characteristics": {
+      "alignment": ["Lawful", "Neutral"],
+      "gender": "Female",
+      "eyes": "Black",
+      "size": "Medium",
+      "height": [5, 4],
+      "faith": "Oponn",
+      "hair": "Black",
+      "skin": "rosey",
+      "age": 20,
+      "weight": 110
+    },
+    "background": "Thief"
+  }
+}
