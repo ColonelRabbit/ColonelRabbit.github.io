@@ -11,8 +11,11 @@
 // document.getElementById(cityName).style.display = "block";
 // evt.currentTarget.className += " active";
 // }
-var char_level = 3;
+
+var character;
+
 var editLocked = true;
+const charSheet = $("#charsheet");
 const lockIcon = $("#lockicon");
 const dice = $(".statdice");
 const alphaSortButton = $("#name-sort-icon");
@@ -23,7 +26,13 @@ const statnumbers = $(".statnumbers");
 const skills=$("#allskills div.skillboxwrapper").get();
 const saves=$("#allsaves div.staboxwrapper").get();
 const loadcharSubmit = $("#loadChar-submit");
-var proficiencyBonus = Math.floor((char_level-1)/4)+2;
+const savecharSumbit = $("#saveChar-submit");
+const loadcharInput = $("#loadChar-idinput");
+
+
+console.log(loadcharInput);
+var charLevel;
+var proficiencyBonus;
 
 const proficiency_types = ['notproficient', 'proficient', 'expert', 'jack'];
 const proficiency_multiplier = [0, 1, 2, 0.5];
@@ -47,19 +56,57 @@ const proficiency_icons = [
 ]
 
 const jsonPath = "data/charsheets/chardata.json";
-
+//const jsonSavePath = "data/charsheets/newchardata.json";
 var charData;
 
 $('document').ready(()=> {
-	DataUtil.loadJSON(jsonPath, onCharLoad);
+	charSheet.hide();
 });
 
-//loadcharSubmit.click()
+loadcharSubmit.click(loadCharacter);
+loadcharInput.keypress((e)=> {
+	if (e.which === 13) {
+		loadcharSubmit.click();
+	}
+});
+
+function loadCharacter() {
+	DataUtil.loadJSON(jsonPath, onCharLoad);
+}
+
+//savecharSumbit.click(onCharSave);
 
 
 function onCharLoad(data) {
-	let character = data.character;
-	console.log(data);
+	let charId = loadcharInput.val();
+
+	let char = data.characters.find(o => o.id === charId);
+	if (char) {
+		character = char;
+	} else {
+		alert('Invalid Character ID');
+		return false;
+	}
+	$(`#charname`)[0].innerText = character.name;
+	$(`#race`)[0].innerText = character.race.subrace ? `${character.race.main} (${character.race.subrace})` : character.race.main ;
+
+	let classText = ``;
+	let classes = character.classes;
+	for (let charclass in classes) {
+		if (classText != ``) {
+			classText += `, `;
+		}
+		classText += classes[charclass].class;
+		if (classes[charclass].subclass) {
+			classText += ` (${classes[charclass].subclass}) `;
+		}
+		classText += ` ${classes[charclass].level}`;
+	}
+	$(`#class`)[0].innerText = classText;
+	$(`#charportrait`)[0].src = character.portrait.path;
+	charLevel = character.totallevel;
+	proficiencyBonus = Math.floor((charLevel-1)/4)+2;
+	//console.log(data);
 	for (let skill in character.skills) {
 		let prof = proficiency_types.indexOf(character.skills[skill]);
 		const profIcon = $(`#${skill}prof`);
@@ -78,8 +125,9 @@ function onCharLoad(data) {
 		$(`#${stat}stat`)[0].innerText = character.stats[stat];
 		updateStat(stat);
 	}
-}
 
+	charSheet.show();
+}
 
 
 function updateStat(stat) {
@@ -144,10 +192,13 @@ function toggleProf() {
 	prof.classList.replace(proficiency_icons[profType].icon, proficiency_icons[new_profType].icon,)
 	prof.classList.replace(proficiency_icons[profType].type, proficiency_icons[new_profType].type,)
 	prof_id = prof.id.split('prof')[0];
-	if (prof_id.includes('save')) {
+	if (prof.classList.contains('save')) {
 		updateSave(prof_id);
-	} else {
+		character.saves[prof_id.substring(0,3)] = proficiency_types[new_profType];
+	} else if (prof.classList.contains('skill')) {
 		updateSkill(prof_id);
+		character.skills[prof_id] = proficiency_types[new_profType];
+		console.log(character.skills[prof_id]);
 	}
 }
 

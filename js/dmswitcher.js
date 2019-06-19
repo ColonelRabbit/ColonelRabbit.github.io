@@ -129,6 +129,7 @@ const DmSwitcher = {
     DmSwitcher.LI('ul_dms', 'trapshazards.html', 'Traps & Hazards');
     DmSwitcher.LI('ul_dms', 'prestigeclasses.html', 'Prestige Classes');
     DmSwitcher.LI('ul_dms', 'dmsecrets.html', 'DM World Info');
+	DmSwitcher.LI('ul_dms', 'charsheet.html', 'Character Sheet Beta');
     DmSwitcher.LIlogout('ul_dms', 'Logout of DM Tools', 'Hides this toolbar from the website');
   },
 
