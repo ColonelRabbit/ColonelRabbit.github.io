@@ -61,6 +61,7 @@ var charData;
 
 $('document').ready(()=> {
 	charSheet.hide();
+	$('#classStuff').hide();
 });
 
 loadcharSubmit.click(loadCharacter);
