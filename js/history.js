@@ -30,7 +30,6 @@ class History {
 					const id = $el.attr("id");
 					History.lastLoadedId = id;
 					loadhash(id);
-					console.log($el[0].pathname.includes("charsheet"));
 					if ($el[0].pathname.includes("charsheet")) {
 						//document.title = decodeURIComponent($el.attr("title"));
 					} else {

@@ -220,7 +220,7 @@ function rollDice() {
 		roll = Math.max(roll, 10);
 	}
 	result = roll+mod;
-	console.log(`Rolling 1d20+${mod} = ${result} for ${rollFor}`);
+	alert(`Rolling 1d20+${mod} = ${result} for ${rollFor}`);
 }
 
 lockIcon.click(lockUnlock);
