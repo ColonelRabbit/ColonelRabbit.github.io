@@ -13,6 +13,8 @@
 // }
 
 var character;
+var charLevel;
+var proficiencyBonus;
 
 var editLocked = true;
 const charSheet = $("#charsheet");
@@ -28,11 +30,6 @@ const saves=$("#allsaves div.staboxwrapper").get();
 const loadcharSubmit = $("#loadChar-submit");
 const savecharSumbit = $("#saveChar-submit");
 const loadcharInput = $("#loadChar-idinput");
-
-
-console.log(loadcharInput);
-var charLevel;
-var proficiencyBonus;
 
 const proficiency_types = ['notproficient', 'proficient', 'expert', 'jack'];
 const proficiency_multiplier = [0, 1, 2, 0.5];
@@ -211,33 +208,43 @@ skillSortButton.click(sortBySkill);
 dice.click(rollDice);
 
 function rollDice() {
-  const rollFor = $(this)[0].id;
-  const mod = parseInt($(`#${rollFor}mod`)[0].innerText);
-  console.log(`Rolling 1d20+${mod} = ${parseInt(Math.random()*20)+mod+1} for ${rollFor}`);
+	let result;
+	const rollFor = $(this)[0].id;
+	const mod = parseInt($(`#${rollFor}mod`)[0].innerText);
+	let roll = parseInt(Math.random()*20)+1;
+
+	if (character.classes.find(x => {return x.subclass === 'Inquisitive'}) && rollFor == "insight")  {
+		roll = Math.max(roll, 8);
+	}
+	if (character.classes.find(x => {return (x.class === 'Rogue' && x.level === 11)}) && $(this)[0].classList.contains('skill'))  {
+		roll = Math.max(roll, 10);
+	}
+	result = roll+mod;
+	console.log(`Rolling 1d20+${mod} = ${result} for ${rollFor}`);
 }
 
 lockIcon.click(lockUnlock);
 
 function lockEdit() {
-  lockIcon.removeClass('fa-lock-open');
-  lockIcon.addClass('fa-lock');
-  proficiencies.off('click');
+	lockIcon.removeClass('fa-lock-open');
+	lockIcon.addClass('fa-lock');
+	proficiencies.off('click');
 }
 
 function unlockEdit() {
-  lockIcon.removeClass('fa-lock');
-  lockIcon.addClass('fa-lock-open');
-  proficiencies.click(toggleProf);
-  statnumbers.click(editStat);
+	lockIcon.removeClass('fa-lock');
+	lockIcon.addClass('fa-lock-open');
+	proficiencies.click(toggleProf);
+	statnumbers.click(editStat);
 }
 
 function lockUnlock() {
-  editLocked = !editLocked;
-  if (editLocked) {
-    lockEdit();
-  } else {
-    unlockEdit();
-  }
+	editLocked = !editLocked;
+	if (editLocked) {
+		lockEdit();
+	} else {
+		unlockEdit();
+	}
 }
 
 var alphaSort=true;
