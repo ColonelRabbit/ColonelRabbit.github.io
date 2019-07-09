@@ -474,12 +474,98 @@
 	</nav>
 	<main class="container bodyContent classes">
 
-		<i id="lockicon" class="fas fa-lock"></i> <!--lock/lock-open for input/user modes-->
-		<input type="text" placeholder="Character ID" id="loadChar-idinput" />
-		<button class="btn btn-default" id="loadChar-submit"><span class="glyphicon glyphicon-download"></span></button>
-		<button class="btn btn-default" id="saveChar-submit"><span class="glyphicon glyphicon-upload"></span></button>
+		<div id="load-save-char">
+			<input type="text" placeholder="Character ID" id="loadChar-idinput" />
+			<button class="btn btn-default" id="loadChar-submit"><span class="glyphicon glyphicon-download"></span></button>
+			<button class="btn btn-default" id="saveChar-submit"><span class="glyphicon glyphicon-upload"></span></button>
+
+		</div>
+
+		<div id="char-creation">
+			<div id="creation-progress-bar"> </div>
+			<div id="input-name">
+				<!-- name -->
+				<input type="text" name="charName" placeholder="Character Name">
+				<input type="submit">
+			</div>
+			<div id="input-race">
+				<div class="container view-col-wrapper">
+					<div class="view-col"  id="listcontainer">
+						<div class="input-group" id="filter-search-input-group">
+							<input type="search" id="search" class="search form-control" placeholder="Find race...">
+							<span class="input-group-btn">
+										<button class="btn btn-default" type="button" id="reset">Reset</button>
+									</span>
+						</div>
+						<div id="filtertools" class="sortlabel btn-group">
+							<button class="col-xs-4 sort btn btn-default btn-xs" type="button" data-sort="name">Name</button>
+							<button class="col-xs-4 sort btn btn-default btn-xs" type="button" data-sort="ability">Ability</button>
+							<button class="col-xs-2 sort btn btn-default btn-xs" type="button" data-sort="size">Size</button>
+							<button class="col-xs-2 sort btn btn-default btn-xs" type="button" data-sort="source">Source</button>
+						</div>
+
+						<ul class="list races"></ul>
+					</div>
+					<div id="contentwrapper" class="view-col">
+						<div id="sublistcontainer">
+							<div id="sublistsort" class="sortlabel btn-group">
+								<button class="col-xs-5 sort btn btn-default btn-xs" data-sort="name">Name</button>
+								<button class="col-xs-5 sort btn btn-default btn-xs" data-sort="ability">Ability</button>
+								<button class="col-xs-2 sort btn btn-default btn-xs" data-sort="size">Size</button>
+							</div>
+							<ul class="list subraces">
+								<!-- populate with JS -->
+							</ul>
+						</div>
+
+						<div class="wrp-stat-tab" id="stat-tabs">
+							<div id="tabs-right"></div>
+						</div>
+
+						<table id="racepagecontent" class="stats">
+
+						</table>
+						<br>
+						<p class="text-align-center">
+							<button class="btn btn-default btn-sm btn-file" id="manage-brew">Manage Homebrew</button>
+						</p>
+					</div>
+				</div>
+
+			</div>
+			<div id="input-class">
+				<!-- select class(es) -->
+				<!-- select subclass(es) -->
+				<!-- select proficiencies -->
+				<!-- select spells -->
+
+				<input type="submit">
+			</div>
+			<div id="input-stats">
+
+				<input type="submit">
+			</div>
+			<div id="input-description">
+				<!-- gender -->
+				<!-- appearance -->
+				<!-- alignment -->
+				<!-- portrait -->
+				<input type="file" name="character-portait-select">
+
+				<input type="submit">
+			</div>
+			<div id="input-background">
+				<!-- select background (and related skills/languages)-->
+				<!-- select/write characteristics -->
+				<!-- notes, organizations and backstory -->
+
+				<input type="submit">
+			</div>
+
+		</div>
 
 		<div id="charsheet">
+			<i id="lockicon" class="fas fa-lock"></i> <!--lock/lock-open for input/user modes-->
 			<div class="row" id="charheader">
 
 				<div style="padding: 0px 0px 20px 2%;" class="col-sm-2 col-xs-3" id="portraitbox">
@@ -1319,39 +1405,10 @@
 
 			-->
 			<div class="col-sm-6 col-xs-12 mason-grid" id="stuff">
+				<div class="row"> Features and Traits </div>
+				<ul class="list features">
 
-				<div class="col-xs-6 col-sm-6 staboxwrapper">
-					<div class="statbox box">
-						<div class="content">
-							<div class="stattext"> STR</div>
-							<div class="statnumbers" id=""> 8 </div>
-							<div class="statmodbox">
-								<div class="col-xs-6 statmod">
-									<div class="statmod2" id=""> </div>
-								</div>
-								<div class="col-xs-6 dicebox">
-									<img class="statdice" id="" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-6 col-sm-6 staboxwrapper">
-					<div class="statbox box">
-						<div class="content">
-							<div class="stattext"> STR</div>
-							<div class="statnumbers" id=""> 8 </div>
-							<div class="statmodbox">
-								<div class="col-xs-6 statmod">
-									<div class="statmod2" id=""> </div>
-								</div>
-								<div class="col-xs-6 dicebox">
-									<img class="statdice" id="" src="img/charsheet/d20.png" alt="d20" height=20px width=20px>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				</ul>
 
 			</div>
 
@@ -1367,7 +1424,7 @@
 <div class="row" style="height:40px; border-style: solid; border-width: 0px 0px 10px;"> </div>
 <div id="classStuff">
 <div class="row">
-	<div class="col-sm-3" id="listcontainer">
+	<div class="col-sm-3">
 		<div class="input-group" id="filter-search-input-group">
 			<input type="search" id="search" class="search form-control" placeholder="Find class...">
 			<span class="input-group-btn">
@@ -1641,7 +1698,7 @@
 	</div>
 	<div class="col-md-9">
 		<div id="subclasses"></div>
-		<table id="pagecontent" class="stats shadow-big">
+		<table id="classpagecontent" class="stats shadow-big">
 			<tr id="ftTopBorder">
 				<th class="border" colspan="6"></th>
 			</tr>
@@ -1667,7 +1724,7 @@
 <script type="text/javascript" src="lib/jquery.js"></script>
 <script type="text/javascript" src="lib/masonry.pkgd.min.js"></script>
 
-<script type="text/javascript" src="js/charsheet.js"></script>
+<!--<script type="text/javascript" src="js/charsheet.js"></script>-->
 
 <script type="text/javascript" src="js/utils.js"></script>
 <script type="text/javascript" src="js/omnisearch.js"></script>
@@ -1675,7 +1732,9 @@
 <script type="text/javascript" src="js/filter.js"></script>
 <script type="text/javascript" src="js/entryrender.js"></script>
 <script type="text/javascript" src="js/history.js"></script>
-<script type="text/javascript" src="js/classes.js"></script>
+<script type="text/javascript" src="js/races.js"></script>
+<!--<script type="text/javascript" src="js/classes.js"></script>-->
+<!--<script type="text/javascript" src="js/charcreator.js"></script>-->
 <script type="text/javascript" src="lib/list.js"></script>
 <script type="text/javascript" src="lib/bootstrap.js"></script>
 <script type="text/javascript" src="lib/elasticlunr.js"></script>

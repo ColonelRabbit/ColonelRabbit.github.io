@@ -46,10 +46,11 @@ let filterBox;
 function onJsonLoad (data) {
 	list = ListUtil.search({
 		valueNames: ['name', 'ability', 'size', 'source', 'clean-name'],
-		listClass: "races"
+		listClass: "races",
+		id: "racelistcontainer"
 	});
 
-	tableDefault = $("#pagecontent").html();
+	tableDefault = $("#racepagecontent").html();
 
 	const jsonRaces = EntryRenderer.race.mergeSubraces(data.race);
 
@@ -211,10 +212,10 @@ function getSublistItem (race, pinId) {
 	return `
 		<li class="row" ${FLTR_ID}="${pinId}" oncontextmenu="ListUtil.openSubContextMenu(event, this)">
 			<a href="#${UrlUtil.autoEncodeHash(race)}" title="${race.name}">
-				<span class="name col-xs-5">${race.name}</span>		
-				<span class="ability col-xs-5">${race._slAbility}</span>		
-				<span class="size col-xs-2">${Parser.sizeAbvToFull(race.size)}</span>		
-				<span class="id hidden">${pinId}</span>				
+				<span class="name col-xs-5">${race.name}</span>
+				<span class="ability col-xs-5">${race._slAbility}</span>
+				<span class="size col-xs-2">${Parser.sizeAbvToFull(race.size)}</span>
+				<span class="id hidden">${pinId}</span>
 			</a>
 		</li>
 	`;
@@ -222,7 +223,7 @@ function getSublistItem (race, pinId) {
 
 const renderer = new EntryRenderer();
 function loadhash (id) {
-	const $pgContent = $("#pagecontent");
+	const $pgContent = $("#racepagecontent");
 	$pgContent.html(tableDefault);
 	$pgContent.find("td").show();
 
@@ -238,7 +239,7 @@ function loadhash (id) {
 		<tr><td id="speed" colspan="6">Speed: <span>30 ft.</span></td></tr>
 		<tr id="traits"><td class="divider" colspan="6"><div></div></td></tr>
 		${EntryRenderer.utils.getBorderTr()}
-		</tbody>		
+		</tbody>
 		`);
 
 		$pgContent.find("th.name").html(`<span class="stats-name">${race.name}</span><span class="stats-source source${race.source}" title="${Parser.sourceJsonToFull(race.source)}">${Parser.sourceJsonToAbv(race.source)}</span>`);

@@ -43,7 +43,7 @@ const jsonURL = "data/classes.json";
 const renderer = new EntryRenderer();
 
 window.onload = function load () {
-	tableDefault = $("#pagecontent").html();
+	tableDefault = $("#classpagecontent").html();
 	statsProfDefault = $("#statsprof").html();
 	classTableDefault = $("#classtable").html();
 
@@ -161,7 +161,7 @@ function addClassData (data) {
 				<a id='${clI}' href='${getClassHash(curClass)}' title='${curClass.name}'>
 					<span class='name col-xs-8'>${curClass.name}</span>
 					<span class='source col-xs-4 text-align-center source${Parser.sourceJsonToAbv(curClass.source)}' title='${Parser.sourceJsonToFull(curClass.source)}'>${Parser.sourceJsonToAbv(curClass.source)}</span>
-					<span class="uniqueid hidden">${curClass.uniqueId ? curClass.uniqueId : clI}</span>
+					<span class="uniqueid hidden"> ${curClass.uniqueId ? curClass.uniqueId : clI}</span>
 				</a>
 			</li>`;
 	}
@@ -224,7 +224,7 @@ function addSubclassData (data) {
 
 let curClass;
 function loadhash (id) {
-	$("#pagecontent").html(tableDefault);
+	$("#classpagecontent").html(tableDefault);
 	$("#statsprof").html(statsProfDefault);
 	$("#classtable").html(classTableDefault);
 	curClass = classes[id];
@@ -604,7 +604,7 @@ function loadsub (sub) {
 		if ($toShow.length === 0) {
 			hideAllSubclasses();
 		} else {
-			const otherSrcSubFeat = $(`#pagecontent`).find(`div.${CLSS_NON_STANDARD_SOURCE}`);
+			const otherSrcSubFeat = $(`#classpagecontent`).find(`div.${CLSS_NON_STANDARD_SOURCE}`);
 			const shownInTable = [];
 
 			$.each($toShow, function (i, v) {
@@ -651,7 +651,7 @@ function loadsub (sub) {
 
 	// hide class features as required
 	const cfToggle = $(`#${ID_CLASS_FEATURES_TOGGLE}`);
-	const allCf = $(`#pagecontent`).find(`.${CLSS_CLASS_FEATURE}`);
+	const allCf = $(`#classpagecontent`).find(`.${CLSS_CLASS_FEATURE}`);
 	const toToggleCf = allCf.not(`.${CLSS_GAIN_SUBCLASS_FEATURE}`);
 	const isHideClassFeatures = hideClassFeatures !== null && hideClassFeatures;
 	// if showing no subclass and hiding class features, hide the "gain a feature at this level" labels
@@ -673,7 +673,7 @@ function loadsub (sub) {
 
 	// show fluff as required
 	const fluffToggle = $(`#${ID_FLUFF_TOGGLE}`);
-	const fluff = $(`#pagecontent`).find(`.${CLSS_CLASS_FLUFF}`);
+	const fluff = $(`#classpagecontent`).find(`.${CLSS_CLASS_FLUFF}`);
 	if (!showFluff) {
 		fluffToggle.removeClass(CLSS_FLUFF_ACTIVE);
 		fluff.hide();
@@ -826,7 +826,7 @@ function loadsub (sub) {
 	function hideAllSubclasses () {
 		updateClassTableLinks();
 		updateNavLinks();
-		const $pgContent = $(`#pagecontent`);
+		const $pgContent = $(`#classpagecontent`);
 		$(`.${CLSS_SUBCLASS_PILL}`).removeClass(CLSS_ACTIVE);
 		$pgContent.find(`.${CLSS_SUBCLASS_FEATURE}`).hide();
 		$(`.${CLSS_SUBCLASS_PREFIX}`).hide();

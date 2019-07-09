@@ -1605,6 +1605,7 @@ ListUtil = {
 
 	search: (options) => {
 		const list = new List("listcontainer", options);
+		console.log(list);
 		list.sort("name");
 		$("#reset").click(function () {
 			$("#filtertools").find("select").val("All");
@@ -2566,7 +2567,6 @@ RollerUtil = {
 
 	addListRollButton: () => {
 		const listWrapper = $("#listcontainer");
-
 		const $btnRoll = $(`<button class="btn btn-default" id="feelinglucky" title="Feeling Lucky?"><span class="glyphicon glyphicon-random"></span></button>`);
 		$btnRoll.on("click", () => {
 			if (listWrapper.data("lists")) {

@@ -56,8 +56,8 @@ const jsonPath = "data/charsheets/chardata.json";
 //const jsonSavePath = "data/charsheets/newchardata.json";
 var charData;
 
-$('document').ready(()=> {
-	charSheet.hide();
+$(window).on('load', ()=> {
+	//charSheet.hide();
 	$('#classStuff').hide();
 });
 
